@@ -193,3 +193,10 @@ sumo-launchd.py
 export PATH=$PATH:/c/Users/jomrich/Downloads/Veins/sumo-0.21.0/bin/
 export PATH=$PATH:/c/Users/jomrich/Downloads/Veins/sumo-0.21.0/bin/
 sumo-launchd.py 
+omnetpp
+cd ..
+ls
+cd veins-veins-4a2/
+ls
+export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
+sumo-launchd.py 
