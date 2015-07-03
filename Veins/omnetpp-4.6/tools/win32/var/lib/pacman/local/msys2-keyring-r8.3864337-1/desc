@@ -1,0 +1,36 @@
+%NAME%
+msys2-keyring
+
+%VERSION%
+r8.3864337-1
+
+%DESC%
+MSYS2 PGP keyring
+
+%URL%
+https://github.com/Alexpux/MSYS2-keyring
+
+%ARCH%
+any
+
+%BUILDDATE%
+1415246063
+
+%INSTALLDATE%
+1416231809
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+25600
+
+%GROUPS%
+base
+
+%LICENSE%
+GPL
+
+%VALIDATION%
+pgp
+

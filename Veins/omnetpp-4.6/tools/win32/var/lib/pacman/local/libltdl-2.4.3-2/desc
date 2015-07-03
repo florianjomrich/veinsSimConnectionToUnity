@@ -1,0 +1,36 @@
+%NAME%
+libltdl
+
+%VERSION%
+2.4.3-2
+
+%DESC%
+A system independent dlopen wrapper for GNU libtool
+
+%URL%
+http://www.gnu.org/software/libtool
+
+%ARCH%
+i686
+
+%BUILDDATE%
+1415308669
+
+%INSTALLDATE%
+1416231780
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+150528
+
+%REASON%
+1
+
+%LICENSE%
+GPL
+
+%VALIDATION%
+pgp
+

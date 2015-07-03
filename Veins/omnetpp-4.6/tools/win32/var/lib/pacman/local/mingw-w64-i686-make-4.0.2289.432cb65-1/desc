@@ -1,0 +1,36 @@
+%NAME%
+mingw-w64-i686-make
+
+%VERSION%
+4.0.2289.432cb65-1
+
+%DESC%
+GNU make utility to maintain groups of programs
+
+%URL%
+http://www.gnu.org/software/make
+
+%ARCH%
+any
+
+%BUILDDATE%
+1389587799
+
+%INSTALLDATE%
+1413800606
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+242688
+
+%GROUPS%
+mingw-w64-i686-toolchain
+
+%LICENSE%
+GPL3
+
+%VALIDATION%
+pgp
+

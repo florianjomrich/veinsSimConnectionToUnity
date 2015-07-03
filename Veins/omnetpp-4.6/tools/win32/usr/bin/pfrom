@@ -1,0 +1,6 @@
+#!/bin/sh
+# $Id$
+libexecdir=/usr/sbin
+PATH=$libexecdir:$PATH
+export PATH
+push --from $*

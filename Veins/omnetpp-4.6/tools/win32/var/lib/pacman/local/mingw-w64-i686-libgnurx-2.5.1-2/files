@@ -1,0 +1,12 @@
+%FILES%
+mingw32/
+mingw32/bin/
+mingw32/bin/libgnurx-0.dll
+mingw32/include/
+mingw32/include/regex.h
+mingw32/lib/
+mingw32/lib/libgnurx.a
+mingw32/lib/libgnurx.dll.a
+mingw32/lib/libregex.a
+mingw32/lib/libregex.dll.a
+

@@ -1,0 +1,36 @@
+%NAME%
+expat
+
+%VERSION%
+2.1.0-2
+
+%DESC%
+An XML parser library
+
+%URL%
+http://expat.sourceforge.net/
+
+%ARCH%
+i686
+
+%BUILDDATE%
+1415123040
+
+%INSTALLDATE%
+1416231769
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+31744
+
+%REASON%
+1
+
+%LICENSE%
+custom
+
+%VALIDATION%
+pgp
+

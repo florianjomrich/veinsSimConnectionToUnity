@@ -1,0 +1,95 @@
+# Global OMNeT++/Tkenv config file
+option updatefreq_fast_ms	{500}
+option updatefreq_express_ms	{1000}
+option event_banners	{1}
+option init_banners	{1}
+option short_banners	{0}
+option animation_enabled	{1}
+option nexteventmarkers	{1}
+option senddirect_arrows	{1}
+option anim_methodcalls	{1}
+option methodcalls_delay	{200}
+option animation_msgnames	{1}
+option animation_msgclassnames	{1}
+option animation_msgcolors	{1}
+option silent_event_filters	{}
+option penguin_mode	{0}
+option showlayouting	{0}
+option layouterchoice	{auto}
+option arrangevectorconnections	{0}
+option iconminsize	{5}
+option bubbles	{1}
+option animation_speed	{1.5}
+option expressmode_autoupdate	{1}
+option stoponmsgcancel	{1}
+option scrollbacklimit	{10000}
+option logbuffer_maxnumevents	{100000}
+config RSUExampleScenario:0:imagesizefactor	{1}
+config RSUExampleScenario:0:layoutseed	{1}
+config RSUExampleScenario:0:showarrowheads	{1}
+config RSUExampleScenario:0:showlabels	{1}
+config RSUExampleScenario:0:zoomfactor	{0.367368772515974}
+config aboutdialog:size	{448 278}
+config combodialog:size	{400 200}
+config concurrent-anim	{1}
+config confirm-exit	{1}
+config display-statusdetails	{1}
+config display-timeline	{1}
+config dontshow	{}
+config editor-backwards	{1}
+config editor-case-sensitive	{0}
+config editor-findstring	{}
+config editor-regexp	{0}
+config editor-whole-words	{0}
+config editor-wrap	{none}
+config filtobjlist-category	{mqsgvo}
+config filtobjlist-class	{}
+config filtobjlist-maxcount	{100000}
+config filtobjlist-name	{}
+config filtobjlist-order	{Class}
+config finddialog:size	{316 132}
+config findobjectsdialog:size	{925 578}
+config inputbox:size	{400 200}
+config inspector:columnwidths	{{#0} 140 name 120 info 300 ptr 200}
+config keep-inspectors-on-top	{1}
+config last-nedfile	{}
+config layout-may-change-zoom	{1}
+config layout-may-resize-window	{1}
+config log-save-filename	{omnetpp.out}
+config mainwin-geom	{640x480+78+78}
+config mainwin-left-sashpos	{287}
+config mainwin-log-mode	{log}
+config mainwin-main-sashpos	{467}
+config mainwin-right-sashpos-horizontal	{}
+config mainwin-right-sashpos-vertical	{272}
+config mainwin-sash-orient	{vertical}
+config mainwin-state	{zoomed}
+config modelinfodialog:size	{400 400}
+config new-loginspector-mode	{log}
+config oncedialog:size	{500 300}
+config outvectoroptionsdialog:size	{300 300}
+config preferences-dialog-page	{g}
+config preferencesdialog:size	{652 545}
+config reuse-inspectors	{1}
+config runseldialog:size	{325 126}
+config rununtil-event	{}
+config rununtil-mode	{Express (tracing off)}
+config rununtil-msg	{}
+config rununtil-time	{}
+config rununtildialog:size	{455 206}
+config stopdialog:size	{154 122}
+config timeline-maxnumevents	{1000}
+config timeline-wantnonselfmsgs	{1}
+config timeline-wantselfmsgs	{1}
+config timeline-wantsilentmsgs	{0}
+config treedialog:size	{353 446}
+config zoomby-factor	{1.3}
+font TimelineFont	{-family {Gill Sans MT Condensed} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font CanvasFont	{-family {Segoe UI} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font LogFont	{-family {DejaVu Sans Mono} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font BIGFont	{-family {Segoe UI} -size 18 -weight normal -slant roman -underline 0 -overstrike 0}
+font BoldFont	{-family {Segoe UI} -size 9 -weight bold -slant roman -underline 0 -overstrike 0}
+font TkDefaultFont	{-family {Segoe UI} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font TkTooltipFont	{-family {Segoe UI} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font TkTextFont	{-family {Segoe UI} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}
+font TkFixedFont	{-family {DejaVu Sans Mono} -size 9 -weight normal -slant roman -underline 0 -overstrike 0}

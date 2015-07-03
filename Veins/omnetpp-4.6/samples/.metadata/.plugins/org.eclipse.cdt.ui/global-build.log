@@ -1,0 +1,157 @@
+10:45:32 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+Creating shared library: ../out/gcc-debug/src/libveins.dll
+.tmplib7400(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x14): undefined reference to `MyFileWriter::printOutPackageLossCounter(char const*, char*, int, int, char const*)'
+.tmplib7400(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x18): undefined reference to `MyFileWriter::printOutFBUs(char const*, char const*)'
+.tmplib7400(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x1c): undefined reference to `MyFileWriter::printOutBindingUpdates(char const*, char const*, char const*, char const*)'
+collect2.exe: error: ld returned 1 exit status
+Makefile:152: recipe for target '../out/gcc-debug/src/libveins.dll' failed
+make[1]: *** [../out/gcc-debug/src/libveins.dll] Error 1
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+10:45:40 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j8 all 
+cd src && /usr/bin/make all
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+10:45:42 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+Creating shared library: ../out/gcc-debug/src/libveins.dll
+.tmplib8184(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x14): undefined reference to `MyFileWriter::printOutPackageLossCounter(char const*, char*, int, int, char const*)'
+.tmplib8184(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x18): undefined reference to `MyFileWriter::printOutFBUs(char const*, char const*)'
+.tmplib8184(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x1c): undefined reference to `MyFileWriter::printOutBindingUpdates(char const*, char const*, char const*, char const*)'
+collect2.exe: error: ld returned 1 exit status
+Makefile:152: recipe for target '../out/gcc-debug/src/libveins.dll' failed
+make[1]: *** [../out/gcc-debug/src/libveins.dll] Error 1
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+10:46:25 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j8 all 
+cd src && /usr/bin/make all
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+10:46:26 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+veins/modules/mobility/traci/TraCIScenarioManager.cc
+Creating shared library: ../out/gcc-debug/src/libveins.dll
+.tmplib4652(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x14): undefined reference to `MyFileWriter::printOutPackageLossCounter(char const*, char*, int, int, char const*)'
+.tmplib4652(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x18): undefined reference to `MyFileWriter::printOutFBUs(char const*, char const*)'
+.tmplib4652(MyFileWriter.o):MyFileWriter.cc:(.rdata$_ZTV12MyFileWriter[__ZTV12MyFileWriter]+0x1c): undefined reference to `MyFileWriter::printOutBindingUpdates(char const*, char const*, char const*, char const*)'
+collect2.exe: error: ld returned 1 exit status
+Makefile:152: recipe for target '../out/gcc-debug/src/libveins.dll' failed
+make[1]: *** [../out/gcc-debug/src/libveins.dll] Error 1
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-4a2/veins-veins-4a2/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+10:54:35 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j8 all 
+cd src && /usr/bin/make all
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+10:54:36 **** Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'
+veins/base/connectionManager/BaseConnectionManager.cc
+veins/base/connectionManager/ChannelAccess.cc
+veins/base/connectionManager/ConnectionManager.cc
+veins/base/connectionManager/NicEntryDebug.cc
+veins/base/connectionManager/NicEntryDirect.cc
+veins/base/modules/BaseApplLayer.cc
+veins/base/modules/BaseBattery.cc
+veins/base/modules/BaseLayer.cc
+MSGC: veins/base/messages/MacPkt.msg
+veins/base/modules/BaseMacLayer.cc
+MSGC: veins/base/messages/BorderMsg.msg
+veins/base/modules/BaseMobility.cc
+veins/base/modules/BaseModule.cc
+veins/base/modules/BaseWorldUtility.cc
+veins/base/modules/BatteryAccess.cc
+MSGC: veins/base/messages/AirFrame.msg
+MSGC: veins/base/messages/ChannelSenseRequest.msg
+veins/base/phyLayer/BaseDecider.cc
+veins/base/phyLayer/BasePhyLayer.cc
+veins/base/phyLayer/ChannelInfo.cc
+veins/base/phyLayer/ChannelState.cc
+veins/base/phyLayer/Decider.cc
+veins/base/phyLayer/MappingBase.cc
+veins/base/phyLayer/MappingUtils.cc
+veins/base/phyLayer/PhyUtils.cc
+veins/base/phyLayer/Signal.cc
+veins/base/utils/asserts.cc
+veins/base/utils/Coord.cc
+veins/base/utils/NetwToMacControlInfo.cc
+veins/base/utils/SimpleAddress.cc
+veins/base/utils/winsupport.cc
+veins/base/utils/winsupport.cc: In function 'int _asprintf(char**, const char*, ...)':
+veins/base/utils/winsupport.cc:26:39: warning: 'len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  *buf = (char*)malloc(len*sizeof(char));
+                                       ^
+veins/base/utils/winsupport.cc:30:9: warning: 'res' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return res;
+         ^
+veins/modules/analogueModel/BreakpointPathlossModel.cc
+veins/modules/analogueModel/JakesFading.cc
+veins/modules/analogueModel/LogNormalShadowing.cc
+veins/modules/analogueModel/PERModel.cc
+veins/modules/analogueModel/SimpleObstacleShadowing.cc
+veins/modules/analogueModel/SimplePathlossModel.cc
+veins/modules/analogueModel/TwoRayInterferenceModel.cc
+MSGC: veins/modules/messages/WaveShortMessage.msg
+veins/modules/application/ieee80211p/BaseWaveApplLayer.cc
+veins/modules/application/traci/TraCIDemo11p.cc
+veins/modules/application/traci/TraCIDemoRSU11p.cc
+veins/modules/application/traci/TraCITestApp.cc
+MSGC: veins/modules/messages/Mac80211Pkt.msg
+MSGC: veins/modules/messages/PhyControlMessage.msg
+veins/modules/mac/ieee80211p/Mac1609_4.cc
+veins/modules/mobility/traci/TraCIBuffer.cc
+veins/modules/mobility/traci/TraCIColor.cc
+veins/modules/mobility/traci/TraCICommandInterface.cc
+veins/modules/mobility/traci/TraCIConnection.cc
+veins/modules/mobility/traci/TraCIMobility.cc
+veins/modules/mobility/traci/TraCIScenarioManager.cc
+veins/modules/mobility/traci/TraCIScenarioManagerInet.cc
+veins/modules/mobility/traci/TraCIScenarioManagerLaunchd.cc
+veins/modules/mobility/traci/TraCIScreenRecorder.cc
+veins/modules/obstacle/Obstacle.cc
+veins/modules/obstacle/ObstacleControl.cc
+MSGC: veins/modules/messages/AirFrame11p.msg
+veins/modules/phy/Decider80211p.cc
+veins/modules/phy/NistErrorRate.cc
+veins/modules/phy/PhyLayer80211p.cc
+veins/modules/phy/SNRThresholdDecider.cc
+veins/modules/world/annotations/AnnotationDummy.cc
+veins/modules/world/annotations/AnnotationManager.cc
+veins/base/messages/AirFrame_m.cc
+veins/base/messages/BorderMsg_m.cc
+veins/base/messages/ChannelSenseRequest_m.cc
+veins/base/messages/MacPkt_m.cc
+veins/modules/messages/AirFrame11p_m.cc
+veins/modules/messages/Mac80211Pkt_m.cc
+veins/modules/messages/PhyControlMessage_m.cc
+veins/modules/messages/WaveShortMessage_m.cc
+Creating shared library: ../out/gcc-debug/src/libveins.dll
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'
+10:58:24 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j8 all 
+cd src && /usr/bin/make all
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+10:58:25 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'
+13:04:16 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j8 all 
+cd src && /usr/bin/make all
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples/inet/src'
+13:04:17 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+make[1]: Entering directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'
+make[1]: Leaving directory '/c/Users/jomrich/Downloads/Veins/veins-veins-4a2/src'

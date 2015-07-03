@@ -1,0 +1,36 @@
+%NAME%
+mingw-w64-i686-expat
+
+%VERSION%
+2.1.0-3
+
+%DESC%
+An XML parser library (mingw-w64)
+
+%URL%
+http://expat.sourceforge.net
+
+%ARCH%
+any
+
+%BUILDDATE%
+1397896365
+
+%INSTALLDATE%
+1413800593
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+559104
+
+%REASON%
+1
+
+%LICENSE%
+custom
+
+%VALIDATION%
+pgp
+

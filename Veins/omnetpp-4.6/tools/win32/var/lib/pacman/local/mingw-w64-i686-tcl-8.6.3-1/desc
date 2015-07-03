@@ -1,0 +1,37 @@
+%NAME%
+mingw-w64-i686-tcl
+
+%VERSION%
+8.6.3-1
+
+%DESC%
+The Tcl scripting language (mingw-w64)
+
+%URL%
+http://tcl.sourceforge.net
+
+%ARCH%
+any
+
+%BUILDDATE%
+1415854749
+
+%INSTALLDATE%
+1416231807
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+13041664
+
+%LICENSE%
+custom
+
+%VALIDATION%
+pgp
+
+%DEPENDS%
+mingw-w64-i686-gcc-libs
+mingw-w64-i686-zlib
+

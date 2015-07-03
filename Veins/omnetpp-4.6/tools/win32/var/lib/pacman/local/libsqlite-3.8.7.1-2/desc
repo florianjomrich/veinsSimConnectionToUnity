@@ -1,0 +1,44 @@
+%NAME%
+libsqlite
+
+%VERSION%
+3.8.7.1-2
+
+%DESC%
+Sqlite3 library
+
+%URL%
+http://www.sqlite.org/
+
+%ARCH%
+i686
+
+%BUILDDATE%
+1415479141
+
+%INSTALLDATE%
+1416231768
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+1046528
+
+%REASON%
+1
+
+%GROUPS%
+libraries
+
+%LICENSE%
+custom:Public Domain
+
+%VALIDATION%
+pgp
+
+%DEPENDS%
+libreadline
+icu
+zlib
+

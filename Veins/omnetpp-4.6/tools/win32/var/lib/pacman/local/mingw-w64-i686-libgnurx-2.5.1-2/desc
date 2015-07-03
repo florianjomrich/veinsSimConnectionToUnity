@@ -1,0 +1,36 @@
+%NAME%
+mingw-w64-i686-libgnurx
+
+%VERSION%
+2.5.1-2
+
+%DESC%
+libgnurx (mingw-w64)
+
+%URL%
+http://mingw.sourceforge.net/
+
+%ARCH%
+any
+
+%BUILDDATE%
+1397803209
+
+%INSTALLDATE%
+1413800595
+
+%PACKAGER%
+Alexey Pavlov <alexpux@gmail.com>
+
+%SIZE%
+225280
+
+%REASON%
+1
+
+%LICENSE%
+LGPL
+
+%VALIDATION%
+pgp
+
