@@ -61,7 +61,7 @@ config mainwin-left-sashpos	{287}
 config mainwin-log-mode	{log}
 config mainwin-main-sashpos	{467}
 config mainwin-right-sashpos-horizontal	{}
-config mainwin-right-sashpos-vertical	{272}
+config mainwin-right-sashpos-vertical	{582}
 config mainwin-sash-orient	{vertical}
 config mainwin-state	{zoomed}
 config modelinfodialog:size	{400 400}

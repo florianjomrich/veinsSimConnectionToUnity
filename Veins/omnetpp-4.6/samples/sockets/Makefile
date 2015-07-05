@@ -141,16 +141,16 @@ $O/ExtTelnetClient.o: ExtTelnetClient.cc \
   ./SocketRTScheduler.h \
   ./NetPkt_m.h
 $O/HttpClient.o: HttpClient.cc \
-  ./HttpMsg_m.h \
-  ./NetPkt_m.h
+  ./NetPkt_m.h \
+  ./HttpMsg_m.h
 $O/HttpMsg_m.o: HttpMsg_m.cc \
   ./HttpMsg_m.h \
   ./NetPkt_m.h
 $O/HttpServer.o: HttpServer.cc \
-  ./QueueBase.h \
-  ./HttpMsg_m.h \
   ./HttpServer.h \
-  ./NetPkt_m.h
+  ./NetPkt_m.h \
+  ./HttpMsg_m.h \
+  ./QueueBase.h
 $O/NetPkt_m.o: NetPkt_m.cc \
   ./NetPkt_m.h
 $O/QueueBase.o: QueueBase.cc \
@@ -164,7 +164,7 @@ $O/TelnetPkt_m.o: TelnetPkt_m.cc \
   ./NetPkt_m.h \
   ./TelnetPkt_m.h
 $O/TelnetServer.o: TelnetServer.cc \
-  ./TelnetServer.h \
-  ./QueueBase.h \
   ./TelnetPkt_m.h \
-  ./NetPkt_m.h
+  ./QueueBase.h \
+  ./NetPkt_m.h \
+  ./TelnetServer.h

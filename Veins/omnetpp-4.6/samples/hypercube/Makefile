@@ -121,8 +121,8 @@ $O/HCGenerator.o: HCGenerator.cc \
 $O/HCPacket_m.o: HCPacket_m.cc \
   ./HCPacket_m.h
 $O/HCRouter.o: HCRouter.cc \
-  ./HCPacket_m.h \
-  ./HCRouter.h
-$O/HCSink.o: HCSink.cc \
-  ./HCSink.h \
+  ./HCRouter.h \
   ./HCPacket_m.h
+$O/HCSink.o: HCSink.cc \
+  ./HCPacket_m.h \
+  ./HCSink.h

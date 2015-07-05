@@ -27,8 +27,9 @@ uname -v = 2014-11-14 00:11
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /c/veinsSimConnectionToUnity/Veins/omnetpp-4.6/bin
 PATH: .
-PATH: /c/Users/jomrich/Downloads/Veins/omnetpp-4.6//bin
+PATH: /c/veinsSimConnectionToUnity/Veins/omnetpp-4.6//bin
 PATH: /mingw32/bin
 PATH: /usr/local/bin
 PATH: /usr/bin
@@ -93,8 +94,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 configure:2531: $? = 0
 configure:2520: gcc -v >&5
 Using built-in specs.
-COLLECT_GCC=C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin\gcc.exe
-COLLECT_LTO_WRAPPER=C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/tools/win32/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
+COLLECT_GCC=C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin\gcc.exe
+COLLECT_LTO_WRAPPER=C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/tools/win32/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
 Target: i686-w64-mingw32
 Configured with: ../gcc-4.9.2/configure --prefix=/mingw32 --with-local-prefix=/mingw32/local --build=i686-w64-mingw32 --host=i686-w64-mingw32 --target=i686-w64-mingw32 --with-native-system-header-dir=/mingw32/i686-w64-mingw32/include --libexecdir=/mingw32/lib --with-gxx-include-dir=/mingw32/include/c++/4.9.2 --enable-bootstrap --with-arch=i686 --with-tune=generic --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-time=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-cloog-backend=isl --enable-version-specific-runtime-libs --disable-cloog-version-check --disable-isl-version-check --enable-lto --enable-libgomp --disable-multilib --enable-checking=release --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw32 --with-mpfr=/mingw32 --with-mpc=/mingw32 --with-isl=/mingw32 --with-cloog=/mingw32 --with-pkgversion='Rev2, Built by MSYS2 project' --with-bugurl=http://sourceforge.net/projects/msys2 --with-gnu-as --with-gnu-ld --disable-sjlj-exceptions --with-dwarf2
 Thread model: posix
@@ -157,8 +158,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 configure:3128: $? = 0
 configure:3117: g++ -v >&5
 Using built-in specs.
-COLLECT_GCC=C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin\g++.exe
-COLLECT_LTO_WRAPPER=C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/tools/win32/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
+COLLECT_GCC=C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin\g++.exe
+COLLECT_LTO_WRAPPER=C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/tools/win32/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
 Target: i686-w64-mingw32
 Configured with: ../gcc-4.9.2/configure --prefix=/mingw32 --with-local-prefix=/mingw32/local --build=i686-w64-mingw32 --host=i686-w64-mingw32 --target=i686-w64-mingw32 --with-native-system-header-dir=/mingw32/i686-w64-mingw32/include --libexecdir=/mingw32/lib --with-gxx-include-dir=/mingw32/include/c++/4.9.2 --enable-bootstrap --with-arch=i686 --with-tune=generic --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-time=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-cloog-backend=isl --enable-version-specific-runtime-libs --disable-cloog-version-check --disable-isl-version-check --enable-lto --enable-libgomp --disable-multilib --enable-checking=release --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw32 --with-mpfr=/mingw32 --with-mpc=/mingw32 --with-isl=/mingw32 --with-cloog=/mingw32 --with-pkgversion='Rev2, Built by MSYS2 project' --with-bugurl=http://sourceforge.net/projects/msys2 --with-gnu-as --with-gnu-ld --disable-sjlj-exceptions --with-dwarf2
 Thread model: posix
@@ -206,7 +207,7 @@ configure:3587: $? = 0
 configure:3589: result: yes
 configure:3615: checking for swapcontext
 configure:3615: g++ -o conftest.exe  -std=c++11   conftest.cpp  >&5
-C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\tmp\cckwFbw2.o:conftest.cpp:(.text+0xc): undefined reference to `swapcontext'
+C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\tmp\ccuuWslf.o:conftest.cpp:(.text+0xc): undefined reference to `swapcontext'
 collect2.exe: error: ld returned 1 exit status
 configure:3615: $? = 1
 configure: failed program was:
@@ -7544,8 +7545,8 @@ configure:4607: $? = 0
 configure:4608: result: yes
 configure:4686: checking for Tcl/Tk 8.6 with CFLAGS=" -O2 -DNDEBUG=1   -I/usr/include -fno-stack-protector " LIBS="-ltk8.6 -ltcl8.6"
 configure:4700: g++ -o conftest.exe  -O2 -DNDEBUG=1   -I/usr/include -fno-stack-protector     -Wl,--enable-auto-import -shared-libgcc -L/usr/bin -L/usr/lib -Wl,-rpath,$(OMNETPP_LIB_DIR) -Wl,-rpath,. conftest.cpp -ltk8.6 -ltcl8.6 >&5
-C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltk8.6
-C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltcl8.6
+C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltk8.6
+C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltcl8.6
 collect2.exe: error: ld returned 1 exit status
 configure:4700: $? = 1
 configure: failed program was:
@@ -7568,8 +7569,8 @@ configure: failed program was:
 configure:4704: result: no
 configure:4721: checking for Tcl/Tk 8.5 with CFLAGS=" -O2 -DNDEBUG=1   -I/usr/include -fno-stack-protector " LIBS="-ltk8.5 -ltcl8.5"
 configure:4735: g++ -o conftest.exe  -O2 -DNDEBUG=1   -I/usr/include -fno-stack-protector     -Wl,--enable-auto-import -shared-libgcc -L/usr/bin -L/usr/lib -Wl,-rpath,$(OMNETPP_LIB_DIR) -Wl,-rpath,. conftest.cpp -ltk8.5 -ltcl8.5 >&5
-C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltk8.5
-C:\Users\jomrich\Downloads\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltcl8.5
+C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltk8.5
+C:\veinsSimConnectionToUnity\Veins\omnetpp-4.6\tools\win32\mingw32\bin/ld.exe: cannot find -ltcl8.5
 collect2.exe: error: ld returned 1 exit status
 configure:4735: $? = 1
 configure: failed program was:
@@ -7666,7 +7667,7 @@ configure:5395: checking for java
 configure:5411: found /c/ProgramData/Oracle/Java/javapath/java
 configure:5422: result: java
 configure:5438: checking for java
-configure:5454: found /c/Users/jomrich/Downloads/Veins/omnetpp-4.6/ide/jre/bin/java
+configure:5454: found /c/veinsSimConnectionToUnity/Veins/omnetpp-4.6/ide/jre/bin/java
 configure:5465: result: java
 configure:5499: WARNING: JAVA_HOME variable not set.
 configure:5516: checking for JNI with CFLAGS=" -O2 -DNDEBUG=1   -I/usr/include -fno-stack-protector "
@@ -7974,23 +7975,23 @@ MYPWD='pwd'
 NEDTOOL='nedtool'
 NO_TCL=''
 OBJEXT='o'
-OMNETPP_BIN_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/bin'
+OMNETPP_BIN_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/bin'
 OMNETPP_BUILDID='141202-f785492'
-OMNETPP_DOC_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/doc'
+OMNETPP_DOC_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/doc'
 OMNETPP_EDITION='Academic Public License -- NOT FOR COMMERCIAL USE'
-OMNETPP_IMAGE_PATH='/;./bitmaps;./images;C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/images'
-OMNETPP_INCL_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/include'
-OMNETPP_LIB_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/lib'
-OMNETPP_OUT_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/out'
+OMNETPP_IMAGE_PATH='/;./bitmaps;./images;C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/images'
+OMNETPP_INCL_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/include'
+OMNETPP_LIB_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/lib'
+OMNETPP_OUT_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/out'
 OMNETPP_PRODUCT='OMNeT++'
 OMNETPP_RELEASE='omnetpp-4.6'
-OMNETPP_ROOT='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6'
-OMNETPP_SAMPLES_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/samples'
-OMNETPP_SRC_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/src'
-OMNETPP_TEST_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/test'
-OMNETPP_TKENV_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/src/tkenv'
-OMNETPP_UI_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/ui'
-OMNETPP_UTILS_DIR='C:/Users/jomrich/Downloads/Veins/omnetpp-4.6/src/utils'
+OMNETPP_ROOT='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6'
+OMNETPP_SAMPLES_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/samples'
+OMNETPP_SRC_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/src'
+OMNETPP_TEST_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/test'
+OMNETPP_TKENV_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/src/tkenv'
+OMNETPP_UI_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/ui'
+OMNETPP_UTILS_DIR='C:/veinsSimConnectionToUnity/Veins/omnetpp-4.6/src/utils'
 OMNETPP_VERSION='4.6'
 PACKAGE_BUGREPORT=''
 PACKAGE_NAME=''
