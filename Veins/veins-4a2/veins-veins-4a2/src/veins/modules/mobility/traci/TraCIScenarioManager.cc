@@ -19,6 +19,7 @@
 //
 
 #include <fstream>
+#include <iostream>//FJ
 #include <vector>
 #include <algorithm>
 #include <stdexcept>
@@ -36,6 +37,11 @@
 using Veins::TraCIScenarioManager;
 using Veins::TraCIBuffer;
 using Veins::TraCICoord;
+
+
+//FJ*************************
+using std::cout;
+//**************************
 
 Define_Module(Veins::TraCIScenarioManager);
 
@@ -620,6 +626,11 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 	int signals;
 	int numRead = 0;
 
+	//FJ*************************
+	std::ofstream file("test_cout.txt"); // Öffnen der Datei in die umgeleitet werden soll
+	  std::cout.rdbuf(file.rdbuf()); // umleitung "anordnen"
+	//FJ*************************
+
 	uint8_t variableNumber_resp; buf >> variableNumber_resp;
 	for (uint8_t j = 0; j < variableNumber_resp; ++j) {
 		uint8_t variable1_resp; buf >> variable1_resp;
@@ -726,8 +737,19 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 		// no such module - need to create
 		addModule(objectId, moduleType, moduleName, moduleDisplayString, p, edge, speed, angle);
 		MYDEBUG << "Added vehicle #" << objectId << endl;
+
+		//FJ********************************************
+
+		cout<<"Fahrzeug platziert"<<endl;
+
+		//FJ ******************************************
 	} else {
 		// module existed - update position
+
+	    //FJ********************************************
+	    cout<<"module "<<objectId<<" "<<moduleName<<" p.x:"<<p.x <<" p.y:"<<p.y<< " speed:"<<speed<<" angle:"<<angle<<endl;
+	    //FJ********************************************
+
 		for (cModule::SubmoduleIterator iter(mod); !iter.end(); iter++) {
 			cModule* submod = iter();
 			ifInetTraCIMobilityCallNextPosition(submod, p, edge, speed, angle);
