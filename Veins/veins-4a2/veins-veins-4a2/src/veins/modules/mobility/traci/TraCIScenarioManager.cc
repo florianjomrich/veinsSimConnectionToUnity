@@ -747,7 +747,9 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 		// module existed - update position
 
 	    //FJ********************************************
-	    cout<<"module "<<objectId<<" "<<moduleName<<" p.x:"<<p.x <<" p.y:"<<p.y<< " speed:"<<speed<<" angle:"<<angle<<endl;
+	    //set Position Information for Unity !!
+
+	    cout<<objectId<<"|"<<p.x <<"|"<<p.y<<"|"<<speed<<"|"<<angle<<endl;
 	    //FJ********************************************
 
 		for (cModule::SubmoduleIterator iter(mod); !iter.end(); iter++) {
