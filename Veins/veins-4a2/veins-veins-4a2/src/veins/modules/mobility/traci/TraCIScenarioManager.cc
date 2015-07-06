@@ -749,7 +749,7 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 	    //FJ********************************************
 	    //set Position Information for Unity !!
 
-	    cout<<objectId<<"|"<<p.x <<"|"<<p.y<<"|"<<speed<<"|"<<angle<<endl;
+	    cout<<objectId<<"|"<<p.x <<"|"<<p.y<<"|"<<p.z<<"|"<<speed<<"|"<<angle<<endl;
 	    //FJ********************************************
 
 		for (cModule::SubmoduleIterator iter(mod); !iter.end(); iter++) {
