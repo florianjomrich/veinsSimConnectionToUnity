@@ -48,7 +48,7 @@ config filtobjlist-maxcount	{100000}
 config filtobjlist-name	{}
 config filtobjlist-order	{Class}
 config finddialog:size	{316 132}
-config findobjectsdialog:size	{925 578}
+config findobjectsdialog:size	{903 452}
 config inputbox:size	{400 200}
 config inspector:columnwidths	{{#0} 140 name 120 info 300 ptr 200}
 config keep-inspectors-on-top	{1}
@@ -56,16 +56,17 @@ config last-nedfile	{}
 config layout-may-change-zoom	{1}
 config layout-may-resize-window	{1}
 config log-save-filename	{omnetpp.out}
-config mainwin-geom	{640x480+78+78}
+config mainwin-geom	{944x981+960+0}
 config mainwin-left-sashpos	{287}
 config mainwin-log-mode	{log}
-config mainwin-main-sashpos	{467}
+config mainwin-main-sashpos	{5}
 config mainwin-right-sashpos-horizontal	{}
 config mainwin-right-sashpos-vertical	{582}
 config mainwin-sash-orient	{vertical}
-config mainwin-state	{zoomed}
+config mainwin-state	{normal}
 config modelinfodialog:size	{400 400}
 config new-loginspector-mode	{log}
+config objdialog:columnwidths	{{#0} 140 name 350 info 200 ptr 201}
 config oncedialog:size	{500 300}
 config outvectoroptionsdialog:size	{300 300}
 config preferences-dialog-page	{g}

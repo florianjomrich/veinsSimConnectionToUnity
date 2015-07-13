@@ -21,9 +21,15 @@
 #include <map>
 #include <set>
 
+//FJ*********
+#include <fstream>
+#include <iostream>
+//FJ*********
+
 #include "veins/modules/obstacle/ObstacleControl.h"
 
 using Veins::ObstacleControl;
+using std::cout;
 
 Define_Module(Veins::ObstacleControl);
 
@@ -32,6 +38,14 @@ ObstacleControl::~ObstacleControl() {
 }
 
 void ObstacleControl::initialize(int stage) {
+
+    //******************************
+      //removeOld DataFiles FJ
+
+      std::remove("building_positions.txt");
+
+      //******************************
+
 	if (stage == 1)	{
 		debug = par("debug");
 
@@ -124,8 +138,27 @@ void ObstacleControl::add(Obstacle obstacle) {
 		}
 	}
 
+	//Note FJ: This is relevant for UNITY PROCESSING !!!!
 	// visualize using AnnotationManager
 	if (annotations) o->visualRepresentation = annotations->drawPolygon(o->getShape(), "red", annotationGroup);
+
+    //FJ******************************
+	//start point
+
+	std::ofstream myfileAllTogether;
+    std::string sname2 = "building_positions.txt";
+    myfileAllTogether.open (sname2.c_str(), std::ios::out | std::ios::app );
+    for(int counter=0;counter<o->getShape().size();counter++){
+
+        myfileAllTogether <<o->getShape().at(counter).x<<"|"<<o->getShape().at(counter).y;
+        if(counter<o->getShape().size()-1){
+            myfileAllTogether<<"#";
+        }
+    }
+    myfileAllTogether<<endl;
+    myfileAllTogether.close();
+
+	//FJ******************************
 
 	cacheEntries.clear();
 }

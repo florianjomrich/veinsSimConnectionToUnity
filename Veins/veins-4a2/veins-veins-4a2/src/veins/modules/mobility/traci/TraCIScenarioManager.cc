@@ -65,6 +65,14 @@ TraCIScenarioManager::~TraCIScenarioManager() {
 }
 
 void TraCIScenarioManager::initialize(int stage) {
+
+    //******************************
+    //removeOld DataFiles FJ
+
+    std::remove("car_positions.txt");
+
+    //******************************
+
 	cSimpleModule::initialize(stage);
 	if (stage != 1) {
 		return;
@@ -626,10 +634,7 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 	int signals;
 	int numRead = 0;
 
-	//FJ*************************
-	std::ofstream file("test_cout.txt"); // Öffnen der Datei in die umgeleitet werden soll
-	  std::cout.rdbuf(file.rdbuf()); // umleitung "anordnen"
-	//FJ*************************
+
 
 	uint8_t variableNumber_resp; buf >> variableNumber_resp;
 	for (uint8_t j = 0; j < variableNumber_resp; ++j) {
@@ -738,19 +743,21 @@ void TraCIScenarioManager::processVehicleSubscription(std::string objectId, TraC
 		addModule(objectId, moduleType, moduleName, moduleDisplayString, p, edge, speed, angle);
 		MYDEBUG << "Added vehicle #" << objectId << endl;
 
-		//FJ********************************************
 
-		cout<<"Fahrzeug platziert"<<endl;
-
-		//FJ ******************************************
 	} else {
 		// module existed - update position
 
 	    //FJ********************************************
 	    //set Position Information for Unity !!
 
-	    cout<<objectId<<"|"<<p.x <<"|"<<p.y<<"|"<<p.z<<"|"<<speed<<"|"<<angle<<endl;
-	    //FJ********************************************
+	    std::ofstream myfileAllTogether;
+	    std::string sname2 = "car_positions.txt";
+	    myfileAllTogether.open (sname2.c_str(), std::ios::out | std::ios::app );
+	    myfileAllTogether <<objectId<<"|"<<p.x <<"|"<<p.y<<"|"<<p.z<<"|"<<speed<<"|"<<angle<<endl;
+	    myfileAllTogether.close();
+
+
+	     //FJ********************************************
 
 		for (cModule::SubmoduleIterator iter(mod); !iter.end(); iter++) {
 			cModule* submod = iter();
