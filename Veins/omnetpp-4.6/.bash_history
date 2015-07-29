@@ -267,3 +267,21 @@ cd veins-veins-4a2/
 ls
 export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
 sumo-launchd.py 
+omnetpp
+omnetpp
+cd ..
+ls
+cd veins-4a2/veins-veins-4a2/
+ls
+sumo-launchd.py 
+sumo-launchd.py 
+export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
+sumo-launchd.py 
+omnetpp
+cd ..
+veins-4a2/veins-veins-4a2/
+cd veins-4a2/veins-veins-4a2/
+ls
+export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
+sumo-launchd.py 
+omnetpp

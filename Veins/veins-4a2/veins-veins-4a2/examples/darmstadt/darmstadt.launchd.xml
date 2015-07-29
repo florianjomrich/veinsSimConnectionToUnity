@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- debug config -->
+<launch>
+	<copy file="darmstadt.net.xml" />
+	<copy file="darmstadt.rou.xml" />
+	<copy file="darmstadt.poly.xml" />
+	<copy file="darmstadt.sumo.cfg" type="config" />
+</launch>
+

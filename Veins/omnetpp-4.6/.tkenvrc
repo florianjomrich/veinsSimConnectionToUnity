@@ -28,7 +28,7 @@ config RSUExampleScenario:0:imagesizefactor	{1}
 config RSUExampleScenario:0:layoutseed	{1}
 config RSUExampleScenario:0:showarrowheads	{1}
 config RSUExampleScenario:0:showlabels	{1}
-config RSUExampleScenario:0:zoomfactor	{0.367368772515974}
+config RSUExampleScenario:0:zoomfactor	{0.3662222568612345}
 config aboutdialog:size	{448 278}
 config combodialog:size	{400 200}
 config concurrent-anim	{1}
@@ -56,14 +56,14 @@ config last-nedfile	{}
 config layout-may-change-zoom	{1}
 config layout-may-resize-window	{1}
 config log-save-filename	{omnetpp.out}
-config mainwin-geom	{944x981+960+0}
+config mainwin-geom	{640x480+960+0}
 config mainwin-left-sashpos	{287}
 config mainwin-log-mode	{log}
 config mainwin-main-sashpos	{5}
 config mainwin-right-sashpos-horizontal	{}
-config mainwin-right-sashpos-vertical	{582}
+config mainwin-right-sashpos-vertical	{683}
 config mainwin-sash-orient	{vertical}
-config mainwin-state	{normal}
+config mainwin-state	{zoomed}
 config modelinfodialog:size	{400 400}
 config new-loginspector-mode	{log}
 config objdialog:columnwidths	{{#0} 140 name 350 info 200 ptr 201}

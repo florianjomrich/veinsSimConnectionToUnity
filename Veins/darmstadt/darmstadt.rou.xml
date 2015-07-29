@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/23/15 15:50:40 by SUMO duarouter Version 0.21.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\veinsSimConnectionToUnity\Veins\darmstadt\darmstadt.net.xml"/>
+        <trip-files value="C:\veinsSimConnectionToUnity\Veins\darmstadt\trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\veinsSimConnectionToUnity\Veins\darmstadt\darmstadt.rou.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/routes_file.xsd">
+    <vehicle id="0011" depart="10.00">
+        <route edges="150016542#7 150016542#8 -140096358 61012583#0 61012583#1 61012583#2 61012583#3 61012583#4 61012583#5 61012583#6 -186498245#1 -140097197#2 -140097197#1 -140097197#0 -140097200 23779994#0 23779994#1 23779994#2 23779994#3 23779994#4 23779994#5 11159807#0 11159807#1 11159807#2 11159807#3 359446336#0 359446336#1 6913022#0 -59802180#4 -59802180#3 -59802180#2 -59802180#1 23575373#6 178610508#0 359446335#9 -359446330#0 -230935523 -229615913 -59802179 -59554813#4 -59554813#3 4211901#1 30822421#1 4211907#1 4211907#2 30822420#3 -59554813#0 -281583605#5 -281583605#4 -281583605#3 -239474282#1 106804095#3 106804095#4 106804095#5 281583590 230340034 139667143#0 139667143#1 139667143#2 139667143#3 139667143#4 61114591 281583589#0 281583589#1 281583589#2 61114968 30092503#0 30092503#1 259212741#4 259212741#5 259212741#6"/>
+    </vehicle>
+</routes>

@@ -1,0 +1,14 @@
+Beispiel Kommmandozeilen Konvertierung eine OSM Karte:
+
+
+Gebäude / Parkplätze / Parks:
+
+polyconvert --osm-files C:\veinsSimConnectionToUnity\Veins\darmstadt\darmstadt.osm --type-file C:\veinsSimConnectionToUnity\Veins\darmstadt\sumo-0.21.0\data\typemap\osmPolyconvert.typ.xml -o C:\veinsSimConnectionToUnity\Veins\darmstadt\darmstadt.poly.xml
+polyconvert --osm-files C:\veinsSimConnectionToUnity\Veins\darmstadt\ruesseslsheimopel.osm --type-file C:\veinsSimConnectionToUnity\Veins\darmstadt\sumo-0.21.0\data\typemap\osmPolyconvert.typ.xml -o C:\veinsSimConnectionToUnity\Veins\darmstadt\ruesseslsheimopel.poly.xml
+
+
+netconvert --osm-files C:\veinsSimConnectionToUnity\Veins\darmstadt\darmstadt.osm -o C:\veinsSimConnectionToUnity\Veins\darmstadtdarmstadt.net.xml
+netconvert --osm-files C:\veinsSimConnectionToUnity\Veins\darmstadt\ruesseslsheimopel.osm -o C:\veinsSimConnectionToUnity\Veins\darmstadt\ruesseslsheimopel.net.xml
+
+
+netconvert --osm-files E:\Dropbox\DoktorrandKOM\hessen-latest.osm -o E:\Dropbox\DoktorrandKOM\hessen-latest.net.xml
