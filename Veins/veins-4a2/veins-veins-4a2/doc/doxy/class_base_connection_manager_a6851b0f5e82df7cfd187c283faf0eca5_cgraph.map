@@ -1,0 +1,13 @@
+digraph "BaseConnectionManager::registerNicExt" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,120"];
+	Node1 [label="BaseConnectionManager\l::registerNicExt", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,60", rects="9,46,142,74"];
+	Node2 [label="BaseConnectionManager\l::getCellForCoordinate", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a7f0e7ff7533bb1f5e3c9bb2c2c0db261", tooltip="Calculates the corresponding cell of a coordinate. ", pos="245,106", rects="179,92,312,120"];
+	Node3 [label="BaseConnectionManager\l::GridCoord::info", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_grid_coord.html#a91ebc91e4af84ce4cf11d177d8ed7813", tooltip="Output string for this coordinate. ", pos="245,60", rects="179,46,312,74"];
+	Node4 [label="BaseConnectionManager\l::getCellEntries", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ae776ac81a8f88a9afba710afaf8573b8", tooltip="Returns the NicEntries of the cell with specified coordinate. ", pos="245,14", rects="179,0,312,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,178,92 142,74 155,78 160,83 169,88"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,178,60 142,60 151,60 159,60 168,60"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,178,28 142,46 155,41 160,36 168,32"];
+}

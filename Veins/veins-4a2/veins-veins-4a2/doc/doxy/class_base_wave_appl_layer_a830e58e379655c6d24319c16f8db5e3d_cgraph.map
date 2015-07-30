@@ -1,0 +1,35 @@
+digraph "BaseWaveApplLayer::handleSelfMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,676,404"];
+	Node1 [label="BaseWaveApplLayer::\lhandleSelfMsg", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,262", rects="9,248,128,276"];
+	Node2 [label="BaseWaveApplLayer::\lsendWSM", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#a3d6389feca9b74c86e5e0a82a7ffa4b2", pos="224,322", rects="165,308,284,336"];
+	Node3 [label="BaseApplLayer::sendDelayedDown", height="0.22", width="2.53", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html#a08d91ffcf2598556db4dd3ba845e4979", tooltip="Sends a message delayed to the lower layer. ", pos="412,396", rects="321,388,504,404"];
+	Node4 [label="BaseLayer::recordPacket", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a33f4f320f4b6c4ec48651847338ff47f", pos="604,396", rects="540,388,668,404"];
+	Node5 [label="BaseWaveApplLayer::\lprepareWSM", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#aaa76362a567f160e008bf8a1dbde15d0", pos="224,202", rects="165,188,284,216"];
+	Node6 [label="WaveShortMessage::setChannel\lNumber", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a33ef604b6a5878e11a3bc4c2477e242e", pos="412,356", rects="330,342,494,370"];
+	Node7 [label="WaveShortMessage::setPsid", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#adaf66b336060aff74a296c29f41509d6", pos="412,316", rects="341,308,483,324"];
+	Node8 [label="WaveShortMessage::setPriority", height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a21ccdbb5f448dbc3853885bc16bc3b3c", pos="412,282", rects="332,274,492,290"];
+	Node9 [label="WaveShortMessage::setWsm\lVersion", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a980ce99a99ced19d20878103bb5a671e", pos="412,242", rects="338,228,487,256"];
+	Node10 [label="WaveShortMessage::setTimestamp", height="0.22", width="2.47", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#aed9bcc826c641cf992fe9bd82b2d5ca6", pos="412,202", rects="323,194,501,210"];
+	Node11 [label="WaveShortMessage::setSender\lAddress", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#ac5318ca78711740c66b88bc156f7c52b", pos="412,162", rects="334,148,490,176"];
+	Node12 [label="WaveShortMessage::setRecipient\lAddress", height="0.39", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a818105a3cb5d5bc51a1257826be98b13", pos="412,116", rects="328,102,497,130"];
+	Node13 [label="WaveShortMessage::setSenderPos", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a66e2d0a9a7bb00d63cf79837fe0de6a3", pos="412,76", rects="326,68,499,84"];
+	Node14 [label="WaveShortMessage::setSerial", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a89a1fd291250ae9c6e16b104d3a76e8e", pos="412,42", rects="338,34,487,50"];
+	Node15 [label="WaveShortMessage::getTimestamp", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a26d848cf954f3c04bc78063e8c16d956", pos="412,8", rects="322,0,502,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,308 128,276 144,284 145,295 156,303"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,320,388 284,336 305,350 298,369 313,383"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,540,396 504,396 513,396 521,396 530,396"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,164,216 128,248 144,241 145,230 156,222"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,330,349 284,216 327,257 277,304 320,342 321,343 321,343 322,344"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,341,318 284,216 318,245 285,282 320,308 323,311 327,313 331,315"];
+	Node5 -> Node8 [color=midnightblue, style=solid, pos="e,332,280 284,216 309,234 295,259 320,274 321,275 322,275 323,276"];
+	Node5 -> Node9 [color=midnightblue, style=solid, pos="e,337,232 284,216 301,221 304,225 320,228 323,228 325,229 327,230"];
+	Node5 -> Node10 [color=midnightblue, style=solid, pos="e,323,202 284,202 293,202 303,202 313,202"];
+	Node5 -> Node11 [color=midnightblue, style=solid, pos="e,334,173 284,188 301,184 304,180 320,176 321,176 323,175 325,175"];
+	Node5 -> Node12 [color=midnightblue, style=solid, pos="e,327,126 284,188 308,171 296,148 318,131"];
+	Node5 -> Node13 [color=midnightblue, style=solid, pos="e,325,81 284,188 320,157 284,118 317,87"];
+	Node5 -> Node14 [color=midnightblue, style=solid, pos="e,337,41 284,188 330,144 272,91 320,50 322,48 325,46 328,45"];
+	Node5 -> Node15 [color=midnightblue, style=solid, pos="e,322,14 284,188 337,135 267,72 315,21"];
+}

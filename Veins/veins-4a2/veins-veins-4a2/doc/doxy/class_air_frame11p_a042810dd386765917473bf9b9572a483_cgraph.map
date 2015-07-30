@@ -1,0 +1,9 @@
+digraph "AirFrame11p::dup" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,282,16"];
+	Node1 [label="AirFrame11p::dup", height="0.22", width="1.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="55,8", rects="8,0,102,16"];
+	Node2 [label="AirFrame11p::AirFrame11p", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_air_frame11p.html#a7f35dba37995cdb2fb5b0f380b9e445e", pos="206,8", rects="138,0,274,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,138,8 102,8 110,8 119,8 128,8"];
+}

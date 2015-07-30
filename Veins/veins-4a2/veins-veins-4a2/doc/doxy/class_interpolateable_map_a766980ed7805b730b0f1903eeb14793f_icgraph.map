@@ -1,0 +1,11 @@
+digraph "InterpolateableMap::setOutOfRangeVal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,308,74"];
+	Node1 [label="InterpolateableMap\l::setOutOfRangeVal", height="0.39", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,37", rects="8,23,116,51"];
+	Node2 [label="MultiDimMapping\< Linear\l \>::MultiDimMapping", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#a3ac6685b718a771032556e192752c528", tooltip="Intern copy-constructor which assures that the sub-mappings are deep copied instead of only their poi...", pos="226,60", rects="153,46,300,74"];
+	Node3 [label="MultiDimMapping\< Linear\l \>::operator=", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#adf3d7e794c6e10795a4fa18d6e3b67d0", tooltip="Copy operator which assures that the sub-mappings are deep copied instead of only their the pointers...", pos="226,14", rects="153,0,300,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,116,45 125,46 134,47 143,48 152,50"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,116,29 125,28 134,27 143,26 152,24"];
+}

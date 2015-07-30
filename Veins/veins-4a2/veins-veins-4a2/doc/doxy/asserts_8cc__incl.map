@@ -1,0 +1,18 @@
+digraph "asserts.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,290,136"];
+	Node1 [label="asserts.cc", height="0.22", width="0.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="145,120", rects="119,112,171,128"];
+	Node2 [label="veins/base/utils/asserts.h", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$asserts_8h.html", pos="145,68", rects="82,60,209,76"];
+	Node3 [label=iostream, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="25,16", rects="0,8,51,24"];
+	Node4 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="86,16", rects="68,8,105,24"];
+	Node5 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="145,16", rects="122,8,169,24"];
+	Node6 [label="stdlib.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="208,16", rects="186,8,230,24"];
+	Node7 [label="math.h", height="0.22", width="0.58", color=grey75, fillcolor=white, style=filled, pos="269,16", rects="248,8,291,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,145,76 145,112 145,105 145,94 145,85"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,44,24 127,60 107,51 74,37 52,28"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,95,24 136,60 127,52 113,40 102,30"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,145,24 145,60 145,53 145,42 145,33"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,198,24 155,60 165,52 179,40 191,30"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,250,24 164,60 185,51 218,37 242,27"];
+}

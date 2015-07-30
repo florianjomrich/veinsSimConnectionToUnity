@@ -1,0 +1,14 @@
+digraph "TimeMappingIterator::next" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,428,100"];
+	Node1 [label="TimeMappingIterator\l::next", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,56", rects="9,42,126,70"];
+	Node2 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="221,92", rects="169,84,274,100"];
+	Node3 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="368,35", rects="317,27,420,43"];
+	Node4 [label="TimeMappingIterator\l::updateNextPos", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_time_mapping_iterator.html#a1a9382671669207404a7edba9469145e", pos="221,14", rects="163,0,280,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,85 126,70 141,75 145,78 158,83"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,316,39 126,52 177,48 252,43 305,40"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,162,28 126,42 139,37 144,35 153,31"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,316,27 280,22 289,23 298,25 307,26"];
+}

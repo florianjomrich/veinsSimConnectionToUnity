@@ -1,0 +1,11 @@
+digraph "Veins::AnnotationManager::drawBubble" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,490,28"];
+	Node1 [label="Veins::AnnotationManager\l::drawBubble", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,14", rects="8,0,150,28"];
+	Node2 [label="Veins::ObstacleControl\l::calculateAttenuation", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#ae3bc0ffe81dd2ca3145636656f392204", tooltip="calculate additional attenuation by obstacles, return signal strength ", pos="246,14", rects="186,0,306,28"];
+	Node3 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="412,14", rects="343,0,482,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,14 160,14 169,14 177,14 186,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,306,14 316,14 325,14 333,14 342,14"];
+}

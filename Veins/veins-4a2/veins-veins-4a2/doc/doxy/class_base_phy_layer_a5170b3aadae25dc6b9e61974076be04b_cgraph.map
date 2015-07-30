@@ -1,0 +1,28 @@
+digraph "BasePhyLayer::setRadioState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,930,139"];
+	Node1 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="83,86", rects="8,78,158,94"];
+	Node2 [label="Veins::Radio::switchTo", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aab434b342c42f1dbfa1df3640afbb4b0", tooltip="A function called by the Physical Layer to start the switching process to a new RadioState. ", pos="470,128", rects="411,120,529,136"];
+	Node3 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a0cdbbabf0ca4bab58eed854b22bb60f2", tooltip="responsible for making entries to the RSAM ", pos="661,125", rects="579,117,744,133"];
+	Node4 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#ad80154bcc09f8db0e08efb2efd75872c", tooltip="Stores an entry of the form \"time-point/attenuation (from now on)\". ", pos="851,125", rects="780,111,922,139"];
+	Node5 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="278,86", rects="207,72,349,100"];
+	Node6 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aceb966be7e36e87068ae3424de8a5928", tooltip="called by PhyLayer when duration-time for the current switching process is up ", pos="470,94", rects="408,86,532,102"];
+	Node7 [label="BasePhyLayer::sendControl\lMsgToMac", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a76d0386516d18d1cc64af5ef6fb315cd", tooltip="Called by the Decider to send a control message to the MACLayer. ", pos="470,54", rects="398,40,542,68"];
+	Node8 [label="ChannelInfo::isRecording", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a5b1b8d56aa2fa64b5d79c0cf5c3167a9", tooltip="Returns true if ChannelInfo is currently recording. ", pos="661,88", rects="594,80,728,96"];
+	Node9 [label="ChannelInfo::stopRecording", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a884277584d1abf73eaca5df0c61e08c9", tooltip="Tells ChannelInfo to stop recording Information from now on. ", pos="661,54", rects="588,46,734,62"];
+	Node10 [label="BasePhyLayer::sendControl\lMessageUp", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aaa439e85a8bc20a39477055aecf04993", tooltip="Sends the passed control message to the upper layer. ", pos="661,14", rects="589,0,733,28"];
+	Node11 [label="BasePhyLayer::sendSelfMessage", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aa59aef501cadd36c94d4f82efe9b64be", tooltip="Schedule self message to passed point in time. ", pos="278,46", rects="195,38,362,54"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,411,129 148,94 152,95 155,95 158,96 175,101 178,106 194,109 264,123 346,128 402,129"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,578,126 529,127 542,127 555,126 568,126"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,780,125 744,125 753,125 761,125 770,125"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,207,86 158,86 171,86 184,86 197,86"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,408,91 349,89 365,90 382,91 398,91"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,578,117 532,100 536,100 539,101 542,102 555,106 560,110 568,114"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,398,66 349,74 362,72 375,70 388,68"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,594,83 542,68 559,73 562,77 578,80 580,80 582,81 584,81"];
+	Node7 -> Node9 [color=midnightblue, style=solid, pos="e,588,54 542,54 554,54 566,54 578,54"];
+	Node7 -> Node10 [color=midnightblue, style=solid, pos="e,589,26 542,40 559,36 562,33 578,28 578,28 579,28 579,28"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,194,54 158,78 173,73 176,65 185,59"];
+}

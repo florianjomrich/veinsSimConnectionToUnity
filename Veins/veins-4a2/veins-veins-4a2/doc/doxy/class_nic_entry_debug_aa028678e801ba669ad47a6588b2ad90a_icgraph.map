@@ -1,0 +1,9 @@
+digraph "NicEntryDebug::requestInGate" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,358,16"];
+	Node1 [label="NicEntryDebug::requestInGate", height="0.22", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="89,8", rects="9,0,170,16"];
+	Node2 [label="NicEntryDebug::connectTo", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#af97ebc8c81c1f7d8094344d2f7fb6a17", tooltip="Connect two nics. ", pos="278,8", rects="207,0,350,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,170,8 180,8 189,8 197,8 206,8"];
+}

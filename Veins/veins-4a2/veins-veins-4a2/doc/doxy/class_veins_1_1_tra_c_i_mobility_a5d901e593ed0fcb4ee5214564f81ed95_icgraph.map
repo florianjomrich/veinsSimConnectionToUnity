@@ -1,0 +1,19 @@
+digraph "Veins::TraCIMobility::getExternalId" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,488,154"];
+	Node1 [label="Veins::TraCIMobility\l::getExternalId", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,65", rects="8,51,120,79"];
+	Node2 [label="Veins::TraCIMobility\l::getVehicleCommandInterface", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a690ad24a231dff3f3d929e3738db9b69", pos="237,94", rects="157,80,318,108"];
+	Node3 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="417,146", rects="354,138,480,154"];
+	Node4 [label="Veins::TraCIMobility\l::handleSelfMsg", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a0f6b3ea2a2e2dc2a308c8db11bc09172", tooltip="Called upon arrival of a self messages. ", pos="417,106", rects="361,92,473,120"];
+	Node5 [label="Veins::TraCITestApp\l::initialize", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a581c6c99b8dcbbdadadc4e69a3febde7", tooltip="Initialization of the module and some variables. ", pos="417,60", rects="361,46,473,74"];
+	Node6 [label="Veins::TraCITestApp\l::handlePositionUpdate", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a634a6ed505d6ff32b4b035c14e6a4e4b", pos="237,37", rects="177,23,297,51"];
+	Node7 [label="Veins::TraCITestApp\l::receiveSignal", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6c6b28964a05c10b4c0c8d956bf48292", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="417,14", rects="361,0,473,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,74 129,75 138,77 147,78 156,80"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,318,108 327,113 337,121 338,131 354,138"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,318,99 328,100 339,100 350,101 361,102"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,318,80 327,78 338,76 350,73 361,71"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,120,56 129,55 144,52 161,50 177,47"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,297,29 306,28 324,26 344,24 361,21"];
+}

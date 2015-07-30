@@ -1,0 +1,68 @@
+digraph "Veins::TraCIMobility" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1532,830"];
+	Node1 [label="Veins::TraCIMobility", height="0.22", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="1468,242", rects="1412,234,1524,250"];
+	Node2 [label=BaseMobility, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html", tooltip="Base module for all mobility modules. ", pos="1148,613", rects="1111,605,1186,621"];
+	Node3 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="866,678", rects="811,670,921,686"];
+	Node4 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="290,678", rects="255,670,326,686"];
+	Node5 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="54,345", rects="11,337,97,353"];
+	Node6 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="54,678", rects="27,670,81,686"];
+	Node7 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="54,768", rects="9,760,100,776"];
+	Node8 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="520,678", rects="486,670,555,686"];
+	Node9 [label=Move, height="0.22", width="0.53", color=black, fillcolor=white, style=filled, URL="$class_move.html", tooltip="Class to store object position and movement. ", pos="866,613", rects="847,605,885,621"];
+	Node10 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="290,594", rects="267,586,314,602"];
+	Node11 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="520,518", rects="500,510,540,526"];
+	Node12 [label=BaseWorldUtility, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html", tooltip="Provides information and utility methods for the whole simulation. ", pos="866,422", rects="818,414,914,430"];
+	Node13 [label="Veins::TraCIScenarioManager", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html", pos="1148,242", rects="1070,234,1226,250"];
+	Node14 [label="Veins::TraCICommandInterface", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface.html", pos="866,114", rects="783,106,950,122"];
+	Node15 [label="Veins::TraCIConnection", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html", pos="520,114", rects="457,106,583,122"];
+	Node16 [label="Veins::TraCICoord", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$struct_veins_1_1_tra_c_i_coord.html", tooltip="Coord equivalent for storing TraCI coordinates. ", pos="290,114", rects="240,106,340,122"];
+	Node17 [label=BaseConnectionManager, height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html", tooltip="Module to control the channel and handle all connection related stuff. ", pos="866,317", rects="800,309,933,325"];
+	Node18 [label="BaseConnectionManager\l::GridCoord", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_grid_coord.html", tooltip="Represents a position inside a grid. ", pos="520,282", rects="454,268,587,296"];
+	Node19 [label="Veins::TraCICommandInterface\l::Vehicle", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface_1_1_vehicle.html", pos="1148,64", rects="1065,50,1232,78"];
+	Node20 [label="Veins::TraCIMobility\l::Statistics", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility_1_1_statistics.html", pos="1148,18", rects="1092,4,1204,32"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,1186,613 1194,613 1252,611 1350,596 1394,532 1430,480 1371,298 1412,252 1413,251 1413,251 1414,250"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,921,675 929,674 936,673 943,671 950,670 995,659 1005,652 1046,633 1055,629 1056,625 1064,623 1079,618 1096,616 1110,614"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,326,684 334,686 336,686 338,687 340,687 349,688 350,690 358,692 396,697 406,693 444,695 587,698 627,733 764,698 773,695 774,69\
+0 782,688 791,685 801,683 811,681"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,97,351 105,358 139,401 212,645 240,668 244,671 249,674 254,675"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,81,678 90,678 135,678 210,678 254,678"];
+	Node7 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,100,760 107,754 110,748 111,743 118,738 166,703 184,704 240,688 245,687 250,685 254,684", lp="170,746"];
+	Node8 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,555,678 563,678 626,678 742,678 811,678", lp="689,686"];
+	Node4 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,326,678 336,678 379,678 445,678 485,678"];
+	Node9 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" move", pos="s,885,613 895,613 946,613 1053,613 1110,613", lp="1007,621"];
+	Node10 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,314,597 323,598 399,608 599,629 764,622 793,620 827,617 847,615"];
+	Node11 -> Node9 [dir=back, color=darkorchid3, style=dashed, label=" lastPos\ndirection\nstartPos", pos="s,540,519 549,520 563,521 580,523 596,526 605,527 606,529 614,532 681,553 709,536 764,578 776,586 770,597 782,605 802,617 829,61\
+7 847,616", lp="689,598"];
+	Node10 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,314,592 323,591 328,590 335,588 340,586 391,568 394,542 444,526 463,520 484,518 500,518"];
+	Node11 -> Node11 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,532,526 535,533 536,539 531,544 520,544 505,544 501,534 508,526", lp="520,552"];
+	Node12 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" world", pos="s,914,422 923,423 965,428 1019,441 1046,480 1079,525 1025,564 1064,603 1071,609 1091,612 1110,613", lp="1007,488"];
+	Node5 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,97,351 106,352 110,353 114,353 118,354 190,360 705,334 764,374 780,384 767,401 782,413 788,417 803,419 818,420"];
+	Node11 -> Node12 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,540,519 549,519 564,519 582,516 596,509 607,503 604,494 614,488 673,449 701,471 764,442 773,437 773,433 782,430 793,426 806,42\
+4 818,422", lp="689,496"];
+	Node7 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" mobilityStateChangedSignal", pos="s,100,768 109,768 157,768 228,768 290,768 290,768 290,768 866,768 959,768 982,728 1046,662 1058,650 1052,640 1064,630 1077,619 1\
+094,614 1110,612", lp="520,776"];
+	Node13 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" manager", pos="s,1226,242 1235,242 1292,242 1363,242 1412,242", lp="1322,250"];
+	Node5 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,90,337 99,335 99,335 100,335 100,335 253,301 289,277 444,259 670,231 940,235 1070,239"];
+	Node12 -> Node13 [dir=back, color=darkorchid3, style=dashed, label=" world", pos="s,914,423 923,422 932,420 942,418 950,414 1004,389 1016,371 1046,321 1061,296 1043,277 1064,258 1067,255 1074,252 1083,250", lp="1007,413"];
+	Node14 -> Node13 [dir=back, color=darkorchid3, style=dashed, label=" commandIfc", pos="s,950,122 958,125 985,134 1032,157 1046,174 1064,195 1043,215 1064,233 1066,234 1068,236 1070,237", lp="1007,182"];
+	Node15 -> Node14 [dir=back, color=darkorchid3, style=dashed, label=" connection", pos="s,583,114 592,114 648,114 724,114 782,114", lp="689,122"];
+	Node16 -> Node15 [dir=back, color=darkorchid3, style=dashed, label=" netbounds1\nnetbounds2", pos="s,340,114 349,114 382,114 423,114 457,114", lp="392,128"];
+	Node15 -> Node13 [dir=back, color=darkorchid3, style=dashed, label=" connection", pos="s,583,119 592,121 593,122 595,122 596,123 605,126 606,130 614,134 797,207 858,171 1046,228 1055,230 1056,233 1064,235 1066,235 1\
+068,236 1070,236", lp="866,210"];
+	Node17 -> Node13 [dir=back, color=darkorchid3, style=dashed, label=" cc", pos="s,933,313 941,312 944,311 947,310 950,309 1005,292 1010,266 1064,250 1066,249 1068,249 1070,248", lp="1007,309"];
+	Node5 -> Node17 [dir=back, color=midnightblue, style=solid, pos="s,97,344 106,344 248,338 641,325 799,319"];
+	Node11 -> Node17 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize\nfindDistance", pos="s,540,519 548,519 565,518 584,514 596,502 625,472 589,442 614,410 660,352 702,379 764,340 773,334 773,329 782,325 787,323 793,32\
+1 799,319", lp="689,427"];
+	Node18 -> Node17 [dir=back, color=darkorchid3, style=dashed, label=" gridDim", pos="s,587,276 595,276 644,273 710,276 764,296 774,299 773,305 782,309 787,311 793,313 799,314", lp="689,304"];
+	Node19 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" vehicleCommandInterface", pos="s,1232,60 1241,60 1301,58 1373,63 1394,84 1442,129 1367,183 1412,232 1413,233 1413,233 1414,234", lp="1322,92"];
+	Node14 -> Node19 [dir=back, color=darkorchid3, style=dashed, label=" traci", pos="s,950,106 957,100 960,95 960,88 968,84 997,68 1033,62 1064,60", lp="1007,92"];
+	Node15 -> Node19 [dir=back, color=darkorchid3, style=dashed, label=" connection", pos="s,580,106 588,105 712,88 959,56 968,56 1003,53 1012,54 1046,56 1053,56 1059,56 1064,57", lp="866,86"];
+	Node11 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" roadPosition", pos="s,540,519 550,519 647,523 953,529 1046,500 1238,439 1241,333 1424,253 1426,252 1429,251 1431,250", lp="1007,520"];
+	Node7 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" parkingStateChangedSignal", pos="s,96,776 105,778 110,779 112,780 118,782 194,799 213,814 290,814 290,814 290,814 1148,814 1298,814 1322,714 1394,583 1413,549 14\
+07,536 1410,499 1413,471 1411,400 1412,373 1414,347 1416,340 1418,315 1420,302 1417,268 1424,258 1426,255 1430,252 1433,250", lp="689,822"];
+	Node14 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" commandInterface", pos="s,950,114 959,115 987,116 1018,119 1046,124 1214,152 1247,193 1412,232 1415,233 1419,233 1422,234", lp="1148,181"];
+	Node20 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" statistics", pos="s,1204,15 1212,15 1276,13 1368,15 1394,38 1421,60 1406,158 1412,193 1415,208 1413,214 1424,226 1428,229 1432,232 1436,234", lp="1322,46"];
+}

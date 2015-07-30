@@ -1,0 +1,8 @@
+digraph "TraCIColor.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,74,84"];
+	Node1 [label="TraCIColor.h", height="0.22", width="1.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="37,68", rects="0,60,74,76"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="37,16", rects="6,8,68,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,37,24 37,60 37,53 37,42 37,33"];
+}

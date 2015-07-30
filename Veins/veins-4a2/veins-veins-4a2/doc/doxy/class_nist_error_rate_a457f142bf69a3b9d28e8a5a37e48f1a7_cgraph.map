@@ -1,0 +1,11 @@
+digraph "NistErrorRate::getFec16QamBer" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,368,50"];
+	Node1 [label="NistErrorRate::getFec16QamBer", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,25", rects="9,17,174,33"];
+	Node2 [label="NistErrorRate::get16QamBer", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a1808f09736f8a581305d5ff4a58e2555", tooltip="Return BER of QAM16 at the given SNR. ", pos="285,42", rects="211,34,360,50"];
+	Node3 [label="NistErrorRate::calculatePe", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#aa2df206d0e5cc31a3c3587438c7d5b74", tooltip="Return the coded BER for the given p and b. ", pos="285,8", rects="217,0,354,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,210,35 174,32 183,33 191,33 200,34"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,216,14 174,18 185,17 196,16 206,15"];
+}

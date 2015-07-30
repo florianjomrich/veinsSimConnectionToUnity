@@ -1,0 +1,9 @@
+digraph "SimpleConstMappingIterator::jumpToBegin" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,362,28"];
+	Node1 [label="SimpleConstMappingIterator\l::jumpToBegin", height="0.39", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,14", rects="9,0,162,28"];
+	Node2 [label="SimpleConstMappingIterator\l::SimpleConstMappingIterator", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping_iterator.html#acd9ffe8031190318003512dd72a060ad", tooltip="Initializes the ConstIterator for the passed ConstMapping, with the passed key entries to iterate ove...", pos="276,14", rects="199,0,354,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,162,14 172,14 181,14 189,14 198,14"];
+}

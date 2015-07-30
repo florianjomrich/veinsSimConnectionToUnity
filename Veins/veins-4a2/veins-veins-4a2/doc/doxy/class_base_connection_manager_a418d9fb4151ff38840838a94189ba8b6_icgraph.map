@@ -1,0 +1,20 @@
+digraph "BaseConnectionManager::isInRange" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,982,74"];
+	Node1 [label="BaseConnectionManager\l::isInRange", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,37", rects="9,23,142,51"];
+	Node2 [label="BaseConnectionManager\l::updateNicConnections", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#af36a4fd1f31773f63187cc9717441a98", tooltip="Manages the connections of a registered nic. ", pos="245,37", rects="179,23,312,51"];
+	Node3 [label="BaseConnectionManager\l::checkGrid", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a063c137e5a6d73ff846321b511d48a32", tooltip="Check connections of a nic in the grid. ", pos="415,37", rects="349,23,482,51"];
+	Node4 [label="BaseConnectionManager\l::updateConnections", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a997a62d3bc3ca2d220a36609e4b7f4e5", tooltip="Updates the connections of the nic with \"nicID\". ", pos="585,37", rects="519,23,652,51"];
+	Node5 [label="BaseConnectionManager\l::registerNic", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ab9d82c54244e022ee41f3d1017cd74f1", tooltip="Registers a nic to have its connections managed by ConnectionManager. ", pos="755,60", rects="689,46,822,74"];
+	Node6 [label="Veins::ChannelAccess\l::receiveSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#ad7c56c9ed2db85ecba91900c35e795a0", tooltip="Called by the signalling mechanism to inform of changes. ", pos="916,37", rects="859,23,974,51"];
+	Node7 [label="BaseConnectionManager\l::updateNicPos", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a075ad308e1ae744f4f7ff1d6517da324", tooltip="Updates the position information of a registered nic. ", pos="755,14", rects="689,0,822,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,37 152,37 161,37 169,37 178,37"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,37 322,37 331,37 339,37 348,37"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,482,37 492,37 501,37 509,37 518,37"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,652,46 661,47 670,49 679,49 688,51"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,822,50 830,49 840,48 849,47 858,45"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,652,28 661,27 670,25 679,25 688,23"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,822,24 830,25 840,26 849,27 858,29"];
+}

@@ -1,0 +1,9 @@
+digraph "BorderMsg::BorderMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,264,16"];
+	Node1 [label="BorderMsg::BorderMsg", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,8", rects="8,0,132,16"];
+	Node2 [label="BorderMsg::dup", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_border_msg.html#ac8c31b191b65d8d5b53293b500aa595a", pos="212,8", rects="168,0,256,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,8 142,8 151,8 159,8 168,8"];
+}

@@ -1,0 +1,10 @@
+digraph "MiXiMDefs.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,260,84"];
+	Node1 [label="MiXiMDefs.h", height="0.22", width="1.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="100,68", rects="61,60,140,76"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="31,16", rects="0,8,62,24"];
+	Node3 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="170,16", rects="80,8,260,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,42,24 89,60 78,52 62,39 49,30"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,159,24 111,60 122,52 139,39 152,29"];
+}

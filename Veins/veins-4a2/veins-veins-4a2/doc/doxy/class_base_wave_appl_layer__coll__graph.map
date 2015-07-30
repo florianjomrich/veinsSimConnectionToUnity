@@ -1,0 +1,35 @@
+digraph BaseWaveApplLayer {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,772,450"];
+	Node1 [label=BaseWaveApplLayer, height="0.22", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="522,16", rects="464,8,580,24"];
+	Node2 [label=BaseApplLayer, height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html", tooltip="Base class for the application layer. ", pos="361,84", rects="318,76,405,92"];
+	Node3 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="319,152", rects="288,144,350,160"];
+	Node4 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="209,220", rects="154,212,264,228"];
+	Node5 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="147,366", rects="112,358,183,374"];
+	Node6 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,434", rects="0,426,86,442"];
+	Node7 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,434", rects="104,426,158,442"];
+	Node8 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="308,434", rects="263,426,354,442"];
+	Node9 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="209,300", rects="175,292,244,308"];
+	Node10 [label=PassedMessage, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_passed_message.html", pos="389,220", rects="348,212,431,228"];
+	Node11 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="482,300", rects="459,292,506,308"];
+	Node12 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="458,186", rects="438,178,478,194"];
+	Node13 [label=WaveAppToMac1609_4Interface, height="0.22", width="2.42", color=black, fillcolor=white, style=filled, URL="$class_wave_app_to_mac1609__4_interface.html", tooltip="Interface between WaveApplication Layer and Mac1609_4. ", pos="685,84", rects="598,76,772,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,378,76 385,72 403,64 429,52 452,42 468,35 485,29 499,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,324,144 329,137 337,123 349,103 356,92"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,222,212 229,208 251,194 287,172 306,160"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,148,358 149,351 151,333 156,304 166,280 176,260 192,239 202,228"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,55,426 62,422 83,408 117,386 135,374"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,133,426 135,417 138,404 143,385 145,374"];
+	Node8 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,267,426 257,424 228,418 197,411 191,408 176,399 161,384 153,374", lp="252,400"];
+	Node9 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,209,292 209,283 209,266 209,242 209,228", lp="233,254"];
+	Node5 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,155,358 161,352 173,338 191,319 201,308"];
+	Node8 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" catDroppedPacketSignal\ncatPassedMsgSignal\ncatPacketSignal", pos="s,308,426 308,419 308,404 308,384 308,366 308,366 308,366 308,220 308,198 314,173 317,160", lp="375,300"];
+	Node10 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" passedMsg", pos="s,381,212 375,206 360,192 339,171 327,160", lp="396,186"];
+	Node11 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,473,292 466,286 464,284 461,282 459,280 437,261 412,240 399,228"];
+	Node12 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" curPosition", pos="s,461,178 464,170 478,134 509,51 519,24", lp="521,118"];
+	Node11 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,480,292 479,285 474,260 464,213 460,194"];
+	Node12 -> Node12 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,478,180 487,180 493,181 496,183 496,186 496,191 488,193 478,192", lp="519,186"];
+	Node8 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mobilityStateChangedSignal", pos="s,347,426 356,424 431,408 570,377 570,366 570,366 570,366 570,84 570,59 547,36 533,24", lp="646,220"];
+	Node13 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" myMac", pos="s,666,76 658,73 624,59 570,36 541,24", lp="649,50"];
+}

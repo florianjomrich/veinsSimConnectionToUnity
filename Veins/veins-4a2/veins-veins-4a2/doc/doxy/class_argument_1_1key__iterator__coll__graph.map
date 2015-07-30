@@ -1,0 +1,8 @@
+digraph "Argument::key_iterator&lt; IteratorType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,124,96"];
+	Node1 [label="Argument::key_iterator\l\< IteratorType \>", height="0.39", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,22", rects="0,8,125,36"];
+	Node2 [label=IteratorType, height="0.22", width="0.97", color=grey75, fillcolor=white, style=filled, pos="62,80", rects="27,72,98,88"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,62,72 62,63 62,54 62,44 62,36"];
+}

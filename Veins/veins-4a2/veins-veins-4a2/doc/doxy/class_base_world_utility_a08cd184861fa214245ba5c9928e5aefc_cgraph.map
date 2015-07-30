@@ -1,0 +1,9 @@
+digraph "BaseWorldUtility::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,332,28"];
+	Node1 [label="BaseWorldUtility::initialize", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,14", rects="8,6,148,22"];
+	Node2 [label="BaseWorldUtility::initialize\lIfNecessary", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#aabcceb57843568c213b0772b08971827", tooltip="Initializes all members accessible by other modules. ", pos="254,14", rects="184,0,324,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,184,14 148,14 157,14 165,14 174,14"];
+}

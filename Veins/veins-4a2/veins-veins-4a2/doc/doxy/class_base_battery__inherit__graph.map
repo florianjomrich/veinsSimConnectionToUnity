@@ -1,0 +1,12 @@
+digraph BaseBattery {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,158,136"];
+	Node1 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,16", rects="53,8,122,24"];
+	Node2 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="87,68", rects="52,60,123,76"];
+	Node3 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,120", rects="0,112,86,128"];
+	Node4 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,120", rects="104,112,158,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,87,60 87,51 87,42 87,31 87,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,50,112 56,105 64,95 74,84 80,76"];
+	Node4 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,124,112 118,105 110,95 100,84 94,76"];
+}

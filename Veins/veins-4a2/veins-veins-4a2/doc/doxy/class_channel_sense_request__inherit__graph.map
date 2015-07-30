@@ -1,0 +1,8 @@
+digraph ChannelSenseRequest {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,118,84"];
+	Node1 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,16", rects="0,8,118,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="59,68", rects="36,60,83,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,59,60 59,51 59,42 59,31 59,24"];
+}

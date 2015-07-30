@@ -1,0 +1,19 @@
+digraph "Veins::Radio::endSwitch" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,700,114"];
+	Node1 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,54", rects="8,46,132,62"];
+	Node2 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="239,54", rects="168,40,310,68"];
+	Node3 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="421,100", rects="349,86,493,114"];
+	Node4 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="421,54", rects="353,40,490,68"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="612,54", rects="533,46,692,62"];
+	Node6 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="421,14", rects="346,6,496,22"];
+	Node7 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="612,14", rects="545,0,679,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,54 142,54 151,54 159,54 168,54"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,310,68 318,71 329,76 333,81 346,86 347,86 348,87 349,87"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,310,54 319,54 330,54 342,54 352,54"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,490,54 499,54 510,54 521,54 532,54"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,310,40 319,36 328,31 333,26 346,22"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,496,14 506,14 519,14 532,14 545,14"];
+}

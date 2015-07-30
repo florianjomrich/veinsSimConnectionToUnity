@@ -1,0 +1,15 @@
+digraph "Signal::setTransmissionPower" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,692,50"];
+	Node1 [label="Signal::setTransmissionPower", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,25", rects="8,17,160,33"];
+	Node2 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a28ca155ff241c3e202a94724cc87b232", tooltip="Creates a simple Signal defined over time with the passed parameters. ", pos="269,42", rects="197,34,342,50"];
+	Node3 [label="Mac1609_4::createSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#aa19fc16c9c52fbe7a896f725cc8a7883", pos="269,8", rects="206,0,332,16"];
+	Node4 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a077b6bebe9a8f8d2a6fcce31c6af86a7", pos="442,8", rects="379,0,506,16"];
+	Node5 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="613,8", rects="542,0,684,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,32 170,33 179,34 187,34 196,35"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,160,18 169,17 181,16 194,15 206,14"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,332,8 342,8 354,8 366,8 378,8"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,506,8 515,8 524,8 533,8 542,8"];
+}

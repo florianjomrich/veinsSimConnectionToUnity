@@ -1,0 +1,11 @@
+digraph "Argument::isClose" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,242,50"];
+	Node1 [label="Argument::isClose", height="0.22", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="57,25", rects="8,17,106,33"];
+	Node2 [label="Argument::begin", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$class_argument.html#af0e836fd4aaecc1461b994e21f66ddc3", tooltip="Returns an iterator to the first argument value in this Argument. ", pos="188,42", rects="142,34,234,50"];
+	Node3 [label="Argument::end", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_argument.html#aeeb6730c20ae8a8d6c9606f2e03cc1da", tooltip="Returns an iterator to the value behind the last argument value. ", pos="188,8", rects="147,0,230,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,142,36 106,31 115,32 123,33 132,35"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,146,14 106,19 116,17 126,16 136,15"];
+}

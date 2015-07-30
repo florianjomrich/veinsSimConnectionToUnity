@@ -1,0 +1,13 @@
+digraph "Veins::AnnotationManagerAccess::getIfExists" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,344,96"];
+	Node1 [label="Veins::AnnotationManager\lAccess::getIfExists", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,54", rects="8,40,150,68"];
+	Node2 [label="TraCIDemoRSU11p::initialize", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#a94a8c38a2685c7dd941c79e96d507cbe", tooltip="Initialization of the module and some variables. ", pos="261,88", rects="186,80,336,96"];
+	Node3 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="261,54", rects="198,46,324,62"];
+	Node4 [label="Veins::ObstacleControl\l::initialize", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a199ba1a4bd7eb58b6365fcaa5c0b1a90", pos="261,14", rects="201,0,321,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,68 158,70 169,73 173,77 186,80"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,150,54 160,54 173,54 185,54 198,54"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,150,40 158,37 169,34 173,31 186,28 191,27 196,25 201,24"];
+}

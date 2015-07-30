@@ -1,0 +1,23 @@
+digraph connectionManager {
+	graph [compound=true];
+	node [label="\N", fontsize=10, fontname=Helvetica];
+	edge [labelfontsize=10, labelfontname=Helvetica];
+	graph [bb="0,0,212,166"];
+	subgraph clusterdir_f93708c3df08a394eee3903eeb27efeb {
+		graph [bgcolor="#ddddee"];
+		graph [pencolor=black];
+		graph [label=base];
+		graph [fontname=Helvetica];
+		graph [fontsize=10];
+		graph [URL="dir_f93708c3df08a394eee3903eeb27efeb.html"];
+		graph [lp="69,150"];
+		graph [bb="8,74,130,158"];
+		dir_6d97c42d9bbf048240eaf2328cad6934 [label=connectionManager, shape=box, style=filled, fillcolor="#eeeeff", pencolor=black, URL="dir_6d97c42d9bbf048240eaf2328cad6934.html", pos="69,100", width="1.47", height="0.50"];
+	}
+	dir_c379419f1ca8ba729e58bdd7bab87a26 [label=utils, shape=box, URL="dir_c379419f1ca8ba729e58bdd7bab87a26.html", pos="136,26", width="0.75", height="0.50"];
+	dir_e06110eca4e35a72326415bbe8edca01 [label=modules, shape=box, URL="dir_e06110eca4e35a72326415bbe8edca01.html", pos="185,100", width="0.75", height="0.50"];
+	dir_6d97c42d9bbf048240eaf2328cad6934 -> dir_c379419f1ca8ba729e58bdd7bab87a26 [headlabel=9, labeldistance="1.5", headhref="dir_000011_000010.html", pos="e,109,44 75,82 76,79 77,76 79,74 85,66 94,57 102,50", head_lp="103,58"];
+	dir_6d97c42d9bbf048240eaf2328cad6934 -> dir_e06110eca4e35a72326415bbe8edca01 [headlabel=5, labeldistance="1.5", headhref="dir_000011_000003.html", pos="e,158,100 122,100 131,100 139,100 148,100", head_lp="144,106"];
+	dir_e06110eca4e35a72326415bbe8edca01 -> dir_6d97c42d9bbf048240eaf2328cad6934 [headlabel=2, labeldistance="1.5", headhref="dir_000003_000011.html", pos="e,122,100 158,100 149,100 141,100 132,100", head_lp="136,94"];
+	dir_e06110eca4e35a72326415bbe8edca01 -> dir_c379419f1ca8ba729e58bdd7bab87a26 [headlabel=27, labeldistance="1.5", headhref="dir_000003_000010.html", pos="e,148,44 173,82 167,73 159,62 153,52", head_lp="161,52"];
+}

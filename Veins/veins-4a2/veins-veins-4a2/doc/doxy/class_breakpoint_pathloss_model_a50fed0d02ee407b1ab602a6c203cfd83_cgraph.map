@@ -1,0 +1,23 @@
+digraph "BreakpointPathlossModel::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,480,164"];
+	Node1 [label="BreakpointPathlossModel\l::filterSignal", height="0.39", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,88", rects="8,74,144,102"];
+	Node2 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="249,156", rects="181,148,318,164"];
+	Node3 [label="Coord::sqrTorusDist", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_coord.html#aaf6119bf8bc9953d561729314de8ed5e", tooltip="Returns the squared distance on a torus of this to Coord &#39;b&#39; (omits calling square root)...", pos="249,122", rects="196,114,302,130"];
+	Node4 [label="Coord::sqrdist", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a9245e5acb794d95128e191e6faef99d4", tooltip="Returns distance^2 to Coord &#39;a&#39; (omits calling square root). ", pos="249,88", rects="212,80,286,96"];
+	Node5 [label="Coord::squareLength", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a278c018d6de54a020c39b3b1afaec50e", tooltip="Returns the square of the length of this Coords position vector. ", pos="413,88", rects="358,80,468,96"];
+	Node6 [label="TimeMapping::setValue", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_time_mapping.html#a453ce64062fa7afd7398735a9cf499a6", tooltip="Changes the value of the function at the specified position. ", pos="249,54", rects="186,46,312,62"];
+	Node7 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="413,54", rects="361,46,466,62"];
+	Node8 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="249,17", rects="189,9,309,25"];
+	Node9 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="413,14", rects="355,0,472,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,180,148 144,102 164,113 160,130 173,142"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,196,117 144,102 161,106 164,110 180,114 182,114 184,115 187,115"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,212,88 144,88 164,88 185,88 203,88"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,358,88 286,88 304,88 327,88 348,88"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,186,61 144,74 159,69 163,66 176,63"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,360,54 312,54 325,54 338,54 350,54"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,189,21 144,74 167,59 157,39 179,26"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,354,15 309,16 321,16 333,15 344,15"];
+}

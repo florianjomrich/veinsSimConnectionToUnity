@@ -1,0 +1,13 @@
+digraph SimplePathlossModel {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,210,154"];
+	Node1 [label=SimplePathlossModel, height="0.22", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,16", rects="19,8,133,24"];
+	Node2 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="44,84", rects="0,76,89,92"];
+	Node3 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="126,84", rects="106,76,146,92"];
+	Node4 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="126,138", rects="103,130,150,146"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,48,76 52,68 58,54 67,35 72,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,120,76 115,69 105,55 90,35 82,24", lp="151,50"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,126,130 126,120 126,111 126,99 126,92"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,146,78 156,78 161,79 164,81 164,84 164,89 156,91 146,90", lp="187,84"];
+}

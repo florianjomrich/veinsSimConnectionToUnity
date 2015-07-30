@@ -1,0 +1,11 @@
+digraph "Mac1609_4::setMCS" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,294,62"];
+	Node1 [label="Mac1609_4::setMCS", height="0.22", width="1.47", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="61,34", rects="8,26,114,42"];
+	Node2 [label=getOfdmDatarate, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$_consts_phy_8h.html#a878241df607e21ba511c4c75aaa10f46", tooltip="Given bandwidth and MCS returns datarate in bits per second. ", pos="218,54", rects="170,46,267,62"];
+	Node3 [label="Mac1609_4::setParameters\lForBitrate", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a30fbd72a0e286f24dd07bbd14b5c043b", pos="218,14", rects="151,0,286,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,169,48 114,41 126,43 139,45 150,46 153,46 156,47 159,47"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,150,22 114,27 123,26 131,25 140,23"];
+}

@@ -1,0 +1,22 @@
+digraph SimpleObstacleShadowing {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,455,234"];
+	Node1 [label=SimpleObstacleShadowing, height="0.22", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="197,16", rects="128,8,267,24"];
+	Node2 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="75,84", rects="31,76,120,92"];
+	Node3 [label="Veins::ObstacleControl", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html", pos="197,84", rects="137,76,257,92"];
+	Node4 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="44,218", rects="1,210,87,226"];
+	Node5 [label="Veins::AnnotationManager", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html", pos="109,158", rects="38,150,180,166"];
+	Node6 [label="Veins::AnnotationManager\l::Group", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_group.html", pos="269,158", rects="198,144,340,172"];
+	Node7 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="371,84", rects="351,76,391,92"];
+	Node8 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="388,158", rects="365,150,412,166"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,89,76 97,72 122,58 161,36 183,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" obstacleControl", pos="s,197,76 197,67 197,53 197,35 197,24", lp="241,50"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,39,210 35,203 27,187 17,161 29,144 44,122 115,102 159,92"];
+	Node5 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" annotations", pos="s,114,150 119,144 126,133 138,120 149,110 157,103 168,97 177,92", lp="184,118"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,53,210 60,204 73,193 90,176 100,166"];
+	Node6 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" annotationGroup", pos="s,255,144 249,138 234,122 216,103 205,92", lp="287,118"];
+	Node7 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,358,76 351,72 335,63 311,50 290,42 272,35 250,29 233,24", lp="372,50"];
+	Node8 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,386,150 384,142 381,126 375,104 373,92"];
+	Node7 -> Node7 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,391,78 401,78 406,79 409,81 409,84 409,89 401,91 391,90", lp="432,84"];
+}

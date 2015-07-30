@@ -1,0 +1,16 @@
+digraph "NicEntryDebug::collectGates" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,732,50"];
+	Node1 [label="NicEntryDebug::collectGates", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="83,25", rects="8,17,158,33"];
+	Node2 [label="NicEntryDebug::collectFree\lGates", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#aac3b943e56b211541596a73f6437608a", tooltip="Iterates over all existing gates of this NicEntries nic and host and checks wether they are useable b...", pos="266,25", rects="194,11,338,39"];
+	Node3 [label="NicEntryDebug::requestInGate", height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#aa028678e801ba669ad47a6588b2ad90a", tooltip="Returns a free in gate of the nic. ", pos="459,42", rects="379,34,540,50"];
+	Node4 [label="NicEntryDebug::connectTo", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#af97ebc8c81c1f7d8094344d2f7fb6a17", tooltip="Connect two nics. ", pos="652,25", rects="581,17,724,33"];
+	Node5 [label="NicEntryDebug::requestOutGate", height="0.22", width="2.36", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#ad601c375fa2fd737f88b3a475a06ff45", tooltip="Returns a free out gate of the nic. ", pos="459,8", rects="374,0,544,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,158,25 168,25 177,25 185,25 194,25"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,338,31 348,32 358,33 368,33 378,35"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,540,35 549,34 559,33 570,32 580,31"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,338,19 347,18 356,18 365,17 374,16"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,544,16 553,17 562,17 572,18 580,19"];
+}

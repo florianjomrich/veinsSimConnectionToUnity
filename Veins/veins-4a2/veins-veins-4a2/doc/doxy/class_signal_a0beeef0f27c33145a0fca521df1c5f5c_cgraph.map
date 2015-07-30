@@ -1,0 +1,9 @@
+digraph "Signal::addAttenuation" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,290,28"];
+	Node1 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="8,6,128,22"];
+	Node2 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="223,14", rects="165,0,282,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,14 128,14 137,14 146,14 154,14"];
+}

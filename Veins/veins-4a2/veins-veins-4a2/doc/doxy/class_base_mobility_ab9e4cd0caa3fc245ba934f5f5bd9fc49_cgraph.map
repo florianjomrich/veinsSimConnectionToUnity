@@ -1,0 +1,19 @@
+digraph "BaseMobility::reflectIfOutside" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,712,120"];
+	Node1 [label="BaseMobility::reflectIfOutside", height="0.22", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="86,60", rects="8,52,164,68"];
+	Node2 [label="BaseMobility::reflectCoordinate", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a6c817348be2c3586777a85bb60e2b3f1", tooltip="helperfunction for reflectIfOutside() to reflect a Coordinate at a given border ", pos="282,60", rects="201,52,364,68"];
+	Node3 [label="BaseMobility::playground\lSizeX", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#afd83457f242d92ccdc2e2b5a3b2c4dd8", tooltip="Returns the width of the playground. ", pos="468,106", rects="401,92,536,120"];
+	Node4 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="638,60", rects="573,52,704,68"];
+	Node5 [label="BaseMobility::playground\lSizeY", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a09941dabdb81e67c77fc4794167c9351", tooltip="Returns the height of the playground. ", pos="468,60", rects="401,46,536,74"];
+	Node6 [label="BaseMobility::playground\lSizeZ", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1245dec457a2d33c8dd1a70ccd74ea33", tooltip="Returns the height of the playground. ", pos="468,14", rects="401,0,536,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,200,60 164,60 173,60 181,60 190,60"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,400,92 364,68 379,73 382,80 391,87"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,572,68 536,92 550,86 553,78 563,72"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,400,60 364,60 373,60 382,60 390,60"];
+	Node5 -> Node4 [color=midnightblue, style=solid, pos="e,572,60 536,60 545,60 553,60 562,60"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,400,28 364,52 379,46 382,39 391,33"];
+	Node6 -> Node4 [color=midnightblue, style=solid, pos="e,572,52 536,28 551,34 553,41 564,48"];
+}

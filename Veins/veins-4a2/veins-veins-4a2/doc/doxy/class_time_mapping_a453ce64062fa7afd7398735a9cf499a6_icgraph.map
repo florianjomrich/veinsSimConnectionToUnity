@@ -1,0 +1,11 @@
+digraph "TimeMapping::setValue" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,314,62"];
+	Node1 [label="TimeMapping::setValue", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,34", rects="8,26,134,42"];
+	Node2 [label="PERModel::filterSignal", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_p_e_r_model.html#ab571e93f422b0e6a299cee2c2b886bc0", tooltip="Has to be overriden by every implementation. ", pos="238,54", rects="177,46,299,62"];
+	Node3 [label="BreakpointPathlossModel\l::filterSignal", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_breakpoint_pathloss_model.html#a50fed0d02ee407b1ab602a6c203cfd83", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="238,14", rects="170,0,306,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,41 143,42 152,44 161,44 170,46 172,46 175,46 177,47"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,134,26 143,25 152,24 161,23 170,22"];
+}

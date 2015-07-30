@@ -1,0 +1,16 @@
+digraph "BasePhyLayer::handleChannelSenseRequest" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,558,120"];
+	Node1 [label="BasePhyLayer::handleChannel\lSenseRequest", height="0.39", width="2.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="88,60", rects="9,46,168,74"];
+	Node2 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="279,106", rects="207,92,351,120"];
+	Node3 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="279,60", rects="211,46,348,74"];
+	Node4 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="470,37", rects="391,29,550,45"];
+	Node5 [label="BasePhyLayer::handleUpper\lControlMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4cab267d310b5fd6cefe613fc8dfe71d", tooltip="Handles messages received from the upper layer through the control gate. ", pos="279,14", rects="205,0,354,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,168,74 176,77 187,82 191,87 204,92 205,92 206,93 207,93"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,168,60 176,60 188,60 200,60 210,60"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,348,50 357,49 368,47 379,46 390,45"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,168,46 176,42 187,37 191,32 204,28"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,354,24 363,25 372,27 381,28 390,29"];
+}

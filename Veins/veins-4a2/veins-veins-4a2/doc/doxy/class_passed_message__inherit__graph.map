@@ -1,0 +1,8 @@
+digraph PassedMessage {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,82,84"];
+	Node1 [label=PassedMessage, height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="41,16", rects="0,8,83,24"];
+	Node2 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="41,68", rects="18,60,65,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,41,60 41,51 41,42 41,31 41,24"];
+}

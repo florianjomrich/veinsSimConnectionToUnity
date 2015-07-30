@@ -1,0 +1,18 @@
+digraph "ChannelInfo::checkAndCleanInterval" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,742,136"];
+	Node1 [label="ChannelInfo::checkAndClean\lInterval", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,71", rects="8,57,162,85"];
+	Node2 [label="ChannelInfo::BaseIntersection\lIterator::next", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html#a2acff6a4c595060ffc74872cdc0be1db", tooltip="Increases the iterator to the next intersecting AirFrame and returns a pointer to this AirFrame...", pos="656,97", rects="579,83,734,111"];
+	Node3 [label="Veins::AirFrame::getDuration", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a713e5d23b4ccb3d89d29468ff1dd7b89", pos="282,88", rects="206,80,358,96"];
+	Node4 [label="ChannelInfo::canDiscardInterval", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#ab4da0befdce7f2b27ae4a61d66ec2167", tooltip="Returns true if all information inside the passed interval can be deleted. ", pos="282,54", rects="198,46,366,62"];
+	Node5 [label="ChannelInfo::isIntersecting", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a2a4e738d7d51c1dc53ba7404b68103ec", tooltip="Returns true if there is at least one AirFrame in the passed AirFrameMatrix which intersect with the ...", pos="472,71", rects="402,63,542,79"];
+	Node6 [label="ChannelInfo::Intersection\lIterator::eraseAirFrame", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_intersection_iterator.html#a6f09ba91d68c971a39fd2c5652e0e4a0", tooltip="Erases the AirFrame the iterator currently points to from the AirFrameMatrix. ", pos="282,14", rects="216,0,348,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,578,110 159,85 160,85 161,86 162,86 180,92 181,100 198,105 324,136 475,124 568,111"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,206,81 162,78 173,79 185,80 197,80"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,198,61 162,64 171,63 179,63 188,62"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,402,65 366,62 375,63 383,63 392,64"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,578,84 542,79 551,80 559,81 568,82"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,216,22 162,57 181,48 180,36 198,28 201,27 204,26 207,25"];
+}

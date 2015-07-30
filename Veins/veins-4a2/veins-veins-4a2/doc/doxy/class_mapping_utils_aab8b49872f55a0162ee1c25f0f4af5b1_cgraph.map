@@ -1,0 +1,9 @@
+digraph "MappingUtils::multiply" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,326,28"];
+	Node1 [label="MappingUtils::multiply", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="9,6,132,22"];
+	Node2 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a45c56f1ea72b2f8b278d1016ac6228df", pos="243,14", rects="168,0,318,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,14 132,14 141,14 149,14 158,14"];
+}

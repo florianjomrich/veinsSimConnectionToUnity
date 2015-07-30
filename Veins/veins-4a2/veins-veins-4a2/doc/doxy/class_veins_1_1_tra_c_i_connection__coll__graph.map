@@ -1,0 +1,8 @@
+digraph "Veins::TraCIConnection" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,131,112"];
+	Node1 [label="Veins::TraCIConnection", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="63,16", rects="0,8,126,24"];
+	Node2 [label="Veins::TraCICoord", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$struct_veins_1_1_tra_c_i_coord.html", tooltip="Coord equivalent for storing TraCI coordinates. ", pos="63,96", rects="13,88,113,104"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" netbounds1\nnetbounds2", pos="s,63,88 63,79 63,62 63,38 63,24", lp="97,56"];
+}

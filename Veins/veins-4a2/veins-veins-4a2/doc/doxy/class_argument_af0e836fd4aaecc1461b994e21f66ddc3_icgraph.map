@@ -1,0 +1,31 @@
+digraph "Argument::begin" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,480,336"];
+	Node1 [label="Argument::begin", height="0.22", width="1.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,243", rects="8,235,100,251"];
+	Node2 [label="MappingUtils::findMax", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#ac9d1a808dbca5da873af58f1da4cbcf4", tooltip="Iterates over the passed mapping and returns the value at the key entry with the highest value in the...", pos="205,328", rects="143,320,268,336"];
+	Node3 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#adb9e9ced268b9a5d1d4f6d34738654aa", tooltip="Iterates over the passed mapping and returns the value at the key entry with the smallest value in th...", pos="205,294", rects="144,286,267,302"];
+	Node4 [label="Argument::isClose", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a306689df8719cb4334335d93cd657f74", tooltip="Two Arguments are compared close if they have the same dimensions and their values don&#39;t differ more ...", pos="205,260", rects="156,252,254,268"];
+	Node5 [label="Argument::isSamePosition", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ac69b6722244626cdf4e0a006c9822cec", tooltip="Returns true if the passed Argument points to the same position. ", pos="205,226", rects="137,218,274,234"];
+	Node6 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a2864c33a93f9ce23403d0c84ca9a19e2", pos="391,244", rects="316,230,466,258"];
+	Node7 [label="ConstMapping::print", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a526e8d5b948e9b2ce9d729e66b162e13", tooltip="Prints the Mapping to an output stream. ", pos="205,192", rects="150,184,260,200"];
+	Node8 [label="Argument::setArgValues", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a72ac36c91caaeb8f34eb091abff19c51", tooltip="Update the values of this Argument with the values of the passed Argument. ", pos="205,123", rects="140,115,271,131"];
+	Node9 [label="MultiDimMappingIterator\l\< Linear \>::updateNextPosition", height="0.39", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a1eb04551f2a3ae22f0eae4844f14ac97", tooltip="Helper method which updates the nextPosition member. ", pos="391,198", rects="310,184,472,212"];
+	Node10 [label="MultiDimMappingIterator\l\< Linear \>::jumpTo", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a71f35cd0d6fabecb65019466018c51ca", tooltip="Lets the iterator point to the passed position. ", pos="391,152", rects="321,138,462,166"];
+	Node11 [label="MultiDimMappingIterator\l\< Linear \>::iterateTo", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a3a3b5ddc5aa1636772b9a89c085acdfc", tooltip="Iterates to the specified position. ", pos="391,106", rects="321,92,462,120"];
+	Node12 [label="MultiDimMappingIterator\l\< Linear \>::next", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a8928195a1fe4bb3af81d3ffe2391827e", tooltip="Iterates to the next position of the function. ", pos="391,60", rects="321,46,462,74"];
+	Node13 [label="MultiDimMappingIterator\l\< Linear \>::jumpToBegin", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#ab41125ce8959de6fafb3347a7691ca52", tooltip="Lets the iterator point to the begin of the function. ", pos="391,14", rects="321,0,462,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,100,251 107,257 124,277 111,302 136,320 138,321 140,322 142,324"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,100,251 108,256 119,265 119,277 136,286 138,287 141,288 143,289"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,100,248 109,249 124,251 141,252 156,254"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,100,238 109,237 118,236 127,235 136,234"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,274,233 284,234 295,235 305,236 316,237"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,100,235 108,230 119,220 119,208 136,200 140,198 145,196 150,195"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,100,235 107,229 133,198 100,159 136,131 137,130 138,129 139,129"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,271,129 279,134 297,148 289,169 310,184"];
+	Node8 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,271,130 280,132 292,134 296,135 310,138 313,139 317,139 320,140"];
+	Node8 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,271,117 280,116 293,115 307,114 320,112"];
+	Node8 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,271,117 279,112 295,100 291,84 310,74 313,72 317,71 320,69"];
+	Node8 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,271,117 278,111 305,86 280,53 310,28 313,26 317,24 320,22"];
+}

@@ -1,0 +1,9 @@
+digraph "Mac1609_4::changeServiceChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,342,28"];
+	Node1 [label="Mac1609_4::changeService\lChannel", height="0.39", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,14", rects="8,0,146,28"];
+	Node2 [label="Mac80211pToPhy11pInterface\l::changeListeningFrequency", height="0.39", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_mac80211p_to_phy11p_interface.html#a91d9c16438fc0ec7c0e3b4907f178d4d", pos="258,14", rects="182,0,334,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,182,14 146,14 155,14 163,14 172,14"];
+}

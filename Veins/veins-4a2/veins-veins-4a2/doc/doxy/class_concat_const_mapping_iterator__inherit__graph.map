@@ -1,0 +1,10 @@
+digraph ConcatConstMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,156,136"];
+	Node1 [label=ConcatConstMappingIterator, height="0.22", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,16", rects="1,8,155,24"];
+	Node2 [label=FilteredConstMappingIterator, height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", tooltip="This iterator takes another ConstMappingIterator and does just pipe every method to the passed ConstM...", pos="78,68", rects="0,60,156,76"];
+	Node3 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="78,120", rects="62,112,94,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,78,60 78,51 78,42 78,31 78,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,78,112 78,103 78,94 78,83 78,76"];
+}

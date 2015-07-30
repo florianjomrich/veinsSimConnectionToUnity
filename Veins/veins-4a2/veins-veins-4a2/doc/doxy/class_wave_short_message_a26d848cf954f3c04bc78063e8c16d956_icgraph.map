@@ -1,0 +1,23 @@
+digraph "WaveShortMessage::getTimestamp" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,942,139"];
+	Node1 [label="WaveShortMessage::getTimestamp", height="0.22", width="2.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="98,85", rects="8,77,188,93"];
+	Node2 [label="BaseWaveApplLayer::\lprepareWSM", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#aaa76362a567f160e008bf8a1dbde15d0", pos="284,85", rects="225,71,344,99"];
+	Node3 [label="BaseWaveApplLayer::\lhandleSelfMsg", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#a830e58e379655c6d24319c16f8db5e3d", tooltip="handle self messages ", pos="467,125", rects="408,111,527,139"];
+	Node4 [label="TraCIDemoRSU11p::sendMessage", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#a8ec20e405841c5724bfe8a29b352d580", pos="467,85", rects="381,77,554,93"];
+	Node5 [label="TraCIDemoRSU11p::onData", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#ac9d01a67de93ec7f9e64ce7c664c370f", pos="669,88", rects="597,80,742,96"];
+	Node6 [label="TraCIDemo11p::sendMessage", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#ab41ac005b7c30f7217ba3a26c23a645d", pos="467,48", rects="393,40,541,56"];
+	Node7 [label="TraCIDemo11p::handlePosition\lUpdate", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#ad9a9d4f6da6e486797c930f6f6df5ab1", pos="669,48", rects="591,34,748,62"];
+	Node8 [label="TraCIDemo11p::receiveSignal", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a63c38f89463a42420b046dd8170117b6", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="859,48", rects="785,40,934,56"];
+	Node9 [label="TraCIDemo11p::onData", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a73a6ca11b60eeb8ca9a523e382787a72", pos="669,8", rects="609,0,730,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,188,85 197,85 206,85 216,85 224,85"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,344,99 352,101 363,104 367,107 380,111 389,113 398,115 407,116"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,344,85 354,85 363,85 371,85 380,85"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,554,86 563,86 574,86 586,87 596,87"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,344,71 353,68 363,63 367,59 380,56 384,55 388,54 393,53"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,541,48 551,48 564,48 577,48 590,48"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,748,48 758,48 767,48 775,48 784,48"];
+	Node6 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,541,43 550,41 551,41 553,40 554,40 573,33 572,22 590,16 596,14 602,13 608,11"];
+}

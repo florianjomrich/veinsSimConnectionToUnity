@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,128,28"];
+	Node1 [label="PairLess\< pair_type,\l key_type \>", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", pos="64,14", rects="9,0,120,28"];
+}

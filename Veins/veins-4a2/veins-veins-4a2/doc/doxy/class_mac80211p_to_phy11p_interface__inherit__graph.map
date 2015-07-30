@@ -1,0 +1,8 @@
+digraph Mac80211pToPhy11pInterface {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,152,84"];
+	Node1 [label=Mac80211pToPhy11pInterface, height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,68", rects="0,60,152,76"];
+	Node2 [label=PhyLayer80211p, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html", tooltip="Adaptation of the PhyLayer class for 802.11p. ", pos="76,16", rects="32,8,121,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,76,60 76,51 76,42 76,31 76,24"];
+}

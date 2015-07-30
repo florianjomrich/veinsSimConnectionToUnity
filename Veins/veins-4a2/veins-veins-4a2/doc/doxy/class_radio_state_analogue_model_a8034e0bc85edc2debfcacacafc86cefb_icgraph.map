@@ -1,0 +1,26 @@
+digraph "RadioStateAnalogueModel::cleanUpUntil" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1526,112"];
+	Node1 [label="RadioStateAnalogueModel\l::cleanUpUntil", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,77", rects="8,63,150,91"];
+	Node2 [label="Veins::Radio::cleanAnalogue\lModelUntil", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a25501a63aaa78e00dda4e5b868874407", tooltip="discards information in the RadioStateAnalogueModel before given time-point ", pos="260,77", rects="187,63,334,91"];
+	Node3 [label="BasePhyLayer::handleAirFrame\lEndReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4f8fde562c0004b498fc3294c3f54c2f", tooltip="Handles incoming AirFrames with the state END_RECEIVE. ", pos="453,77", rects="370,63,536,91"];
+	Node4 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="1059,60", rects="976,52,1142,68"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1438,58", rects="1359,50,1518,66"];
+	Node6 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="1250,60", rects="1178,46,1322,74"];
+	Node7 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="1250,14", rects="1182,0,1319,28"];
+	Node8 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="655,56", rects="572,42,738,70"];
+	Node9 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="857,18", rects="774,4,940,32"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,77 160,77 169,77 177,77 186,77"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,334,77 344,77 353,77 361,77 370,77"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,536,78 545,79 554,79 564,79 572,79 736,80 777,81 940,71 952,70 964,69 976,68"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1138,68 1147,70 1160,74 1164,79 1178,83 1241,94 1260,97 1322,83 1340,79 1341,70 1358,66"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1142,60 1151,60 1160,60 1169,60 1178,60"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1142,52 1150,48 1161,42 1164,34 1178,28 1179,28 1180,27 1181,27"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1319,27 1327,30 1340,36 1343,45 1358,50"];
+	Node3 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,536,68 545,67 554,67 563,66 572,65"];
+	Node8 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,738,57 747,57 815,58 909,59 976,59"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,738,42 746,40 757,37 761,34 774,32"];
+	Node9 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,940,32 948,35 959,41 962,47 976,52"];
+}

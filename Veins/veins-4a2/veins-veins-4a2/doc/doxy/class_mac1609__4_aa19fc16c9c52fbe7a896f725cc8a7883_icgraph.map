@@ -1,0 +1,11 @@
+digraph "Mac1609_4::createSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,484,16"];
+	Node1 [label="Mac1609_4::createSignal", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,8", rects="8,0,134,16"];
+	Node2 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a077b6bebe9a8f8d2a6fcce31c6af86a7", pos="234,8", rects="171,0,298,16"];
+	Node3 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="405,8", rects="334,0,476,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,8 144,8 153,8 161,8 170,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,298,8 307,8 316,8 325,8 334,8"];
+}

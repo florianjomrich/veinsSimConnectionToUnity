@@ -1,0 +1,25 @@
+digraph "ConcatConstMapping::addMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,472,326"];
+	Node1 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,172", rects="9,158,126,186"];
+	Node2 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="222,172", rects="162,164,282,180"];
+	Node3 [label="BreakpointPathlossModel\l::filterSignal", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_breakpoint_pathloss_model.html#a50fed0d02ee407b1ab602a6c203cfd83", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="391,312", rects="323,298,459,326"];
+	Node4 [label="JakesFading::filterSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_jakes_fading.html#ae02fbdbf7ef6db9b78a3416076074190", tooltip="Has to be overriden by every implementation. ", pos="391,272", rects="328,264,455,280"];
+	Node5 [label="LogNormalShadowing\l::filterSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#abecf1f338dc41facc038dbcd8a863ccd", tooltip="Calculates shadowing loss based on a normal gaussian function. ", pos="391,232", rects="330,218,453,246"];
+	Node6 [label="PERModel::filterSignal", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_p_e_r_model.html#ab571e93f422b0e6a299cee2c2b886bc0", tooltip="Has to be overriden by every implementation. ", pos="391,192", rects="330,184,452,200"];
+	Node7 [label="RadioStateAnalogueModel\l::filterSignal", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#a5373d679bc62e9da7130d93f531adbbf", tooltip="Filters the AirFrame&#39;s Signal according to the RadioState (passively), i.e. ", pos="391,152", rects="320,138,462,166"];
+	Node8 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="391,106", rects="322,92,461,120"];
+	Node9 [label="SimplePathlossModel\l::filterSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html#a632b408d1c0ecac4fd90da5d48d73c5e", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="391,60", rects="334,46,448,74"];
+	Node10 [label="TwoRayInterferenceModel\l::filterSignal", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model.html#a4488ba8c6127ff2e016edaa6bbd6a4c0", tooltip="Has to be overriden by every implementation. ", pos="391,14", rects="319,0,464,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,172 136,172 145,172 153,172 162,172"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,282,180 289,186 319,220 280,263 318,298 320,299 321,301 323,302"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,282,180 289,187 310,210 289,241 318,264 321,266 324,268 327,269"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,282,180 290,185 302,194 301,208 318,218 322,220 325,222 329,223"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,282,179 290,180 300,181 309,182 318,184 322,184 326,185 330,185"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,282,165 291,164 300,162 310,162 320,160"];
+	Node2 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,282,164 289,159 303,146 300,130 318,120 319,119 320,119 321,118"];
+	Node2 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,282,164 288,158 312,132 287,99 318,74 323,70 328,67 334,65"];
+	Node2 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,282,164 289,157 323,117 275,68 318,28"];
+}

@@ -1,0 +1,9 @@
+digraph "BaseMobility::handleSelfMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,356,16"];
+	Node1 [label="BaseMobility::handleSelfMsg", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,8", rects="8,0,160,16"];
+	Node2 [label="BaseMobility::handleMessage", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aad7ebb839ae5726f97ccf149ae661333", tooltip="This modules should only receive self-messages. ", pos="272,8", rects="196,0,348,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,8 169,8 178,8 187,8 196,8"];
+}

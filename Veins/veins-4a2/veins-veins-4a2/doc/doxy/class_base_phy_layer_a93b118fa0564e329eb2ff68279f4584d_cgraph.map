@@ -1,0 +1,11 @@
+digraph "BasePhyLayer::initializeRadio" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,50"];
+	Node1 [label="BasePhyLayer::initialize\lRadio", height="0.39", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,25", rects="9,11,134,39"];
+	Node2 [label="BasePhyLayer::readPar", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a379b5527a61ac5dfe378691faca6c2d9", tooltip="Reads and returns the parameter with the passed name. ", pos="243,42", rects="182,34,305,50"];
+	Node3 [label="Veins::Radio::setSwitchTime", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aed80922c736427067f27669c87aaf4f8", tooltip="function called by PhyLayer in order to make an entry in the switch times matrix, i...", pos="243,8", rects="171,0,316,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,181,36 134,31 146,33 159,34 171,35"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,170,15 134,19 143,18 151,18 160,16"];
+}

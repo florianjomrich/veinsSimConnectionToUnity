@@ -1,0 +1,11 @@
+digraph "BaseMobility::getCurrentSpeed" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,286,50"];
+	Node1 [label="BaseMobility::getCurrent\lSpeed", height="0.39", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,25", rects="9,11,140,39"];
+	Node2 [label="Move::getDirection", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_move.html#a13cf0bb336db329a2033506d739c834f", tooltip="Returns the direction vector (which is unit less, because of normalization). ", pos="227,42", rects="177,34,278,50"];
+	Node3 [label="Move::getSpeed", height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$class_move.html#a3db12757bf11ac7f025b2496d09e4941", tooltip="Returns the current speed. ", pos="227,8", rects="185,0,269,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,176,36 140,32 149,33 157,34 166,35"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,185,13 140,18 152,16 164,15 175,14"];
+}

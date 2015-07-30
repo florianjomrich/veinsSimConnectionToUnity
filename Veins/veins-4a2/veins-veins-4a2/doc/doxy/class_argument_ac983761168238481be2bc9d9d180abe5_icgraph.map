@@ -1,0 +1,13 @@
+digraph "Argument::compare" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,284,84"];
+	Node1 [label="Argument::compare", height="0.22", width="1.47", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,42", rects="9,34,116,50"];
+	Node2 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#adb9e9ced268b9a5d1d4f6d34738654aa", tooltip="Iterates over the passed mapping and returns the value at the key entry with the smallest value in th...", pos="214,76", rects="153,68,276,84"];
+	Node3 [label="Argument::operator\<", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a20805e35e4f766088dccfa2bbd8faf03", tooltip="Returns true if this Argument is smaller then the passed Argument. ", pos="214,42", rects="158,34,271,50"];
+	Node4 [label="Argument::operator==", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_argument.html#afedad9de51d93e634baa82f1152d7155", tooltip="Two Arguments are compared equal if they have the same dimensions and the same values. ", pos="214,8", rects="154,0,274,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,116,50 124,53 135,58 138,63 152,68"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,116,42 126,42 136,42 147,42 157,42"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,116,34 124,31 135,25 138,20 152,16 153,16 153,16 154,15"];
+}

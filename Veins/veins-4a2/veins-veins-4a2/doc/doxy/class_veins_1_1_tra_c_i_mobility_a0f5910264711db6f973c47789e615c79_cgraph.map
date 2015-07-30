@@ -1,0 +1,21 @@
+digraph "Veins::TraCIMobility::preInitialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,458,164"];
+	Node1 [label="Veins::TraCIMobility\l::preInitialize", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,76", rects="8,62,120,90"];
+	Node2 [label="Veins::TraCIMobility\l::calculateAntennaPosition", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#ad717a66b60ffceb73d95bf7c1c4eb87e", tooltip="Calculates where the antenna of this car is, given its front bumper position. ", pos="230,150", rects="162,136,299,164"];
+	Node3 [label="Move::getCurrentPosition", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_move.html#ae3bceb166e7924c6ea1620b633b1192d", pos="230,110", rects="164,102,297,118"];
+	Node4 [label="Move::setStart", height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_move.html#a385a1d6229f2490fdbe26f9266f29188", tooltip="Sets start position (components in meters) and start time. ", pos="230,76", rects="192,68,269,84"];
+	Node5 [label="Move::setDirectionByVector", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_move.html#a1700ddcd2a41917a29747abaf2aee294", tooltip="Sets the direction to the passed vector, which must be already normalized or the 0-vector. ", pos="230,42", rects="156,34,304,50"];
+	Node6 [label="FWMath::close", height="0.22", width="1.11", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#a38d2500887b49de2a2b5f8610f7ba6d1", tooltip="Tests whether two doubles are close enough to be declared equal. ", pos="395,59", rects="355,51,436,67"];
+	Node7 [label="Coord::squareLength", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a278c018d6de54a020c39b3b1afaec50e", tooltip="Returns the square of the length of this Coords position vector. ", pos="395,25", rects="340,17,450,33"];
+	Node8 [label="Move::setSpeed", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_move.html#af80f74d5fc42ec7fcedf9940c9d01655", tooltip="Sets the current speed in meters per second. ", pos="230,8", rects="189,0,272,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,161,139 121,90 141,103 135,120 152,133"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,163,103 120,90 136,94 140,97 153,101"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,191,76 120,76 140,76 162,76 182,76"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,156,50 120,62 133,58 138,55 147,52"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,354,55 304,50 318,52 332,53 345,54"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,340,31 304,34 313,33 321,33 330,32"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,188,7 121,62 142,47 134,28 156,16 163,12 171,10 178,8"];
+}

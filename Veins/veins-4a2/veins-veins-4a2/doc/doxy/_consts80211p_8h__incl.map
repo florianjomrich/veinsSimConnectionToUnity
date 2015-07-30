@@ -1,0 +1,8 @@
+digraph "Consts80211p.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,80,84"];
+	Node1 [label="Consts80211p.h", height="0.22", width="1.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="40,68", rects="0,60,80,76"];
+	Node2 [label="stdint.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="40,16", rects="18,8,63,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,40,24 40,60 40,53 40,42 40,33"];
+}

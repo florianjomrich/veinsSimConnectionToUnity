@@ -1,0 +1,32 @@
+digraph BaseMobility {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,683,314"];
+	Node1 [label=BaseMobility, height="0.22", width="1.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="265,16", rects="228,8,303,24"];
+	Node2 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="147,84", rects="92,76,202,92"];
+	Node3 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="85,230", rects="50,222,121,238"];
+	Node4 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="353,298", rects="310,290,396,306"];
+	Node5 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="27,298", rects="0,290,54,306"];
+	Node6 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="179,298", rects="134,290,225,306"];
+	Node7 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="147,176", rects="113,168,182,184"];
+	Node8 [label=Move, height="0.22", width="0.53", color=black, fillcolor=white, style=filled, URL="$class_move.html", tooltip="Class to store object position and movement. ", pos="593,84", rects="574,76,612,92"];
+	Node9 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="635,230", rects="612,222,659,238"];
+	Node10 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="561,176", rects="541,168,581,184"];
+	Node11 [label=BaseWorldUtility, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html", tooltip="Provides information and utility methods for the whole simulation. ", pos="422,84", rects="374,76,470,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,161,76 168,72 193,58 230,36 251,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,87,222 89,215 92,202 98,183 104,168 116,139 134,107 142,92"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,324,290 316,288 283,279 235,266 194,256 170,249 142,243 121,238"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,30,290 34,282 39,274 44,264 51,256 57,249 65,243 72,238"];
+	Node6 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,144,290 135,288 113,282 91,276 87,272 80,262 81,248 83,238", lp="144,264"];
+	Node7 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,147,168 147,160 147,140 147,108 147,92", lp="171,130"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,94,222 101,216 113,206 128,193 138,184"];
+	Node8 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" move", pos="s,574,76 565,73 454,39 420,45 303,24", lp="537,50"];
+	Node9 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,639,222 643,214 647,206 652,195 654,184 660,150 658,136 638,110 634,105 621,97 610,92"];
+	Node10 -> Node8 [dir=back, color=darkorchid3, style=dashed, label=" lastPos\ndirection\nstartPos", pos="s,564,168 567,160 573,140 585,108 590,92", lp="608,130"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,624,222 617,217 603,207 584,193 572,184"];
+	Node10 -> Node10 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,581,170 591,170 596,171 599,173 599,176 599,181 591,183 581,182", lp="622,176"];
+	Node11 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" world", pos="s,403,76 394,72 363,58 311,36 284,24", lp="385,50"];
+	Node4 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,357,290 360,283 369,262 386,220 398,184 408,150 417,109 420,92"];
+	Node10 -> Node11 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,541,168 532,165 509,159 497,164 475,150 452,135 434,106 426,92", lp="522,130"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mobilityStateChangedSignal", pos="s,195,290 202,286 219,274 242,255 242,230 242,230 242,230 242,84 242,61 254,36 260,24", lp="318,176"];
+}

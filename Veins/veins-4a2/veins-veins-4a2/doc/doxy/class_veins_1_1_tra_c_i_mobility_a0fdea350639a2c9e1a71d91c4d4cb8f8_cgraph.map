@@ -1,0 +1,86 @@
+digraph "Veins::TraCIMobility::fixIfHostGetsOutside" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1064,703"];
+	Node1 [label="Veins::TraCIMobility\l::fixIfHostGetsOutside", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,452", rects="8,438,126,466"];
+	Node2 [label="Move::getStartPos", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_move.html#aeab90c9059a2c9214e491a58833b3c3c", tooltip="Returns the start position. ", pos="630,612", rects="582,604,678,620"];
+	Node3 [label="BaseMobility::playground\lSizeX", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#afd83457f242d92ccdc2e2b5a3b2c4dd8", tooltip="Returns the width of the playground. ", pos="818,441", rects="751,427,886,455"];
+	Node4 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="990,296", rects="925,288,1056,304"];
+	Node5 [label="BaseMobility::playground\lSizeY", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a09941dabdb81e67c77fc4794167c9351", tooltip="Returns the height of the playground. ", pos="818,296", rects="751,282,886,310"];
+	Node6 [label="BaseWorldUtility::use2D", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a84c3d488e01d52be51c686e3fb206498", tooltip="Returns true if the world is 2-dimensional. ", pos="630,430", rects="565,422,695,438"];
+	Node7 [label="BaseMobility::playground\lSizeZ", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1245dec457a2d33c8dd1a70ccd74ea33", tooltip="Returns the height of the playground. ", pos="818,250", rects="751,236,886,264"];
+	Node8 [label="BaseMobility::handleIfOutside", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aae36006995d117a723134cbe1fee5e90", tooltip="Main border handling function. ", pos="241,375", rects="163,367,320,383"];
+	Node9 [label="BaseMobility::checkIfOutside", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#ab69f42caa7932524bf470f0799b4aac7", tooltip="Checks whether the host is outside the playground and returns where. ", pos="434,460", rects="358,452,511,468"];
+	Node10 [label="Move::getDirection", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_move.html#a13cf0bb336db329a2033506d739c834f", tooltip="Returns the direction vector (which is unit less, because of normalization). ", pos="630,396", rects="580,388,681,404"];
+	Node11 [label="Coord::info", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a86994bfa7096155d951abb03dcf30bf1", tooltip="Returns a string with the value of the coordinate. ", pos="630,362", rects="599,354,662,370"];
+	Node12 [label="BaseMobility::reflectIfOutside", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#ab9e4cd0caa3fc245ba934f5f5bd9fc49", tooltip="Utility function to reflect the node if it goes outside the playground. ", pos="434,566", rects="356,558,512,574"];
+	Node13 [label="BaseMobility::reflectCoordinate", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a6c817348be2c3586777a85bb60e2b3f1", tooltip="helperfunction for reflectIfOutside() to reflect a Coordinate at a given border ", pos="630,540", rects="549,532,712,548"];
+	Node14 [label="BaseMobility::wrapIfOutside", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a78f392149c0f8185e07dc9a51286bf85", tooltip="Utility function to wrap the node to the opposite edge (torus) if it goes outside the playground...", pos="630,142", rects="555,134,705,150"];
+	Node15 [label="FWMath::modulo", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#adfee479fcdbaba84bd4cfa57cdacf97e", tooltip="Returns the remainder r on division of dividend a by divisor n, using floored division. ", pos="818,142", rects="770,134,866,150"];
+	Node16 [label="BaseMobility::placeRandomly\lIfOutside", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a933475f97d6ab7bf834e4d07beda131b", tooltip="Utility function to place the node randomly if it goes outside the playground. ", pos="434,98", rects="356,84,512,112"];
+	Node17 [label="BaseWorldUtility::getRandom\lPosition", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a3c574ecd7a055ba2407f638ce548bc24", tooltip="Random position somewhere in the playground. ", pos="630,14", rects="552,0,709,28"];
+	Node18 [label="BaseWorldUtility::initialize\lIfNecessary", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#aabcceb57843568c213b0772b08971827", tooltip="Initializes all members accessible by other modules. ", pos="818,14", rects="748,0,888,28"];
+	Node19 [label="BaseMobility::goToBorder", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a3bf65a049293dc4c7043554c04555bdc", tooltip="calculate the step to reach the border ", pos="434,324", rects="366,316,503,332"];
+	Node20 [label="Coord::length", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#acc536671c07e1af44e6ad9676a6c39ad", tooltip="Returns the length of this Coords position vector. ", pos="630,214", rects="593,206,667,222"];
+	Node21 [label="Move::getSpeed", height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$class_move.html#a3db12757bf11ac7f025b2496d09e4941", tooltip="Returns the current speed. ", pos="434,494", rects="392,486,476,502"];
+	Node22 [label="Coord::distance", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_coord.html#ab6a7bfcc5c55e5d8edbc7c0cb5a11626", tooltip="Returns the distance to Coord &#39;a&#39;. ", pos="434,252", rects="393,244,475,260"];
+	Node23 [label="BorderMsg::setPolicy", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_border_msg.html#aa0371a4891d2ea7511a349ca7cc08e74", pos="434,426", rects="379,418,490,434"];
+	Node24 [label="BorderMsg::setStartPos", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_border_msg.html#afc208cb998b157e7fbe712401c5f686a", pos="434,392", rects="374,384,495,400"];
+	Node25 [label="BorderMsg::setDirection", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_border_msg.html#abc409044ee39b6ff6fc3e896eae428c2", pos="434,358", rects="371,350,497,366"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,582,614 122,466 124,467 125,467 126,468 146,478 145,488 162,502 242,560 261,584 356,610 395,620 504,617 572,614"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,768,455 115,466 118,468 122,470 126,474 157,503 132,533 162,562 253,645 615,703 712,629 758,594 736,561 744,505 746,496 743,47\
+4 748,468 752,463 756,459 760,457"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,924,304 886,429 887,428 887,428 888,427 927,391 887,346 917,311"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,750,284 111,438 115,436 120,434 126,429 153,405 140,385 162,358 232,272 253,241 356,203 431,175 648,151 712,197 743,218 713,25\
+1 740,277 741,278 741,278 742,279"];
+	Node5 -> Node4 [color=midnightblue, style=solid, pos="e,924,296 886,296 896,296 905,296 914,296"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,566,438 126,465 197,481 312,506 356,511 425,517 453,546 512,511 543,493 521,460 551,443 552,442 554,441 556,440"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,783,236 109,438 115,436 120,433 126,426 186,350 112,294 162,213 219,124 256,108 356,75 509,27 588,25 712,125 735,144 732,155 7\
+40,183 742,187 745,221 748,225 757,234 765,235 774,236"];
+	Node7 -> Node4 [color=midnightblue, style=solid, pos="e,924,288 886,263 886,263 887,264 888,264 903,270 905,277 916,284"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,162,383 126,438 147,423 140,403 155,389"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,357,453 320,383 346,400 331,427 350,446"];
+	Node9 -> Node2 [color=midnightblue, style=solid, pos="e,582,616 511,467 511,467 512,468 512,468 560,508 501,563 548,604 555,610 563,613 572,615"];
+	Node9 -> Node3 [color=midnightblue, style=solid, pos="e,763,455 511,465 513,467 514,468 516,469 533,480 539,484 544,504 546,509 544,552 548,557 602,606 650,594 712,557 736,542 732,52\
+7 740,501 742,497 746,467 748,465 750,463 753,461 755,459"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,579,394 511,453 511,453 512,452 512,452 536,438 525,417 548,404 554,401 562,398 569,396"];
+	Node9 -> Node5 [color=midnightblue, style=solid, pos="e,758,310 511,465 511,466 511,466 512,466 529,469 532,476 548,480 620,493 656,526 712,480 770,432 694,370 744,316 744,315 746,31\
+4 749,313"];
+	Node9 -> Node6 [color=midnightblue, style=solid, pos="e,565,435 511,452 511,452 512,452 512,452 529,447 532,441 548,438 550,438 553,437 556,436"];
+	Node9 -> Node7 [color=midnightblue, style=solid, pos="e,756,264 511,461 588,462 697,460 712,447 771,396 712,346 744,276 745,274 746,272 748,270"];
+	Node9 -> Node11 [color=midnightblue, style=solid, pos="e,598,358 511,453 511,453 512,452 512,452 545,428 516,393 548,370 559,361 575,358 589,358"];
+	Node8 -> Node11 [color=midnightblue, style=solid, pos="e,598,357 301,367 309,365 317,362 324,358 341,349 345,343 352,326 356,318 350,312 356,307 410,263 449,279 512,307 534,316 528,33\
+3 548,346 553,348 555,347 559,349 569,351 579,353 589,355"];
+	Node8 -> Node12 [color=midnightblue, style=solid, pos="e,356,558 320,383 376,434 305,498 349,551"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,548,548 512,558 525,555 530,552 538,550"];
+	Node13 -> Node3 [color=midnightblue, style=solid, pos="e,750,453 712,532 741,512 722,483 742,460"];
+	Node13 -> Node5 [color=midnightblue, style=solid, pos="e,750,308 712,532 783,465 684,385 743,315"];
+	Node13 -> Node7 [color=midnightblue, style=solid, pos="e,750,262 712,532 797,450 672,355 743,270"];
+	Node8 -> Node14 [color=midnightblue, style=solid, pos="e,555,136 295,367 305,364 315,360 324,355 336,347 337,342 344,331 355,315 351,308 352,290 353,280 350,210 356,203 401,148 482,13\
+6 545,136"];
+	Node14 -> Node15 [color=midnightblue, style=solid, pos="e,770,142 705,142 724,142 743,142 761,142"];
+	Node14 -> Node3 [color=midnightblue, style=solid, pos="e,750,429 705,145 708,146 710,148 712,150 800,234 670,332 743,421"];
+	Node14 -> Node5 [color=midnightblue, style=solid, pos="e,750,284 705,145 708,147 710,148 712,150 757,187 708,236 743,277"];
+	Node14 -> Node7 [color=midnightblue, style=solid, pos="e,750,238 705,146 708,147 710,148 712,150 744,173 719,205 743,231"];
+	Node8 -> Node16 [color=midnightblue, style=solid, pos="e,356,112 320,367 400,290 285,200 349,120"];
+	Node16 -> Node17 [color=midnightblue, style=solid, pos="e,551,26 512,84 535,69 526,48 543,32"];
+	Node17 -> Node18 [color=midnightblue, style=solid, pos="e,748,14 709,14 719,14 728,14 738,14"];
+	Node8 -> Node19 [color=midnightblue, style=solid, pos="e,365,328 320,367 341,357 336,342 355,332"];
+	Node19 -> Node2 [color=midnightblue, style=solid, pos="e,582,617 503,325 506,327 509,329 512,332 600,416 461,519 548,604 555,610 563,614 572,616"];
+	Node19 -> Node11 [color=midnightblue, style=solid, pos="e,598,362 503,329 506,330 509,331 512,332 530,337 531,348 548,354 561,358 576,360 589,361"];
+	Node19 -> Node10 [color=midnightblue, style=solid, pos="e,579,398 503,327 506,328 509,330 512,332 538,347 523,372 548,388 554,392 562,395 570,397"];
+	Node19 -> Node6 [color=midnightblue, style=solid, pos="e,565,430 503,326 506,328 509,330 512,332 547,357 514,396 548,422 550,424 553,425 556,427"];
+	Node19 -> Node3 [color=midnightblue, style=solid, pos="e,750,428 503,321 574,319 680,321 712,345 741,366 714,396 740,421 741,422 741,422 742,423"];
+	Node19 -> Node5 [color=midnightblue, style=solid, pos="e,750,299 503,316 518,315 533,313 548,312 612,306 686,303 739,300"];
+	Node19 -> Node7 [color=midnightblue, style=solid, pos="e,750,259 472,316 485,313 499,310 512,307 529,302 532,299 548,296 612,280 686,268 740,260"];
+	Node8 -> Node20 [color=midnightblue, style=solid, pos="e,593,211 304,367 311,365 318,362 324,358 339,348 341,342 348,327 351,320 351,318 352,311 354,302 351,241 356,235 387,203 514,20\
+7 584,210"];
+	Node8 -> Node21 [color=midnightblue, style=solid, pos="e,392,498 320,383 359,413 318,455 356,486 363,492 373,495 382,497"];
+	Node8 -> Node2 [color=midnightblue, style=solid, pos="e,582,613 303,383 311,385 317,388 320,391 381,453 292,525 356,583 387,610 500,614 572,613"];
+	Node8 -> Node22 [color=midnightblue, style=solid, pos="e,393,248 320,367 360,335 317,291 356,260 364,254 373,251 383,249"];
+	Node22 -> Node20 [color=midnightblue, style=solid, pos="e,593,214 475,251 487,250 500,248 512,244 530,238 531,227 548,222 559,218 571,216 583,215"];
+	Node8 -> Node23 [color=midnightblue, style=solid, pos="e,378,425 320,383 341,392 336,408 356,418 360,420 364,421 369,422"];
+	Node8 -> Node24 [color=midnightblue, style=solid, pos="e,373,387 320,382 335,384 349,385 363,386"];
+	Node8 -> Node25 [color=midnightblue, style=solid, pos="e,371,363 320,368 334,366 348,365 361,364"];
+}

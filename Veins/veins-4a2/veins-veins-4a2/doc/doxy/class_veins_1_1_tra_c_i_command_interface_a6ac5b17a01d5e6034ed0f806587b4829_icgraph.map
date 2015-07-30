@@ -1,0 +1,19 @@
+digraph "Veins::TraCICommandInterface::addVehicle" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,952,74"];
+	Node1 [label="Veins::TraCICommandInterface\l::addVehicle", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,37", rects="9,23,176,51"];
+	Node2 [label="Veins::TraCITestApp\l::handlePositionUpdate", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a634a6ed505d6ff32b4b035c14e6a4e4b", pos="290,60", rects="230,46,350,74"];
+	Node3 [label="Veins::TraCITestApp\l::receiveSignal", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6c6b28964a05c10b4c0c8d956bf48292", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="482,60", rects="426,46,538,74"];
+	Node4 [label="Veins::TraCIScenarioManager\l::insertVehicles", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a2950402455646afe8ed6c36254cc9fa3", tooltip="tries to add all vehicles in the vehicle queue to SUMO; ", pos="290,14", rects="212,0,368,28"];
+	Node5 [label="Veins::TraCIScenarioManager\l::executeOneTimestep", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a84ebe9fb50441189bd39f949f2593115", tooltip="read and execute all commands for the next timestep ", pos="482,14", rects="404,0,560,28"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="674,14", rects="596,0,752,28"];
+	Node7 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="866,14", rects="788,0,944,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,47 185,48 200,50 216,51 230,53"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,350,60 360,60 381,60 405,60 426,60"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,176,27 185,26 194,25 203,24 212,23"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,368,14 378,14 387,14 395,14 404,14"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,560,14 570,14 579,14 587,14 596,14"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,752,14 762,14 771,14 779,14 788,14"];
+}

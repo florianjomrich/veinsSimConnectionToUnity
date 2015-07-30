@@ -1,0 +1,19 @@
+digraph "Veins::ObstacleControlAccess::getIfExists" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,744,120"];
+	Node1 [label="Veins::ObstacleControlAccess\l::getIfExists", height="0.39", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,37", rects="8,23,160,51"];
+	Node2 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="274,60", rects="196,46,352,74"];
+	Node3 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="466,106", rects="388,92,544,120"];
+	Node4 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="658,106", rects="580,92,736,120"];
+	Node5 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="466,60", rects="388,46,544,74"];
+	Node6 [label="PhyLayer80211p::initialize\lSimpleObstacleShadowing", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#adfe098a981b32aa82c0cf369bdca29b3", tooltip="Creates and initializes a SimpleObstacleShadowing with the passed parameter values. ", pos="274,14", rects="205,0,344,28"];
+	Node7 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="466,14", rects="389,0,543,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,46 169,47 178,49 187,49 196,51"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,352,74 360,78 371,83 375,88 388,92"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,544,106 554,106 563,106 571,106 580,106"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,352,60 362,60 371,60 379,60 388,60"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,160,28 168,27 180,25 193,24 204,22"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,344,14 354,14 366,14 377,14 389,14"];
+}

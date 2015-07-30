@@ -1,0 +1,19 @@
+digraph "Argument::insertValue" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,504,212"];
+	Node1 [label="Argument::insertValue", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="69,106", rects="9,98,130,114"];
+	Node2 [label="Argument::setArgValues", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a72ac36c91caaeb8f34eb091abff19c51", tooltip="Update the values of this Argument with the values of the passed Argument. ", pos="232,106", rects="167,98,298,114"];
+	Node3 [label="MultiDimMappingIterator\l\< Linear \>::updateNextPosition", height="0.39", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a1eb04551f2a3ae22f0eae4844f14ac97", tooltip="Helper method which updates the nextPosition member. ", pos="415,198", rects="334,184,496,212"];
+	Node4 [label="MultiDimMappingIterator\l\< Linear \>::jumpTo", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a71f35cd0d6fabecb65019466018c51ca", tooltip="Lets the iterator point to the passed position. ", pos="415,152", rects="345,138,486,166"];
+	Node5 [label="MultiDimMappingIterator\l\< Linear \>::iterateTo", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a3a3b5ddc5aa1636772b9a89c085acdfc", tooltip="Iterates to the specified position. ", pos="415,106", rects="345,92,486,120"];
+	Node6 [label="MultiDimMappingIterator\l\< Linear \>::next", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a8928195a1fe4bb3af81d3ffe2391827e", tooltip="Iterates to the next position of the function. ", pos="415,60", rects="345,46,486,74"];
+	Node7 [label="MultiDimMappingIterator\l\< Linear \>::jumpToBegin", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#ab41125ce8959de6fafb3347a7691ca52", tooltip="Lets the iterator point to the begin of the function. ", pos="415,14", rects="345,0,486,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,130,106 139,106 148,106 157,106 166,106"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,298,114 305,120 323,139 309,165 334,184"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,298,114 307,118 318,124 320,131 334,138 337,139 341,140 344,141"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,298,106 308,106 320,106 332,106 344,106"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,298,98 306,94 317,88 320,80 334,74 337,73 341,71 344,70"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,298,98 305,92 324,73 309,46 334,28 337,26 341,24 344,22"];
+}

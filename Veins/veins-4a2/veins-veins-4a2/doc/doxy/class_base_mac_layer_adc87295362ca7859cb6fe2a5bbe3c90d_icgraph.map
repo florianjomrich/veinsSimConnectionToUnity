@@ -1,0 +1,11 @@
+digraph "BaseMacLayer::registerInterface" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,494,16"];
+	Node1 [label="BaseMacLayer::registerInterface", height="0.22", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,8", rects="9,0,176,16"];
+	Node2 [label="BaseMacLayer::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a61c82dc3b225eac37f7fa9936c28c2c3", tooltip="Initialization of the module and some variables. ", pos="276,8", rects="213,0,340,16"];
+	Node3 [label="Mac1609_4::initialize", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a898fd0c2fee5cc98d17cac36368133a6", tooltip="States of the channel selecting operation. ", pos="431,8", rects="377,0,486,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,8 185,8 194,8 204,8 212,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,8 349,8 358,8 368,8 376,8"];
+}

@@ -1,0 +1,11 @@
+digraph "PhyToMacControlInfo::setControlInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,506,28"];
+	Node1 [label="PhyToMacControlInfo\l::setControlInfo", height="0.39", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="9,0,132,28"];
+	Node2 [label="BasePhyLayer::setUpControlInfo", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a39b6850ec657a0c898ccc59ca1ba9b4b", tooltip="Attaches a \"control info\" (PhyToMac) structure (object) to the message pMsg. ", pos="254,14", rects="168,6,340,22"];
+	Node3 [label="BasePhyLayer::sendUp", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a0e9f0ccf4ed1d8377aa3f00b931a3e71", tooltip="Called to send an AirFrame with DeciderResult to the MACLayer. ", pos="437,14", rects="376,6,498,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,14 142,14 150,14 159,14 168,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,14 350,14 359,14 367,14 376,14"];
+}

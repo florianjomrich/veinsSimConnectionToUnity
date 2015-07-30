@@ -1,0 +1,11 @@
+digraph "Mac1609_4::channelIdle" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,50"];
+	Node1 [label="Mac1609_4::channelIdle", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,25", rects="8,17,132,33"];
+	Node2 [label="Mac1609_4::timeLeftTillGuardOver", height="0.22", width="2.56", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a41a9c4025c9840048f72a0d758230af8", pos="260,42", rects="168,34,352,50"];
+	Node3 [label="Mac1609_4::guardActive", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a621bca21c2e13d7312361fd86d648a2e", pos="260,8", rects="196,0,325,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,34 132,31 141,32 149,32 158,33"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,195,13 132,19 144,18 156,17 168,16 174,15 179,15 185,14"];
+}

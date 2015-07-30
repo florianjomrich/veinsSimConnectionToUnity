@@ -1,0 +1,9 @@
+digraph "LogNormalShadowing::randomLogNormalGain" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,298,28"];
+	Node1 [label="LogNormalShadowing\l::randomLogNormalGain", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="8,0,142,28"];
+	Node2 [label="FWMath::dBm2mW", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#af308407856d9835b103f2421e373ee28", tooltip="Converts a dBm value into milliwatts. ", pos="234,14", rects="179,6,290,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,178,14 142,14 151,14 160,14 168,14"];
+}

@@ -1,0 +1,13 @@
+digraph "MappingUtils::addDiscontinuity" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,84"];
+	Node1 [label="MappingUtils::addDiscontinuity", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,42", rects="9,34,174,50"];
+	Node2 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="263,76", rects="211,68,316,84"];
+	Node3 [label="Mapping::setValue", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#ab8906dfac661d5c6a0a35cf1744f06ed", tooltip="Changes the value of the Mapping at the specified position. ", pos="263,42", rects="213,34,313,50"];
+	Node4 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="263,8", rects="212,0,315,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,210,68 174,50 188,53 192,59 201,64"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,213,42 174,42 184,42 194,42 203,42"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,211,16 174,34 188,30 192,24 201,19"];
+}

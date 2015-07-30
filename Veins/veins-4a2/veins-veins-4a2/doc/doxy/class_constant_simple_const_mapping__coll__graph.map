@@ -1,0 +1,15 @@
+digraph ConstantSimpleConstMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,230,274"];
+	Node1 [label=ConstantSimpleConstMapping, height="0.22", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,16", rects="0,8,160,24"];
+	Node2 [label=SimpleConstMapping, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html", tooltip="Abstract subclass of ConstMapping which can be used as base for any ConstMapping implementation with ...", pos="80,70", rects="22,62,138,78"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="80,124", rects="39,116,122,132"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="80,198", rects="42,190,119,206"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="80,258", rects="24,250,137,266"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,80,62 80,52 80,43 80,31 80,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,80,116 80,106 80,97 80,85 80,78"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,80,190 80,181 80,166 80,144 80,132", lp="114,158"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,80,250 80,241 80,229 80,215 80,206"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,119,192 128,193 133,194 136,196 136,198 136,202 128,204 119,204", lp="183,198"];
+}

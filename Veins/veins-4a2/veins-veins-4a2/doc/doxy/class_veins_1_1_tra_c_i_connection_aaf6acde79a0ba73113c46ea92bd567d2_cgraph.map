@@ -1,0 +1,11 @@
+digraph "Veins::TraCIConnection::sendMessage" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,298,50"];
+	Node1 [label="Veins::TraCIConnection\l::sendMessage", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,25", rects="8,11,134,39"];
+	Node2 [label="Veins::socket", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a6eeefaf3bbdaff6c10cfcd01200016d3", pos="230,42", rects="195,34,266,50"];
+	Node3 [label="Veins::TraCIBuffer::str", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#ae0833eeb81079e14eed3f13d0ae5d2b3", pos="230,8", rects="170,0,290,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,194,38 134,32 152,34 170,36 185,37"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,170,14 134,18 143,17 151,16 160,15"];
+}

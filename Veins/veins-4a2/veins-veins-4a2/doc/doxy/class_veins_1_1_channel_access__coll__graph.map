@@ -1,0 +1,37 @@
+digraph "Veins::ChannelAccess" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1090,398"];
+	Node1 [label="Veins::ChannelAccess", height="0.22", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="1024,246", rects="967,238,1082,254"];
+	Node2 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="852,284", rects="797,276,907,292"];
+	Node3 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="435,292", rects="400,284,471,300"];
+	Node4 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="161,216", rects="118,208,204,224"];
+	Node5 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="161,292", rects="134,284,188,300"];
+	Node6 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="161,360", rects="116,352,207,368"];
+	Node7 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="616,320", rects="582,312,651,328"];
+	Node8 [label=ChannelMobilityAccessType, height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_access_module_wrap.html", tooltip="Finds and returns the pointer to a module of type T. ", pos="852,246", rects="776,238,928,254"];
+	Node9 [label=BaseWorldUtility, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html", tooltip="Provides information and utility methods for the whole simulation. ", pos="435,208", rects="387,200,483,216"];
+	Node10 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="161,102", rects="141,94,181,110"];
+	Node11 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="32,102", rects="9,94,56,110"];
+	Node12 [label=BaseConnectionManager, height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html", tooltip="Module to control the channel and handle all connection related stuff. ", pos="435,89", rects="369,81,502,97"];
+	Node13 [label="BaseConnectionManager\l::GridCoord", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_grid_coord.html", tooltip="Represents a position inside a grid. ", pos="161,18", rects="95,4,228,32"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,907,280 916,279 920,278 924,277 928,276 947,270 948,262 966,256 968,255 970,255 972,254"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,471,291 480,291 556,290 713,287 797,285"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,204,219 213,220 218,221 223,223 228,224 294,241 304,264 368,282 378,285 389,287 399,288"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,188,292 197,292 250,292 347,292 399,292"];
+	Node6 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,207,356 216,354 220,353 224,353 228,352 293,336 304,318 368,302 378,299 389,297 399,296", lp="298,354"];
+	Node7 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,651,317 660,316 670,315 682,314 692,312 730,305 739,298 776,292 783,291 790,290 797,289", lp="734,314"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,471,295 480,296 487,297 495,299 502,300 520,303 523,308 540,312 554,314 568,316 581,317"];
+	Node8 -> Node1 [dir=back, color=darkgreen, style=solid, pos="s,928,246 937,246 947,246 957,246 966,246"];
+	Node9 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" world", pos="s,483,208 492,208 584,208 771,212 928,229 946,230 950,232 966,236 970,237 974,237 978,238", lp="734,222"];
+	Node4 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,204,215 212,215 263,213 338,211 387,209"];
+	Node10 -> Node9 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,181,103 189,103 202,104 216,107 228,111 298,137 299,174 368,199 374,201 380,203 387,204", lp="298,201"];
+	Node11 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,56,102 65,102 89,102 121,102 141,102"];
+	Node10 -> Node10 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,173,110 176,117 177,123 172,128 161,128 146,128 142,118 149,110", lp="161,136"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mobilityStateChangedSignal", pos="s,207,365 217,366 284,372 394,382 435,382 435,382 435,382 852,382 871,382 952,271 967,262 972,259 978,256 984,254", lp="616,390"];
+	Node12 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" cc", pos="s,502,97 511,99 696,135 746,150 928,212 946,217 949,221 966,228 976,231 987,235 997,238", lp="734,165"];
+	Node4 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,204,211 212,210 262,201 332,188 350,168 373,145 344,120 368,98 368,98 369,97 369,97"];
+	Node10 -> Node12 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize\nfindDistance", pos="s,181,102 190,101 202,100 216,98 228,94 237,92 238,87 246,84 291,73 304,83 350,84 356,84 362,85 368,85", lp="298,101"];
+	Node13 -> Node12 [dir=back, color=darkorchid3, style=dashed, label=" gridDim", pos="s,228,32 236,34 285,43 305,35 350,60 360,66 358,73 368,78 370,79 372,80 375,81", lp="298,68"];
+}

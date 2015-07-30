@@ -1,0 +1,9 @@
+digraph "Argument::operator==" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,280,16"];
+	Node1 [label="Argument::operator==", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,8", rects="8,0,128,16"];
+	Node2 [label="Argument::compare", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ac983761168238481be2bc9d9d180abe5", tooltip="Compares this Argument with the passed Argument in the dimensions of the passed DimensionsSet. ", pos="218,8", rects="165,0,272,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,8 128,8 137,8 145,8 154,8"];
+}

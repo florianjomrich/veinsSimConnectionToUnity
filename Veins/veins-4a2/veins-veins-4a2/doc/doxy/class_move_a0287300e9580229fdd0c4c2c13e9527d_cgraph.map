@@ -1,0 +1,9 @@
+digraph "Move::info" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,178,16"];
+	Node1 [label="Move::info", height="0.22", width="0.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="39,8", rects="8,0,70,16"];
+	Node2 [label="Coord::info", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a86994bfa7096155d951abb03dcf30bf1", tooltip="Returns a string with the value of the coordinate. ", pos="138,8", rects="107,0,170,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,106,8 70,8 79,8 88,8 96,8"];
+}

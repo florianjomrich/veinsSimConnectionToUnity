@@ -1,0 +1,11 @@
+digraph "Veins::Radio::endSwitch" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,520,28"];
+	Node1 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="8,6,132,22"];
+	Node2 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a0cdbbabf0ca4bab58eed854b22bb60f2", tooltip="responsible for making entries to the RSAM ", pos="251,14", rects="169,6,334,22"];
+	Node3 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#ad80154bcc09f8db0e08efb2efd75872c", tooltip="Stores an entry of the form \"time-point/attenuation (from now on)\". ", pos="441,14", rects="370,0,512,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,14 132,14 141,14 149,14 158,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,370,14 334,14 343,14 351,14 360,14"];
+}

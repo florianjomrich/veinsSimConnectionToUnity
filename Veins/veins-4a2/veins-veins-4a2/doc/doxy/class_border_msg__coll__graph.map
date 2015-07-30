@@ -1,0 +1,13 @@
+digraph BorderMsg {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,168,166"];
+	Node1 [label=BorderMsg, height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="49,16", rects="17,8,82,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,96", rects="0,88,47,104"];
+	Node3 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="84,96", rects="64,88,104,104"];
+	Node4 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="84,150", rects="61,142,108,158"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,26,88 29,80 34,63 42,38 46,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" direction_var\nstartPos_var", pos="s,80,88 77,80 69,63 58,38 53,24", lp="111,56"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,84,142 84,132 84,123 84,111 84,104"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,104,90 114,90 119,91 122,93 122,96 122,101 114,103 104,102", lp="145,96"];
+}

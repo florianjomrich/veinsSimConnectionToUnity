@@ -1,0 +1,9 @@
+digraph "MacToPhyControlInfo::setControlInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,366,28"];
+	Node1 [label="MacToPhyControlInfo\l::setControlInfo", height="0.39", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="9,0,132,28"];
+	Node2 [label="BaseMacLayer::setDownControlInfo", height="0.22", width="2.61", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a999ed9cd9f29bf3470711cf37429ca62", tooltip="Attaches a \"control info\" (MacToPhy) structure (object) to the message pMsg. ", pos="263,14", rects="169,6,358,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,14 142,14 151,14 159,14 168,14"];
+}

@@ -1,0 +1,11 @@
+digraph "Argument::operator&lt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,304,50"];
+	Node1 [label="Argument::operator\<", height="0.22", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="65,25", rects="9,17,122,33"];
+	Node2 [label="Argument::getDimensions", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8b3fcda23d2eec4e931126d261e4b194", tooltip="Returns the dimensions this argument is defined over. ", pos="227,42", rects="159,34,296,50"];
+	Node3 [label="Argument::compare", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ac983761168238481be2bc9d9d180abe5", tooltip="Compares this Argument with the passed Argument in the dimensions of the passed DimensionsSet. ", pos="227,8", rects="174,0,281,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,158,35 122,31 131,32 139,33 148,34"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,173,14 122,19 136,17 150,16 163,15"];
+}

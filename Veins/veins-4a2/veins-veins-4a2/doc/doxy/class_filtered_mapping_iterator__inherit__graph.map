@@ -1,0 +1,16 @@
+digraph FilteredMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,272,232"];
+	Node1 [label=FilteredMappingIterator, height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="125,16", rects="61,8,189,24"];
+	Node2 [label="BaseFilteredIterator\l\< MappingIterator \>", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", pos="125,76", rects="69,62,181,90"];
+	Node3 [label=MappingIterator, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_mapping_iterator.html", tooltip="Defines an iterator for a Mapping which is able to iterate over the Mapping. ", pos="59,156", rects="14,148,105,164"];
+	Node4 [label=ConstMappingIterator, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html", tooltip="Defines an const iterator for a ConstMapping which is able to iterate over the Mapping. ", pos="59,216", rects="0,208,119,224"];
+	Node5 [label="BaseFilteredIterator\l\< Base \>", height="0.39", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", tooltip="This iterator takes another ConstMappingIterator and does just pipe every method to the passed ConstM...", pos="175,156", rects="122,142,228,170"];
+	Node6 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="175,216", rects="159,208,191,224"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,125,62 125,53 125,43 125,32 125,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,66,148 71,142 83,127 102,105 113,90"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,59,208 59,199 59,187 59,173 59,164"];
+	Node5 -> Node2 [dir=back, color=orange, style=dashed, label=" \< MappingIterator \>", pos="s,166,142 161,134 153,120 142,103 134,90", lp="212,116"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,175,208 175,199 175,190 175,179 175,170"];
+}

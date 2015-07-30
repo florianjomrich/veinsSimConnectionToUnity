@@ -1,0 +1,9 @@
+digraph "PhyLayer80211p::initializeSimplePathlossModel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,338,28"];
+	Node1 [label="PhyLayer80211p::initialize\lSimplePathlossModel", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,14", rects="8,0,140,28"];
+	Node2 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="253,14", rects="176,0,330,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,140,14 150,14 159,14 167,14 176,14"];
+}

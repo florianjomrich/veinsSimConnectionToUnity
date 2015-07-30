@@ -1,0 +1,16 @@
+digraph ConstMappingWrapper {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,274"];
+	Node1 [label=ConstMappingWrapper, height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,16", rects="9,8,136,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="139,70", rects="112,62,167,78"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="56,124", rects="15,116,98,132"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="56,198", rects="18,190,95,206"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,258", rects="0,250,113,266"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,129,62 122,57 109,47 93,33 82,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,69,116 76,111 92,101 113,87 127,78"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,56,190 56,181 56,166 56,144 56,132", lp="90,158"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,56,250 56,241 56,229 56,215 56,206"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,192 104,193 109,194 112,196 112,198 112,202 104,204 95,204", lp="159,198"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mapping", pos="s,53,116 50,109 46,96 42,77 46,62 50,47 59,33 66,24", lp="75,70"];
+}

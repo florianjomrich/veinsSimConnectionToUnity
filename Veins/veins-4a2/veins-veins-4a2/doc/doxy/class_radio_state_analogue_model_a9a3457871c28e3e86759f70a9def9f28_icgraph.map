@@ -1,0 +1,27 @@
+digraph "RadioStateAnalogueModel::setTrackingModeTo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1510,116"];
+	Node1 [label="RadioStateAnalogueModel\l::setTrackingModeTo", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,83", rects="8,69,150,97"];
+	Node2 [label="Veins::Radio::setTracking\lModeTo", height="0.39", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a803442f32c2eced5bda170cd3a9b5772", tooltip="sets tracking mode ", pos="252,83", rects="187,69,318,97"];
+	Node3 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="841,102", rects="758,88,924,116"];
+	Node4 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="1043,60", rects="960,52,1126,68"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1422,58", rects="1343,50,1502,66"];
+	Node6 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="1234,60", rects="1162,46,1306,74"];
+	Node7 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="1234,14", rects="1166,0,1303,28"];
+	Node8 [label="BasePhyLayer::handleAirFrame\lEndReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4f8fde562c0004b498fc3294c3f54c2f", tooltip="Handles incoming AirFrames with the state END_RECEIVE. ", pos="437,62", rects="354,48,520,76"];
+	Node9 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="639,62", rects="556,48,722,76"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,83 159,83 168,83 178,83 186,83"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,318,85 327,85 437,89 642,95 758,99"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,924,88 932,84 943,78 946,72 960,68"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1122,68 1131,70 1144,74 1148,79 1162,83 1225,94 1244,97 1306,83 1324,79 1325,70 1342,66"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1126,60 1135,60 1144,60 1153,60 1162,60"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1126,52 1135,48 1146,42 1148,35 1162,28 1163,28 1164,27 1165,27"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1303,27 1311,30 1324,37 1327,46 1342,50"];
+	Node2 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,318,76 327,75 336,74 345,73 354,72"];
+	Node8 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,520,48 528,46 539,44 543,41 556,39 632,30 842,44 960,53"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,520,62 530,62 539,62 547,62 556,62"];
+	Node9 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,722,62 730,62 799,61 893,61 960,60"];
+	Node9 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,722,76 730,78 741,81 745,84 758,88"];
+}

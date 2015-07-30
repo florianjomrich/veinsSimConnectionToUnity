@@ -1,0 +1,21 @@
+digraph "Veins::ObstacleControl::calculateAttenuation" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,590,142"];
+	Node1 [label="Veins::ObstacleControl\l::calculateAttenuation", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,80", rects="8,66,128,94"];
+	Node2 [label="Veins::Obstacle::getBboxP2", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#aca5158acb83145623179b40756afbc76", pos="235,134", rects="166,126,305,142"];
+	Node3 [label="Veins::Obstacle::getBboxP1", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#a85c7631c055aa999d73c1f57a2f01d46", pos="235,100", rects="167,92,304,108"];
+	Node4 [label="Veins::Obstacle::calculate\lAttenuation", height="0.39", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#a637ef6f4ebd448f7f2f3f68a6fb7466a", pos="235,60", rects="171,46,299,74"];
+	Node5 [label="Veins::Obstacle::getShape", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#a1e5a701e21f19186862a7e93fbf3727f", pos="407,77", rects="343,69,472,85"];
+	Node6 [label="Coord::distance", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_coord.html#ab6a7bfcc5c55e5d8edbc7c0cb5a11626", tooltip="Returns the distance to Coord &#39;a&#39;. ", pos="407,43", rects="366,35,448,51"];
+	Node7 [label="Coord::length", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#acc536671c07e1af44e6ad9676a6c39ad", tooltip="Returns the length of this Coords position vector. ", pos="545,43", rects="508,35,582,51"];
+	Node8 [label="Veins::AnnotationManager\l::drawBubble", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a0b53a21c767d536a5a7ed72335cb9331", pos="235,14", rects="164,0,306,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,165,127 128,94 145,102 145,113 156,121"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,166,92 128,87 137,89 147,90 156,91"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,171,68 128,73 139,71 150,70 161,69"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,342,70 299,66 310,67 321,68 332,69"];
+	Node4 -> Node6 [color=midnightblue, style=solid, pos="e,366,47 299,54 318,52 339,50 357,48"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,508,43 448,43 464,43 482,43 498,43"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,164,28 128,66 146,56 145,44 156,34"];
+}

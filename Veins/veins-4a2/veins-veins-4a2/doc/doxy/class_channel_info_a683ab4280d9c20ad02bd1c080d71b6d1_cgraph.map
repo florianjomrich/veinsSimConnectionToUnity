@@ -1,0 +1,9 @@
+digraph "ChannelInfo::getIntersections" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,28"];
+	Node1 [label="ChannelInfo::getIntersections", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,14", rects="9,6,160,22"];
+	Node2 [label="ChannelInfo::BaseIntersection\lIterator::next", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html#a2acff6a4c595060ffc74872cdc0be1db", tooltip="Increases the iterator to the next intersecting AirFrame and returns a pointer to this AirFrame...", pos="274,14", rects="197,0,352,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,196,14 160,14 169,14 177,14 186,14"];
+}

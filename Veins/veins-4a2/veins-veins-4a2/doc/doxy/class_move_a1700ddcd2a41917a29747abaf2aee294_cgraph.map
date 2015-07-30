@@ -1,0 +1,11 @@
+digraph "Move::setDirectionByVector" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,310,50"];
+	Node1 [label="Move::setDirectionByVector", height="0.22", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,25", rects="8,17,156,33"];
+	Node2 [label="FWMath::close", height="0.22", width="1.11", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#a38d2500887b49de2a2b5f8610f7ba6d1", tooltip="Tests whether two doubles are close enough to be declared equal. ", pos="247,42", rects="207,34,288,50"];
+	Node3 [label="Coord::squareLength", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a278c018d6de54a020c39b3b1afaec50e", tooltip="Returns the square of the length of this Coords position vector. ", pos="247,8", rects="192,0,302,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,206,38 156,33 170,35 184,36 197,37"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,192,14 156,17 165,16 173,16 182,15"];
+}

@@ -1,0 +1,11 @@
+digraph "Veins::ChannelAccess::getMobilityModule" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,484,28"];
+	Node1 [label="Veins::ChannelAccess\l::getMobilityModule", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,14", rects="9,0,124,28"];
+	Node2 [label="AccessModuleWrap::get", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_access_module_wrap.html#aabe6dcb792c40ce4c77b2f194aadbe5f", pos="224,14", rects="161,6,288,22"];
+	Node3 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="400,14", rects="325,6,476,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,160,14 124,14 133,14 141,14 150,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,324,14 288,14 297,14 305,14 314,14"];
+}

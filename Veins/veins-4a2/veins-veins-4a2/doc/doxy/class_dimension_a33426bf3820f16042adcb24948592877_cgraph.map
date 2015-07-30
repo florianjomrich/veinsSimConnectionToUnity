@@ -1,0 +1,13 @@
+digraph "Dimension::getDimensionID" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,352,84"];
+	Node1 [label="Dimension::getDimensionID", height="0.22", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,42", rects="9,34,156,50"];
+	Node2 [label="Dimension::dimensionIDs", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#ada939a13a34a9c28edff67670caf873d", tooltip="stores the registered dimensions ids. ", pos="268,76", rects="202,68,335,84"];
+	Node3 [label="Dimension::nextFreeID", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#a7b9273f9c3c429aa1cc924964645936e", tooltip="Stores the next free ID for a new dimension. ", pos="268,42", rects="207,34,329,50"];
+	Node4 [label="Dimension::dimensionNames", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#a5dd35619b73de635a0a57aca248af68a", tooltip="ConstMapping from id to name of registered dimensions. ", pos="268,8", rects="193,0,344,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,201,70 156,50 174,55 175,62 191,68"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,207,42 156,42 170,42 184,42 197,42"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,192,16 156,34 170,29 174,24 182,20"];
+}

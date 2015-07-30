@@ -1,0 +1,9 @@
+digraph "BaseDecider::CSRInfo::getSenseStart" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,292,28"];
+	Node1 [label="BaseDecider::CSRInfo\l::getSenseStart", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,14", rects="9,0,126,28"];
+	Node2 [label="SNRThresholdDecider\l::canAnswerCSR", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a0946c7a3e2ee04e2bb1c2dce4b7be7ec", tooltip="Returns point in time when the ChannelSenseRequest of the passed CSRInfo can be answered (e...", pos="223,14", rects="163,0,284,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,14 136,14 145,14 153,14 162,14"];
+}

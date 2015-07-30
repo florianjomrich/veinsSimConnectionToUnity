@@ -1,0 +1,9 @@
+digraph "ConstMappingWrapper::createIterator" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,28"];
+	Node1 [label="ConstMappingWrapper\l::createIterator", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,14", rects="9,0,136,28"];
+	Node2 [label="ConstMapping::createConst\lIterator", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a5ff3a15fe6d536fa7a26a3fe1ff1b274", tooltip="Returns a pointer of a new Iterator which is able to iterate over this Mapping. ", pos="244,14", rects="173,0,316,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,14 136,14 145,14 153,14 162,14"];
+}

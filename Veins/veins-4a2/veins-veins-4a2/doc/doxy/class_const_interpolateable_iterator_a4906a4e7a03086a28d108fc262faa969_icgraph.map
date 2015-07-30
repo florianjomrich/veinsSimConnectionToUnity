@@ -1,0 +1,15 @@
+digraph "ConstInterpolateableIterator::hasNext" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,362,190"];
+	Node1 [label="ConstInterpolateableIterator\l::hasNext", height="0.39", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,92", rects="9,78,156,106"];
+	Node2 [label="ConstInterpolateableIterator\l\< TInterpolator, TInterpolator\l::iterator \>::getNextPosition", height="0.56", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_const_interpolateable_iterator.html#aa545c5da980cbc9a5889ac6cf42d7b7e", pos="273,170", rects="195,150,351,190"];
+	Node3 [label="MultiDimMappingIterator\l\< Linear \>::hasNext", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a99bbed82612268040bb8f5162871fb48", tooltip="Returns true if the iterator has a valid next value a call to \"next()\" could jump to...", pos="273,118", rects="203,104,344,132"];
+	Node4 [label="ConstInterpolateableIterator\l\< TInterpolator, TInterpolator\l::iterator \>::next", height="0.56", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_const_interpolateable_iterator.html#aa9b9aaf1491ef6ef251bc7399aecdf52", tooltip="Iterates to the next entry in the underlying data structure. ", pos="273,66", rects="195,46,351,86"];
+	Node5 [label="MultiDimMappingIterator\l\< Linear \>::updateNextPosition", height="0.39", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a1eb04551f2a3ae22f0eae4844f14ac97", tooltip="Helper method which updates the nextPosition member. ", pos="273,14", rects="192,0,354,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,106 164,112 177,123 174,138 192,150 193,151 194,151 195,152"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,156,102 165,103 177,105 190,106 202,108"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,156,82 165,81 175,79 185,79 195,77"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,156,78 164,72 178,58 172,40 192,28"];
+}

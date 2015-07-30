@@ -1,0 +1,11 @@
+digraph "TimeMappingIterator::updateNextPos" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,290,74"];
+	Node1 [label="TimeMappingIterator\l::updateNextPos", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,37", rects="9,23,126,51"];
+	Node2 [label="TimeMappingIterator\l::next", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_time_mapping_iterator.html#aa12e17f8a08312b3661671c1c2b6c4ea", tooltip="Iterates to the next position of the function. ", pos="222,60", rects="164,46,281,74"];
+	Node3 [label="TimeMappingIterator\l::TimeMappingIterator", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_time_mapping_iterator.html#a0bdf656d6e53fda33b555b0c100af6ff", tooltip="Initializes the Iterator to use the passed InterpolateableMapIterator. ", pos="222,14", rects="162,0,282,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,46 135,47 144,49 154,50 163,51"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,126,28 135,27 144,25 153,25 162,23"];
+}

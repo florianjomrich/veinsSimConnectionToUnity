@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,158,28"];
+	Node1 [label="RadioStateAnalogueModel\l::ListEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model_1_1_list_entry.html", tooltip="Data structure for the list elements. ", pos="79,14", rects="8,0,150,28"];
+}

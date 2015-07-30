@@ -1,0 +1,24 @@
+digraph SimplePathlossConstMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,345,302"];
+	Node1 [label=SimplePathlossConstMapping, height="0.22", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="135,16", rects="57,8,213,24"];
+	Node2 [label=SimpleConstMapping, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html", tooltip="Abstract subclass of ConstMapping which can be used as base for any ConstMapping implementation with ...", pos="58,84", rects="0,76,116,92"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="58,152", rects="17,144,100,160"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="58,226", rects="20,218,97,234"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="58,286", rects="2,278,115,294"];
+	Node6 [label=SimplePathlossModel, height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html", tooltip="Basic implementation of a SimplePathlossModel that uses SimplePathlossConstMapping (that is subclasse...", pos="191,84", rects="134,76,248,92"];
+	Node7 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="179,152", rects="135,144,224,160"];
+	Node8 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="261,152", rects="241,144,281,160"];
+	Node9 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="261,226", rects="238,218,285,234"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,67,76 73,70 89,57 113,35 126,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,58,144 58,135 58,121 58,103 58,92"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,58,218 58,209 58,194 58,172 58,160", lp="92,186"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,58,278 58,270 58,258 58,244 58,234"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,97,220 106,221 111,222 114,224 114,226 114,230 106,232 97,232", lp="161,226"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" model", pos="s,184,76 179,69 168,56 151,35 142,24", lp="191,50"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,180,144 182,135 184,122 188,103 190,92"];
+	Node8 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,253,144 247,138 232,124 211,103 199,92", lp="279,118"];
+	Node9 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,261,218 261,209 261,194 261,172 261,160"];
+	Node8 -> Node8 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,281,146 291,146 296,147 299,149 299,152 299,157 291,159 281,158", lp="322,152"];
+}

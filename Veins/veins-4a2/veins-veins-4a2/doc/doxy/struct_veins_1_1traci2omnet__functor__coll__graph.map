@@ -1,0 +1,12 @@
+digraph "Veins::traci2omnet_functor" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,273,204"];
+	Node1 [label="Veins::traci2omnet\l_functor", height="0.39", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="109,22", rects="60,8,159,36"];
+	Node2 [label="std::unary_function\l\< TraCICoord, Coord \>", height="0.39", width="1.72", color=grey75, fillcolor=white, style=filled, pos="62,102", rects="0,88,125,116"];
+	Node3 [label="Veins::TraCIConnection", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html", pos="205,102", rects="142,94,268,110"];
+	Node4 [label="Veins::TraCICoord", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$struct_veins_1_1_tra_c_i_coord.html", tooltip="Coord equivalent for storing TraCI coordinates. ", pos="205,188", rects="155,180,255,196"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,70,88 75,80 83,66 93,49 101,36"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" owner", pos="s,195,94 189,89 172,74 144,51 126,36", lp="190,62"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" netbounds1\nnetbounds2", pos="s,205,180 205,172 205,153 205,124 205,110", lp="239,148"];
+}

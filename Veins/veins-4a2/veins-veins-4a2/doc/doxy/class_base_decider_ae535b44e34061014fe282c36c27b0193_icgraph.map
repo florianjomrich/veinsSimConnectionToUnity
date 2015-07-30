@@ -1,0 +1,14 @@
+digraph "BaseDecider::setChannelIdleStatus" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,536,50"];
+	Node1 [label="BaseDecider::setChannelIdle\lStatus", height="0.39", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,25", rects="8,11,154,39"];
+	Node2 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a6a480f87157d0509c0c1fccf94ea9fef", tooltip="Processes a new Signal. ", pos="272,42", rects="191,34,354,50"];
+	Node3 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="459,25", rects="390,17,528,33"];
+	Node4 [label="BaseDecider::processSignalEnd", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ab9cfef6c04e12d2524d45e881f341300", tooltip="Processes the end of a received Signal. ", pos="272,8", rects="193,0,352,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,154,31 164,32 173,33 181,33 190,34"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,354,35 363,34 372,33 381,33 390,31"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,154,19 162,18 172,18 183,17 192,15"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,352,15 362,16 371,17 380,18 390,19"];
+}

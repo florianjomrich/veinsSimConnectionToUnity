@@ -1,0 +1,8 @@
+digraph "ConnectionManager.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,122,84"];
+	Node1 [label="ConnectionManager.h", height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="61,68", rects="2,60,120,76"];
+	Node2 [label="ConnectionManager.cc", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$_connection_manager_8cc.html", pos="61,16", rects="0,8,122,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,61,60 61,51 61,42 61,31 61,24"];
+}

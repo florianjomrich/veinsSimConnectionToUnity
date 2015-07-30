@@ -1,0 +1,17 @@
+digraph "BaseWaveApplLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,478,84"];
+	Node1 [label="BaseWaveApplLayer::\linitialize", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,42", rects="9,28,128,56"];
+	Node2 [label="BaseApplLayer::initialize", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html#aa3ebaf5d1d1bdbec4648b07f65eb4145", tooltip="Initialization of the module and some variables. ", pos="240,76", rects="175,68,306,84"];
+	Node3 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a70f5ea30a9980d57b8384faed29ec3eb", tooltip="Initialization of the module and some variables. ", pos="411,76", rects="358,68,464,84"];
+	Node4 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="240,42", rects="165,34,316,50"];
+	Node5 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="240,8", rects="182,0,299,16"];
+	Node6 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="411,8", rects="353,0,470,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,174,70 128,56 145,60 148,64 164,68 164,68 164,68 164,68"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,358,76 306,76 320,76 334,76 348,76"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,164,42 128,42 137,42 145,42 154,42"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,181,13 128,28 145,23 148,19 164,16 167,16 169,15 171,15"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,352,8 299,8 313,8 328,8 342,8"];
+}

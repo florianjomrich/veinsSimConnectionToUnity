@@ -1,0 +1,12 @@
+digraph Decider {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,214,136"];
+	Node1 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="96,120", rects="73,112,120,128"];
+	Node2 [label=BaseDecider, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html", tooltip="Provides some base functionality for most common deciders. ", pos="96,68", rects="61,60,131,76"];
+	Node3 [label=Decider80211p, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html", tooltip="Based on Decider80211.h from Karl Wessel and modifications by Christopher Saloman. ", pos="38,16", rects="0,8,77,24"];
+	Node4 [label=SNRThresholdDecider, height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html", tooltip="Decider implementation which decides a signals correctness by checking its SNR against a threshold...", pos="154,16", rects="94,8,215,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,96,112 96,103 96,94 96,83 96,76"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,87,60 80,54 70,44 56,32 47,24"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,105,60 112,54 122,44 136,32 145,24"];
+}

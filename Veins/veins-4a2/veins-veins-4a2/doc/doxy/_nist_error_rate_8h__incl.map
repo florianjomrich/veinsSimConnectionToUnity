@@ -1,0 +1,16 @@
+digraph "NistErrorRate.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,196,148"];
+	Node1 [label="NistErrorRate.h", height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="100,132", rects="56,124,144,140"];
+	Node2 [label="stdint.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,16", rects="0,8,45,24"];
+	Node3 [label=cmath, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="176,16", rects="156,8,196,24"];
+	Node4 [label="veins/modules/utility\l/ConstsPhy.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_consts_phy_8h.html", pos="100,74", rects="44,60,157,88"];
+	Node5 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="100,16", rects="69,8,131,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,22,24 81,124 66,117 46,105 35,88 25,70 22,46 22,31"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,177,24 119,124 134,117 154,105 165,88 175,70 177,46 177,31"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,100,88 100,124 100,118 100,107 100,98"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,100,24 100,60 100,52 100,42 100,33"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,166,24 118,60 131,51 146,38 159,29"];
+	Node4 -> Node2 [color=midnightblue, style=solid, pos="e,33,24 81,60 68,51 52,38 40,29"];
+}

@@ -1,0 +1,30 @@
+digraph "BaseConnectionManager::updateNicPos" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,832,250"];
+	Node1 [label="BaseConnectionManager\l::updateNicPos", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,152", rects="9,138,142,166"];
+	Node2 [label="BaseConnectionManager\l::updateConnections", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a997a62d3bc3ca2d220a36609e4b7f4e5", tooltip="Updates the connections of the nic with \"nicID\". ", pos="245,152", rects="179,138,312,166"];
+	Node3 [label="BaseConnectionManager\l::getCellForCoordinate", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a7f0e7ff7533bb1f5e3c9bb2c2c0db261", tooltip="Calculates the corresponding cell of a coordinate. ", pos="415,175", rects="349,161,482,189"];
+	Node4 [label="BaseConnectionManager\l::checkGrid", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a063c137e5a6d73ff846321b511d48a32", tooltip="Check connections of a nic in the grid. ", pos="415,129", rects="349,115,482,143"];
+	Node5 [label="BaseConnectionManager\l::getCellEntries", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ae776ac81a8f88a9afba710afaf8573b8", tooltip="Returns the NicEntries of the cell with specified coordinate. ", pos="586,236", rects="520,222,653,250"];
+	Node6 [label="BaseConnectionManager\l::CoordSet::add", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_coord_set.html#aaa3c6a4f31789b4644a5bb7aaf414206", tooltip="Adds a GridCoord to the set. ", pos="757,194", rects="691,180,824,208"];
+	Node7 [label="BaseConnectionManager\l::fillUnionWithNeighbors", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a9b524c0f46ec4bb2ade902ac0855cac5", tooltip="Adds every direct Neighbor of a GridCoord to a union of coords. ", pos="586,152", rects="519,138,654,166"];
+	Node8 [label="BaseConnectionManager\l::wrapIfTorus", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a77e53c22a7c607482398632b85396a6c", tooltip="If the value is outside of its bounds (zero and max) this function returns -1 if useTorus is false an...", pos="757,148", rects="691,134,824,162"];
+	Node9 [label="BaseConnectionManager\l::CoordSet::next", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_coord_set.html#a02d6a8788ed22b635e7d8edbcb576d9d", tooltip="Returns the next GridCoord in the set. ", pos="586,106", rects="520,92,653,120"];
+	Node10 [label="BaseConnectionManager\l::GridCoord::info", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_grid_coord.html#a91ebc91e4af84ce4cf11d177d8ed7813", tooltip="Output string for this coordinate. ", pos="586,60", rects="520,46,653,74"];
+	Node11 [label="BaseConnectionManager\l::updateNicConnections", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#af36a4fd1f31773f63187cc9717441a98", tooltip="Manages the connections of a registered nic. ", pos="586,14", rects="520,0,653,28"];
+	Node12 [label="BaseConnectionManager\l::isInRange", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a418d9fb4151ff38840838a94189ba8b6", tooltip="Check if the two nic&#39;s are in range. ", pos="757,14", rects="691,0,824,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,178,152 142,152 151,152 159,152 168,152"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,348,166 312,161 321,162 329,163 338,165"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,348,138 312,143 321,142 329,141 338,139"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,519,223 482,143 511,165 491,193 512,216"];
+	Node4 -> Node6 [color=midnightblue, style=solid, pos="e,690,200 480,143 481,143 481,144 482,144 491,147 492,150 498,156 508,163 507,170 518,175 569,197 632,202 680,200"];
+	Node4 -> Node7 [color=midnightblue, style=solid, pos="e,518,143 482,138 491,139 499,140 508,141"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,690,149 654,150 663,150 671,149 680,149"];
+	Node7 -> Node6 [color=midnightblue, style=solid, pos="e,690,180 654,166 667,169 672,173 680,176"];
+	Node4 -> Node9 [color=midnightblue, style=solid, pos="e,519,115 482,120 491,119 500,118 509,116"];
+	Node4 -> Node10 [color=midnightblue, style=solid, pos="e,519,73 482,115 500,104 499,91 510,80"];
+	Node4 -> Node11 [color=midnightblue, style=solid, pos="e,519,27 482,115 512,90 490,59 511,34"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,690,14 653,14 662,14 671,14 680,14"];
+}

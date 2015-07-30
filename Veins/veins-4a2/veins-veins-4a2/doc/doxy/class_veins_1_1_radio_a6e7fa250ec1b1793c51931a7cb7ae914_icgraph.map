@@ -1,0 +1,17 @@
+digraph "Veins::Radio::getCurrentChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,708,96"];
+	Node1 [label="Veins::Radio::getCurrent\lChannel", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,54", rects="9,40,136,68"];
+	Node2 [label="PhyLayer80211p::encapsMsg", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a88a501014c135335bf1e51ac3d92d845", tooltip="This function encapsulates messages from the upper layer into an AirFrame and sets all necessary attr...", pos="245,88", rects="172,80,318,96"];
+	Node3 [label="BasePhyLayer::encapsMsg", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a1e42622259807fe3cf06935e7a818ccf", tooltip="This function encapsulates messages from the upper layer into an AirFrame and sets all necessary attr...", pos="245,54", rects="176,46,315,62"];
+	Node4 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="429,54", rects="355,40,504,68"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="620,54", rects="541,46,700,62"];
+	Node6 [label="BasePhyLayer::getCurrent\lRadioChannel", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9d7df0ea2dd543f2722640716cda38e7", tooltip="Returns the channel currently used by the radio. ", pos="245,14", rects="176,0,314,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,68 144,70 155,73 159,77 172,80"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,136,54 146,54 156,54 165,54 175,54"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,315,54 324,54 334,54 344,54 354,54"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,504,54 514,54 523,54 531,54 540,54"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,136,40 144,37 155,34 159,31 172,28 173,28 175,27 176,27"];
+}

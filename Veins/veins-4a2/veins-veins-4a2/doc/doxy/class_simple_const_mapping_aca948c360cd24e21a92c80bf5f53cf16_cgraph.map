@@ -1,0 +1,13 @@
+digraph "SimpleConstMapping::initializeArguments" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,426,50"];
+	Node1 [label="SimpleConstMapping\l::initializeArguments", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,25", rects="8,11,124,39"];
+	Node2 [label="SimpleConstMapping\l::createKeyEntries", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html#a3804bf19eee40fe09c626b7ca9e0885e", tooltip="Utility method to fill add range of key entries in the time dimension to the key entry set...", pos="218,25", rects="160,11,276,39"];
+	Node3 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="365,42", rects="313,34,418,50"];
+	Node4 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="365,8", rects="314,0,417,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,160,25 124,25 133,25 141,25 150,25"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,312,36 276,32 285,33 294,34 303,35"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,313,14 276,18 285,17 294,16 303,15"];
+}

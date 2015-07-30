@@ -1,0 +1,20 @@
+digraph Signal {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,282,326"];
+	Node1 [label=Signal, height="0.22", width="0.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="107,16", rects="87,8,127,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="107,102", rects="80,94,135,110"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="132,176", rects="91,168,174,184"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="132,250", rects="94,242,171,258"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="132,310", rects="76,302,189,318"];
+	Node6 [label="ConcatConstMapping\l\< Operator \>", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html", tooltip="Defines it values by concatenating one or more Mappings to a reference Mapping. ", pos="210,102", rects="152,88,269,116"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" txBitrate\nbitrate", pos="s,107,94 107,86 107,67 107,38 107,24", lp="135,56"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,129,168 127,160 122,145 114,122 110,110"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,132,242 132,233 132,218 132,196 132,184", lp="166,210"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,132,302 132,293 132,281 132,267 132,258"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,171,244 180,245 185,246 188,248 188,250 188,254 180,256 171,256", lp="235,250"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" power", pos="s,102,168 94,165 70,156 41,140 27,116 6,78 63,40 91,24", lp="52,102"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" rcvPower", pos="s,203,88 199,80 191,67 179,52 167,42 163,39 143,31 127,24", lp="222,56"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,141,168 147,163 161,150 181,130 195,116"];
+	Node3 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" refMapping", pos="s,152,168 160,163 167,159 174,155 180,150 190,140 198,126 203,116", lp="227,142"];
+}

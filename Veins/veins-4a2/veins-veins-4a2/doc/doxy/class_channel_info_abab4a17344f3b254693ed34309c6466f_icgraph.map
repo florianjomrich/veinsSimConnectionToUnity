@@ -1,0 +1,18 @@
+digraph "ChannelInfo::startRecording" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,742,120"];
+	Node1 [label="ChannelInfo::startRecording", height="0.22", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,60", rects="8,52,156,68"];
+	Node2 [label="BasePhyLayer::handleChannel\lSenseRequest", height="0.39", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a6866e3f79df84cdb5550a51d6502463f", tooltip="Handles reception of a ChannelSenseRequest by forwarding it to the decider and scheduling it to the p...", pos="272,60", rects="193,46,352,74"];
+	Node3 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="463,106", rects="391,92,535,120"];
+	Node4 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="463,60", rects="395,46,532,74"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="654,37", rects="575,29,734,45"];
+	Node6 [label="BasePhyLayer::handleUpper\lControlMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4cab267d310b5fd6cefe613fc8dfe71d", tooltip="Handles messages received from the upper layer through the control gate. ", pos="463,14", rects="389,0,538,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,60 166,60 175,60 183,60 192,60"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,352,74 360,77 371,82 375,87 388,92 389,92 390,93 391,93"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,352,60 360,60 372,60 384,60 394,60"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,532,50 541,49 552,47 563,46 574,45"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,352,46 360,42 371,37 375,32 388,28"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,538,24 547,25 556,27 565,28 574,29"];
+}

@@ -1,0 +1,31 @@
+digraph "TraCICommandInterface.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,954,188"];
+	Node1 [label="TraCICommandInterface.h", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="348,172", rects="276,164,420,180"];
+	Node2 [label="TraCIDemo11p.h", height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_demo11p_8h.html", pos="47,68", rects="2,60,92,76"];
+	Node3 [label="TraCIDemo11p.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_demo11p_8cc.html", pos="46,16", rects="0,8,93,24"];
+	Node4 [label="TraCITestApp.h", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_test_app_8h.html", pos="154,68", rects="110,60,199,76"];
+	Node5 [label="TraCITestApp.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_test_app_8cc.html", pos="156,16", rects="110,8,202,24"];
+	Node6 [label="TraCICommandInterface.cc", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_command_interface_8cc.html", pos="399,120", rects="326,112,473,128"];
+	Node7 [label="TraCIMobility.h", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_mobility_8h.html", pos="226,120", rects="182,112,271,128"];
+	Node8 [label="TraCIMobility.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_mobility_8cc.html", pos="262,68", rects="216,60,309,76"];
+	Node9 [label="TraCIScenarioManager.cc", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_8cc.html", pos="394,68", rects="326,60,462,76"];
+	Node10 [label="TraCIScenarioManagerLaunchd.cc", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_launchd_8cc.html", pos="580,120", rects="490,112,670,128"];
+	Node11 [label="TraCIScreenRecorder.cc", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_screen_recorder_8cc.html", pos="751,120", rects="688,112,815,128"];
+	Node12 [label="AnnotationManager.cc", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$_annotation_manager_8cc.html", pos="893,120", rects="832,112,954,128"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,284,164 276,163 270,162 264,161 259,160 249,158 212,148 210,148 150,130 86,93 60,76"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,47,60 47,51 47,42 47,31 46,24"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,293,164 285,163 241,155 189,143 173,128 158,114 155,89 154,76"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,154,60 155,51 155,42 155,31 156,24"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,356,164 362,157 371,148 383,136 391,128"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,329,164 321,161 298,151 265,137 245,128"];
+	Node7 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,198,112 190,109 156,99 105,85 75,76"];
+	Node7 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,215,112 208,107 195,97 177,84 166,76"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,232,112 237,104 244,95 251,84 256,76"];
+	Node7 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,252,112 262,109 293,99 339,85 368,76"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,338,164 332,158 321,146 308,127 317,112 323,100 353,85 374,76"];
+	Node1 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,384,164 394,162 437,152 503,137 544,128"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,410,164 420,163 496,153 615,138 688,128"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,420,164 430,163 604,145 652,147 832,128"];
+}

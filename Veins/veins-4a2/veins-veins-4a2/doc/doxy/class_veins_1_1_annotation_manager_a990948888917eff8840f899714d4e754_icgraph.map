@@ -1,0 +1,17 @@
+digraph "Veins::AnnotationManager::erase" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,514,120"];
+	Node1 [label="Veins::AnnotationManager\l::erase", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,60", rects="8,46,150,74"];
+	Node2 [label="Veins::ObstacleControl\l::erase", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a3c5fb281ac00c947afe86d5e4bf99759", pos="257,106", rects="197,92,317,120"];
+	Node3 [label="Veins::ObstacleControl\l::finish", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a9c07fdcd59de3e83ff27779c262a58b8", pos="435,106", rects="375,92,495,120"];
+	Node4 [label="Veins::AnnotationManager\l::eraseAll", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#ae4e81c01b715f94d40b5e6cfdb81279a", pos="257,60", rects="186,46,328,74"];
+	Node5 [label="Veins::AnnotationManager\l::handleSelfMsg", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a15b1bc8dc418c545c8ff4e2b1f14833b", pos="257,14", rects="186,0,328,28"];
+	Node6 [label="Veins::AnnotationManager\l::handleMessage", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a030910f3c70bf5205be6f7865bbf3073", pos="435,14", rects="364,0,506,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,74 158,77 169,82 173,87 186,92 190,93 193,94 197,95"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,317,106 327,106 343,106 359,106 375,106"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,150,60 159,60 168,60 177,60 186,60"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,150,46 158,42 169,37 173,32 186,28"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,328,14 337,14 346,14 355,14 364,14"];
+}

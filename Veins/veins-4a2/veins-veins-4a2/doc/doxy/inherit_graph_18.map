@@ -1,0 +1,29 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,358,288"];
+	Node1 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="32,144", rects="9,136,56,152"];
+	Node2 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="158,280", rects="138,272,178,288"];
+	Node3 [label=HostState, height="0.22", width="0.78", color=black, fillcolor=white, style=filled, URL="$class_host_state.html", tooltip="HostState is published by the battery to announce host failure. ", pos="158,246", rects="130,238,186,254"];
+	Node4 [label=MacToNetwControlInfo, height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_mac_to_netw_control_info.html", tooltip="Stores control information from mac to upper layer. ", pos="158,212", rects="93,204,224,220"];
+	Node5 [label=MacToPhyControlInfo, height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_control_info.html", tooltip="Stores information which is needed by the physical layer when sending a MacPkt. ", pos="158,178", rects="97,170,220,186"];
+	Node6 [label=Move, height="0.22", width="0.53", color=black, fillcolor=white, style=filled, URL="$class_move.html", tooltip="Class to store object position and movement. ", pos="158,144", rects="139,136,177,152"];
+	Node7 [label=NetwToMacControlInfo, height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_netw_to_mac_control_info.html", tooltip="Control info to pass next hop L2 addr from netw to MAC layer. ", pos="158,110", rects="93,102,224,118"];
+	Node8 [label=NicEntry, height="0.22", width="0.78", color=black, fillcolor=white, style=filled, URL="$class_nic_entry.html", tooltip="NicEntry is used by ConnectionManager to store the necessary information for each nic...", pos="158,76", rects="130,68,186,84"];
+	Node9 [label=NicEntryDebug, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html", tooltip="NicEntry is used by ConnectionManager to store the necessary information for each nic...", pos="305,93", rects="261,85,350,101"];
+	Node10 [label=NicEntryDirect, height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_direct.html", tooltip="NicEntry is used by ConnectionManager to store the necessary information for each nic...", pos="305,59", rects="262,51,348,67"];
+	Node11 [label=PassedMessage, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_passed_message.html", pos="158,42", rects="117,34,200,50"];
+	Node12 [label=PhyToMacControlInfo, height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_phy_to_mac_control_info.html", tooltip="Controlinfo for packets which are send from Physical layer to the MAC layer. ", pos="158,8", rects="97,0,220,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,56,152 63,160 89,197 53,238 92,272 105,283 124,284 138,283"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,56,152 62,159 83,185 62,215 92,238 103,246 117,248 130,248"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,56,152 63,158 77,173 71,191 92,204"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,56,152 64,155 74,160 78,165 92,170 93,170 95,171 96,171"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,56,144 65,144 89,144 120,144 139,144"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,56,136 64,132 74,127 78,122 92,118"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,56,136 63,130 77,114 71,96 92,84 103,77 118,75 130,74"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,186,79 195,80 215,82 239,85 260,88"];
+	Node8 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,186,73 195,72 216,69 240,67 262,64"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,56,136 62,130 83,102 61,72 92,50 99,45 108,42 116,40"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,56,136 62,130 90,91 52,49 92,16 93,15 95,14 96,13"];
+}

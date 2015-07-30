@@ -1,0 +1,9 @@
+digraph "BasePhyLayer::finish" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,246,16"];
+	Node1 [label="BasePhyLayer::finish", height="0.22", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="65,8", rects="9,0,122,16"];
+	Node2 [label="Decider::finish", height="0.22", width="1.08", color=black, fillcolor=white, style=filled, URL="$class_decider.html#a6e4b28a733a18fddec77bb6a3f179be5", tooltip="Method to be called by an OMNeT-module during its own finish(), to enable a decider to do some things...", pos="198,8", rects="159,0,238,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,158,8 122,8 131,8 140,8 148,8"];
+}

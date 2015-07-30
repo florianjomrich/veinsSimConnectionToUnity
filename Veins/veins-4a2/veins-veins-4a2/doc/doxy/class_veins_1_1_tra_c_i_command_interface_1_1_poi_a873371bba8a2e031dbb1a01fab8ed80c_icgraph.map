@@ -1,0 +1,27 @@
+digraph "Veins::TraCICommandInterface::Poi::remove" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,896,212"];
+	Node1 [label="Veins::TraCICommandInterface\l::Poi::remove", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,94", rects="9,80,176,108"];
+	Node2 [label="Veins::AnnotationManager\l::hide", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#ae7cd5fba58d72f4351963b9a6c95e669", pos="283,94", rects="212,80,354,108"];
+	Node3 [label="Veins::AnnotationManager\l::erase", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a990948888917eff8840f899714d4e754", pos="461,129", rects="390,115,532,143"];
+	Node4 [label="Veins::ObstacleControl\l::erase", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a3c5fb281ac00c947afe86d5e4bf99759", pos="639,198", rects="579,184,699,212"];
+	Node5 [label="Veins::ObstacleControl\l::finish", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a9c07fdcd59de3e83ff27779c262a58b8", pos="817,198", rects="757,184,877,212"];
+	Node6 [label="Veins::AnnotationManager\l::eraseAll", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#ae4e81c01b715f94d40b5e6cfdb81279a", pos="639,152", rects="568,138,710,166"];
+	Node7 [label="Veins::AnnotationManager\l::handleSelfMsg", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a15b1bc8dc418c545c8ff4e2b1f14833b", pos="639,106", rects="568,92,710,120"];
+	Node8 [label="Veins::AnnotationManager\l::handleMessage", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a030910f3c70bf5205be6f7865bbf3073", pos="817,106", rects="746,92,888,120"];
+	Node9 [label="Veins::AnnotationManager\l::hideAll", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a00d8af6a3eb73ccacec8bb3083bf0fd8", pos="461,60", rects="390,46,532,74"];
+	Node10 [label="Veins::AnnotationManager\l::finish", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a6b000dd9d5d40d81b5b3b9d4581cfa19", pos="639,60", rects="568,46,710,74"];
+	Node11 [label="Veins::AnnotationManager\l::handleParameterChange", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a8bf0a36cd6e242341fa5a5b39fefd898", pos="639,14", rects="568,0,710,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,94 185,94 194,94 203,94 212,94"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,354,108 363,110 372,111 381,113 390,115"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,533,143 541,149 553,160 550,173 568,184 571,186 575,188 579,189"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,699,198 709,198 725,198 741,198 757,198"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,532,138 541,139 550,141 559,141 568,143"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,532,120 541,119 550,117 559,117 568,115"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,710,106 719,106 728,106 737,106 746,106"];
+	Node2 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,354,80 363,79 372,77 381,75 390,73"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,532,60 541,60 550,60 559,60 568,60"];
+	Node9 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,532,46 540,43 551,38 555,33 568,28"];
+}

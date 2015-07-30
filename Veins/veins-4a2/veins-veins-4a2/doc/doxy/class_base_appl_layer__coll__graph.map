@@ -1,0 +1,26 @@
+digraph BaseApplLayer {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,505,368"];
+	Node1 [label=BaseApplLayer, height="0.22", width="1.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="308,16", rects="265,8,352,24"];
+	Node2 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="308,70", rects="277,62,339,78"];
+	Node3 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="209,138", rects="154,130,264,146"];
+	Node4 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="147,284", rects="112,276,183,292"];
+	Node5 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,352", rects="0,344,86,360"];
+	Node6 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,352", rects="104,344,158,360"];
+	Node7 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="264,352", rects="219,344,310,360"];
+	Node8 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="209,218", rects="175,210,244,226"];
+	Node9 [label=PassedMessage, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_passed_message.html", pos="429,138", rects="388,130,471,146"];
+	Node10 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="482,218", rects="459,210,506,226"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,308,62 308,52 308,43 308,31 308,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,221,130 228,125 248,111 279,90 296,78"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,148,276 149,269 151,251 156,222 166,198 176,178 192,157 202,146"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,55,344 62,340 83,326 117,304 135,292"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,133,344 135,335 138,322 143,303 145,292"];
+	Node7 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,233,344 224,341 213,337 201,332 191,326 176,316 162,302 154,292", lp="249,318"];
+	Node8 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,209,210 209,201 209,184 209,160 209,146", lp="233,172"];
+	Node4 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,155,276 161,270 173,256 191,237 201,226"];
+	Node7 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" catDroppedPacketSignal\ncatPassedMsgSignal\ncatPacketSignal", pos="s,278,344 286,338 290,334 295,330 298,326 309,309 309,303 308,284 308,284 308,284 308,138 309,116 308,91 308,78", lp="375,218"];
+	Node9 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" passedMsg", pos="s,415,130 407,126 383,112 344,90 322,78", lp="417,104"];
+	Node10 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,477,210 473,203 461,186 444,160 435,146"];
+}

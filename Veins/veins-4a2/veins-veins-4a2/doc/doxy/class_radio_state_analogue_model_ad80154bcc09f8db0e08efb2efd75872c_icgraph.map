@@ -1,0 +1,26 @@
+digraph "RadioStateAnalogueModel::writeRecvEntry" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1080,114"];
+	Node1 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,80", rects="8,66,150,94"];
+	Node2 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a0cdbbabf0ca4bab58eed854b22bb60f2", tooltip="responsible for making entries to the RSAM ", pos="269,80", rects="187,72,352,88"];
+	Node3 [label="Veins::Radio::switchTo", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aab434b342c42f1dbfa1df3640afbb4b0", tooltip="A function called by the Physical Layer to start the switching process to a new RadioState. ", pos="619,100", rects="560,92,678,108"];
+	Node4 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="801,100", rects="726,92,876,108"];
+	Node5 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="992,100", rects="925,86,1059,114"];
+	Node6 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aceb966be7e36e87068ae3424de8a5928", tooltip="called by PhyLayer when duration-time for the current switching process is up ", pos="450,62", rects="388,54,512,70"];
+	Node7 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="619,60", rects="548,46,690,74"];
+	Node8 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="801,60", rects="729,46,873,74"];
+	Node9 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="801,14", rects="733,0,870,28"];
+	Node10 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="992,14", rects="913,6,1072,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,80 160,80 169,80 177,80 186,80"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,352,85 361,86 424,89 506,94 560,97"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,678,100 688,100 700,100 713,100 726,100"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,876,100 886,100 899,100 912,100 925,100"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,352,72 361,71 370,70 379,69 388,68"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,512,61 522,61 531,61 539,61 548,61"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,690,60 700,60 710,60 719,60 729,60"];
+	Node7 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,690,46 698,43 709,38 713,33 726,28 728,27 730,27 732,26"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,870,14 879,14 890,14 901,14 912,14"];
+	Node7 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,690,74 699,77 708,82 713,87 726,92"];
+}

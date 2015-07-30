@@ -1,0 +1,26 @@
+digraph "BaseBattery.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,358,316"];
+	Node1 [label="BaseBattery.cc", height="0.22", width="1.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="163,300", rects="123,292,204,308"];
+	Node2 [label="veins/base/modules\l/BaseBattery.h", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$_base_battery_8h.html", pos="163,242", rects="111,228,216,256"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="278,16", rects="247,8,309,24"];
+	Node4 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="119,68", rects="41,60,198,76"];
+	Node5 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="119,16", rects="29,8,209,24"];
+	Node6 [label="veins/base/modules\l/BaseModule.h", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$_base_module_8h.html", pos="208,178", rects="156,164,261,192"];
+	Node7 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="259,120", rects="236,112,283,128"];
+	Node8 [label="veins/base/utils/HostState.h", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$_host_state_8h.html", pos="109,120", rects="38,112,180,128"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,163,256 163,292 163,286 163,275 163,266"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,286,24 214,228 233,221 247,212 269,192 292,169 295,159 305,128 313,98 316,89 308,60 305,49 298,39 291,30"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,83,76 130,228 80,204 56,187 29,128 18,103 47,88 75,79"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,253,24 143,60 170,51 214,37 244,27"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,119,24 119,60 119,53 119,42 119,33"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,198,192 173,228 178,220 186,209 192,200"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,252,128 220,164 228,155 238,143 246,134"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,282,24 255,164 269,157 280,148 291,128 307,96 294,53 285,31"];
+	Node6 -> Node4 [color=midnightblue, style=solid, pos="e,140,76 207,164 205,150 200,127 189,112 178,98 162,87 148,80"];
+	Node6 -> Node8 [color=midnightblue, style=solid, pos="e,123,128 184,164 168,155 146,141 130,132"];
+	Node8 -> Node3 [color=midnightblue, style=solid, pos="e,270,24 131,112 151,104 181,91 206,76 228,62 251,42 265,29"];
+	Node8 -> Node4 [color=midnightblue, style=solid, pos="e,117,76 111,112 112,105 114,94 115,85"];
+	Node2 -> Node8 [color=midnightblue, style=solid, pos="e,113,128 157,228 146,205 126,159 116,135"];
+}

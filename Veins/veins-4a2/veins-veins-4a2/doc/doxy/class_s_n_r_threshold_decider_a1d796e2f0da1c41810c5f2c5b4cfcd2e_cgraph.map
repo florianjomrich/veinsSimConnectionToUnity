@@ -1,0 +1,23 @@
+digraph "SNRThresholdDecider::checkIfAboveThreshold" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,336,326"];
+	Node1 [label="SNRThresholdDecider\l::checkIfAboveThreshold", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,166", rects="8,152,140,180"];
+	Node2 [label="Mapping::createConstIterator", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#acdf62aed4b8a469e63c036e75567c2e3", tooltip="Returns an ConstMappingIterator by use of the respective implementation of the \"createIterator()\"-met...", pos="252,318", rects="177,310,328,326"];
+	Node3 [label="ConstMappingIterator\l::getValue", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4419c259e747867f003d07d62d4259f", tooltip="Returns the value of the Mapping at the current position. ", pos="252,278", rects="193,264,312,292"];
+	Node4 [label="ConstMappingIterator\l::hasNext", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4bac7233c154b7086c6124d2e21be49", tooltip="Returns true if the iterator has a next value it can iterate to on a call to \"next()\". ", pos="252,232", rects="193,218,312,246"];
+	Node5 [label="ConstMappingIterator\l::getNextPosition", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a1f4cae3b170754a76049b8e81b2e3c07", tooltip="Returns the position the next call to \"next()\" of this Iterator would iterate to. ...", pos="252,186", rects="193,172,312,200"];
+	Node6 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="252,146", rects="200,138,305,154"];
+	Node7 [label="ConstMappingIterator\l::next", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#afdafa6870cd19b3d35674a7bc777585d", tooltip="Iterates to the next position of the Mapping. ", pos="252,106", rects="193,92,312,120"];
+	Node8 [label="ConstMappingIterator\l::getPosition", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a047e853613d5a19ff34526d0cff8fcf9", tooltip="Returns the current position of the iterator. ", pos="252,60", rects="193,46,312,74"];
+	Node9 [label="ConstMappingIterator\l::iterateTo", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a607d741e2d841265851a85670f247c46", tooltip="Iterates to the specified position. ", pos="252,14", rects="193,0,312,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,176,310 140,180 181,219 137,265 169,303"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,192,273 140,180 172,205 145,238 176,264 178,266 181,267 183,269"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,192,225 140,180 161,191 156,206 176,218 178,219 180,220 183,221"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,192,179 140,173 154,175 169,176 183,178"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,199,151 140,158 152,157 164,155 176,154 181,153 185,153 189,152"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,192,113 140,152 160,142 157,129 176,120 178,119 180,118 183,117"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,192,65 140,152 170,128 146,97 176,74 178,72 181,71 183,69"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,192,18 140,152 183,112 134,66 176,28 178,26 181,24 183,23"];
+}

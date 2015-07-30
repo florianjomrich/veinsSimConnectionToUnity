@@ -1,0 +1,12 @@
+digraph "AccessModuleWrap&lt; T &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,136,200"];
+	Node1 [label="AccessModuleWrap\< T \>", height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,184", rects="0,176,137,192"];
+	Node2 [label="Veins::ChannelAccess\l\< BaseMobility \>", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html", pos="68,126", rects="11,112,126,140"];
+	Node3 [label=BasePhyLayer, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html", tooltip="The BasePhyLayer represents the physical layer of a nic. ", pos="68,68", rects="27,60,109,76"];
+	Node4 [label=PhyLayer80211p, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html", tooltip="Adaptation of the PhyLayer class for 802.11p. ", pos="68,16", rects="24,8,113,24"];
+	Node1 -> Node2 [dir=back, color=darkgreen, style=solid, pos="s,68,176 68,167 68,158 68,148 68,140"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,68,112 68,103 68,93 68,83 68,76"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,68,60 68,51 68,42 68,31 68,24"];
+}

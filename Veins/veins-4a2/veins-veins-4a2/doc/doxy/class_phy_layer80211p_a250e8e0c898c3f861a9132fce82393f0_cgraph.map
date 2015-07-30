@@ -1,0 +1,11 @@
+digraph "PhyLayer80211p::getRadioState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,504,28"];
+	Node1 [label="PhyLayer80211p::getRadio\lState", height="0.39", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,14", rects="8,0,144,28"];
+	Node2 [label="BasePhyLayer::getRadioState", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a905b025f39422a9ec57b9349ad36269c", tooltip="Returns the current state the radio is in. ", pos="256,14", rects="180,6,332,22"];
+	Node3 [label="Veins::Radio::getCurrent\lState", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aa6255c987dcff98f53fb9eed5e056d42", tooltip="Returns the state the Radio is currently in. ", pos="432,14", rects="369,0,496,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,180,14 144,14 153,14 161,14 170,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,368,14 332,14 341,14 350,14 358,14"];
+}

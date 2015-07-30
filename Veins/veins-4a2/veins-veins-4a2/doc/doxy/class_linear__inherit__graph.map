@@ -1,0 +1,10 @@
+digraph "Linear&lt; _ContainerType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,208,190"];
+	Node1 [label="Linear\< _ContainerType \>", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,108", rects="3,100,147,116"];
+	Node2 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="75,168", rects="25,154,126,182"];
+	Node3 [label="Linear\< std::map\< argument\l_value_t, Mapping * \> \>", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_linear.html", pos="75,22", rects="0,8,150,36"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,75,154 75,145 75,135 75,124 75,116"];
+	Node1 -> Node3 [dir=back, color=orange, style=dashed, label=" \< std::map\< argument\l_value_t, Mapping * \> \>", pos="s,75,100 75,92 75,76 75,51 75,36", lp="142,68"];
+}

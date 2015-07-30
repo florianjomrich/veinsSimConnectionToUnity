@@ -1,0 +1,26 @@
+digraph "Veins::TraCIScenarioManager::deleteManagedModule" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,706,250"];
+	Node1 [label="Veins::TraCIScenarioManager\l::deleteManagedModule", height="0.39", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="86,152", rects="8,138,164,166"];
+	Node2 [label="Veins::TraCIScenarioManager\l::getManagedModule", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a600d697200c9ed997ed6551cbc8e81d3", tooltip="returns a pointer to the managed module named moduleName, or 0 if no module can be found ...", pos="278,175", rects="200,161,356,189"];
+	Node3 [label="BaseConnectionManager\l::unregisterNic", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a3e3f6ea1da0e15af3c91493dcfdc22ba", tooltip="Unregisters a NIC such that its connections aren&#39;t managed by the CM anymore. ", pos="278,129", rects="212,115,345,143"];
+	Node4 [label="BaseConnectionManager\l::getCellForCoordinate", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a7f0e7ff7533bb1f5e3c9bb2c2c0db261", tooltip="Calculates the corresponding cell of a coordinate. ", pos="460,236", rects="394,222,527,250"];
+	Node5 [label="BaseConnectionManager\l::CoordSet::add", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_coord_set.html#aaa3c6a4f31789b4644a5bb7aaf414206", tooltip="Adds a GridCoord to the set. ", pos="631,194", rects="565,180,698,208"];
+	Node6 [label="BaseConnectionManager\l::fillUnionWithNeighbors", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a9b524c0f46ec4bb2ade902ac0855cac5", tooltip="Adds every direct Neighbor of a GridCoord to a union of coords. ", pos="460,152", rects="393,138,528,166"];
+	Node7 [label="BaseConnectionManager\l::wrapIfTorus", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a77e53c22a7c607482398632b85396a6c", tooltip="If the value is outside of its bounds (zero and max) this function returns -1 if useTorus is false an...", pos="631,148", rects="565,134,698,162"];
+	Node8 [label="BaseConnectionManager\l::CoordSet::next", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_coord_set.html#a02d6a8788ed22b635e7d8edbcb576d9d", tooltip="Returns the next GridCoord in the set. ", pos="460,106", rects="394,92,527,120"];
+	Node9 [label="BaseConnectionManager\l::GridCoord::info", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_grid_coord.html#a91ebc91e4af84ce4cf11d177d8ed7813", tooltip="Output string for this coordinate. ", pos="460,60", rects="394,46,527,74"];
+	Node10 [label="BaseConnectionManager\l::getCellEntries", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ae776ac81a8f88a9afba710afaf8573b8", tooltip="Returns the NicEntries of the cell with specified coordinate. ", pos="460,14", rects="394,0,527,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,200,166 164,161 173,162 181,163 190,165"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,211,137 164,143 177,141 189,140 201,138"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,393,223 345,136 349,138 353,140 356,143 385,164 365,193 386,216"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,564,200 345,137 349,139 352,140 356,142 365,146 366,149 372,156 382,164 381,170 392,175 443,197 506,202 554,200"];
+	Node3 -> Node6 [color=midnightblue, style=solid, pos="e,392,143 345,137 357,139 370,140 382,142"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,564,149 528,150 537,150 545,149 554,149"];
+	Node6 -> Node5 [color=midnightblue, style=solid, pos="e,564,180 528,166 541,169 546,173 554,176"];
+	Node3 -> Node8 [color=midnightblue, style=solid, pos="e,393,115 345,121 358,119 370,118 383,116"];
+	Node3 -> Node9 [color=midnightblue, style=solid, pos="e,393,73 345,120 349,119 352,117 356,115 375,105 373,91 385,80"];
+	Node3 -> Node10 [color=midnightblue, style=solid, pos="e,393,27 345,122 349,120 353,118 356,115 387,90 364,60 386,34"];
+}

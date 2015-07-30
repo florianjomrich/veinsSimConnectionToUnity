@@ -1,0 +1,11 @@
+digraph "Veins::TraCIMobility::getParkingState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,508,28"];
+	Node1 [label="Veins::TraCIMobility\l::getParkingState", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,14", rects="8,0,120,28"];
+	Node2 [label="TraCIDemo11p::handleParking\lUpdate", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a173cade98af1b12755ee6dbac4e7584e", pos="235,14", rects="157,0,314,28"];
+	Node3 [label="TraCIDemo11p::receiveSignal", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a63c38f89463a42420b046dd8170117b6", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="425,14", rects="351,6,500,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,14 130,14 139,14 147,14 156,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,314,14 324,14 333,14 341,14 350,14"];
+}

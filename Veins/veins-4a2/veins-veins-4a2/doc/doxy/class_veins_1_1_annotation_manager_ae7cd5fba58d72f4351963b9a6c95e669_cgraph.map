@@ -1,0 +1,37 @@
+digraph "Veins::AnnotationManager::hide" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,926,280"];
+	Node1 [label="Veins::AnnotationManager\l::hide", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,151", rects="8,137,150,165"];
+	Node2 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_access.html#af6404515b1b992848f352b03d325b10d", pos="279,266", rects="201,252,357,280"];
+	Node3 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="491,266", rects="409,258,574,274"];
+	Node4 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="686,266", rects="611,258,762,274"];
+	Node5 [label="Veins::TraCIScenarioManager\l::isConnected", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#ab25b8a9284329844c1fb4f48124ddfa3", pos="279,220", rects="201,206,357,234"];
+	Node6 [label="Veins::TraCIScenarioManager\l::getCommandInterface", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#af9d96f6e40de409df2f1d04b617433d5", pos="279,174", rects="201,160,357,188"];
+	Node7 [label="Veins::TraCICommandInterface\l::polygon", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface.html#ae16f3b06b09adeeb8f714ef321b6df75", pos="279,128", rects="196,114,363,142"];
+	Node8 [label="Veins::TraCICommandInterface::poi", height="0.22", width="2.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface.html#a6722786178a64686107cad4e98a6effd", pos="279,88", rects="187,80,372,96"];
+	Node9 [label="Veins::TraCICommandInterface\l::Poi::remove", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface_1_1_poi.html#a873371bba8a2e031dbb1a01fab8ed80c", pos="279,48", rects="196,34,363,62"];
+	Node10 [label="Veins::TraCIConnection\l::query", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#ac0f5129ad1e50365588ec39112432c7d", tooltip="sends a single command via TraCI, checks status response, returns additional responses ...", pos="491,48", rects="428,34,554,62"];
+	Node11 [label="Veins::TraCIConnection\l::sendMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#aaf6acde79a0ba73113c46ea92bd567d2", tooltip="sends a message via TraCI (after adding the header) ", pos="686,48", rects="623,34,749,62"];
+	Node12 [label="Veins::socket", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a6eeefaf3bbdaff6c10cfcd01200016d3", pos="858,66", rects="823,58,894,74"];
+	Node13 [label="Veins::TraCIBuffer::str", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#ae0833eeb81079e14eed3f13d0ae5d2b3", pos="858,29", rects="798,21,918,37"];
+	Node14 [label="Veins::makeTraCICommand", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#ab52db5bfe6d9095440c0b0ac309bb99d", tooltip="returns byte-buffer containing a TraCI command with optional parameters ", pos="686,8", rects="611,0,761,16"];
+	Node15 [label="Veins::TraCIConnection\l::receiveMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#a634ce6c27d5e98f7d96f65706f3460df", tooltip="receives a message via TraCI (and strips the header) ", pos="686,94", rects="623,80,749,108"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,201,260 150,165 183,191 154,226 186,252 188,253 190,254 192,256"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,408,266 357,266 371,266 384,266 398,266"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,610,266 574,266 583,266 592,266 600,266"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,201,212 151,165 172,177 165,194 186,206 188,207 190,208 192,209"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,201,165 150,159 164,161 177,162 191,164"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,195,138 150,143 162,141 173,140 185,139"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,186,96 151,137 169,126 166,111 178,101"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,195,56 150,137 180,114 157,83 186,62 186,62 186,62 187,62"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,428,48 363,48 382,48 400,48 418,48"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,623,48 554,48 573,48 594,48 613,48"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,822,62 749,55 771,58 794,59 813,61"];
+	Node11 -> Node13 [color=midnightblue, style=solid, pos="e,798,36 749,41 762,39 775,38 788,37"];
+	Node10 -> Node14 [color=midnightblue, style=solid, pos="e,611,16 554,39 561,38 568,36 574,34 588,29 592,24 601,19"];
+	Node14 -> Node13 [color=midnightblue, style=solid, pos="e,798,21 761,16 761,16 762,16 762,16 775,17 780,18 788,19"];
+	Node10 -> Node15 [color=midnightblue, style=solid, pos="e,623,83 554,56 561,58 568,60 574,62 592,67 594,74 610,80 611,80 612,81 613,81"];
+	Node15 -> Node12 [color=midnightblue, style=solid, pos="e,822,70 749,82 769,79 789,75 798,74 803,73 807,72 812,72"];
+}

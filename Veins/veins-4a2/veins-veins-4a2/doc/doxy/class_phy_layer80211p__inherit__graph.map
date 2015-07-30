@@ -1,0 +1,28 @@
+digraph PhyLayer80211p {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,667,304"];
+	Node1 [label=PhyLayer80211p, height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="433,16", rects="389,8,478,24"];
+	Node2 [label=BasePhyLayer, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html", tooltip="The BasePhyLayer represents the physical layer of a nic. ", pos="298,74", rects="257,66,339,82"];
+	Node3 [label="Veins::ChannelAccess", height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html", pos="161,132", rects="104,124,219,140"];
+	Node4 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="87,184", rects="32,176,142,192"];
+	Node5 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="87,236", rects="52,228,123,244"];
+	Node6 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,288", rects="0,280,86,296"];
+	Node7 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,288", rects="104,280,158,296"];
+	Node8 [label=ChannelMobilityAccessType, height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_access_module_wrap.html", tooltip="Finds and returns the pointer to a module of type T. ", pos="236,184", rects="160,176,312,192"];
+	Node9 [label=DeciderToPhyInterface, height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html", tooltip="This class is the interface for a Decider to the BasePhyLayer. ", pos="298,132", rects="236,124,361,140"];
+	Node10 [label=MacToPhyInterface, height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_interface.html", tooltip="Defines the methods provided by the phy to the mac layer. ", pos="432,132", rects="378,124,487,140"];
+	Node11 [label=Mac80211pToPhy11pInterface, height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_mac80211p_to_phy11p_interface.html", tooltip="Interface of PhyLayer80211p exposed to Mac1609_4. ", pos="433,74", rects="357,66,509,82"];
+	Node12 [label="Decider80211pToPhy80211p\lInterface", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_decider80211p_to_phy80211p_interface.html", tooltip="Interface of PhyLayer80211p exposed to Decider80211p. ", pos="597,74", rects="527,60,667,88"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,317,66 325,62 352,51 391,34 414,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,180,124 188,120 215,109 256,92 279,82"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,99,176 106,171 119,161 137,148 149,140"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,87,228 87,219 87,210 87,199 87,192"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,50,280 56,273 64,263 74,252 80,244"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,124,280 118,273 110,263 100,252 94,244"];
+	Node8 -> Node3 [dir=back, color=darkgreen, style=solid, pos="s,224,176 217,171 203,161 185,148 173,140"];
+	Node9 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,298,124 298,115 298,104 298,90 298,82"];
+	Node10 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,413,124 405,120 379,109 340,92 317,82"];
+	Node11 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,433,66 433,57 433,46 433,32 433,24"];
+	Node12 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,557,60 548,57 518,46 480,32 456,24"];
+}

@@ -1,0 +1,16 @@
+digraph "NicEntryDebug::connectTo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,732,50"];
+	Node1 [label="NicEntryDebug::connectTo", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,25", rects="9,17,152,33"];
+	Node2 [label="NicEntryDebug::requestOutGate", height="0.22", width="2.36", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#ad601c375fa2fd737f88b3a475a06ff45", tooltip="Returns a free out gate of the nic. ", pos="273,42", rects="188,34,358,50"];
+	Node3 [label="NicEntryDebug::collectFree\lGates", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#aac3b943e56b211541596a73f6437608a", tooltip="Iterates over all existing gates of this NicEntries nic and host and checks wether they are useable b...", pos="466,25", rects="394,11,538,39"];
+	Node4 [label="NicEntryDebug::collectGates", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#ae4c6e480d8b2f3fc4199a7a8314ab2df", tooltip="Collects all free gates with a certain pattern as names and puts them on a stack. ...", pos="649,25", rects="574,17,724,33"];
+	Node5 [label="NicEntryDebug::requestInGate", height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#aa028678e801ba669ad47a6588b2ad90a", tooltip="Returns a free in gate of the nic. ", pos="273,8", rects="193,0,354,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,34 152,31 161,32 169,32 178,33"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,394,31 358,34 367,33 375,33 384,32"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,574,25 538,25 547,25 555,25 564,25"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,192,15 152,19 162,18 172,17 182,16"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,394,19 354,15 364,16 374,17 384,18"];
+}

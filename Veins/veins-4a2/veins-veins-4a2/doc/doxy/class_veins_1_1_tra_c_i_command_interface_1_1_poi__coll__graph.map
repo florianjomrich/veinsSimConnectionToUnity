@@ -1,0 +1,13 @@
+digraph "Veins::TraCICommandInterface::Poi" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,290,248"];
+	Node1 [label="Veins::TraCICommandInterface::Poi", height="0.22", width="2.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="93,16", rects="1,8,186,24"];
+	Node2 [label="Veins::TraCICommandInterface", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface.html", pos="207,84", rects="124,76,291,92"];
+	Node3 [label="Veins::TraCIConnection", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html", pos="63,152", rects="0,144,126,160"];
+	Node4 [label="Veins::TraCICoord", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$struct_veins_1_1_tra_c_i_coord.html", tooltip="Coord equivalent for storing TraCI coordinates. ", pos="63,232", rects="13,224,113,240"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" traci", pos="s,193,76 186,72 163,58 126,36 106,24", lp="179,50"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" connection", pos="s,80,144 88,140 118,126 165,104 190,92", lp="179,118"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" netbounds1\nnetbounds2", pos="s,63,224 63,215 63,198 63,174 63,160", lp="97,192"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" connection", pos="s,59,144 56,137 50,121 43,97 49,76 56,55 74,35 84,24", lp="82,84"];
+}

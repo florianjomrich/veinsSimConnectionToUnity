@@ -1,0 +1,23 @@
+digraph "MappingUtils::createCompatibleMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,508,280"];
+	Node1 [label="MappingUtils::createCompatible\lMapping", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,140", rects="8,126,174,154"];
+	Node2 [label="ConstMapping::getDimensionSet", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#acc1559cf5741bec3aa6422e94c5b9cce", tooltip="Returns this Mappings domain as DimensionSet. ", pos="294,272", rects="210,264,378,280"];
+	Node3 [label="ConstMapping::createConst\lIterator", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a5ff3a15fe6d536fa7a26a3fe1ff1b274", tooltip="Returns a pointer of a new Iterator which is able to iterate over this Mapping. ", pos="294,232", rects="223,218,366,246"];
+	Node4 [label="ConstMappingIterator\l::inRange", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a4a6348a453418da95978e570fec046fc", tooltip="Returns true if the current position of the iterator is in range of the function. ...", pos="294,186", rects="235,172,354,200"];
+	Node5 [label="ConstMappingIterator\l::getPosition", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a047e853613d5a19ff34526d0cff8fcf9", tooltip="Returns the current position of the iterator. ", pos="294,140", rects="235,126,354,154"];
+	Node6 [label="Argument::getArgValue", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a137a911de0281cbb519fe13727aa0813", tooltip="Returns the value for the specified dimension. ", pos="294,100", rects="230,92,359,108"];
+	Node7 [label="Argument::find", height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ae4b61830a991f8911978c30a67dd2da6", tooltip="Returns an iterator to the Argument value for the passed Dimension. ", pos="457,100", rects="414,92,500,108"];
+	Node8 [label="ConstMappingIterator\l::hasNext", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4bac7233c154b7086c6124d2e21be49", tooltip="Returns true if the iterator has a next value it can iterate to on a call to \"next()\". ", pos="294,60", rects="235,46,354,74"];
+	Node9 [label="ConstMappingIterator\l::next", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#afdafa6870cd19b3d35674a7bc777585d", tooltip="Iterates to the next position of the Mapping. ", pos="294,14", rects="235,0,354,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,210,264 174,154 210,185 175,225 203,257"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,222,224 174,154 201,172 184,199 210,218 211,219 212,220 213,220"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,234,178 174,154 192,159 193,166 210,172 215,173 220,174 224,176"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,234,140 174,140 191,140 209,140 225,140"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,229,104 174,126 192,120 193,112 210,108 213,107 216,106 219,106"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,414,100 359,100 374,100 390,100 404,100"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,234,64 174,126 198,110 187,89 210,74 214,71 219,69 225,67"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,234,16 174,126 210,96 175,57 210,28 214,24 220,21 225,19"];
+}

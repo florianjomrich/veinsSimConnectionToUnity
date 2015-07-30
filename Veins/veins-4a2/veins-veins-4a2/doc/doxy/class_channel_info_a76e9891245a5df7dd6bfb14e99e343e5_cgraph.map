@@ -1,0 +1,11 @@
+digraph "ChannelInfo::getAirFrames" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,540,28"];
+	Node1 [label="ChannelInfo::getAirFrames", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="9,6,152,22"];
+	Node2 [label="ChannelInfo::getIntersections", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a683ab4280d9c20ad02bd1c080d71b6d1", tooltip="Returns every AirFrame of an AirFrameMatrix which intersect with a given interval. ", pos="264,14", rects="189,6,340,22"];
+	Node3 [label="ChannelInfo::BaseIntersection\lIterator::next", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html#a2acff6a4c595060ffc74872cdc0be1db", tooltip="Increases the iterator to the next intersecting AirFrame and returns a pointer to this AirFrame...", pos="454,14", rects="377,0,532,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,14 152,14 161,14 169,14 178,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,376,14 340,14 349,14 357,14 366,14"];
+}

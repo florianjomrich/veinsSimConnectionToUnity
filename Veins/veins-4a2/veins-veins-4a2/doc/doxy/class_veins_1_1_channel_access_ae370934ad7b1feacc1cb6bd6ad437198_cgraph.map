@@ -1,0 +1,21 @@
+digraph "Veins::ChannelAccess::sendToChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,816,88"];
+	Node1 [label="Veins::ChannelAccess\l::sendToChannel", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,51", rects="9,37,124,65"];
+	Node2 [label="BaseConnectionManager\l::getGateList", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ae71cb544584cb71f96e7de50896577f8", tooltip="Returns the ingates of all nics in range. ", pos="232,74", rects="166,60,299,88"];
+	Node3 [label="Veins::ChannelAccess\l::calculatePropagationDelay", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#a01c12c70034ec0583ee5f4e1ac0f683b", tooltip="Calculates the propagation delay to the passed receiving nic. ", pos="232,28", rects="161,14,304,42"];
+	Node4 [label="Veins::ChannelAccess\l::getMobilityModule", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#a130bfd04f4e40b490929f99d96cc1aef", tooltip="Returns the host&#39;s mobility module. ", pos="398,48", rects="341,34,456,62"];
+	Node5 [label="AccessModuleWrap::get", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_access_module_wrap.html#aabe6dcb792c40ce4c77b2f194aadbe5f", pos="556,48", rects="493,40,620,56"];
+	Node6 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="732,48", rects="657,40,808,56"];
+	Node7 [label="Coord::distance", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_coord.html#ab6a7bfcc5c55e5d8edbc7c0cb5a11626", tooltip="Returns the distance to Coord &#39;a&#39;. ", pos="398,8", rects="357,0,439,16"];
+	Node8 [label="Coord::length", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#acc536671c07e1af44e6ad9676a6c39ad", tooltip="Returns the length of this Coords position vector. ", pos="556,8", rects="519,0,593,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,165,65 124,59 134,61 145,62 155,64"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,160,38 124,43 133,42 141,41 150,39"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,340,41 304,37 313,38 322,39 331,40"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,492,48 456,48 465,48 473,48 482,48"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,656,48 620,48 629,48 637,48 646,48"];
+	Node3 -> Node7 [color=midnightblue, style=solid, pos="e,357,13 304,19 319,17 334,16 348,14"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,519,8 439,8 461,8 487,8 510,8"];
+}

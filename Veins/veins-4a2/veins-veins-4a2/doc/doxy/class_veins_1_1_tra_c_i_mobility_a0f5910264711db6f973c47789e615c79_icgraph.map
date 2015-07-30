@@ -1,0 +1,27 @@
+digraph "Veins::TraCIMobility::preInitialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1280,120"];
+	Node1 [label="Veins::TraCIMobility\l::preInitialize", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,37", rects="8,23,120,51"];
+	Node2 [label="Veins::TraCIScenarioManager\l::addModule", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a08e1ff8c735af701665a197839515aa6", pos="234,37", rects="156,23,312,51"];
+	Node3 [label="Veins::TraCIScenarioManager\l::processVehicleSubscription", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a4b6aa1aa798b245ff323c5759a3b848e", pos="426,37", rects="348,23,504,51"];
+	Node4 [label="Veins::TraCIScenarioManager\l::processSubcriptionResult", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a2f149bc15c3119ab19850b6960689eeb", pos="618,59", rects="540,45,696,73"];
+	Node5 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="810,60", rects="732,46,888,74"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="1002,106", rects="924,92,1080,120"];
+	Node7 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="1194,106", rects="1116,92,1272,120"];
+	Node8 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="1002,60", rects="924,46,1080,74"];
+	Node9 [label="Veins::TraCIScenarioManager\l::executeOneTimestep", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a84ebe9fb50441189bd39f949f2593115", tooltip="read and execute all commands for the next timestep ", pos="810,106", rects="732,92,888,120"];
+	Node10 [label="Veins::TraCIScenarioManager\l::subscribeToVehicleVariables", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a999d945fca20d45532a24b492430d742", pos="810,14", rects="732,0,888,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,37 130,37 139,37 147,37 156,37"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,37 322,37 331,37 339,37 348,37"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,504,46 513,47 522,48 531,49 540,50"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,696,59 705,59 714,59 723,59 732,60"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,888,74 896,77 907,82 911,87 924,92"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1080,106 1090,106 1099,106 1107,106 1116,106"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,888,60 898,60 907,60 915,60 924,60"];
+	Node4 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,696,73 704,76 715,81 718,87 732,92"];
+	Node9 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,888,106 898,106 907,106 915,106 924,106"];
+	Node4 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,696,45 705,42 715,38 719,33 732,28"];
+	Node10 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,732,19 722,20 656,23 567,28 504,32"];
+}

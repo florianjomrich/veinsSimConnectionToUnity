@@ -1,0 +1,11 @@
+digraph "ConstMappingIterator::jumpToBegin" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,336,74"];
+	Node1 [label="ConstMappingIterator\l::jumpToBegin", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,37", rects="9,23,128,51"];
+	Node2 [label="ConstMappingIteratorWrapper\l::jumpToBegin", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator_wrapper.html#a6e3de2e2477083e963498675ed8b78b9", tooltip="Lets the iterator point to the begin of the mapping. ", pos="246,60", rects="164,46,328,74"];
+	Node3 [label="MultiDimMappingIterator\l\< Linear \>::updateSubIterator", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a37918121567f5a283b209113b2d4983a", tooltip="Helper method which updates the sub-iterator and sets the position of the sub-iterator to its beginni...", pos="246,14", rects="169,0,323,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,45 137,46 145,47 155,48 164,49"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,128,29 137,28 147,27 158,26 169,24"];
+}

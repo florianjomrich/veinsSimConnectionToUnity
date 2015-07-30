@@ -1,0 +1,17 @@
+digraph "ChannelInfo::IntersectionIterator" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,840,138"];
+	Node1 [label="ChannelInfo::Intersection\lIterator", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="766,70", rects="700,56,832,84"];
+	Node2 [label="ChannelInfo::BaseIntersection\lIterator\< AirFrameMatrix,\l AirFrameMatrix::iterator,\l AirFrameTimeList::iterator \>", height="0.72", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html", pos="584,70", rects="507,44,662,96"];
+	Node3 [label="ChannelInfo::BaseIntersection\lIterator\< C, ItMatrix, ItList \>", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html", tooltip="Iterator for every intersection of a specific interval in a AirFrameMatrix. ", pos="230,70", rects="153,56,308,84"];
+	Node4 [label=ItList, height="0.22", width="0.47", color=grey75, fillcolor=white, style=filled, pos="34,122", rects="17,114,52,130"];
+	Node5 [label=ItMatrix, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="34,70", rects="9,62,60,78"];
+	Node6 [label=C, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="34,18", rects="20,10,49,26"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,662,70 671,70 681,70 690,70 700,70"];
+	Node3 -> Node2 [dir=back, color=orange, style=dashed, label=" \< AirFrameMatrix, AirFrame\lMatrix::iterator, AirFrameTime\lList::iterator \>", pos="s,308,70 318,70 375,70 450,70 506,70", lp="407,90"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" startIt", pos="s,52,116 61,114 93,103 102,100 134,90 143,87 144,86 152,84", lp="106,115"];
+	Node5 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" endIt", pos="s,60,70 68,70 91,70 123,70 152,70", lp="106,78"];
+	Node6 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" intervals", pos="s,49,22 57,25 58,25 59,26 60,26 81,32 132,49 152,55 153,55 155,56 156,56", lp="106,55"];
+}

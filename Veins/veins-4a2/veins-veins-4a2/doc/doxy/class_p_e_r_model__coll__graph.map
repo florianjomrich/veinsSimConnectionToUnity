@@ -1,0 +1,8 @@
+digraph PERModel {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,88,84"];
+	Node1 [label=PERModel, height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="44,16", rects="12,8,76,24"];
+	Node2 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="44,68", rects="0,60,89,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,44,60 44,51 44,42 44,31 44,24"];
+}

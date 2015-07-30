@@ -1,0 +1,9 @@
+digraph "BaseWaveApplLayer::onBeacon" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,292,28"];
+	Node1 [label="BaseWaveApplLayer::\lonBeacon", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="9,0,128,28"];
+	Node2 [label="BaseWaveApplLayer::\lhandleLowerMsg", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#a69055de1e5462e98e07880476c90e5a4", tooltip="handle messages from below ", pos="224,14", rects="165,0,284,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,14 138,14 147,14 155,14 164,14"];
+}

@@ -1,0 +1,12 @@
+digraph "TraCIBuffer.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,184,84"];
+	Node1 [label="TraCIBuffer.h", height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,68", rects="39,60,121,76"];
+	Node2 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,16", rects="0,8,45,24"];
+	Node3 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="80,16", rects="62,8,99,24"];
+	Node4 [label="cexception.h", height="0.22", width="0.94", color=grey75, fillcolor=white, style=filled, pos="150,16", rects="116,8,185,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,31,24 71,60 62,52 48,40 38,30"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,80,24 80,60 80,53 80,42 80,33"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,139,24 91,60 102,52 119,39 132,29"];
+}

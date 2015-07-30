@@ -1,0 +1,8 @@
+digraph "Interpolated&lt; V &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,161,112"];
+	Node1 [label="Interpolated\< V \>", height="0.22", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,96", rects="10,88,109,104"];
+	Node2 [label="Interpolated\< mapped\l_type \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_interpolated.html", pos="59,22", rects="0,8,119,36"];
+	Node1 -> Node2 [dir=back, color=orange, style=dashed, label=" \< mapped_type \>", pos="s,59,88 59,80 59,67 59,49 59,36", lp="110,62"];
+}

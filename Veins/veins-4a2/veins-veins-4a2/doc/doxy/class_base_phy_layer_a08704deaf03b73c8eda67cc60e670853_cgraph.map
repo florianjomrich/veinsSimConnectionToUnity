@@ -1,0 +1,32 @@
+digraph "BasePhyLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,706,234"];
+	Node1 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,146", rects="9,138,134,154"];
+	Node2 [label="FWMath::dBm2mW", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#af308407856d9835b103f2421e373ee28", tooltip="Converts a dBm value into milliwatts. ", pos="253,226", rects="198,218,309,234"];
+	Node3 [label="BasePhyLayer::initialize\lRadio", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a93b118fa0564e329eb2ff68279f4584d", tooltip="Initializes and returns the radio class to use. ", pos="253,186", rects="191,172,316,200"];
+	Node4 [label="BasePhyLayer::readPar", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a379b5527a61ac5dfe378691faca6c2d9", tooltip="Reads and returns the parameter with the passed name. ", pos="449,217", rects="388,209,511,225"];
+	Node5 [label="Veins::Radio::setSwitchTime", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aed80922c736427067f27669c87aaf4f8", tooltip="function called by PhyLayer in order to make an entry in the switch times matrix, i...", pos="449,183", rects="377,175,522,191"];
+	Node6 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="253,146", rects="171,138,336,154"];
+	Node7 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="449,146", rects="374,138,525,154"];
+	Node8 [label="BasePhyLayer::initialize\lAnalogueModels", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8ea7353793eed2f1a7b0cd1caacd72e9", tooltip="Initializes the AnalogueModels with the data from the passed XML-config data. ", pos="253,106", rects="191,92,316,120"];
+	Node9 [label="BasePhyLayer::getAnalogue\lModelFromName", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a419df7f53684ee758de1dcabb959e10f", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="449,106", rects="376,92,523,120"];
+	Node10 [label="Veins::Radio::getAnalogue\lModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a38a6c78b55f1442108b44a0bd27abb9f", tooltip="Returns a pointer to the RadioStateAnalogueModel. ", pos="630,106", rects="562,92,698,120"];
+	Node11 [label="BasePhyLayer::getParameters\lFromXML", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aa89a9272b99ab3005347301c2effc254", tooltip="Utility function. ", pos="449,60", rects="372,46,526,74"];
+	Node12 [label="BasePhyLayer::initialize\lDecider", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9da4f8ffaa373a0de7895cbea524816b", tooltip="Initializes the Decider with the data from the passed XML-config data. ", pos="253,60", rects="191,46,316,74"];
+	Node13 [label="BasePhyLayer::getDecider\lFromName", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a095d1b5fd25b9ada3ac86d3c9237c3f8", tooltip="Creates and returns an instance of the Decider with the specified name. ", pos="449,14", rects="381,0,518,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,197,228 134,154 162,172 143,200 170,218 175,221 181,224 187,226"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,190,177 134,154 152,159 153,166 170,172 173,173 177,174 181,175"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,387,211 316,196 323,197 330,199 336,200 353,203 356,206 372,209 374,209 375,210 377,210"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,376,184 316,185 332,185 349,184 366,184"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,170,146 134,146 143,146 151,146 160,146"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,373,146 336,146 345,146 354,146 363,146"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,190,114 134,138 152,132 153,125 170,120 173,119 177,118 180,117"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,375,106 316,106 332,106 349,106 365,106"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,562,106 523,106 533,106 542,106 552,106"];
+	Node8 -> Node11 [color=midnightblue, style=solid, pos="e,372,74 316,98 323,96 330,94 336,92 350,88 354,83 364,78"];
+	Node1 -> Node12 [color=midnightblue, style=solid, pos="e,190,65 134,138 162,119 144,93 170,74 173,72 177,70 181,68"];
+	Node12 -> Node11 [color=midnightblue, style=solid, pos="e,372,60 316,60 331,60 346,60 362,60"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,380,26 316,52 323,50 330,48 336,46 353,41 356,35 370,29"];
+}

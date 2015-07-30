@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,136,28"];
+	Node1 [label="Veins::ObstacleControl\l::CacheKey", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$struct_veins_1_1_obstacle_control_1_1_cache_key.html", pos="68,14", rects="8,0,128,28"];
+}

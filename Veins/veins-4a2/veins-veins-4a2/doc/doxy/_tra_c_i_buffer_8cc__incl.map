@@ -1,0 +1,22 @@
+digraph "TraCIBuffer.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,558,148"];
+	Node1 [label="TraCIBuffer.cc", height="0.22", width="1.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="364,132", rects="322,124,407,140"];
+	Node2 [label="veins/modules/mobility\l/traci/TraCIBuffer.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_buffer_8h.html", pos="80,74", rects="18,60,143,88"];
+	Node3 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,16", rects="0,8,45,24"];
+	Node4 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="80,16", rects="62,8,99,24"];
+	Node5 [label="cexception.h", height="0.22", width="0.94", color=grey75, fillcolor=white, style=filled, pos="150,16", rects="116,8,185,24"];
+	Node6 [label="veins/modules/mobility\l/traci/TraCIConstants.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_constants_8h.html", pos="222,74", rects="160,60,285,88"];
+	Node7 [label="veins/modules/mobility\l/traci/TraCICoord.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_coord_8h.html", pos="364,74", rects="302,60,427,88"];
+	Node8 [label=iomanip, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="469,74", rects="444,66,494,82"];
+	Node9 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="535,74", rects="512,66,559,82"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,143,88 323,124 280,115 213,102 153,90"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,30,24 66,60 57,51 45,39 36,30"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,80,24 80,60 80,52 80,42 80,33"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,140,24 97,60 109,51 123,39 134,29"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,256,88 344,124 323,116 292,102 265,92"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,364,88 364,124 364,118 364,107 364,98"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,454,82 378,124 394,115 421,100 444,88 445,88 445,87 446,87"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,522,82 399,124 430,116 475,104 512,88 513,88 513,87 514,87"];
+}

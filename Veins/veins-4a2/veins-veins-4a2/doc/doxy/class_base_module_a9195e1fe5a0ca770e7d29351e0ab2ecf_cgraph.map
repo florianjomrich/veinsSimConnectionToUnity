@@ -1,0 +1,11 @@
+digraph "BaseModule::receiveSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,454,16"];
+	Node1 [label="BaseModule::receiveSignal", height="0.22", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,8", rects="8,0,146,16"];
+	Node2 [label="BaseModule::handleHostState", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a44220aa650488eee8ad121f8bc599265", tooltip="Called whenever the hosts state changes. ", pos="259,8", rects="183,0,336,16"];
+	Node3 [label="HostState::get", height="0.22", width="1.00", color=black, fillcolor=white, style=filled, URL="$class_host_state.html#a3167de707748fd5280fce231d6cbcf90", tooltip="Returns the host state. ", pos="409,8", rects="373,0,446,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,182,8 146,8 155,8 163,8 172,8"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,372,8 336,8 345,8 354,8 363,8"];
+}

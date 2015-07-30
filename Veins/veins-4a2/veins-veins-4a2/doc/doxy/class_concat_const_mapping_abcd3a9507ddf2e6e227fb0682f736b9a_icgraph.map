@@ -1,0 +1,36 @@
+digraph "ConcatConstMapping::getRefMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1306,146"];
+	Node1 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,70", rects="9,56,126,84"];
+	Node2 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="246,87", rects="163,79,330,95"];
+	Node3 [label="Signal::operator=", height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_signal.html#aa9c8501095ecc3fb4a60f4f0e2007138", tooltip="Overwrites the copy operator to make sure that the mappings are cloned correct. ", pos="442,121", rects="397,113,488,129"];
+	Node4 [label="Signal::setPropagationDelay", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a2864ac2fa780e25223db94ba3d36b8e9", tooltip="Sets the propagation delay of the signal. ", pos="442,87", rects="370,79,514,95"];
+	Node5 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="637,90", rects="554,76,720,104"];
+	Node6 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="839,93", rects="756,85,922,101"];
+	Node7 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1218,92", rects="1139,84,1298,100"];
+	Node8 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="1030,94", rects="958,80,1102,108"];
+	Node9 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="1030,48", rects="962,34,1099,62"];
+	Node10 [label="Signal::setTransmissionPower", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_signal.html#ad8c5494d0f7bd564bf14dc0c90f9a361", tooltip="Sets the function representing the transmission power of the signal. ", pos="442,50", rects="366,42,518,58"];
+	Node11 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a28ca155ff241c3e202a94724cc87b232", tooltip="Creates a simple Signal defined over time with the passed parameters. ", pos="637,50", rects="565,42,710,58"];
+	Node12 [label="Mac1609_4::createSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#aa19fc16c9c52fbe7a896f725cc8a7883", pos="637,15", rects="574,7,700,23"];
+	Node13 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a077b6bebe9a8f8d2a6fcce31c6af86a7", pos="839,14", rects="776,6,903,22"];
+	Node14 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="1030,8", rects="959,0,1101,16"];
+	Node15 [label="Signal::~Signal", height="0.22", width="1.08", color=black, fillcolor=white, style=filled, URL="$class_signal.html#ae7a1d116cda63e790bf9aab549d57d3a", tooltip="Delete the functions of this signal. ", pos="246,53", rects="207,45,286,61"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,76 136,77 145,78 153,78 162,79"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,330,95 338,98 349,102 352,108 366,113 376,116 386,117 396,119"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,330,87 340,87 350,87 360,87 370,87"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,514,88 524,88 534,88 544,88 554,89"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,720,91 730,91 739,91 747,91 756,92"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,919,101 928,104 940,108 944,114 958,117 1021,129 1040,131 1102,117 1120,113 1121,104 1138,100"];
+	Node6 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,922,93 932,93 941,93 949,93 958,94"];
+	Node6 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,922,85 930,81 941,75 944,68 958,62 959,62 960,61 961,61"];
+	Node9 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1099,61 1107,64 1120,70 1123,79 1138,84"];
+	Node2 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,330,79 339,75 349,69 352,62 366,58"];
+	Node10 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,518,50 528,50 540,50 552,50 564,50"];
+	Node10 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,518,42 526,39 537,34 540,28 554,23 560,21 567,20 574,19"];
+	Node12 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,700,15 710,15 731,15 754,14 775,14"];
+	Node13 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,903,12 913,12 928,11 943,11 959,10"];
+	Node1 -> Node15 [dir=back, color=midnightblue, style=solid, pos="s,126,64 135,63 159,61 186,59 206,57"];
+}

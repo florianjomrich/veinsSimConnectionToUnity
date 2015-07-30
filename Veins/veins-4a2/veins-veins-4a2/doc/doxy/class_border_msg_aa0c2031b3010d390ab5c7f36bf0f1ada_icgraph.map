@@ -1,0 +1,9 @@
+digraph "BorderMsg::parsimPack" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,240,16"];
+	Node1 [label="BorderMsg::parsimPack", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,8", rects="8,0,134,16"];
+	Node2 [label=doPacking, height="0.22", width="0.83", color=black, fillcolor=white, style=filled, URL="$_border_msg__m_8h.html#a22d334b7616278a3df52bb1d909385b8", pos="201,8", rects="171,0,232,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,8 144,8 153,8 162,8 170,8"];
+}

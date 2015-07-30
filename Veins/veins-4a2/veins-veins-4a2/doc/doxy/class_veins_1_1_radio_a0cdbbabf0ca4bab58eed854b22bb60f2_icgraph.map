@@ -1,0 +1,24 @@
+digraph "Veins::Radio::makeRSAMEntry" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,902,114"];
+	Node1 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,34", rects="9,26,174,42"];
+	Node2 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aceb966be7e36e87068ae3424de8a5928", tooltip="called by PhyLayer when duration-time for the current switching process is up ", pos="272,53", rects="210,45,334,61"];
+	Node3 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="441,54", rects="370,40,512,68"];
+	Node4 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="623,100", rects="551,86,695,114"];
+	Node5 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="623,54", rects="555,40,692,68"];
+	Node6 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="814,54", rects="735,46,894,62"];
+	Node7 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="623,14", rects="548,6,698,22"];
+	Node8 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="814,14", rects="747,0,881,28"];
+	Node9 [label="Veins::Radio::switchTo", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aab434b342c42f1dbfa1df3640afbb4b0", tooltip="A function called by the Physical Layer to start the switching process to a new RadioState. ", pos="441,14", rects="382,6,500,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,174,42 184,43 193,44 201,45 210,46"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,334,53 344,53 353,53 361,53 370,54"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,512,68 520,71 531,76 535,81 548,86 549,86 550,87 551,87"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,512,54 521,54 532,54 544,54 554,54"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,692,54 701,54 712,54 723,54 734,54"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,512,40 521,36 530,31 535,26 548,22"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,698,14 708,14 721,14 734,14 747,14"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,174,29 182,28 245,25 327,20 382,17"];
+	Node9 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,500,14 510,14 522,14 535,14 548,14"];
+}

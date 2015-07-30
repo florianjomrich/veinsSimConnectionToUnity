@@ -1,0 +1,11 @@
+digraph "TimeMapping::createIterator" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,306,62"];
+	Node1 [label="TimeMapping::createIterator", height="0.22", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,28", rects="8,20,156,36"];
+	Node2 [label="InterpolateableMap\l::findIntpl", height="0.39", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html#aa643292fee63e1ffde54ba2315ac22ca", pos="245,48", rects="192,34,298,62"];
+	Node3 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="245,8", rects="193,0,298,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,192,40 156,36 165,37 173,38 182,39"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,192,15 156,20 165,19 174,18 183,17"];
+}

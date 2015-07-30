@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,392,74"];
+	Node1 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="24,37", rects="8,29,40,45"];
+	Node2 [label="BaseDelayedMapping\l\< Base \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_delayed_mapping.html", tooltip="Common base for Const- and NonConst-DelayedMapping. ", pos="135,60", rects="76,46,194,74"];
+	Node3 [label="BaseFilteredIterator\l\< Base \>", height="0.39", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", tooltip="This iterator takes another ConstMappingIterator and does just pipe every method to the passed ConstM...", pos="135,14", rects="82,0,188,28"];
+	Node4 [label=ConcatConstMappingIterator, height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping_iterator.html", tooltip="Deletes its ConstMapping when this iterator is deleted. ", pos="307,14", rects="230,6,384,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,40,40 49,42 57,44 67,46 76,48"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,40,34 48,32 58,30 70,27 82,25"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,188,14 198,14 208,14 219,14 230,14"];
+}

@@ -1,0 +1,15 @@
+digraph "Veins::Radio::getCurrentState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,528,68"];
+	Node1 [label="Veins::Radio::getCurrent\lState", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,34", rects="9,20,136,48"];
+	Node2 [label="BasePhyLayer::getRadioState", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a905b025f39422a9ec57b9349ad36269c", tooltip="Returns the current state the radio is in. ", pos="248,54", rects="172,46,324,62"];
+	Node3 [label="PhyLayer80211p::getRadio\lState", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a250e8e0c898c3f861a9132fce82393f0", tooltip="Returns the current state the radio is in. ", pos="440,54", rects="372,40,508,68"];
+	Node4 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="248,14", rects="174,0,323,28"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="440,14", rects="361,6,520,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,41 145,42 154,44 163,44 172,46"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,324,54 334,54 347,54 359,54 372,54"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,136,27 145,26 154,25 164,24 173,23"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,323,14 333,14 342,14 351,14 360,14"];
+}

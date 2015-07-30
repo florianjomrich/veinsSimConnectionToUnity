@@ -1,0 +1,9 @@
+digraph "BaseDecider::processNewSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,354,16"];
+	Node1 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="90,8", rects="9,0,172,16"];
+	Node2 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="277,8", rects="208,0,346,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,172,8 182,8 191,8 199,8 208,8"];
+}

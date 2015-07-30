@@ -1,0 +1,9 @@
+digraph "PhyLayer80211p::initializeSimpleObstacleShadowing" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,346,28"];
+	Node1 [label="PhyLayer80211p::initialize\lSimpleObstacleShadowing", height="0.39", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,14", rects="9,0,148,28"];
+	Node2 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="261,14", rects="184,0,338,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,148,14 158,14 167,14 175,14 184,14"];
+}

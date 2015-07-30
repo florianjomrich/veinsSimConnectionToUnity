@@ -1,0 +1,17 @@
+digraph "PERModel::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,466,94"];
+	Node1 [label="PERModel::filterSignal", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="69,52", rects="8,44,130,60"];
+	Node2 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="235,86", rects="167,78,304,94"];
+	Node3 [label="TimeMapping::setValue", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_time_mapping.html#a453ce64062fa7afd7398735a9cf499a6", tooltip="Changes the value of the function at the specified position. ", pos="235,52", rects="172,44,298,60"];
+	Node4 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="399,54", rects="347,46,452,62"];
+	Node5 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="235,17", rects="175,9,295,25"];
+	Node6 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="399,14", rects="341,0,458,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,166,78 130,60 144,64 148,69 157,74"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,172,52 130,52 141,52 151,52 162,52"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,346,53 298,53 311,53 324,53 336,53"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,175,22 130,44 148,38 149,30 165,25"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,340,15 295,16 307,16 319,15 330,15"];
+}

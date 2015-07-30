@@ -1,0 +1,9 @@
+digraph "FilledUpMapping::createSubSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,356,28"];
+	Node1 [label="FilledUpMapping::createSub\lSignal", height="0.39", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,14", rects="8,0,156,28"];
+	Node2 [label="MultiDimMapping::createSub\lSignal", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#a1fbdfd6bd7d903fdd388556ead454461", tooltip="Internal helper method which creates a new sub-mapping for this MultiDimMapping instance. ", pos="270,14", rects="193,0,348,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,192,14 156,14 165,14 173,14 182,14"];
+}

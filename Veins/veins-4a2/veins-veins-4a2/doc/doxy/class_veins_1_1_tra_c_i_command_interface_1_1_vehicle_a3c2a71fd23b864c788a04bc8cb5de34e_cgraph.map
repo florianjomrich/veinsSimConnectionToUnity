@@ -1,0 +1,9 @@
+digraph "Veins::TraCICommandInterface::Vehicle::setSpeed" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,344,28"];
+	Node1 [label="Veins::TraCICommandInterface\l::Vehicle::setSpeed", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,14", rects="9,0,176,28"];
+	Node2 [label="Veins::TraCIBuffer::eof", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a0065f3b4bf17cac8e10dc94b551eb9f8", pos="274,14", rects="212,6,336,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,212,14 176,14 185,14 193,14 202,14"];
+}

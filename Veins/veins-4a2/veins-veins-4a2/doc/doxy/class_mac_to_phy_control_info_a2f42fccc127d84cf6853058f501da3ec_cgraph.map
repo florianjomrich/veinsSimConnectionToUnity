@@ -1,0 +1,9 @@
+digraph "MacToPhyControlInfo::getSignalFromControlInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,28"];
+	Node1 [label="MacToPhyControlInfo\l::getSignalFromControlInfo", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="9,0,152,28"];
+	Node2 [label="MacToPhyControlInfo\l::retrieveSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_control_info.html#a5e04d8d4088109ccccb7c3fcdae526a7", tooltip="Returns a pointer to the Signal of this ControlInfo. ", pos="250,14", rects="189,0,312,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,14 152,14 161,14 169,14 178,14"];
+}

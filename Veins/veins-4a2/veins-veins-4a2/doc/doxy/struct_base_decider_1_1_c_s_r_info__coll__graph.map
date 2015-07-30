@@ -1,0 +1,12 @@
+digraph "BaseDecider::CSRInfo" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,164,168"];
+	Node1 [label="BaseDecider::CSRInfo", height="0.22", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,16", rects="4,8,121,24"];
+	Node2 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html", pos="62,84", rects="3,76,121,92"];
+	Node3 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,152", rects="0,144,47,160"];
+	Node4 [label=ChannelState, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_channel_state.html", tooltip="Provides information about the current state of the channel: ", pos="101,152", rects="64,144,139,160"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" first", pos="s,62,76 62,67 62,53 62,35 62,24", lp="79,50"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,28,144 32,136 40,123 51,103 57,92"];
+	Node4 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" result_var", pos="s,96,144 92,136 84,123 73,103 67,92", lp="118,118"];
+}

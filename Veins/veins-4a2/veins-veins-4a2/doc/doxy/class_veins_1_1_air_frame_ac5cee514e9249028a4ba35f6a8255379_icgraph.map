@@ -1,0 +1,15 @@
+digraph "Veins::AirFrame::setChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,728,56"];
+	Node1 [label="Veins::AirFrame::setChannel", height="0.22", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,31", rects="9,23,156,39"];
+	Node2 [label="PhyLayer80211p::encapsMsg", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a88a501014c135335bf1e51ac3d92d845", tooltip="This function encapsulates messages from the upper layer into an AirFrame and sets all necessary attr...", pos="265,48", rects="192,40,338,56"];
+	Node3 [label="BasePhyLayer::encapsMsg", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a1e42622259807fe3cf06935e7a818ccf", tooltip="This function encapsulates messages from the upper layer into an AirFrame and sets all necessary attr...", pos="265,14", rects="196,6,335,22"];
+	Node4 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="449,14", rects="375,0,524,28"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="640,14", rects="561,6,720,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,38 166,39 175,40 183,40 192,41"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,156,24 165,23 175,22 185,21 195,20"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,335,14 344,14 354,14 364,14 374,14"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,524,14 534,14 543,14 551,14 560,14"];
+}

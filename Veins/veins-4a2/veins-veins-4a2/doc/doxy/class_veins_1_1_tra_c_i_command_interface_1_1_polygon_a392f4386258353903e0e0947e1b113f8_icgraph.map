@@ -1,0 +1,19 @@
+digraph "Veins::TraCICommandInterface::Polygon::getShape" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,760,120"];
+	Node1 [label="Veins::TraCICommandInterface\l::Polygon::getShape", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,83", rects="9,69,176,97"];
+	Node2 [label="Veins::TraCITestApp\l::handlePositionUpdate", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a634a6ed505d6ff32b4b035c14e6a4e4b", pos="290,106", rects="230,92,350,120"];
+	Node3 [label="Veins::TraCITestApp\l::receiveSignal", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6c6b28964a05c10b4c0c8d956bf48292", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="482,106", rects="426,92,538,120"];
+	Node4 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="290,60", rects="212,46,368,74"];
+	Node5 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="482,60", rects="404,46,560,74"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="674,60", rects="596,46,752,74"];
+	Node7 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="482,14", rects="404,0,560,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,93 185,94 200,96 216,97 230,99"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,350,106 360,106 381,106 405,106 426,106"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,176,73 185,72 194,71 203,70 212,69"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,368,60 378,60 387,60 395,60 404,60"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,560,60 570,60 579,60 587,60 596,60"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,368,46 376,42 387,37 391,32 404,28"];
+}

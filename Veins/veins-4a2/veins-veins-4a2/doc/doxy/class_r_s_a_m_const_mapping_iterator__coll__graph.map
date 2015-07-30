@@ -1,0 +1,14 @@
+digraph RSAMConstMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,397,166"];
+	Node1 [label=RSAMConstMappingIterator, height="0.22", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="207,16", rects="130,8,285,24"];
+	Node2 [label=ConstMappingIterator, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html", tooltip="Defines an const iterator for a ConstMapping which is able to iterate over the Mapping. ", pos="59,96", rects="0,88,119,104"];
+	Node3 [label=RadioStateAnalogueModel, height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html", tooltip="This special AnalogueModel provides filtering of a Signal according to the actual RadioStates the Rad...", pos="207,96", rects="136,88,278,104"];
+	Node4 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="207,150", rects="163,142,252,158"];
+	Node5 [label=Argument, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_argument.html", tooltip="Defines an argument for a mapping. ", pos="327,96", rects="296,88,358,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,74,88 82,84 113,68 166,39 192,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" rsam", pos="s,207,88 207,79 207,62 207,38 207,24", lp="226,56"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,207,142 207,132 207,123 207,111 207,104"];
+	Node5 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" position\nnextPosition", pos="s,316,88 310,84 293,72 270,56 248,42 239,36 228,29 220,24", lp="329,56"];
+}

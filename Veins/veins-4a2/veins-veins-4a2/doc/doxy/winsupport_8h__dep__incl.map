@@ -1,0 +1,8 @@
+digraph "winsupport.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,76,84"];
+	Node1 [label="winsupport.h", height="0.22", width="1.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="38,68", rects="1,60,75,76"];
+	Node2 [label="winsupport.cc", height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$winsupport_8cc.html", tooltip="Support for Win32 architectures. ", pos="38,16", rects="0,8,77,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,38,60 38,51 38,42 38,31 38,24"];
+}

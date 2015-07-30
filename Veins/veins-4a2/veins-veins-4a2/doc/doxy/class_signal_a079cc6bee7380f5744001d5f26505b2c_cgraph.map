@@ -1,0 +1,11 @@
+digraph "Signal::Signal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,264,50"];
+	Node1 [label="Signal::Signal", height="0.22", width="1.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="44,25", rects="8,17,80,33"];
+	Node2 [label="ConstMapping::constClone", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a741e083fb18412a3d9cde7eac3dced10", tooltip="returns a deep copy of this mapping instance. ", pos="186,42", rects="116,34,256,50"];
+	Node3 [label="Mapping::clone", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#a95f064bd4bc5a22aef1cf0e4a6052ec7", tooltip="Returns a deep copy of this Mapping. ", pos="186,8", rects="145,0,228,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,116,34 80,30 89,31 97,32 106,33"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,144,13 80,20 92,19 104,17 116,16 122,15 128,15 134,14"];
+}

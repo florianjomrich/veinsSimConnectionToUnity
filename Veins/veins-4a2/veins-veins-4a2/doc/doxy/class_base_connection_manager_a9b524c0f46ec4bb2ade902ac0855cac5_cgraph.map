@@ -1,0 +1,11 @@
+digraph "BaseConnectionManager::fillUnionWithNeighbors" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,322,74"];
+	Node1 [label="BaseConnectionManager\l::fillUnionWithNeighbors", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,37", rects="9,23,144,51"];
+	Node2 [label="BaseConnectionManager\l::wrapIfTorus", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a77e53c22a7c607482398632b85396a6c", tooltip="If the value is outside of its bounds (zero and max) this function returns -1 if useTorus is false an...", pos="247,60", rects="181,46,314,74"];
+	Node3 [label="BaseConnectionManager\l::CoordSet::add", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager_1_1_coord_set.html#aaa3c6a4f31789b4644a5bb7aaf414206", tooltip="Adds a GridCoord to the set. ", pos="247,14", rects="181,0,314,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,180,51 144,46 153,47 161,49 170,50"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,180,23 144,28 153,27 161,25 170,24"];
+}

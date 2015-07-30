@@ -1,0 +1,15 @@
+digraph "InterpolateableMap&lt; TInterpolator, TContainer &gt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,618,218"];
+	Node1 [label="InterpolateableMap\l\< TInterpolator, TContainer \>", height="0.39", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="191,102", rects="113,88,270,116"];
+	Node2 [label=TContainer, height="0.22", width="0.92", color=grey75, fillcolor=white, style=filled, pos="41,102", rects="8,94,74,110"];
+	Node3 [label="InterpolateableMap\l\< Linear\< std::map\<\l argument_value_t, Mapping\l * \> \> \>", height="0.72", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", pos="532,178", rects="454,152,610,204"];
+	Node4 [label="InterpolateableMap\l\< Interpolator\< std\l::map\< argument_value\l_t, Mapping * \> \> \>", height="0.72", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", pos="532,102", rects="469,76,596,128"];
+	Node5 [label="InterpolateableMap\l\< Interpolator\< std\l::map\< simtime_t, argument\l_value_t \> \> \>", height="0.72", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", pos="532,26", rects="458,0,606,52"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,74,102 83,102 92,102 102,102 112,102"];
+	Node1 -> Node3 [dir=back, color=orange, style=dashed, label=" \< Linear\< std::map\l\< argument_value_t,\l Mapping * \> \> \>", pos="s,270,116 276,122 281,129 278,139 288,146 315,163 393,171 454,175", lp="362,192"];
+	Node1 -> Node4 [dir=back, color=orange, style=dashed, label=" \< Interpolator\< std\l::map\< argument_value\l_t, Mapping * \> \> \>", pos="s,270,102 280,102 339,102 415,102 468,102", lp="362,122"];
+	Node1 -> Node5 [dir=back, color=orange, style=dashed, label=" \< Interpolator\< std\l::map\< simtime_t, argument\l_value_t \> \> \>", pos="s,270,88 276,82 281,75 278,65 288,58 338,26 406,19 458,20", lp="362,81"];
+}

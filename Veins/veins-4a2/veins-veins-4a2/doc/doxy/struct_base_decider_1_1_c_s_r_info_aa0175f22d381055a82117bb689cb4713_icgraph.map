@@ -1,0 +1,11 @@
+digraph "BaseDecider::CSRInfo::setSenseStart" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,512,28"];
+	Node1 [label="BaseDecider::CSRInfo\l::setSenseStart", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,14", rects="9,0,126,28"];
+	Node2 [label="BaseDecider::handleNewSense\lRequest", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a1dba383c238fba606279ef483b435f78", tooltip="Handles a new incoming ChannelSenseRequest and returns the next (or latest) time to handle the reques...", pos="241,14", rects="163,0,320,28"];
+	Node3 [label="BaseDecider::handleChannel\lSenseRequest", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#afd31e5a65d1798d329ace9bdbec25d64", tooltip="This function is called by the PhyLayer to hand over a ChannelSenseRequest. ", pos="430,14", rects="356,0,504,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,14 136,14 145,14 153,14 162,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,320,14 329,14 338,14 347,14 356,14"];
+}

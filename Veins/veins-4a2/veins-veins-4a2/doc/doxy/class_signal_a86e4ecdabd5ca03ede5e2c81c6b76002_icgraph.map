@@ -1,0 +1,15 @@
+digraph "Signal::setBitrate" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,628,50"];
+	Node1 [label="Signal::setBitrate", height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="52,25", rects="8,17,96,33"];
+	Node2 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a28ca155ff241c3e202a94724cc87b232", tooltip="Creates a simple Signal defined over time with the passed parameters. ", pos="205,42", rects="133,34,278,50"];
+	Node3 [label="Mac1609_4::createSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#aa19fc16c9c52fbe7a896f725cc8a7883", pos="205,8", rects="142,0,268,16"];
+	Node4 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a077b6bebe9a8f8d2a6fcce31c6af86a7", pos="378,8", rects="315,0,442,16"];
+	Node5 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="549,8", rects="478,0,620,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,96,30 105,31 114,32 124,33 132,34"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,96,20 104,19 114,18 123,17 132,16 135,16 139,15 142,15"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,268,8 278,8 290,8 302,8 314,8"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,442,8 451,8 460,8 469,8 478,8"];
+}

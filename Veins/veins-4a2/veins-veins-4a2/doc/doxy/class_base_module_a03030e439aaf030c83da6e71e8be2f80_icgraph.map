@@ -1,0 +1,13 @@
+digraph "BaseModule::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,436,68"];
+	Node1 [label="BaseModule::initialize", height="0.22", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,34", rects="9,26,124,42"];
+	Node2 [label="Veins::ChannelAccess\l::initialize", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#af4c4d6652f6e3d4846cb3d2e826f4bed", tooltip="Register with ConnectionManager. ", pos="220,54", rects="163,40,278,68"];
+	Node3 [label="BaseMobility::initialize", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aa89e41596faff0067340643acbab27d0", tooltip="Initializes mobility model parameters. ", pos="220,14", rects="161,6,280,22"];
+	Node4 [label="Veins::TraCIMobility\l::initialize", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a508c83b198cc326da67bd8ed1decfb75", tooltip="Initializes mobility model parameters. ", pos="372,14", rects="316,0,428,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,124,42 134,43 143,44 153,46 162,47"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,124,26 133,25 142,24 151,23 160,22"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,280,14 290,14 299,14 307,14 316,14"];
+}

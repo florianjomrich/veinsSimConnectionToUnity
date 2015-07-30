@@ -1,0 +1,15 @@
+digraph "Veins::Obstacle::setShape" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,720,74"];
+	Node1 [label="Veins::Obstacle::setShape", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,37", rects="9,29,136,45"];
+	Node2 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="250,37", rects="172,23,328,51"];
+	Node3 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="442,60", rects="364,46,520,74"];
+	Node4 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="634,60", rects="556,46,712,74"];
+	Node5 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="442,14", rects="364,0,520,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,37 146,37 155,37 163,37 172,37"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,328,46 337,47 346,49 355,49 364,51"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,520,60 530,60 539,60 547,60 556,60"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,328,28 337,27 346,25 355,25 364,23"];
+}

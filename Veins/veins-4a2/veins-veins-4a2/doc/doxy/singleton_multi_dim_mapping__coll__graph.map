@@ -1,0 +1,37 @@
+digraph "MultiDimMapping&lt; Interpolator &gt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1366,280"];
+	Node1 [label="MultiDimMapping\< Interpolator \>", height="0.22", width="2.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="1266,158", rects="1175,150,1358,166"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="607,236", rects="580,228,635,244"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="384,194", rects="343,186,426,202"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="199,194", rects="161,186,238,202"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="65,194", rects="9,186,122,202"];
+	Node6 [label=ConstMappingWrapper, height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_wrapper.html", tooltip="Wraps an ConstMapping into a Mapping interface. ", pos="930,210", rects="867,202,994,218"];
+	Node7 [label="InterpolateableMap\l\< Interpolator\< std\l::map\< argument_value\l_t, Mapping * \> \> \>", height="0.72", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", pos="930,106", rects="867,80,994,132"];
+	Node8 [label=TContainer, height="0.22", width="0.92", color=grey75, fillcolor=white, style=filled, pos="384,93", rects="351,85,417,101"];
+	Node9 [label="InterpolateableMap\l\< TInterpolator, TContainer \>", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", tooltip="Represents a std::map which is able to interpolate. ", pos="607,44", rects="529,30,686,58"];
+	Node10 [label=TInterpolator, height="0.22", width="1.03", color=grey75, fillcolor=white, style=filled, pos="384,30", rects="347,22,422,38"];
+	Node11 [label=ConstantSimpleConstMapping, height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_constant_simple_const_mapping.html", tooltip="Represents a constant mathematical mapping (f(x) = c) ", pos="930,158", rects="850,150,1010,166"];
+	Node12 [label=SimpleConstMapping, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html", tooltip="Abstract subclass of ConstMapping which can be used as base for any ConstMapping implementation with ...", pos="607,150", rects="549,142,665,158"];
+	Node13 [label=Dimension, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_dimension.html", tooltip="Specifies a dimension for mappings (like time, frequency, etc.) ", pos="930,8", rects="899,0,962,16"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,635,239 644,240 753,251 1074,276 1156,219 1174,206 1156,184 1175,174 1181,171 1188,168 1195,166"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,426,202 435,204 437,205 440,206 444,208 481,218 491,221 528,228 545,230 564,232 579,234"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,238,194 247,194 276,194 314,194 342,194", lp="290,202"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,122,194 131,194 141,194 151,194 160,194"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,222,202 227,207 231,213 222,220 199,220 171,220 164,210 176,202", lp="199,234"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" wrappedOORMapping", pos="s,994,204 1003,203 1005,203 1008,202 1010,202 1076,193 1094,199 1156,178 1165,174 1166,170 1174,168 1176,167 1178,167 1181,166", lp="1092,207"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,635,234 644,233 698,228 800,221 866,215"];
+	Node3 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" mapping", pos="s,426,195 435,195 535,198 757,205 866,208", lp="607,210"];
+	Node7 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" entries", pos="s,994,109 1003,110 1048,113 1106,121 1156,138 1165,140 1166,145 1174,148 1176,149 1179,149 1181,150", lp="1092,146"];
+	Node8 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,417,94 427,94 488,96 605,99 704,102 759,103 821,104 866,105"];
+	Node9 -> Node7 [dir=back, color=orange, style=dashed, label=" \< Interpolator\< std\l::map\< argument_value\l_t, Mapping * \> \> \>", pos="s,686,34 695,34 738,32 790,37 832,58 844,64 840,73 850,80 855,83 861,86 866,89", lp="768,78"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,417,87 426,85 472,75 483,69 528,58"];
+	Node10 -> Node9 [dir=back, color=darkorchid3, style=dashed, label=" interpolate", pos="s,422,32 430,33 458,34 495,36 528,39", lp="477,47"];
+	Node11 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" outOfRangeMapping", pos="s,1010,158 1020,158 1067,158 1126,158 1174,158", lp="1092,166"];
+	Node12 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,665,151 674,151 726,153 795,155 850,156"];
+	Node3 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,426,186 435,183 437,182 440,181 444,180 481,169 491,164 528,158 535,157 542,156 549,155"];
+	Node13 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" myDimension", pos="s,962,8 971,9 984,10 998,12 1010,16 1080,37 1108,36 1156,90 1172,107 1157,124 1174,140 1179,144 1190,147 1202,150", lp="1092,98"];
+	Node13 -> Node13 [dir=back, color=darkorchid3, style=dashed, label=" frequency\ntime", pos="s,948,16 953,21 956,28 948,34 930,34 907,34 901,24 912,16", lp="930,48"];
+}

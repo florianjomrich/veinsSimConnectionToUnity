@@ -1,0 +1,29 @@
+digraph "LogNormalShadowing::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,518,272"];
+	Node1 [label="LogNormalShadowing\l::filterSignal", height="0.39", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,145", rects="9,131,132,159"];
+	Node2 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="246,264", rects="178,256,315,272"];
+	Node3 [label="Signal::getReceptionStart", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a7c4710243cf87caf7dfc9f313e2619b2", tooltip="Returns the point in time when the receiving of the Signal started at the receiver module...", pos="246,230", rects="182,222,311,238"];
+	Node4 [label="Signal::getReceptionEnd", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a2875223239e124d85949e1116cc12ae9", tooltip="Returns the point in time when the receiving of the Signal ended at the receiver module. ", pos="246,196", rects="183,188,310,204"];
+	Node5 [label="MappingUtils::createMapping", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0c61c76ba04339162563339b23bf42e9", tooltip="Returns an appropriate changeable Mapping with the specified domain and the specified interpolation m...", pos="246,162", rects="169,154,324,170"];
+	Node6 [label="DimensionSet::hasDimension", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#a015cb6fa6c77b26b8c7b1e65827b8342", tooltip="Returns true if the passed Dimension is inside this DimensionSet. ", pos="435,162", rects="360,154,510,170"];
+	Node7 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="246,128", rects="195,120,298,136"];
+	Node8 [label="Mapping::appendValue", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#a2a63bc33cabcddf8c0f5938afd2e3328", tooltip="Appends the passed value at the passed position to the mapping. ", pos="246,94", rects="184,86,308,102"];
+	Node9 [label="LogNormalShadowing\l::randomLogNormalGain", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#ab81e4e559d16d59321fe0dced4a45806", tooltip="Returns a random log normal distributed gain factor. ", pos="246,54", rects="179,40,313,68"];
+	Node10 [label="FWMath::dBm2mW", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#af308407856d9835b103f2421e373ee28", tooltip="Converts a dBm value into milliwatts. ", pos="435,54", rects="380,46,491,62"];
+	Node11 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="246,14", rects="186,6,306,22"];
+	Node12 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="435,14", rects="377,0,494,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,177,261 132,159 167,189 132,227 168,256 168,256 168,256 168,256"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,181,228 132,159 158,178 141,204 168,222 169,223 171,224 172,225"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,182,192 132,159 151,167 149,180 168,188 170,189 171,189 173,190"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,168,155 132,151 141,152 149,152 158,154"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,360,162 324,162 333,162 341,162 350,162"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,194,133 132,139 149,137 168,136 185,134"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,184,97 132,131 151,122 149,109 168,102 170,101 172,100 174,100"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,179,62 132,131 158,111 142,86 168,68 169,68 169,67 170,67"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,379,54 313,54 332,54 351,54 369,54"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,186,13 132,131 170,96 129,53 168,22 171,20 174,18 177,17"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,376,14 306,14 325,14 347,14 366,14"];
+}

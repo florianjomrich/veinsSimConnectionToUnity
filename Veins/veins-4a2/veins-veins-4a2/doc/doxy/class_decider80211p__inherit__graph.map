@@ -1,0 +1,10 @@
+digraph Decider80211p {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,76,136"];
+	Node1 [label=Decider80211p, height="0.22", width="1.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="38,16", rects="0,8,77,24"];
+	Node2 [label=BaseDecider, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html", tooltip="Provides some base functionality for most common deciders. ", pos="38,68", rects="3,60,73,76"];
+	Node3 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=white, style=filled, URL="$class_decider.html", tooltip="The basic Decider class. ", pos="38,120", rects="15,112,62,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,38,60 38,51 38,42 38,31 38,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,38,112 38,103 38,94 38,83 38,76"];
+}

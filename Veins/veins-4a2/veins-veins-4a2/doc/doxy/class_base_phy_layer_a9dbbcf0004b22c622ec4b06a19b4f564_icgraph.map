@@ -1,0 +1,19 @@
+digraph "BasePhyLayer::handleAirFrameReceiving" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,962,112"];
+	Node1 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,60", rects="8,46,174,74"];
+	Node2 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="495,60", rects="412,52,578,68"];
+	Node3 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="874,58", rects="795,50,954,66"];
+	Node4 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="686,60", rects="614,46,758,74"];
+	Node5 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="686,14", rects="618,0,755,28"];
+	Node6 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="293,39", rects="210,25,376,53"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,174,61 183,62 192,62 202,62 210,62 284,62 303,62 376,62 388,62 400,62 412,61"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,574,68 583,70 596,74 600,79 614,83 677,94 696,97 758,83 776,79 777,70 794,66"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,578,60 587,60 596,60 605,60 614,60"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,578,52 586,48 597,42 600,35 614,28 615,28 616,27 617,27"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,755,27 764,30 776,37 779,45 794,50"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,174,51 183,50 192,50 201,49 210,48"];
+	Node6 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,376,48 385,49 394,50 404,51 412,52"];
+}

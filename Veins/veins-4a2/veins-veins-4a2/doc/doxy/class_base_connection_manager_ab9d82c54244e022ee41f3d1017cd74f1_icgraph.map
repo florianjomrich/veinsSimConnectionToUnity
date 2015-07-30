@@ -1,0 +1,9 @@
+digraph "BaseConnectionManager::registerNic" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,302,28"];
+	Node1 [label="BaseConnectionManager\l::registerNic", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="9,0,142,28"];
+	Node2 [label="Veins::ChannelAccess\l::receiveSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#ad7c56c9ed2db85ecba91900c35e795a0", tooltip="Called by the signalling mechanism to inform of changes. ", pos="236,14", rects="179,0,294,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,14 151,14 160,14 170,14 178,14"];
+}

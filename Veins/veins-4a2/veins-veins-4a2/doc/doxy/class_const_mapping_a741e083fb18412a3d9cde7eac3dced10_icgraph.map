@@ -1,0 +1,15 @@
+digraph "ConstMapping::constClone" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,142"];
+	Node1 [label="ConstMapping::constClone", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,62", rects="8,54,148,70"];
+	Node2 [label="ConstMappingWrapper\l::clone", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_wrapper.html#a17b06a78a2258990893fddf79d9268a0", tooltip="Returns a deep copy of this Mapping. ", pos="248,128", rects="185,114,312,142"];
+	Node3 [label="ConstMappingWrapper\l::constClone", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_wrapper.html#a5290d7c6126897a26e810da626d115ec", tooltip="Returns a deep const copy of this mapping by using the according \"clone()\"-implementation. ", pos="248,82", rects="185,68,312,96"];
+	Node4 [label="Signal::operator=", height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_signal.html#aa9c8501095ecc3fb4a60f4f0e2007138", tooltip="Overwrites the copy operator to make sure that the mappings are cloned correct. ", pos="248,42", rects="203,34,294,50"];
+	Node5 [label="Signal::Signal", height="0.22", width="1.00", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a079cc6bee7380f5744001d5f26505b2c", tooltip="Overwrites the copy constructor to make sure that the mappings are cloned correct. ", pos="248,8", rects="212,0,284,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,148,70 155,75 169,87 166,102 184,114"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,148,70 157,71 166,72 175,73 184,74"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,148,54 157,53 172,51 188,49 202,47"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,148,54 155,49 168,38 167,25 184,16 193,12 202,10 212,9"];
+}

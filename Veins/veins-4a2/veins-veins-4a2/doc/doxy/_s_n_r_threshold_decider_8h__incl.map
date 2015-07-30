@@ -1,0 +1,36 @@
+digraph "SNRThresholdDecider.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,494,392"];
+	Node1 [label="SNRThresholdDecider.h", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,376", rects="0,368,129,384"];
+	Node2 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="98,68", rects="20,60,177,76"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="307,16", rects="276,8,338,24"];
+	Node4 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="98,16", rects="8,8,188,24"];
+	Node5 [label="veins/base/phyLayer\l/BaseDecider.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_base_decider_8h.html", pos="106,318", rects="50,304,162,332"];
+	Node6 [label="veins/base/phyLayer\l/Decider.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_decider_8h.html", pos="190,254", rects="134,240,246,268"];
+	Node7 [label="veins/base/phyLayer\l/DeciderToPhyInterface.h", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$_decider_to_phy_interface_8h.html", pos="426,126", rects="358,112,495,140"];
+	Node8 [label=vector, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="474,68", rects="454,60,494,76"];
+	Node9 [label=list, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="422,68", rects="408,60,437,76"];
+	Node10 [label="veins/base/messages\l/ChannelSenseRequest_m.h", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$_channel_sense_request__m_8h.html", pos="237,190", rects="164,176,311,204"];
+	Node11 [label="veins/base/phyLayer\l/ChannelState.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_channel_state_8h.html", pos="191,126", rects="135,112,247,140"];
+	Node12 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="217,68", rects="194,60,241,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,88,76 59,368 48,348 22,299 22,254 22,254 22,254 22,190 23,145 59,103 81,82"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,276,24 130,60 163,51 218,38 268,26"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,98,24 98,60 98,53 98,42 98,33"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,96,332 70,368 75,361 83,349 90,339"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,98,76 106,304 104,261 100,134 98,86"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,171,268 125,304 137,295 151,284 163,274"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,311,24 234,240 269,226 316,207 319,204 354,150 329,68 315,33"];
+	Node6 -> Node2 [color=midnightblue, style=solid, pos="e,100,76 162,240 155,230 154,220 147,204 126,162 110,110 102,84"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,416,140 242,240 286,226 347,207 352,204 376,189 398,163 411,146"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,467,76 438,112 445,103 455,92 462,83"];
+	Node7 -> Node9 [color=midnightblue, style=solid, pos="e,423,76 425,112 424,104 424,93 423,85"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,316,24 410,112 388,90 346,52 323,30"];
+	Node7 -> Node2 [color=midnightblue, style=solid, pos="e,149,76 358,112 289,99 212,86 159,77"];
+	Node6 -> Node10 [color=midnightblue, style=solid, pos="e,226,204 200,240 206,231 214,221 221,212"];
+	Node10 -> Node3 [color=midnightblue, style=solid, pos="e,304,24 243,176 255,144 286,68 300,33"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,201,140 227,176 221,167 213,157 207,148"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,213,76 197,112 201,104 206,93 209,84"];
+	Node11 -> Node2 [color=midnightblue, style=solid, pos="e,111,76 168,112 153,103 133,90 118,80"];
+	Node6 -> Node11 [color=midnightblue, style=solid, pos="e,177,140 177,240 169,230 159,217 155,204 151,192 151,187 155,176 158,165 165,155 171,147"];
+}

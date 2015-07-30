@@ -1,0 +1,11 @@
+digraph "PhyLayer80211p::initializeSimplePathlossModel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,328,50"];
+	Node1 [label="PhyLayer80211p::initialize\lSimplePathlossModel", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,25", rects="8,11,140,39"];
+	Node2 [label="BaseWorldUtility::useTorus", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a37a1abb90a220afdaf6dbdab58299e51", tooltip="Returns true if our playground represents a torus (borders are connected) ", pos="248,42", rects="176,34,320,50"];
+	Node3 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="248,8", rects="183,0,314,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,176,35 140,31 149,32 157,32 166,34"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,182,15 140,19 151,18 162,17 172,16"];
+}

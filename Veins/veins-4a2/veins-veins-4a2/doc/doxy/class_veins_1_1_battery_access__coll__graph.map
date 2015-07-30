@@ -1,0 +1,17 @@
+digraph "Veins::BatteryAccess" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,222"];
+	Node1 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="139,16", rects="84,8,194,24"];
+	Node2 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="131,138", rects="96,130,167,146"];
+	Node3 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,206", rects="0,198,86,214"];
+	Node4 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,206", rects="104,198,158,214"];
+	Node5 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="221,206", rects="176,198,267,214"];
+	Node6 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="174,84", rects="140,76,209,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,131,130 131,122 131,110 130,91 131,76 132,57 136,36 138,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,53,198 60,193 78,179 106,157 121,146"];
+	Node4 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,131,198 131,189 131,175 131,157 131,146"];
+	Node5 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,210,198 203,193 185,179 157,157 142,146", lp="239,172"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,170,76 166,68 159,55 149,35 143,24", lp="183,50"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,138,130 144,123 152,112 162,100 168,92"];
+}

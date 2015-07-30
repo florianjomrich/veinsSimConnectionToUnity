@@ -1,0 +1,20 @@
+digraph "MappingUtils::divide" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,700,108"];
+	Node1 [label="MappingUtils::divide", height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,48", rects="9,40,120,56"];
+	Node2 [label="Decider80211p::calculate\lSinrAndSnrMapping", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#aed94d240800692fe3a7c604a6d11e54e", tooltip="Calculates a SNR-Mapping for a Signal. ", pos="223,94", rects="162,80,285,108"];
+	Node3 [label="Decider80211p::checkIfSignalOk", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a01349c12df6c01678d1e25553b754819", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="408,91", rects="327,83,490,99"];
+	Node4 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="609,91", rects="526,83,692,99"];
+	Node5 [label="BaseDecider::calculateSnr\lMapping", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#abac709d59f48d292f147919854c002e2", tooltip="Calculates a SNR-Mapping for a Signal. ", pos="223,48", rects="157,34,290,62"];
+	Node6 [label="SNRThresholdDecider\l::processSignalEnd", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a6002f2ee8ffa35ded0162c72f93c9fba", tooltip="Processes a received AirFrame. ", pos="408,48", rects="348,34,469,62"];
+	Node7 [label="operator/", height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$_mapping_utils_8h.html#a4dd8d69004180c73deb537f4f7fb85a0", pos="223,8", rects="196,0,250,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,56 128,60 139,66 142,74 156,80 158,81 159,81 161,82"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,285,93 294,93 304,93 315,93 326,92"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,490,91 500,91 509,91 517,91 526,91"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,120,48 130,48 139,48 147,48 156,48"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,290,62 298,66 309,72 312,79 326,83"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,290,48 299,48 315,48 332,48 347,48"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,120,40 128,36 139,30 141,22 156,16 169,12 184,9 196,9"];
+}

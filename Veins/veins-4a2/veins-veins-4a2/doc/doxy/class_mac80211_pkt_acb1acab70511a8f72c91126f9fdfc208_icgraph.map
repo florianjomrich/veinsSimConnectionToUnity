@@ -1,0 +1,9 @@
+digraph "Mac80211Pkt::Mac80211Pkt" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,284,16"];
+	Node1 [label="Mac80211Pkt::Mac80211Pkt", height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,8", rects="9,0,146,16"];
+	Node2 [label="Mac80211Pkt::dup", height="0.22", width="1.31", color=black, fillcolor=white, style=filled, URL="$class_mac80211_pkt.html#a776e1a1cbb1ffe3ab3de3021c98dcf73", pos="229,8", rects="182,0,276,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,146,8 155,8 164,8 173,8 182,8"];
+}

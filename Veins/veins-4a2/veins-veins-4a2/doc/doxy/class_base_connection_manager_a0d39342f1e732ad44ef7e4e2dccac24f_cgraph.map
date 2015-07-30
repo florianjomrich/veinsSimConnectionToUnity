@@ -1,0 +1,19 @@
+digraph "BaseConnectionManager::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,540,164"];
+	Node1 [label="BaseConnectionManager\l::initialize", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,88", rects="9,74,142,102"];
+	Node2 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="261,156", rects="179,148,344,164"];
+	Node3 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="456,156", rects="381,148,532,164"];
+	Node4 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="261,122", rects="196,114,327,130"];
+	Node5 [label="BaseWorldUtility::useTorus", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a37a1abb90a220afdaf6dbdab58299e51", tooltip="Returns true if our playground represents a torus (borders are connected) ", pos="261,88", rects="189,80,333,96"];
+	Node6 [label="BaseConnectionManager\l::calcInterfDist", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a00b2487d2565c70a46101964a2767643", tooltip="Calculate interference distance. ", pos="261,48", rects="195,34,328,62"];
+	Node7 [label="Coord::info", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a86994bfa7096155d951abb03dcf30bf1", tooltip="Returns a string with the value of the coordinate. ", pos="261,8", rects="230,0,293,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,178,148 142,102 162,113 158,130 171,142"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,380,156 344,156 353,156 362,156 370,156"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,195,117 142,102 159,106 162,110 178,114 181,114 183,115 185,115"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,189,88 142,88 154,88 167,88 179,88"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,194,58 142,74 159,69 162,66 178,62 180,62 182,61 184,60"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,229,5 142,74 167,56 153,32 178,16 190,9 206,6 220,5"];
+}

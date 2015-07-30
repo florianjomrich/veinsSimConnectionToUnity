@@ -1,0 +1,8 @@
+digraph "Veins::TraCIScreenRecorder" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,146,84"];
+	Node1 [label="Veins::TraCIScreenRecorder", height="0.22", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,16", rects="0,8,147,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="73,68", rects="30,60,116,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,73,60 73,51 73,42 73,31 73,24"];
+}

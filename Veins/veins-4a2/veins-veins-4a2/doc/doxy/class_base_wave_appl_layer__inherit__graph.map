@@ -1,0 +1,22 @@
+digraph BaseWaveApplLayer {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,344"];
+	Node1 [label=BaseWaveApplLayer, height="0.22", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="97,68", rects="39,60,155,76"];
+	Node2 [label=BaseApplLayer, height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html", tooltip="Base class for the application layer. ", pos="97,120", rects="54,112,141,128"];
+	Node3 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="97,172", rects="66,164,128,180"];
+	Node4 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="97,224", rects="42,216,152,232"];
+	Node5 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="97,276", rects="62,268,133,284"];
+	Node6 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="53,328", rects="10,320,96,336"];
+	Node7 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="141,328", rects="114,320,168,336"];
+	Node8 [label=TraCIDemo11p, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html", tooltip="Small IVC Demo using 11p. ", pos="41,16", rects="0,8,82,24"];
+	Node9 [label=TraCIDemoRSU11p, height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html", tooltip="Small RSU Demo using 11p. ", pos="153,16", rects="100,8,206,24"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,97,112 97,103 97,94 97,83 97,76"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,97,164 97,155 97,146 97,135 97,128"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,97,216 97,207 97,198 97,187 97,180"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,97,268 97,259 97,250 97,239 97,232"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,60,320 66,313 74,303 84,292 90,284"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,134,320 128,313 120,303 110,292 104,284"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,88,60 81,54 71,44 58,32 50,24"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,106,60 113,54 123,44 136,32 144,24"];
+}

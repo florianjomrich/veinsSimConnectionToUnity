@@ -1,0 +1,36 @@
+digraph "BorderMsg::setDirection" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1790,121"];
+	Node1 [label="BorderMsg::setDirection", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,37", rects="8,29,134,45"];
+	Node2 [label="BaseMobility::handleIfOutside", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aae36006995d117a723134cbe1fee5e90", tooltip="Main border handling function. ", pos="249,37", rects="171,29,328,45"];
+	Node3 [label="Veins::TraCIMobility\l::fixIfHostGetsOutside", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a0fdea350639a2c9e1a71d91c4d4cb8f8", tooltip="called after each read to check for (and handle) invalid positions ", pos="423,37", rects="364,23,482,51"];
+	Node4 [label="Veins::TraCIMobility\l::changePosition", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a3137899bb330551c9823c40b4ed8b8fc", pos="574,37", rects="518,23,630,51"];
+	Node5 [label="Veins::TraCIMobility\l::nextPosition", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a2b8432d33ff6bcadf7a5c4d30d5636b3", pos="744,60", rects="688,46,800,74"];
+	Node6 [label="Veins::TraCIScenarioManager\l::processVehicleSubscription", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a4b6aa1aa798b245ff323c5759a3b848e", pos="936,37", rects="858,23,1014,51"];
+	Node7 [label="Veins::TraCIScenarioManager\l::processSubcriptionResult", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a2f149bc15c3119ab19850b6960689eeb", pos="1128,60", rects="1050,46,1206,74"];
+	Node8 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="1320,61", rects="1242,47,1398,75"];
+	Node9 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="1512,107", rects="1434,93,1590,121"];
+	Node10 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="1704,107", rects="1626,93,1782,121"];
+	Node11 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="1512,61", rects="1434,47,1590,75"];
+	Node12 [label="Veins::TraCIScenarioManager\l::executeOneTimestep", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a84ebe9fb50441189bd39f949f2593115", tooltip="read and execute all commands for the next timestep ", pos="1320,107", rects="1242,93,1398,121"];
+	Node13 [label="Veins::TraCIScenarioManager\l::subscribeToVehicleVariables", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a999d945fca20d45532a24b492430d742", pos="1320,15", rects="1242,1,1398,29"];
+	Node14 [label="Veins::TraCIScenarioManager\l::addModule", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a08e1ff8c735af701665a197839515aa6", pos="744,14", rects="666,0,822,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,37 144,37 153,37 161,37 170,37"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,328,37 338,37 347,37 355,37 364,37"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,482,37 492,37 501,37 509,37 518,37"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,630,45 639,46 655,48 672,50 688,52"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,800,53 809,52 824,50 842,48 858,46"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1014,46 1023,47 1032,49 1041,49 1050,51"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,1206,60 1216,60 1225,60 1233,60 1242,61"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,1398,75 1406,78 1417,83 1421,88 1434,93"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,1590,107 1600,107 1609,107 1617,107 1626,107"];
+	Node8 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,1398,61 1408,61 1417,61 1425,61 1434,61"];
+	Node7 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,1206,74 1214,77 1225,82 1228,88 1242,93"];
+	Node12 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,1398,107 1408,107 1417,107 1425,107 1434,107"];
+	Node7 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,1206,46 1215,43 1225,39 1229,34 1242,29"];
+	Node13 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1242,19 1232,20 1166,24 1077,29 1014,33"];
+	Node4 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,630,29 639,28 648,27 657,26 666,25"];
+	Node14 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,822,23 831,24 840,26 849,26 858,28"];
+}

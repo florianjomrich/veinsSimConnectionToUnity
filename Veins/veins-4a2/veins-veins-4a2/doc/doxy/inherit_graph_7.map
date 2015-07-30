@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,194,28"];
+	Node1 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="24,14", rects="8,6,40,22"];
+	Node2 [label="BaseDelayedIterator\l\< Base, Iterator \>", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_base_delayed_iterator.html", tooltip="Common base for a Const- and NonConst-Iterator for a DelayedMapping. ", pos="131,14", rects="77,0,186,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,40,14 49,14 57,14 67,14 76,14"];
+}

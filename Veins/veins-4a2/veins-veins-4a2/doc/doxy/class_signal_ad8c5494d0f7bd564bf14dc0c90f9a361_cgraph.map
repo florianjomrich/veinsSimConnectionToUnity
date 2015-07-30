@@ -1,0 +1,11 @@
+digraph "Signal::setTransmissionPower" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,526,28"];
+	Node1 [label="Signal::setTransmissionPower", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,14", rects="8,6,160,22"];
+	Node2 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="280,14", rects="197,6,364,22"];
+	Node3 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="459,14", rects="401,0,518,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,196,14 160,14 169,14 177,14 186,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,400,14 364,14 373,14 382,14 390,14"];
+}

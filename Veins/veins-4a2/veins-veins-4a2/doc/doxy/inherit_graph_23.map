@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,96,16"];
+	Node1 [label=DrawAmount, height="0.22", width="1.11", color=black, fillcolor=white, style=filled, URL="$class_draw_amount.html", tooltip="Defines the amount of power drawn by a device from a power source. ", pos="48,8", rects="8,0,88,16"];
+}

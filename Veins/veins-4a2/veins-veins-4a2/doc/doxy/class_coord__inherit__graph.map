@@ -1,0 +1,8 @@
+digraph Coord {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,46,84"];
+	Node1 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="23,16", rects="3,8,43,24"];
+	Node2 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,68", rects="0,60,47,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,23,60 23,51 23,42 23,31 23,24"];
+}

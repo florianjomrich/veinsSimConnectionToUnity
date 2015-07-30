@@ -1,0 +1,19 @@
+digraph "Veins::ObstacleControl::add" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,732,120"];
+	Node1 [label="Veins::ObstacleControl::add", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,83", rects="8,75,148,91"];
+	Node2 [label="Veins::ObstacleControl\l::addFromXml", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a1e5fceb8e8d9616622cc12551231c9d3", pos="262,106", rects="202,92,322,120"];
+	Node3 [label="Veins::ObstacleControl\l::initialize", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a199ba1a4bd7eb58b6365fcaa5c0b1a90", pos="454,106", rects="394,92,514,120"];
+	Node4 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="262,60", rects="184,46,340,74"];
+	Node5 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="454,60", rects="376,46,532,74"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="646,60", rects="568,46,724,74"];
+	Node7 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="454,14", rects="376,0,532,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,148,91 157,92 172,94 187,95 202,98"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,322,106 332,106 352,106 374,106 394,106"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,148,75 157,74 166,72 175,72 184,70"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,340,60 350,60 359,60 367,60 376,60"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,532,60 542,60 551,60 559,60 568,60"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,340,46 348,42 359,37 363,32 376,28"];
+}

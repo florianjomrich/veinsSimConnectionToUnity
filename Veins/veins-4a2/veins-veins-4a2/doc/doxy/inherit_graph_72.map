@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,162,16"];
+	Node1 [label="Veins::TraCIMobilityAccess", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility_access.html", pos="81,8", rects="9,0,154,16"];
+}

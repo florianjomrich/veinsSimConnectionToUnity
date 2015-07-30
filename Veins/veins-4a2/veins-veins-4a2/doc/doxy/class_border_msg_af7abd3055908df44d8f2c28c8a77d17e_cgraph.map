@@ -1,0 +1,8 @@
+digraph "BorderMsg::getDirection" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,144,34"];
+	Node1 [label="BorderMsg::getDirection", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,8", rects="8,0,136,16"];
+	Node1 -> Node1 [color=midnightblue, style=solid, pos="e,34,16 110,16 131,24 119,34 72,34 31,34 16,26 28,19"];
+}

@@ -1,0 +1,9 @@
+digraph "ChannelSenseRequest::ChannelSenseRequest" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,312,28"];
+	Node1 [label="ChannelSenseRequest\l::ChannelSenseRequest", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="8,0,128,28"];
+	Node2 [label="ChannelSenseRequest::dup", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html#ab81b7dc879dc6c2c793ae7bfae399454", pos="234,14", rects="164,6,304,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,14 138,14 147,14 155,14 164,14"];
+}

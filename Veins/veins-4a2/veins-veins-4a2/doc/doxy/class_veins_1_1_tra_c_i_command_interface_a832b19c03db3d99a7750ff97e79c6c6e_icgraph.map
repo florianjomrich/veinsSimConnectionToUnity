@@ -1,0 +1,11 @@
+digraph "Veins::TraCICommandInterface::junction" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,488,28"];
+	Node1 [label="Veins::TraCICommandInterface\l::junction", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,14", rects="9,0,176,28"];
+	Node2 [label="Veins::TraCITestApp\l::handlePositionUpdate", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a634a6ed505d6ff32b4b035c14e6a4e4b", pos="272,14", rects="212,0,332,28"];
+	Node3 [label="Veins::TraCITestApp\l::receiveSignal", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6c6b28964a05c10b4c0c8d956bf48292", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="424,14", rects="368,0,480,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,14 186,14 195,14 203,14 212,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,332,14 342,14 351,14 359,14 368,14"];
+}

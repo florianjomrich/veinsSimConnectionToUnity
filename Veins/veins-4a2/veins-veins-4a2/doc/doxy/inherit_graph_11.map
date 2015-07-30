@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,340,52"];
+	Node1 [label="ChannelInfo::BaseIntersection\lIterator\< AirFrameMatrix,\l AirFrameMatrix::iterator,\l AirFrameTimeList::iterator \>", height="0.72", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html", pos="86,26", rects="9,0,164,52"];
+	Node2 [label="ChannelInfo::Intersection\lIterator", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_intersection_iterator.html", tooltip="Type for a iterator over an AirFrame interval matrix. ", pos="266,26", rects="200,12,332,40"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,164,26 174,26 183,26 191,26 200,26"];
+}

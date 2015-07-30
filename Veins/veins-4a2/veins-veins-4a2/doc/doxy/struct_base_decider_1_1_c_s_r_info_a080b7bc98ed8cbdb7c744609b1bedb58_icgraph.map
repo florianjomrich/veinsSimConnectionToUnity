@@ -1,0 +1,30 @@
+digraph "BaseDecider::CSRInfo::getRequest" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,864,176"];
+	Node1 [label="BaseDecider::CSRInfo\l::getRequest", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,128", rects="9,114,126,142"];
+	Node2 [label="SNRThresholdDecider\l::canAnswerCSR", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a0946c7a3e2ee04e2bb1c2dce4b7be7ec", tooltip="Returns point in time when the ChannelSenseRequest of the passed CSRInfo can be answered (e...", pos="230,151", rects="170,137,291,165"];
+	Node3 [label="BaseDecider::channelState\lChanged", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#add7242168c4bb521c6335f3de590e4b0", tooltip="Checks if the changed channel state enables us to answer any ongoing ChannelSenseRequests. ", pos="230,105", rects="163,91,298,119"];
+	Node4 [label="SNRThresholdDecider\l::processNewSignal", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#ace13845f43c5328cea40eb00c59af2b3", tooltip="Processes a new Signal. ", pos="407,151", rects="347,137,468,165"];
+	Node5 [label="Decider80211p::setChannel\lIdleStatus", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#af06ba4862697730ee05b65f6bf90279b", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="407,105", rects="340,91,474,119"];
+	Node6 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="599,162", rects="530,148,669,176"];
+	Node7 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="599,122", rects="516,114,682,130"];
+	Node8 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="599,82", rects="527,68,671,96"];
+	Node9 [label="BaseDecider::setChannelIdle\lStatus", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ae535b44e34061014fe282c36c27b0193", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="407,42", rects="334,28,480,56"];
+	Node10 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a6a480f87157d0509c0c1fccf94ea9fef", tooltip="Processes a new Signal. ", pos="599,42", rects="518,34,681,50"];
+	Node11 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="787,25", rects="718,17,856,33"];
+	Node12 [label="BaseDecider::processSignalEnd", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ab9cfef6c04e12d2524d45e881f341300", tooltip="Processes the end of a received Signal. ", pos="599,8", rects="520,0,679,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,136 135,137 146,139 158,140 169,142"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,126,120 135,119 144,117 153,116 162,115"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,298,119 306,122 317,127 321,132 334,137 338,138 342,139 346,140"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,298,105 307,105 318,105 329,105 340,105"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,474,116 483,120 499,128 499,139 516,148 520,150 525,151 529,153"];
+	Node5 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,474,111 484,112 495,113 505,113 516,115"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,474,97 483,96 497,94 513,93 527,91"];
+	Node3 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,298,91 306,86 318,76 318,64 334,56"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,480,42 490,42 499,42 508,42 517,42"];
+	Node10 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,681,35 690,34 699,33 709,33 718,31"];
+	Node9 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,480,28 488,25 499,22 503,18 516,16 517,16 518,16 519,15"];
+	Node12 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,679,15 689,16 699,17 708,18 718,19"];
+}

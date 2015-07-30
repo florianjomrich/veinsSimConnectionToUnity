@@ -1,0 +1,25 @@
+digraph "SimplePathlossModel::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,488,226"];
+	Node1 [label="SimplePathlossModel\l::filterSignal", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="65,116", rects="8,102,122,130"];
+	Node2 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="242,218", rects="174,210,311,226"];
+	Node3 [label="Coord::sqrTorusDist", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_coord.html#aaf6119bf8bc9953d561729314de8ed5e", tooltip="Returns the squared distance on a torus of this to Coord &#39;b&#39; (omits calling square root)...", pos="242,184", rects="189,176,295,192"];
+	Node4 [label="Coord::sqrdist", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a9245e5acb794d95128e191e6faef99d4", tooltip="Returns distance^2 to Coord &#39;a&#39; (omits calling square root). ", pos="242,150", rects="205,142,279,158"];
+	Node5 [label="Coord::squareLength", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a278c018d6de54a020c39b3b1afaec50e", tooltip="Returns the square of the length of this Coords position vector. ", pos="421,150", rects="366,142,476,158"];
+	Node6 [label="Signal::getTransmissionPower", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a392ecf1a624edfb90243e7227370a772", tooltip="Returns the function representing the transmission power of the signal. ", pos="242,116", rects="165,108,319,124"];
+	Node7 [label="ConstMapping::getDimensionSet", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#acc1559cf5741bec3aa6422e94c5b9cce", tooltip="Returns this Mappings domain as DimensionSet. ", pos="242,82", rects="158,74,326,90"];
+	Node8 [label="DimensionSet::hasDimension", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#a015cb6fa6c77b26b8c7b1e65827b8342", tooltip="Returns true if the passed Dimension is inside this DimensionSet. ", pos="242,48", rects="167,40,317,56"];
+	Node9 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="242,14", rects="182,6,302,22"];
+	Node10 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="421,14", rects="363,0,480,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,173,217 122,130 152,154 127,187 158,210 160,211 162,212 164,213"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,189,185 123,130 144,144 136,163 158,176 165,180 172,182 180,184"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,205,148 122,130 139,134 142,138 158,142 170,144 183,146 195,147"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,366,150 279,150 301,150 330,150 356,150"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,165,116 122,116 133,116 144,116 155,116"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,158,90 122,102 135,98 140,95 149,92"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,167,52 123,102 144,87 136,69 157,57"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,182,12 122,102 152,77 127,44 158,22 162,19 167,17 172,15"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,362,14 302,14 318,14 336,14 352,14"];
+}

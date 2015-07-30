@@ -1,0 +1,24 @@
+digraph "Veins::AirFrame" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,268,394"];
+	Node1 [label="Veins::AirFrame", height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,16", rects="28,8,117,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="46,84", rects="23,76,70,92"];
+	Node3 [label=Signal, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_signal.html", tooltip="The signal class stores the physical representation of the signal of an AirFrame. ...", pos="107,84", rects="87,76,127,92"];
+	Node4 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="107,170", rects="80,162,135,178"];
+	Node5 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="108,244", rects="67,236,150,252"];
+	Node6 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="108,318", rects="70,310,147,326"];
+	Node7 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="108,378", rects="52,370,165,386"];
+	Node8 [label="ConcatConstMapping\l\< Operator \>", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html", tooltip="Defines it values by concatenating one or more Mappings to a reference Mapping. ", pos="210,170", rects="152,156,269,184"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,49,76 52,68 57,54 65,35 69,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" signal_var", pos="s,103,76 99,68 92,55 82,35 76,24", lp="127,50"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" txBitrate\nbitrate", pos="s,107,162 107,154 107,135 107,106 107,92", lp="135,124"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,108,236 108,227 108,212 107,190 107,178"];
+	Node6 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,108,310 108,301 108,286 108,264 108,252", lp="142,278"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,108,370 108,361 108,349 108,335 108,326"];
+	Node6 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,147,312 156,313 161,314 164,316 164,318 164,322 156,324 147,324", lp="211,318"];
+	Node5 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" power", pos="s,89,236 82,232 62,223 38,206 27,184 8,146 63,108 91,92", lp="52,170"];
+	Node8 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" rcvPower", pos="s,203,156 199,148 191,135 179,120 167,110 163,107 143,99 127,92", lp="222,124"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,146,236 155,234 180,228 204,222 208,218 215,208 215,194 213,184"];
+	Node5 -> Node8 [dir=back, color=darkorchid3, style=dashed, label=" refMapping", pos="s,109,236 111,228 113,219 118,209 125,202 132,194 142,189 151,184", lp="162,210"];
+}

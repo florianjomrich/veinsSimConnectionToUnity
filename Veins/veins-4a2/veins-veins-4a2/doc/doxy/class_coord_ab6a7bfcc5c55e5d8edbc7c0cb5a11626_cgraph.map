@@ -1,0 +1,9 @@
+digraph "Coord::distance" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,208,16"];
+	Node1 [label="Coord::distance", height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="49,8", rects="8,0,90,16"];
+	Node2 [label="Coord::length", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#acc536671c07e1af44e6ad9676a6c39ad", tooltip="Returns the length of this Coords position vector. ", pos="163,8", rects="126,0,200,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,126,8 90,8 99,8 107,8 116,8"];
+}

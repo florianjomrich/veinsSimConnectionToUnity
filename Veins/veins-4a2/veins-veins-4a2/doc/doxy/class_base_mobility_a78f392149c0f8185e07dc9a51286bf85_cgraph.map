@@ -1,0 +1,19 @@
+digraph "BaseMobility::wrapIfOutside" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,506,154"];
+	Node1 [label="BaseMobility::wrapIfOutside", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="83,83", rects="8,75,158,91"];
+	Node2 [label="FWMath::modulo", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#adfee479fcdbaba84bd4cfa57cdacf97e", tooltip="Returns the remainder r on division of dividend a by divisor n, using floored division. ", pos="262,146", rects="214,138,310,154"];
+	Node3 [label="BaseMobility::playground\lSizeX", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#afd83457f242d92ccdc2e2b5a3b2c4dd8", tooltip="Returns the width of the playground. ", pos="262,106", rects="195,92,330,120"];
+	Node4 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="432,60", rects="367,52,498,68"];
+	Node5 [label="BaseMobility::playground\lSizeY", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a09941dabdb81e67c77fc4794167c9351", tooltip="Returns the height of the playground. ", pos="262,60", rects="195,46,330,74"];
+	Node6 [label="BaseMobility::playground\lSizeZ", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1245dec457a2d33c8dd1a70ccd74ea33", tooltip="Returns the height of the playground. ", pos="262,14", rects="195,0,330,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,214,145 158,91 181,103 172,124 194,138 197,140 201,141 204,142"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,194,95 158,91 167,92 175,93 184,94"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,366,68 330,92 344,86 347,78 357,72"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,194,70 158,75 167,74 175,73 184,71"];
+	Node5 -> Node4 [color=midnightblue, style=solid, pos="e,366,60 330,60 339,60 347,60 356,60"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,194,28 158,75 178,64 174,46 187,34"];
+	Node6 -> Node4 [color=midnightblue, style=solid, pos="e,366,52 330,28 345,34 347,41 358,48"];
+}

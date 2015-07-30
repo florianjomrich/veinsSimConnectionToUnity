@@ -1,0 +1,15 @@
+digraph "Veins::BatteryAccess::registerWithBattery" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,468,84"];
+	Node1 [label="Veins::BatteryAccess\l::registerWithBattery", height="0.39", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="63,42", rects="8,28,118,56"];
+	Node2 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="230,76", rects="155,68,306,84"];
+	Node3 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="230,42", rects="172,34,289,50"];
+	Node4 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="401,42", rects="343,34,460,50"];
+	Node5 [label="BaseBattery::registerDevice", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html#a6b2ac07e8d11823bdd239de2bfa4563a", tooltip="Registers a power draining device with this battery. ", pos="230,8", rects="159,0,301,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,154,68 118,56 131,59 136,62 145,65"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,171,42 118,42 132,42 147,42 161,42"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,342,42 289,42 303,42 318,42 332,42"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,159,15 118,28 133,24 137,20 149,17"];
+}

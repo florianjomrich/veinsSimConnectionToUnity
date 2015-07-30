@@ -1,0 +1,9 @@
+digraph "Decider::channelChanged" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,322,28"];
+	Node1 [label="Decider::channelChanged", height="0.22", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="9,6,142,22"];
+	Node2 [label="BasePhyLayer::setCurrent\lRadioChannel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aa662c2194a72e2c46f6b25e7e6901834", tooltip="Sets the channel currently used by the radio. ", pos="246,14", rects="178,0,314,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,14 152,14 161,14 169,14 178,14"];
+}

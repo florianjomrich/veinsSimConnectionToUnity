@@ -1,0 +1,8 @@
+digraph "BorderMsg_m.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,90,84"];
+	Node1 [label="BorderMsg_m.h", height="0.22", width="1.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="45,68", rects="0,60,91,76"];
+	Node2 [label="BaseMobility.cc", height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$_base_mobility_8cc.html", pos="45,16", rects="2,8,88,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,45,60 45,51 45,42 45,31 45,24"];
+}

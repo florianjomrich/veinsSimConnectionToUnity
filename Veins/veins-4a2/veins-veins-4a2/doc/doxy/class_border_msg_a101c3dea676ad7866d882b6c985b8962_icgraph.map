@@ -1,0 +1,11 @@
+digraph "BorderMsg::getDirection" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,536,16"];
+	Node1 [label="BorderMsg::getDirection", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,8", rects="8,0,136,16"];
+	Node2 [label="BaseMobility::handleBorderMsg", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1cd10753592e8eeb018d8f774ce862c6", tooltip="Called upon arrival of a border messages. ", pos="256,8", rects="173,0,340,16"];
+	Node3 [label="BaseMobility::handleMessage", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aad7ebb839ae5726f97ccf149ae661333", tooltip="This modules should only receive self-messages. ", pos="452,8", rects="376,0,528,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,8 146,8 155,8 163,8 172,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,8 349,8 358,8 367,8 376,8"];
+}

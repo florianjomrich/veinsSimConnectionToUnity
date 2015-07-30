@@ -1,0 +1,9 @@
+digraph "BasePhyLayer::getCurrentRadioChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,318,28"];
+	Node1 [label="BasePhyLayer::getCurrent\lRadioChannel", height="0.39", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,14", rects="8,0,146,28"];
+	Node2 [label="Veins::Radio::getCurrent\lChannel", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a6e7fa250ec1b1793c51931a7cb7ae914", tooltip="Returns the channel the radio is currently set to. ", pos="246,14", rects="183,0,310,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,182,14 146,14 155,14 163,14 172,14"];
+}

@@ -1,0 +1,9 @@
+digraph doPacking {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,232,28"];
+	Node1 [label=doPacking, height="0.22", width="0.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="39,14", rects="9,6,70,22"];
+	Node2 [label="ChannelSenseRequest\l::parsimPack", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html#ad68b445d5a8c69a09c65cb11d411e691", pos="165,14", rects="106,0,224,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,106,14 70,14 78,14 86,14 95,14"];
+}

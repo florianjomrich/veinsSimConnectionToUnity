@@ -1,0 +1,9 @@
+digraph "TwoRayInterferenceModel::Mapping::constClone" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,344,28"];
+	Node1 [label="TwoRayInterferenceModel\l::Mapping::constClone", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,14", rects="9,0,154,28"];
+	Node2 [label="TwoRayInterferenceModel\l::Mapping::Mapping", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model_1_1_mapping.html#a213028d2da53563f4c3b069e7c6b1608", pos="263,14", rects="191,0,336,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,190,14 154,14 163,14 171,14 180,14"];
+}

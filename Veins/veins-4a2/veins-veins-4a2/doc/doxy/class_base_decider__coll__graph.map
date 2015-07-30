@@ -1,0 +1,18 @@
+digraph BaseDecider {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,318,236"];
+	Node1 [label=BaseDecider, height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="131,16", rects="96,8,166,24"];
+	Node2 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=white, style=filled, URL="$class_decider.html", tooltip="The basic Decider class. ", pos="72,84", rects="49,76,96,92"];
+	Node3 [label=DeciderToPhyInterface, height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html", tooltip="This class is the interface for a Decider to the BasePhyLayer. ", pos="62,152", rects="0,144,125,160"];
+	Node4 [label="BaseDecider::CSRInfo", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$struct_base_decider_1_1_c_s_r_info.html", tooltip="Data about an currently ongoing ChannelSenseRequest. ", pos="176,84", rects="118,76,235,92"];
+	Node5 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html", pos="201,152", rects="142,144,260,160"];
+	Node6 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="162,220", rects="139,212,186,228"];
+	Node7 [label=ChannelState, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_channel_state.html", tooltip="Provides information about the current state of the channel: ", pos="240,220", rects="203,212,278,228"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,79,76 85,70 97,56 115,35 124,24"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" phy", pos="s,63,144 64,135 66,122 69,103 71,92", lp="85,118"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" currentChannelSenseRequest", pos="s,171,76 166,69 157,55 144,35 136,24", lp="237,50"];
+	Node5 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" first", pos="s,198,144 195,136 190,122 183,103 179,92", lp="207,118"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,167,212 171,204 179,191 190,171 196,160"];
+	Node7 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" result_var", pos="s,235,212 231,204 223,191 212,171 206,160", lp="257,186"];
+}

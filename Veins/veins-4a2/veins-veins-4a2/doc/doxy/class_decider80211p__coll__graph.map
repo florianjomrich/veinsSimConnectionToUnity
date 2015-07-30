@@ -1,0 +1,22 @@
+digraph Decider80211p {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,314,316"];
+	Node1 [label=Decider80211p, height="0.22", width="1.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="200,16", rects="162,8,239,24"];
+	Node2 [label=BaseDecider, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html", tooltip="Provides some base functionality for most common deciders. ", pos="108,90", rects="73,82,143,98"];
+	Node3 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=white, style=filled, URL="$class_decider.html", tooltip="The basic Decider class. ", pos="72,164", rects="49,156,96,172"];
+	Node4 [label=DeciderToPhyInterface, height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html", tooltip="This class is the interface for a Decider to the BasePhyLayer. ", pos="62,232", rects="0,224,125,240"];
+	Node5 [label="BaseDecider::CSRInfo", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$struct_base_decider_1_1_c_s_r_info.html", tooltip="Data about an currently ongoing ChannelSenseRequest. ", pos="191,164", rects="133,156,250,172"];
+	Node6 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html", pos="201,232", rects="142,224,260,240"];
+	Node7 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="162,300", rects="139,292,186,308"];
+	Node8 [label=ChannelState, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_channel_state.html", tooltip="Provides information about the current state of the channel: ", pos="240,300", rects="203,292,278,308"];
+	Node9 [label="Decider80211pToPhy80211p\lInterface", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_decider80211p_to_phy80211p_interface.html", tooltip="Interface of PhyLayer80211p exposed to Decider80211p. ", pos="231,90", rects="161,76,301,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,118,82 124,77 144,62 174,36 190,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,76,156 80,148 87,133 98,110 104,98"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" phy", pos="s,63,224 64,215 66,202 69,183 71,172", lp="85,198"];
+	Node5 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" currentChannelSenseRequest", pos="s,180,156 173,150 168,146 162,142 157,138 142,125 125,108 116,98", lp="242,130"];
+	Node6 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" first", pos="s,200,224 199,215 197,202 194,183 192,172", lp="215,198"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,167,292 171,284 179,271 190,251 196,240"];
+	Node8 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" result_var", pos="s,235,292 231,284 223,271 212,251 206,240", lp="259,266"];
+	Node9 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" phy11p", pos="s,225,76 222,68 216,53 208,35 203,24", lp="243,50"];
+}

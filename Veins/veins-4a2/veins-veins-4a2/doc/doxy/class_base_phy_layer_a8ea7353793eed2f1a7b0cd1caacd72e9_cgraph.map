@@ -1,0 +1,13 @@
+digraph "BasePhyLayer::initializeAnalogueModels" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,504,74"];
+	Node1 [label="BasePhyLayer::initialize\lAnalogueModels", height="0.39", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,37", rects="9,23,134,51"];
+	Node2 [label="BasePhyLayer::getAnalogue\lModelFromName", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a419df7f53684ee758de1dcabb959e10f", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="247,60", rects="174,46,321,74"];
+	Node3 [label="Veins::Radio::getAnalogue\lModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a38a6c78b55f1442108b44a0bd27abb9f", tooltip="Returns a pointer to the RadioStateAnalogueModel. ", pos="428,60", rects="360,46,496,74"];
+	Node4 [label="BasePhyLayer::getParameters\lFromXML", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aa89a9272b99ab3005347301c2effc254", tooltip="Utility function. ", pos="247,14", rects="170,0,324,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,173,50 134,45 144,46 153,48 163,49"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,360,60 321,60 331,60 340,60 350,60"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,170,24 134,29 143,28 151,27 160,25"];
+}

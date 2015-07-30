@@ -1,0 +1,9 @@
+digraph "SimpleConstMapping::initializeArguments" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,310,28"];
+	Node1 [label="SimpleConstMapping\l::initializeArguments", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,14", rects="8,0,124,28"];
+	Node2 [label="BasePhyLayer::getThermal\lNoise", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a42664d512b88bedf58b5d21adc180984", tooltip="Returns a Mapping which defines the thermal noise in the passed time frame (in mW). ", pos="231,14", rects="161,0,302,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,124,14 133,14 142,14 151,14 160,14"];
+}

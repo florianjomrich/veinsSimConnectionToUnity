@@ -1,0 +1,8 @@
+digraph "PairLess&lt; Pair, Key &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,192,112"];
+	Node1 [label="PairLess\< Pair, Key \>", height="0.22", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="58,96", rects="0,88,117,104"];
+	Node2 [label="PairLess\< pair_type,\l key_type \>", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", pos="58,22", rects="3,8,114,36"];
+	Node1 -> Node2 [dir=back, color=orange, style=dashed, label=" \< pair_type, key_type \>", pos="s,58,88 58,80 58,67 58,49 58,36", lp="125,62"];
+}

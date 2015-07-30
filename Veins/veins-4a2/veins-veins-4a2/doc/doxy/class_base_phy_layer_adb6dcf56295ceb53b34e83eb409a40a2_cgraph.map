@@ -1,0 +1,13 @@
+digraph "BasePhyLayer::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,660,28"];
+	Node1 [label="BasePhyLayer::filterSignal", height="0.22", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,14", rects="9,6,148,22"];
+	Node2 [label="Veins::ChannelAccess\l::getMobilityModule", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#a130bfd04f4e40b490929f99d96cc1aef", tooltip="Returns the host&#39;s mobility module. ", pos="242,14", rects="185,0,300,28"];
+	Node3 [label="AccessModuleWrap::get", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_access_module_wrap.html#aabe6dcb792c40ce4c77b2f194aadbe5f", pos="400,14", rects="337,6,464,22"];
+	Node4 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="576,14", rects="501,6,652,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,184,14 148,14 157,14 166,14 174,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,336,14 300,14 309,14 317,14 326,14"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,500,14 464,14 473,14 481,14 490,14"];
+}

@@ -1,0 +1,29 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,698,234"];
+	Node1 [label=ConstMappingIterator, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html", tooltip="Defines an const iterator for a ConstMapping which is able to iterate over the Mapping. ", pos="68,92", rects="9,84,128,100"];
+	Node2 [label=MappingIterator, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_mapping_iterator.html", tooltip="Defines an iterator for a Mapping which is able to iterate over the Mapping. ", pos="242,126", rects="197,118,288,134"];
+	Node3 [label="BaseFilteredIterator\l\< MappingIterator \>", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", pos="438,220", rects="382,206,494,234"];
+	Node4 [label=FilteredMappingIterator, height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_filtered_mapping_iterator.html", tooltip="Non-Const version of the BaseFilteredIterator. ", pos="623,220", rects="559,212,687,228"];
+	Node5 [label=ConstMappingIteratorWrapper, height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator_wrapper.html", tooltip="Wraps an ConstMappingIterator into a MappingIterator interface. ", pos="438,180", rects="356,172,520,188"];
+	Node6 [label=LinearIntplMappingIterator, height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_linear_intpl_mapping_iterator.html", tooltip="Helper-class for the MultiDimMapping which provides an Iterator which linear interpolates between two...", pos="438,146", rects="365,138,512,154"];
+	Node7 [label="MultiDimMappingIterator\l\< Interpolator \>", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html", tooltip="Implementation of the MappingIterator-interface which is able to iterate over every value in a MultiD...", pos="438,106", rects="368,92,509,120"];
+	Node8 [label="MultiDimMappingIterator\l\< Linear \>", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html", pos="438,60", rects="368,46,509,74"];
+	Node9 [label=FilledUpMappingIterator, height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_filled_up_mapping_iterator.html", tooltip="MappingIterator implementation for FilledUpMappings. ", pos="623,60", rects="556,52,690,68"];
+	Node10 [label="TimeMappingIterator\l\< Interpolator \>", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_time_mapping_iterator.html", tooltip="Provides an implementation of the MappingIterator- Interface which is able to iterate over TimeMappin...", pos="438,14", rects="380,0,497,28"];
+	Node11 [label=RSAMConstMappingIterator, height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_r_s_a_m_const_mapping_iterator.html", tooltip="ConstMapingIterator implementation for a RSAM. ", pos="242,92", rects="165,84,320,100"];
+	Node12 [label=SimpleConstMappingIterator, height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping_iterator.html", tooltip="A fully working ConstIterator-implementation usable with almost every ConstMapping. ", pos="242,58", rects="166,50,319,66"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,100 136,103 147,108 150,114 164,118 174,121 186,123 196,124"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,288,123 297,124 305,126 313,129 320,134 350,154 328,184 356,206 364,212 373,215 382,218"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,494,220 503,220 521,220 541,220 559,220"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,288,125 297,126 305,128 313,130 320,134 341,144 336,161 356,172"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,288,130 297,131 305,133 313,133 320,134 337,135 340,136 356,138 359,138 362,138 364,139"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,288,121 296,120 319,118 344,116 367,113"];
+	Node2 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,288,127 297,126 305,124 313,122 320,118 343,106 335,86 356,74 360,72 363,70 367,68"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,509,60 519,60 531,60 544,60 556,60"];
+	Node2 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,288,129 297,128 305,126 313,123 320,118 355,92 323,55 356,28 363,22 371,19 379,16"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,128,92 138,92 147,92 155,92 164,92"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,128,84 136,81 147,75 150,69 164,66 164,66 165,66 165,66"];
+}

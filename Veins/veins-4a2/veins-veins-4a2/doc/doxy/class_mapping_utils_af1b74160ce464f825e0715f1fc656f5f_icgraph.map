@@ -1,0 +1,11 @@
+digraph "MappingUtils::addDiscontinuity" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,564,28"];
+	Node1 [label="MappingUtils::addDiscontinuity", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,14", rects="9,6,174,22"];
+	Node2 [label="BaseMacLayer::createRectangle\lMapping", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a23ed373dcfd98255df5f5ffa7e30eec6", tooltip="Creates a simple Mapping with a constant curve progression at the passed value and discontinuities at...", pos="292,14", rects="210,0,374,28"];
+	Node3 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a28ca155ff241c3e202a94724cc87b232", tooltip="Creates a simple Signal defined over time with the passed parameters. ", pos="483,14", rects="411,6,556,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,174,14 184,14 193,14 201,14 210,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,374,14 384,14 393,14 401,14 410,14"];
+}

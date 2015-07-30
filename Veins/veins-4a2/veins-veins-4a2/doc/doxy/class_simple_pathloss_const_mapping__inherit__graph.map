@@ -1,0 +1,10 @@
+digraph SimplePathlossConstMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,156,136"];
+	Node1 [label=SimplePathlossConstMapping, height="0.22", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,16", rects="0,8,156,24"];
+	Node2 [label=SimpleConstMapping, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html", tooltip="Abstract subclass of ConstMapping which can be used as base for any ConstMapping implementation with ...", pos="78,68", rects="20,60,136,76"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="78,120", rects="37,112,120,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,78,60 78,51 78,42 78,31 78,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,78,112 78,103 78,94 78,83 78,76"];
+}

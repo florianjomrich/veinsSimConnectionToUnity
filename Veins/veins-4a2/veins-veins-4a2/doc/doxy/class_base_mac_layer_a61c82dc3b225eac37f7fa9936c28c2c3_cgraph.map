@@ -1,0 +1,21 @@
+digraph "BaseMacLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,502,210"];
+	Node1 [label="BaseMacLayer::initialize", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,105", rects="9,97,136,113"];
+	Node2 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a70f5ea30a9980d57b8384faed29ec3eb", tooltip="Initialization of the module and some variables. ", pos="256,202", rects="203,194,309,210"];
+	Node3 [label="MacToPhyInterface::\lgetPhyHeaderLength", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_interface.html#adf27aa5a5e5cbee6f8be1ec58cb9306f", tooltip="Returns the length of the phy header in bits. ", pos="256,162", rects="199,148,314,176"];
+	Node4 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="256,122", rects="181,114,332,130"];
+	Node5 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="256,88", rects="198,80,315,96"];
+	Node6 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="435,88", rects="377,80,494,96"];
+	Node7 [label="AddressingInterface\l::myMacAddr", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_addressing_interface.html#a7d81614e8dea6e3a7316184e6b9e959c", tooltip="Returns the L2 address for the passed mac. ", pos="256,48", rects="202,34,311,62"];
+	Node8 [label="BaseMacLayer::registerInterface", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#adc87295362ca7859cb6fe2a5bbe3c90d", tooltip="Registers this bridge&#39;s NIC with INET&#39;s InterfaceTable. ", pos="256,8", rects="173,0,340,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,203,205 136,113 168,136 141,170 172,194 178,198 186,201 193,203"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,198,157 136,113 157,122 153,137 172,148 177,151 183,153 188,154"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,180,115 136,111 147,112 159,113 170,114"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,197,93 136,99 153,97 171,96 187,94"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,376,88 315,88 332,88 350,88 366,88"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,201,52 136,97 157,87 153,72 172,62 178,59 185,56 191,54"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,172,16 136,97 165,75 146,46 164,23"];
+}

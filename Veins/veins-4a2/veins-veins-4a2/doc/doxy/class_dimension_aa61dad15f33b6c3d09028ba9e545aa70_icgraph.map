@@ -1,0 +1,26 @@
+digraph "Dimension::Dimension" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,694,172"];
+	Node1 [label="Dimension::Dimension", height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,60", rects="9,52,128,68"];
+	Node2 [label="Dimension::frequency\l_static", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#aad8d4dbdfadd58664a90f34ce4d8154e", tooltip="Shortcut to the frequency Dimension, same as &#39;Dimension(\"frequency\")&#39;, but spares the parsing of a st...", pos="224,80", rects="166,66,283,94"];
+	Node3 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="603,146", rects="534,132,673,160"];
+	Node4 [label="Decider80211p::calcChannel\lSenseRSSI", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a09e54d78f37b5e61aa100ea5b9f3083f", tooltip="Calculates the RSSI value for the passed ChannelSenseRequest. ", pos="402,120", rects="332,106,472,134"];
+	Node5 [label="Decider80211p::checkIfSignalOk", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a01349c12df6c01678d1e25553b754819", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="402,8", rects="321,0,484,16"];
+	Node6 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="603,42", rects="520,34,686,50"];
+	Node7 [label="Decider80211p::cca", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#aeba984a7f23ef26ce8b22b0bfef88947", pos="402,80", rects="354,72,450,88"];
+	Node8 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="603,82", rects="531,68,675,96"];
+	Node9 [label="Dimension::time_static", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#a0ebe0eeec14af70b3f75f675c3eb7a7b", tooltip="Shortcut to the time Dimension, same as &#39;Dimension(\"time\")&#39;, but spares the parsing of a string...", pos="224,40", rects="165,32,284,48"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,68 138,69 147,70 156,71 165,72"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,264,94 272,96 276,98 280,100 284,103 305,116 299,133 320,143 357,159 462,156 533,151"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,283,94 292,96 302,99 307,102 320,106 324,107 328,108 332,108"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,283,67 290,61 305,46 299,28 320,16"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,484,16 493,19 503,23 506,30 520,34"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,283,80 293,80 313,80 335,80 354,80"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,450,80 459,80 481,80 507,81 531,81"];
+	Node7 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,450,78 459,79 468,81 476,83 484,88 507,99 499,119 520,132 524,134 529,136 533,138"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,450,79 458,78 467,76 476,74 484,72 502,66 503,55 520,50"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,283,69 292,67 301,65 311,64 320,63 387,54 463,49 520,46"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,128,52 137,51 146,50 155,49 164,48"];
+}

@@ -1,0 +1,17 @@
+digraph "BaseMacLayer::encapsMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,724,96"];
+	Node1 [label="BaseMacLayer::encapsMsg", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,42", rects="9,34,150,50"];
+	Node2 [label="BaseMacLayer::getUpperDestination\lFromControlInfo", height="0.39", width="2.61", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a64013bf689c9da4e79fa48116e14730e", tooltip="Extracts the MAC address from the \"control info\" structure (object). ", pos="281,82", rects="187,68,376,96"];
+	Node3 [label="NetwToMacControlInfo\l::getDestFromControlInfo", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_netw_to_mac_control_info.html#add42e098a1af72c3fbc8be746d04b27f", tooltip="Extracts the MAC address from the \"control info\" structure (object). ", pos="480,82", rects="413,68,548,96"];
+	Node4 [label="NetwToMacControlInfo\l::getDest", height="0.39", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_netw_to_mac_control_info.html#a19518c8f5ccf35d44a2813a922e214ef", pos="650,82", rects="585,68,716,96"];
+	Node5 [label="MacPkt::setDestAddr", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_mac_pkt.html#a72fd30a2a508d10258c3fddd7167549d", pos="281,42", rects="225,34,337,50"];
+	Node6 [label="MacPkt::setSrcAddr", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_mac_pkt.html#adbb8351e4adc8c8bc3d8147a80d9917f", pos="281,8", rects="228,0,334,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,186,68 150,50 164,54 168,59 177,64"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,412,82 376,82 385,82 394,82 402,82"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,584,82 548,82 557,82 565,82 574,82"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,225,42 150,42 171,42 195,42 216,42"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,228,9 150,34 168,28 169,20 186,16 196,13 207,11 218,10"];
+}

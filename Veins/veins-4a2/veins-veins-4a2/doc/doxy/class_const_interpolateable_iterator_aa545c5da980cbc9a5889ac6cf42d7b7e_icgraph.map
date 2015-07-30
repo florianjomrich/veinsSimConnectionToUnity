@@ -1,0 +1,9 @@
+digraph "ConstInterpolateableIterator::getNextPosition" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,362,28"];
+	Node1 [label="ConstInterpolateableIterator\l::getNextPosition", height="0.39", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,14", rects="9,0,156,28"];
+	Node2 [label="MultiDimMappingIterator\l\< Linear \>::updateNextPosition", height="0.39", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a1eb04551f2a3ae22f0eae4844f14ac97", tooltip="Helper method which updates the nextPosition member. ", pos="273,14", rects="192,0,354,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,14 166,14 175,14 183,14 192,14"];
+}

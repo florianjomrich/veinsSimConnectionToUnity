@@ -1,0 +1,30 @@
+digraph "ChannelInfo::removeAirFrame" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1134,169"];
+	Node1 [label="ChannelInfo::removeAirFrame", height="0.22", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="89,88", rects="9,80,170,96"];
+	Node2 [label="Veins::AirFrame::getDuration", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a713e5d23b4ccb3d89d29468ff1dd7b89", pos="674,160", rects="598,152,750,168"];
+	Node3 [label="ChannelInfo::deleteAirFrame", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#aec072c13541b9a22bbdcc8e9103fe9e5", tooltip="Deletes an AirFrame from an AirFrameMatrix. ", pos="285,122", rects="209,114,361,130"];
+	Node4 [label="ChannelInfo::addToInactives", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a002d7a0fff6734bdb6d8ddebf799f7f5", tooltip="Moves a previously active AirFrame to the inactive AirFrames. ", pos="285,88", rects="210,80,360,96"];
+	Node5 [label="ChannelInfo::checkAndClean\lInterval", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a1ffb197c5bf86824cd04313da5e9e4ed", tooltip="Checks if any information inside the passed interval can be discarded. ", pos="477,88", rects="400,74,554,102"];
+	Node6 [label="ChannelInfo::BaseIntersection\lIterator::next", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html#a2acff6a4c595060ffc74872cdc0be1db", tooltip="Increases the iterator to the next intersecting AirFrame and returns a pointer to this AirFrame...", pos="1048,94", rects="971,80,1126,108"];
+	Node7 [label="ChannelInfo::canDiscardInterval", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#ab4da0befdce7f2b27ae4a61d66ec2167", tooltip="Returns true if all information inside the passed interval can be deleted. ", pos="674,42", rects="590,34,758,50"];
+	Node8 [label="ChannelInfo::isIntersecting", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a2a4e738d7d51c1dc53ba7404b68103ec", tooltip="Returns true if there is at least one AirFrame in the passed AirFrameMatrix which intersect with the ...", pos="864,65", rects="794,57,934,73"];
+	Node9 [label="ChannelInfo::Intersection\lIterator::eraseAirFrame", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_intersection_iterator.html#a6f09ba91d68c971a39fd2c5652e0e4a0", tooltip="Erases the AirFrame the iterator currently points to from the AirFrameMatrix. ", pos="674,82", rects="608,68,740,96"];
+	Node10 [label="ChannelInfo::isChannelEmpty", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a5af012c57b6bb9930b1634138ab65bf8", tooltip="Returns true if there are currently no active or inactive AirFrames on the channel. ", pos="285,54", rects="206,46,364,62"];
+	Node11 [label="ChannelInfo::findEarliest\lInfoPoint", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a627fbeddfec6f3ec1da17a91b97f1051", tooltip="Returns the start time of the odlest AirFrame on the channel. ", pos="285,14", rects="219,0,352,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,598,163 151,96 158,98 164,101 170,104 190,114 186,130 206,139 273,167 472,166 588,163"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,209,115 170,96 185,99 188,106 200,112"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,210,88 170,88 180,88 190,88 200,88"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,400,88 360,88 370,88 380,88 390,88"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,970,100 554,101 566,103 578,104 590,105 719,115 867,108 959,101"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,598,156 554,102 578,116 567,137 589,151"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,590,50 554,74 568,68 571,60 581,54"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,794,57 758,50 771,52 776,53 784,55"];
+	Node8 -> Node6 [color=midnightblue, style=solid, pos="e,970,80 934,73 947,75 952,76 960,78"];
+	Node5 -> Node9 [color=midnightblue, style=solid, pos="e,608,84 554,86 569,85 583,85 598,84"];
+	Node4 -> Node7 [color=midnightblue, style=solid, pos="e,590,43 355,80 358,79 361,79 364,78 381,74 384,68 400,65 459,52 527,46 580,43"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,206,62 170,80 184,76 188,70 197,65"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,218,22 170,80 195,65 183,43 206,28 207,27 208,27 209,26"];
+}

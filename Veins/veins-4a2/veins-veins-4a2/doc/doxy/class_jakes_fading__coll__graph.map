@@ -1,0 +1,10 @@
+digraph JakesFading {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,188,100"];
+	Node1 [label=JakesFading, height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="90,16", rects="55,8,125,24"];
+	Node2 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="44,84", rects="0,76,89,92"];
+	Node3 [label=Argument, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_argument.html", tooltip="Defines an argument for a mapping. ", pos="137,84", rects="106,76,168,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,49,76 54,69 63,55 77,35 85,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" interval", pos="s,131,76 126,69 117,55 104,35 96,24", lp="143,50"];
+}

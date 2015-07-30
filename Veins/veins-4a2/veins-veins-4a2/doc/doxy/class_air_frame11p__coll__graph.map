@@ -1,0 +1,26 @@
+digraph AirFrame11p {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,282,448"];
+	Node1 [label=AirFrame11p, height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,16", rects="37,8,108,24"];
+	Node2 [label="Veins::AirFrame", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html", tooltip="Class generated from veins/base/messages/AirFrame.msg:33 by nedtool. ", pos="72,70", rects="28,62,117,78"];
+	Node3 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="46,138", rects="23,130,70,146"];
+	Node4 [label=Signal, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_signal.html", tooltip="The signal class stores the physical representation of the signal of an AirFrame. ...", pos="107,138", rects="87,130,127,146"];
+	Node5 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="107,224", rects="80,216,135,232"];
+	Node6 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="132,298", rects="91,290,174,306"];
+	Node7 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="132,372", rects="94,364,171,380"];
+	Node8 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="132,432", rects="76,424,189,440"];
+	Node9 [label="ConcatConstMapping\l\< Operator \>", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html", tooltip="Defines it values by concatenating one or more Mappings to a reference Mapping. ", pos="210,224", rects="152,210,269,238"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,72,62 72,52 72,43 72,31 72,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,49,130 52,122 57,108 65,89 69,78"];
+	Node4 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" signal_var", pos="s,103,130 99,122 92,109 82,89 76,78", lp="129,104"];
+	Node5 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" txBitrate\nbitrate", pos="s,107,216 107,208 107,189 107,160 107,146", lp="135,178"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,129,290 127,282 122,267 114,244 110,232"];
+	Node7 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,132,364 132,355 132,340 132,318 132,306", lp="166,332"];
+	Node8 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,132,424 132,415 132,403 132,389 132,380"];
+	Node7 -> Node7 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,171,366 180,367 185,368 188,370 188,372 188,376 180,378 171,378", lp="235,372"];
+	Node6 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" power", pos="s,102,290 94,287 70,278 41,262 27,238 6,200 63,162 91,146", lp="52,224"];
+	Node9 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" rcvPower", pos="s,203,210 199,202 191,189 179,174 167,164 163,161 143,153 127,146", lp="222,178"];
+	Node6 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,141,290 147,285 161,272 181,252 195,238"];
+	Node6 -> Node9 [dir=back, color=darkorchid3, style=dashed, label=" refMapping", pos="s,152,290 160,285 167,281 174,277 180,272 190,262 198,248 203,238", lp="227,264"];
+}

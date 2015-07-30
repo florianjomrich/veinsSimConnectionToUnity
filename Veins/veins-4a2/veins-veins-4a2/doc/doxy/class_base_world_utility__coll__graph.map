@@ -1,0 +1,13 @@
+digraph BaseWorldUtility {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,208,154"];
+	Node1 [label=BaseWorldUtility, height="0.22", width="1.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,16", rects="26,8,122,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,84", rects="0,76,86,92"];
+	Node3 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="124,84", rects="104,76,144,92"];
+	Node4 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="124,138", rects="101,130,148,146"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,47,76 51,68 57,54 65,35 70,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" playgroundSize", pos="s,118,76 113,69 103,55 88,35 80,24", lp="149,50"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,124,130 124,120 124,111 124,99 124,92"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,144,78 154,78 159,79 162,81 162,84 162,89 154,91 144,90", lp="185,84"];
+}

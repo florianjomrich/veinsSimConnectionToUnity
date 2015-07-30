@@ -1,0 +1,26 @@
+digraph "ChannelInfo::deleteAirFrame" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1550,112"];
+	Node1 [label="ChannelInfo::deleteAirFrame", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,77", rects="8,69,160,85"];
+	Node2 [label="ChannelInfo::removeAirFrame", height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#af9ee0be843528ee913df218f73d4d713", tooltip="Tells the ChannelInfo that an AirFrame is over. ", pos="277,77", rects="197,69,358,85"];
+	Node3 [label="BasePhyLayer::handleAirFrame\lEndReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4f8fde562c0004b498fc3294c3f54c2f", tooltip="Handles incoming AirFrames with the state END_RECEIVE. ", pos="477,77", rects="394,63,560,91"];
+	Node4 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="1083,60", rects="1000,52,1166,68"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1462,58", rects="1383,50,1542,66"];
+	Node6 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="1274,60", rects="1202,46,1346,74"];
+	Node7 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="1274,14", rects="1206,0,1343,28"];
+	Node8 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="679,56", rects="596,42,762,70"];
+	Node9 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="881,18", rects="798,4,964,32"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,77 170,77 179,77 187,77 196,77"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,358,77 368,77 377,77 385,77 394,77"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,560,78 569,79 578,79 588,79 596,79 760,80 801,81 964,71 976,70 988,69 1000,68"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1162,68 1171,70 1184,74 1188,79 1202,83 1265,94 1284,97 1346,83 1364,79 1365,70 1382,66"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1166,60 1175,60 1184,60 1193,60 1202,60"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1166,52 1174,48 1185,42 1188,34 1202,28 1203,28 1204,27 1205,27"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1343,27 1351,30 1364,36 1367,45 1382,50"];
+	Node3 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,560,68 569,67 578,67 587,66 596,65"];
+	Node8 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,762,57 771,57 839,58 933,59 1000,59"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,762,42 770,40 781,37 785,34 798,32"];
+	Node9 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,964,32 972,35 983,41 986,47 1000,52"];
+}

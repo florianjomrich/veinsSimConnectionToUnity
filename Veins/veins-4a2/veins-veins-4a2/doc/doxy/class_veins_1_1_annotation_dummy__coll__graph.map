@@ -1,0 +1,8 @@
+digraph "Veins::AnnotationDummy" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,140,84"];
+	Node1 [label="Veins::AnnotationDummy", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,16", rects="0,8,140,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="70,68", rects="27,60,113,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,70,60 70,51 70,42 70,31 70,24"];
+}

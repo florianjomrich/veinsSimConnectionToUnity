@@ -1,0 +1,11 @@
+digraph "operator*" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,418,28"];
+	Node1 [label="operator*", height="0.22", width="0.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="36,14", rects="9,6,64,22"];
+	Node2 [label="MappingUtils::multiply", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a11550dc6dc55beb5a14def9ffb501a40", tooltip="Multiplies the passed functions element-wise with each other and returns the result in a new Function...", pos="162,14", rects="101,6,224,22"];
+	Node3 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a45c56f1ea72b2f8b278d1016ac6228df", pos="335,14", rects="260,0,410,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,100,14 64,14 72,14 81,14 90,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,260,14 224,14 233,14 241,14 250,14"];
+}

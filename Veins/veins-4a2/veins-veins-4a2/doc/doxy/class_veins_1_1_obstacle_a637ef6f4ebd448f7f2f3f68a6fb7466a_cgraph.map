@@ -1,0 +1,13 @@
+digraph "Veins::Obstacle::calculateAttenuation" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,420,50"];
+	Node1 [label="Veins::Obstacle::calculate\lAttenuation", height="0.39", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,25", rects="8,11,136,39"];
+	Node2 [label="Veins::Obstacle::getShape", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#a1e5a701e21f19186862a7e93fbf3727f", pos="237,42", rects="173,34,302,50"];
+	Node3 [label="Coord::distance", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_coord.html#ab6a7bfcc5c55e5d8edbc7c0cb5a11626", tooltip="Returns the distance to Coord &#39;a&#39;. ", pos="237,8", rects="196,0,278,16"];
+	Node4 [label="Coord::length", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#acc536671c07e1af44e6ad9676a6c39ad", tooltip="Returns the length of this Coords position vector. ", pos="375,8", rects="338,0,412,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,35 136,32 145,33 154,33 162,34"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,196,12 136,18 153,16 171,15 187,13"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,338,8 278,8 294,8 312,8 328,8"];
+}

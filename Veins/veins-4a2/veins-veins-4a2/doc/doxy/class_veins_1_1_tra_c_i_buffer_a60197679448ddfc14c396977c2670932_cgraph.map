@@ -1,0 +1,11 @@
+digraph "Veins::TraCIBuffer::operator&lt;&lt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,402,28"];
+	Node1 [label="Veins::TraCIBuffer\l::operator\<\<", height="0.39", width="1.44", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="61,14", rects="9,0,114,28"];
+	Node2 [label="Veins::TraCIBuffer\l::write", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a5716cca2373bc83b19f9182bc2b916b4", pos="203,14", rects="151,0,256,28"];
+	Node3 [label="Veins::isBigEndian", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a9701754031a4d3de7cc9eeaae1bf9e87", pos="343,14", rects="293,6,394,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,150,14 114,14 123,14 132,14 140,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,292,14 256,14 265,14 273,14 282,14"];
+}

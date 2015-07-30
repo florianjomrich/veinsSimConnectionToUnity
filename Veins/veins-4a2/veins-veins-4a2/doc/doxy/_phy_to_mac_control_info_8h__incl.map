@@ -1,0 +1,34 @@
+digraph "PhyToMacControlInfo.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,500,328"];
+	Node1 [label="PhyToMacControlInfo.h", height="0.22", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="243,312", rects="178,304,309,320"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="96,16", rects="65,8,127,24"];
+	Node3 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="410,68", rects="332,60,489,76"];
+	Node4 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="410,16", rects="320,8,500,24"];
+	Node5 [label="veins/base/phyLayer\l/Decider.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_decider_8h.html", pos="243,254", rects="187,240,299,268"];
+	Node6 [label="veins/base/phyLayer\l/DeciderToPhyInterface.h", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$_decider_to_phy_interface_8h.html", pos="144,126", rects="76,112,213,140"];
+	Node7 [label=vector, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="144,68", rects="124,60,164,76"];
+	Node8 [label=list, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="196,68", rects="182,60,211,76"];
+	Node9 [label="veins/base/messages\l/ChannelSenseRequest_m.h", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$_channel_sense_request__m_8h.html", pos="243,190", rects="170,176,317,204"];
+	Node10 [label="veins/base/phyLayer\l/ChannelState.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_channel_state_8h.html", pos="324,126", rects="268,112,380,140"];
+	Node11 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="291,68", rects="268,60,315,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,83,24 216,304 155,285 11,236 10,190 10,190 10,190 10,126 11,84 50,48 75,29"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,411,76 257,304 270,296 291,282 308,268 361,220 383,207 406,140 412,121 412,98 411,83"];
+	Node3 -> Node2 [color=midnightblue, style=solid, pos="e,127,24 348,60 292,52 210,40 137,26"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,410,24 410,60 410,53 410,42 410,33"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,243,268 243,304 243,298 243,287 243,278"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,91,24 188,240 148,210 67,141 67,140 50,103 72,55 87,31"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,409,76 298,240 314,226 338,206 340,204 364,178 372,171 389,140 398,121 404,98 407,83"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,144,140 207,240 191,232 172,220 161,204 149,188 145,165 144,148"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,144,76 144,112 144,104 144,94 144,85"];
+	Node6 -> Node8 [color=midnightblue, style=solid, pos="e,189,76 157,112 165,103 175,91 183,82"];
+	Node6 -> Node2 [color=midnightblue, style=solid, pos="e,98,24 135,112 128,102 120,88 115,76 108,61 103,44 100,31"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,373,76 208,112 257,102 322,87 364,78"];
+	Node5 -> Node9 [color=midnightblue, style=solid, pos="e,243,204 243,240 243,232 243,223 243,214"];
+	Node9 -> Node2 [color=midnightblue, style=solid, pos="e,123,24 245,176 247,150 248,93 219,60 213,53 167,37 133,27"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,306,140 261,176 273,167 287,156 299,146"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,296,76 316,112 311,104 305,92 300,84"];
+	Node10 -> Node3 [color=midnightblue, style=solid, pos="e,398,76 345,112 359,103 377,90 391,81"];
+	Node5 -> Node10 [color=midnightblue, style=solid, pos="e,328,140 282,240 299,232 316,220 325,204 334,187 333,164 330,148"];
+}

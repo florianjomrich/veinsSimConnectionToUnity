@@ -1,0 +1,15 @@
+digraph "NistErrorRate::getFec64QamBer" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,978,16"];
+	Node1 [label="NistErrorRate::getFec64QamBer", height="0.22", width="2.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,8", rects="8,0,176,16"];
+	Node2 [label="NistErrorRate::getChunkSuccessRate", height="0.22", width="2.64", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a25b315284a666a5065540f8f1da1cbe5", pos="308,8", rects="213,0,404,16"];
+	Node3 [label="Decider80211p::packetOk", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a25ca0927f831000b88741dc0db84246c", tooltip="computes if packet is ok or has errors ", pos="504,8", rects="440,0,568,16"];
+	Node4 [label="Decider80211p::checkIfSignalOk", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a01349c12df6c01678d1e25553b754819", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="686,8", rects="605,0,768,16"];
+	Node5 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="887,8", rects="804,0,970,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,8 186,8 195,8 203,8 212,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,404,8 414,8 423,8 431,8 440,8"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,568,8 578,8 587,8 595,8 604,8"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,768,8 778,8 787,8 795,8 804,8"];
+}

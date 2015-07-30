@@ -1,0 +1,16 @@
+digraph "TraCIConstants.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,724,84"];
+	Node1 [label="TraCIConstants.h", height="0.22", width="1.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="319,68", rects="272,60,367,76"];
+	Node2 [label="TraCIBuffer.cc", height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_buffer_8cc.html", pos="42,16", rects="0,8,85,24"];
+	Node3 [label="TraCICommandInterface.cc", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_command_interface_8cc.html", pos="175,16", rects="102,8,249,24"];
+	Node4 [label="TraCIConnection.cc", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_connection_8cc.html", pos="319,16", rects="266,8,372,24"];
+	Node5 [label="TraCIScenarioManager.cc", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_8cc.html", pos="458,16", rects="390,8,526,24"];
+	Node6 [label="TraCIScenarioManagerLaunchd.cc", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_launchd_8cc.html", pos="634,16", rects="544,8,724,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,276,60 266,58 214,48 134,33 85,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,297,60 288,57 261,47 221,33 197,24"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,319,60 319,51 319,42 319,31 319,24"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,340,60 348,57 375,47 413,33 436,24"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,367,60 377,58 450,46 532,33 584,24"];
+}

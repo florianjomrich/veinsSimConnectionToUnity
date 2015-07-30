@@ -1,0 +1,9 @@
+digraph "PhyToMacControlInfo::getDeciderResultFromControlInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,358,28"];
+	Node1 [label="PhyToMacControlInfo\l::getDeciderResultFromControlInfo", height="0.39", width="2.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="99,14", rects="8,0,190,28"];
+	Node2 [label="PhyToMacControlInfo\l::getDeciderResult", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_phy_to_mac_control_info.html#a695fcb4091796018a3315486acafc9b0", tooltip="Returns the result of the evaluation of the Decider. ", pos="288,14", rects="227,0,350,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,226,14 190,14 199,14 208,14 216,14"];
+}

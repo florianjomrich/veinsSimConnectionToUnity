@@ -1,0 +1,8 @@
+digraph "Nearest&lt; _ContainerType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,148,96"];
+	Node1 [label="Nearest\< _ContainerType \>", height="0.22", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,16", rects="0,8,149,24"];
+	Node2 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="74,74", rects="24,60,125,88"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,74,60 74,51 74,41 74,31 74,24"];
+}

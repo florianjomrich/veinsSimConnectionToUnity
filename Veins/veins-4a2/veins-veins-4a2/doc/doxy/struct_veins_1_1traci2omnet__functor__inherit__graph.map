@@ -1,0 +1,8 @@
+digraph "Veins::traci2omnet_functor" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,124,108"];
+	Node1 [label="Veins::traci2omnet\l_functor", height="0.39", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,22", rects="13,8,112,36"];
+	Node2 [label="std::unary_function\l\< TraCICoord, Coord \>", height="0.39", width="1.72", color=grey75, fillcolor=white, style=filled, pos="62,86", rects="0,72,125,100"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,62,72 62,62 62,53 62,44 62,36"];
+}

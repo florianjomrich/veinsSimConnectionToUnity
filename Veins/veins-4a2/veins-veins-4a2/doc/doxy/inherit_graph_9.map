@@ -1,0 +1,21 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,326,152"];
+	Node1 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="32,76", rects="9,68,56,84"];
+	Node2 [label=BorderMsg, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$class_border_msg.html", tooltip="Class generated from veins/base/messages/BorderMsg.msg:34 by nedtool. ", pos="151,144", rects="119,136,184,152"];
+	Node3 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html", pos="151,110", rects="92,102,210,118"];
+	Node4 [label=MacPkt, height="0.22", width="0.67", color=black, fillcolor=white, style=filled, URL="$class_mac_pkt.html", tooltip="Class generated from veins/base/messages/MacPkt.msg:36 by nedtool. ", pos="151,76", rects="127,68,175,84"];
+	Node5 [label=Mac80211Pkt, height="0.22", width="1.00", color=black, fillcolor=white, style=filled, URL="$class_mac80211_pkt.html", tooltip="Class generated from veins/modules/messages/Mac80211Pkt.msg:24 by nedtool. ", pos="282,76", rects="246,68,318,84"];
+	Node6 [label="Veins::AirFrame", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html", tooltip="Class generated from veins/base/messages/AirFrame.msg:33 by nedtool. ", pos="151,42", rects="107,34,196,50"];
+	Node7 [label=AirFrame11p, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_air_frame11p.html", tooltip="Class generated from veins/modules/messages/AirFrame11p.msg:25 by nedtool. ", pos="282,42", rects="247,34,318,50"];
+	Node8 [label=WaveShortMessage, height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html", tooltip="Class generated from veins/modules/messages/WaveShortMessage.msg:27 by nedtool. ", pos="151,8", rects="98,0,205,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,56,84 63,90 77,105 72,123 92,136 100,140 109,143 118,144"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,56,84 64,87 74,92 78,97 92,102"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,56,76 65,76 84,76 109,76 127,76"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,175,76 184,76 203,76 226,76 246,76"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,56,68 64,64 74,59 78,54 92,50 97,49 102,47 106,46"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,196,42 206,42 219,42 234,42 246,42"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,56,68 63,62 77,46 72,28 92,16 94,15 95,14 97,13"];
+}

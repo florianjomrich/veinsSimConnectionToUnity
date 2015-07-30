@@ -1,0 +1,11 @@
+digraph "Veins::ChannelAccess::getConnectionManager" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,534,28"];
+	Node1 [label="Veins::ChannelAccess\l::getConnectionManager", height="0.39", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,14", rects="8,0,136,28"];
+	Node2 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="255,14", rects="173,6,338,22"];
+	Node3 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="450,14", rects="375,6,526,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,14 136,14 145,14 153,14 162,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,374,14 338,14 347,14 356,14 364,14"];
+}

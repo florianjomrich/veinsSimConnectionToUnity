@@ -1,0 +1,38 @@
+digraph "Veins::BatteryAccess" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,619,344"];
+	Node1 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="449,224", rects="394,216,504,232"];
+	Node2 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="449,276", rects="414,268,485,284"];
+	Node3 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="405,328", rects="362,320,448,336"];
+	Node4 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="493,328", rects="466,320,520,336"];
+	Node5 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="333,172", rects="302,164,364,180"];
+	Node6 [label=BaseApplLayer, height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html", tooltip="Base class for the application layer. ", pos="229,120", rects="186,112,273,128"];
+	Node7 [label=BaseWaveApplLayer, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html", tooltip="WAVE application layer base class. ", pos="97,68", rects="39,60,155,76"];
+	Node8 [label=TraCIDemo11p, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html", tooltip="Small IVC Demo using 11p. ", pos="41,16", rects="0,8,82,24"];
+	Node9 [label=TraCIDemoRSU11p, height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html", tooltip="Small RSU Demo using 11p. ", pos="153,16", rects="100,8,206,24"];
+	Node10 [label="Veins::TraCITestApp", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html", pos="229,68", rects="173,60,285,76"];
+	Node11 [label=BaseMacLayer, height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html", tooltip="A very simple MAC module template which provides de- and encapsulation of messages using the standard...", pos="333,120", rects="291,112,375,128"];
+	Node12 [label=Mac1609_4, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html", tooltip="Manages timeslots for CCH and SCH listening and sending. ", pos="335,68", rects="303,60,368,76"];
+	Node13 [label=BaseMobility, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html", tooltip="Base module for all mobility modules. ", pos="449,172", rects="412,164,487,180"];
+	Node14 [label="Veins::TraCIMobility", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html", pos="449,120", rects="393,112,505,128"];
+	Node15 [label="Veins::ChannelAccess", height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html", pos="562,172", rects="505,164,620,180"];
+	Node16 [label=BasePhyLayer, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html", tooltip="The BasePhyLayer represents the physical layer of a nic. ", pos="564,120", rects="523,112,605,128"];
+	Node17 [label=PhyLayer80211p, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html", tooltip="Adaptation of the PhyLayer class for 802.11p. ", pos="564,68", rects="520,60,609,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,449,268 449,259 449,250 449,239 449,232"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,412,320 418,313 426,303 436,292 442,284"];
+	Node4 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,486,320 480,313 472,303 462,292 456,284"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,431,216 423,212 402,202 370,189 351,180"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,317,164 309,160 289,150 262,137 245,128"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,209,112 201,109 176,99 140,85 118,76"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,88,60 81,54 71,44 58,32 50,24"];
+	Node7 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,106,60 112,54 122,44 135,32 144,24"];
+	Node6 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,229,112 229,103 229,94 229,83 229,76"];
+	Node5 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,333,164 333,155 333,146 333,135 333,128"];
+	Node11 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,333,112 334,104 334,94 334,84 335,76"];
+	Node1 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,449,216 449,207 449,198 449,187 449,180"];
+	Node13 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,449,164 449,155 449,146 449,135 449,128"];
+	Node1 -> Node15 [dir=back, color=midnightblue, style=solid, pos="s,467,216 475,212 496,202 525,189 544,180"];
+	Node15 -> Node16 [dir=back, color=midnightblue, style=solid, pos="s,562,164 563,155 563,146 563,135 564,128"];
+	Node16 -> Node17 [dir=back, color=midnightblue, style=solid, pos="s,564,112 564,103 564,94 564,83 564,76"];
+}

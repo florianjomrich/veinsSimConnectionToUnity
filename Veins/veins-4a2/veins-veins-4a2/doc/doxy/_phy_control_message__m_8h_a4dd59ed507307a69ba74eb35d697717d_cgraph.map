@@ -1,0 +1,9 @@
+digraph doPacking {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,226,28"];
+	Node1 [label=doPacking, height="0.22", width="0.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="39,14", rects="9,6,70,22"];
+	Node2 [label="PhyControlMessage::\lparsimPack", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_phy_control_message.html#a119c428cba20e50d32f4cc3068758454", pos="162,14", rects="107,0,218,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,106,14 70,14 78,14 87,14 96,14"];
+}

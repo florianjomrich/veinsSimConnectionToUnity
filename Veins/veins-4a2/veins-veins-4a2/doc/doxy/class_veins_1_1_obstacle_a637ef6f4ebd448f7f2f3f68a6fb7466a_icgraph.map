@@ -1,0 +1,11 @@
+digraph "Veins::Obstacle::calculateAttenuation" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,476,28"];
+	Node1 [label="Veins::Obstacle::calculate\lAttenuation", height="0.39", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,14", rects="8,0,136,28"];
+	Node2 [label="Veins::ObstacleControl\l::calculateAttenuation", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#ae3bc0ffe81dd2ca3145636656f392204", tooltip="calculate additional attenuation by obstacles, return signal strength ", pos="232,14", rects="172,0,292,28"];
+	Node3 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="398,14", rects="329,0,468,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,14 146,14 155,14 163,14 172,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,292,14 302,14 311,14 319,14 328,14"];
+}

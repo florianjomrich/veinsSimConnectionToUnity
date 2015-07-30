@@ -1,0 +1,10 @@
+digraph "NicEntryDirect.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,260,84"];
+	Node1 [label="NicEntryDirect.h", height="0.22", width="1.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="141,68", rects="94,60,188,76"];
+	Node2 [label="BaseConnectionManager.cc", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$_base_connection_manager_8cc.html", pos="72,16", rects="0,8,145,24"];
+	Node3 [label="NicEntryDirect.cc", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$_nic_entry_direct_8cc.html", pos="211,16", rects="162,8,260,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,130,60 123,54 110,45 94,32 83,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,152,60 159,55 172,45 189,32 200,24"];
+}

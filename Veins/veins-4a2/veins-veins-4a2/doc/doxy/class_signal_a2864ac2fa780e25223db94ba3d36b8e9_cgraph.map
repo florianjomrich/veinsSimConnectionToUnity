@@ -1,0 +1,11 @@
+digraph "Signal::setPropagationDelay" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,518,28"];
+	Node1 [label="Signal::setPropagationDelay", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="8,6,152,22"];
+	Node2 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="272,14", rects="189,6,356,22"];
+	Node3 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="451,14", rects="393,0,510,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,14 152,14 161,14 169,14 178,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,392,14 356,14 365,14 374,14 382,14"];
+}

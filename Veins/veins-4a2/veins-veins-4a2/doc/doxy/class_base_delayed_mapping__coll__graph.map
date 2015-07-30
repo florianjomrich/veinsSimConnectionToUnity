@@ -1,0 +1,9 @@
+digraph "BaseDelayedMapping&lt; Base &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,139,112"];
+	Node1 [label="BaseDelayedMapping\l\< Base \>", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,22", rects="0,8,118,36"];
+	Node2 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="59,96", rects="43,88,75,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,59,88 59,80 59,67 59,49 59,36"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mapping", pos="s,61,88 62,79 63,76 63,73 64,70 65,58 64,45 62,36", lp="93,62"];
+}

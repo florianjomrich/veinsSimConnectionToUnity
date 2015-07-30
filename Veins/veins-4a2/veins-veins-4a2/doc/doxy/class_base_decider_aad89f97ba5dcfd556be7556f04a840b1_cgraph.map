@@ -1,0 +1,13 @@
+digraph "BaseDecider::canAnswerCSR" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,330,120"];
+	Node1 [label="BaseDecider::canAnswerCSR", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,60", rects="8,52,160,68"];
+	Node2 [label="ChannelSenseRequest\l::getSenseMode", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html#a27ef56313d2b2b273fba86467906518b", pos="259,106", rects="200,92,318,120"];
+	Node3 [label="DeciderToPhyInterface\l::getSimTime", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html#a73660771f127a990489fb04da07ea39e", tooltip="Returns the current simulation time. ", pos="259,60", rects="197,46,322,74"];
+	Node4 [label="ChannelSenseRequest\l::getSenseTimeout", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html#a174933b0466807743cee69e497b39543", pos="259,14", rects="200,0,318,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,200,93 160,68 177,73 179,82 191,89"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,196,60 160,60 169,60 178,60 186,60"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,200,26 160,52 177,46 179,37 190,31"];
+}

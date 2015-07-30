@@ -1,0 +1,37 @@
+digraph "BaseMacLayer::createSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,752,196"];
+	Node1 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,73", rects="9,65,154,81"];
+	Node2 [label="BaseMacLayer::createRectangle\lMapping", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a23ed373dcfd98255df5f5ffa7e30eec6", tooltip="Creates a simple Mapping with a constant curve progression at the passed value and discontinuities at...", pos="272,93", rects="190,79,354,107"];
+	Node3 [label="MappingUtils::createMapping", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0c61c76ba04339162563339b23bf42e9", tooltip="Returns an appropriate changeable Mapping with the specified domain and the specified interpolation m...", pos="474,150", rects="397,142,552,158"];
+	Node4 [label="DimensionSet::hasDimension", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#a015cb6fa6c77b26b8c7b1e65827b8342", tooltip="Returns true if the passed Dimension is inside this DimensionSet. ", pos="669,150", rects="594,142,744,158"];
+	Node5 [label="MappingUtils::addDiscontinuity", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#af1b74160ce464f825e0715f1fc656f5f", tooltip="Adds a discontinuity in time-dimension, i.e. ", pos="474,116", rects="392,108,557,124"];
+	Node6 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="669,82", rects="617,74,722,90"];
+	Node7 [label="Mapping::setValue", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#ab8906dfac661d5c6a0a35cf1744f06ed", tooltip="Changes the value of the Mapping at the specified position. ", pos="669,185", rects="619,177,719,193"];
+	Node8 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="669,116", rects="618,108,721,124"];
+	Node9 [label="MappingUtils::post", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a31183e79401391df3e2d250846ae8d0e", tooltip="returns the closest value of simtime after passed values ", pos="474,82", rects="424,74,525,90"];
+	Node10 [label="MappingUtils::pre", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a2cf7c04c0adea7f6e9fe49101b0197c3", tooltip="returns the closest value of simtime before passed value ", pos="474,48", rects="426,40,523,56"];
+	Node11 [label="Signal::setTransmissionPower", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_signal.html#ad8c5494d0f7bd564bf14dc0c90f9a361", tooltip="Sets the function representing the transmission power of the signal. ", pos="272,53", rects="196,45,348,61"];
+	Node12 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="474,14", rects="391,6,558,22"];
+	Node13 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="669,14", rects="611,0,728,28"];
+	Node14 [label="BaseMacLayer::createConstant\lMapping", height="0.39", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a1c05648ce7d11bc767f9acd3d64ee067", tooltip="Creates a simple Mapping with a constant curve progression at the passed value. ", pos="272,150", rects="193,136,352,164"];
+	Node15 [label="Signal::setBitrate", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a86e4ecdabd5ca03ede5e2c81c6b76002", tooltip="Sets the function representing the bitrate of the signal. ", pos="272,19", rects="228,11,316,27"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,190,84 154,81 163,82 171,82 180,83"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,396,144 354,107 373,116 370,130 386,140"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,594,150 552,150 563,150 573,150 584,150"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,391,108 354,104 363,105 372,106 381,107"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,616,85 557,108 557,108 558,108 558,108 576,103 577,95 594,90 598,89 602,88 606,87"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,619,186 557,123 557,124 558,124 558,124 583,138 570,162 594,177 598,180 604,182 609,183"];
+	Node5 -> Node8 [color=midnightblue, style=solid, pos="e,617,116 557,116 574,116 592,116 608,116"];
+	Node2 -> Node9 [color=midnightblue, style=solid, pos="e,423,85 354,89 375,87 395,86 414,85"];
+	Node2 -> Node10 [color=midnightblue, style=solid, pos="e,425,48 354,79 372,72 373,62 390,56 398,53 407,51 415,50"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,196,60 154,65 170,63 173,62 186,61"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,390,22 348,47 350,46 352,46 354,45 368,39 372,32 381,26"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,610,14 558,14 572,14 587,14 600,14"];
+	Node1 -> Node14 [color=midnightblue, style=solid, pos="e,192,137 154,81 177,95 168,115 184,131"];
+	Node14 -> Node3 [color=midnightblue, style=solid, pos="e,396,150 352,150 364,150 375,150 386,150"];
+	Node14 -> Node7 [color=midnightblue, style=solid, pos="e,619,183 352,162 364,164 378,166 390,167 466,175 553,179 610,183"];
+	Node1 -> Node15 [color=midnightblue, style=solid, pos="e,228,17 154,65 175,54 170,37 190,27 199,23 209,20 218,18"];
+}

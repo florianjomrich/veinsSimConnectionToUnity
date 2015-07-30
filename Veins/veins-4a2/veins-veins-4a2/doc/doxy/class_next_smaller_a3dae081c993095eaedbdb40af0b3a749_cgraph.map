@@ -1,0 +1,9 @@
+digraph "NextSmaller::operator()" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,338,16"];
+	Node1 [label="NextSmaller::operator()", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,8", rects="9,0,132,16"];
+	Node2 [label="InterpolatorBase::asInterpolated", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html#ae79c26e2532175da7eaf9b8183c7cfe9", pos="249,8", rects="168,0,330,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,8 132,8 140,8 149,8 158,8"];
+}

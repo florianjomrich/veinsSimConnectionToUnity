@@ -1,0 +1,17 @@
+digraph "NistErrorRate::getQpskBer" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1146,16"];
+	Node1 [label="NistErrorRate::getQpskBer", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,8", rects="9,0,150,16"];
+	Node2 [label="NistErrorRate::getFecQpskBer", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a5814e5bd473a3127bf659d82edfd97fa", tooltip="Return BER of QPSK at the given SNR after applying FEC. ", pos="265,8", rects="186,0,344,16"];
+	Node3 [label="NistErrorRate::getChunkSuccessRate", height="0.22", width="2.64", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a25b315284a666a5065540f8f1da1cbe5", pos="476,8", rects="381,0,572,16"];
+	Node4 [label="Decider80211p::packetOk", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a25ca0927f831000b88741dc0db84246c", tooltip="computes if packet is ok or has errors ", pos="672,8", rects="608,0,736,16"];
+	Node5 [label="Decider80211p::checkIfSignalOk", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a01349c12df6c01678d1e25553b754819", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="854,8", rects="773,0,936,16"];
+	Node6 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="1055,8", rects="972,0,1138,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,8 160,8 169,8 177,8 186,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,344,8 354,8 363,8 371,8 380,8"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,572,8 582,8 591,8 599,8 608,8"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,736,8 746,8 755,8 763,8 772,8"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,936,8 946,8 955,8 963,8 972,8"];
+}

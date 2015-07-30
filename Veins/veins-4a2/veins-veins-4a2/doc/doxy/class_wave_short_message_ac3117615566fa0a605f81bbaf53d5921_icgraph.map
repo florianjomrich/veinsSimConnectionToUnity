@@ -1,0 +1,11 @@
+digraph "WaveShortMessage::getPriority" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,368,50"];
+	Node1 [label="WaveShortMessage::getPriority", height="0.22", width="2.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="89,25", rects="8,17,170,33"];
+	Node2 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="283,42", rects="212,34,354,50"];
+	Node3 [label="Mac1609_4::handleUpperMsg", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#ac93bf319ea2065fd7e8c041697e49919", tooltip="Handle messages from upper layer. ", pos="283,8", rects="206,0,360,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,170,32 180,33 191,34 201,35 212,36"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,170,18 179,17 188,17 197,16 206,15"];
+}

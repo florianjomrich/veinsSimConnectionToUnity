@@ -1,0 +1,9 @@
+digraph "NicEntryDebug::collectFreeGates" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,346,28"];
+	Node1 [label="NicEntryDebug::collectFree\lGates", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="8,0,152,28"];
+	Node2 [label="NicEntryDebug::collectGates", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#ae4c6e480d8b2f3fc4199a7a8314ab2df", tooltip="Collects all free gates with a certain pattern as names and puts them on a stack. ...", pos="263,14", rects="188,6,338,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,14 152,14 161,14 169,14 178,14"];
+}

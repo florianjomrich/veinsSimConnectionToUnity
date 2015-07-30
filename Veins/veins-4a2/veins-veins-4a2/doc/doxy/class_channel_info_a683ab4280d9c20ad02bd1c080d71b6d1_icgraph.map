@@ -1,0 +1,13 @@
+digraph "ChannelInfo::getIntersections" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,548,50"];
+	Node1 [label="ChannelInfo::getIntersections", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,25", rects="9,17,160,33"];
+	Node2 [label="ChannelInfo::getAirFrames", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a76e9891245a5df7dd6bfb14e99e343e5", tooltip="Fills the passed AirFrameVector reference with the AirFrames which intersect with the given time inte...", pos="268,25", rects="197,17,340,33"];
+	Node3 [label="BasePhyLayer::getChannelInfo", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a44a1a7e9bc420aa7b835c8a7687f97a5", tooltip="Fills the passed AirFrameVector with all AirFrames that intersect with the time interval [from...", pos="458,42", rects="377,34,539,50"];
+	Node4 [label="BasePhyLayer::~BasePhyLayer", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a0fc69907490ed2752d2a888ef26348ff", tooltip="Free the pointer to the decider and the AnalogueModels and the Radio. ", pos="458,8", rects="376,0,540,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,25 170,25 179,25 187,25 196,25"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,31 350,32 359,33 368,33 377,34"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,340,19 349,18 358,18 367,17 376,16"];
+}

@@ -1,0 +1,10 @@
+digraph MacToPhyInterface {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,108,136"];
+	Node1 [label=MacToPhyInterface, height="0.22", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,120", rects="0,112,109,128"];
+	Node2 [label=BasePhyLayer, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html", tooltip="The BasePhyLayer represents the physical layer of a nic. ", pos="54,68", rects="13,60,95,76"];
+	Node3 [label=PhyLayer80211p, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html", tooltip="Adaptation of the PhyLayer class for 802.11p. ", pos="54,16", rects="10,8,99,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,54,112 54,103 54,94 54,83 54,76"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,54,60 54,51 54,42 54,31 54,24"];
+}

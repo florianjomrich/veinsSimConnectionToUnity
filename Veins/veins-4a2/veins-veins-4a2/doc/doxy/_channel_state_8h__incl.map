@@ -1,0 +1,14 @@
+digraph "ChannelState.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,301,136"];
+	Node1 [label="ChannelState.h", height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,120", rects="41,112,124,128"];
+	Node2 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,68", rects="0,60,47,76"];
+	Node3 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="142,68", rects="64,60,221,76"];
+	Node4 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="72,16", rects="41,8,103,24"];
+	Node5 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="211,16", rects="121,8,301,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,32,76 73,112 64,104 50,92 39,82"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,132,76 91,112 100,104 114,92 125,82"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,83,24 131,60 120,52 103,39 90,29"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,200,24 153,60 164,52 180,39 193,30"];
+}

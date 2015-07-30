@@ -1,0 +1,10 @@
+digraph LinearIntplMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,146,136"];
+	Node1 [label=LinearIntplMappingIterator, height="0.22", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,16", rects="0,8,147,24"];
+	Node2 [label=MappingIterator, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_mapping_iterator.html", tooltip="Defines an iterator for a Mapping which is able to iterate over the Mapping. ", pos="73,68", rects="28,60,119,76"];
+	Node3 [label=ConstMappingIterator, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html", tooltip="Defines an const iterator for a ConstMapping which is able to iterate over the Mapping. ", pos="73,120", rects="14,112,133,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,73,60 73,51 73,42 73,31 73,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,73,112 73,103 73,94 73,83 73,76"];
+}

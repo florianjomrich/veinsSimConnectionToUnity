@@ -1,0 +1,15 @@
+digraph "Veins::AnnotationManager::drawLine" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,518,96"];
+	Node1 [label="Veins::AnnotationManager\l::drawLine", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,42", rects="8,28,150,56"];
+	Node2 [label="Veins::AnnotationManager\l::addFromXml", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a946e1967906528815fbe61cb8cfb2986", tooltip="adds Annotations from an XML document; example below. ", pos="259,82", rects="188,68,330,96"];
+	Node3 [label="Veins::AnnotationManager\l::initialize", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a4e45767a1dabba9ee81112336be01786", pos="439,82", rects="368,68,510,96"];
+	Node4 [label="TraCIDemoRSU11p::onData", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#ac9d01a67de93ec7f9e64ce7c664c370f", pos="259,42", rects="187,34,332,50"];
+	Node5 [label="TraCIDemo11p::onData", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a73a6ca11b60eeb8ca9a523e382787a72", pos="259,8", rects="199,0,320,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,56 158,58 169,61 173,64 186,68 187,68 187,68 188,68"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,330,82 340,82 349,82 358,82 368,82"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,150,42 160,42 169,42 177,42 186,42"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,150,28 158,25 169,22 173,18 186,16 190,15 194,14 198,14"];
+}

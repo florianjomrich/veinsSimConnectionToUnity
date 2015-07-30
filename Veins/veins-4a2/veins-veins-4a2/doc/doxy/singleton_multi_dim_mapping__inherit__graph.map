@@ -1,0 +1,14 @@
+digraph "MultiDimMapping&lt; Interpolator &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,182,262"];
+	Node1 [label="MultiDimMapping\< Interpolator \>", height="0.22", width="2.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,138", rects="0,130,183,146"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="91,192", rects="64,184,119,200"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="91,246", rects="50,238,133,254"];
+	Node4 [label="MultiDimMapping\< Linear \>", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html", pos="91,70", rects="13,62,170,78"];
+	Node5 [label=FilledUpMapping, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_filled_up_mapping.html", tooltip="Takes a source ConstMapping with a domain A and a set of KeyEntries for a domain B and creates a clon...", pos="91,16", rects="43,8,140,24"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,91,184 91,174 91,165 91,153 91,146"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,91,238 91,228 91,219 91,207 91,200"];
+	Node1 -> Node4 [dir=back, color=orange, style=dashed, label=" \< Linear \>", pos="s,91,130 91,121 91,107 91,89 91,78", lp="124,104"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,91,62 91,52 91,43 91,31 91,24"];
+}

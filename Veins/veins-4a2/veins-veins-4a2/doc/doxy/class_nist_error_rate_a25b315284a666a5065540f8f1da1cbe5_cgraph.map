@@ -1,0 +1,30 @@
+digraph "NistErrorRate::getChunkSuccessRate" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,600,169"];
+	Node1 [label="NistErrorRate::getChunkSuccessRate", height="0.22", width="2.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="104,93", rects="9,85,200,101"];
+	Node2 [label=getMCS, height="0.22", width="0.67", color=black, fillcolor=white, style=filled, URL="$_consts_phy_8h.html#a481094cdfeec1bcd0e44a79583b2e538", tooltip="returns encoding given datarate ", pos="320,161", rects="296,153,345,169"];
+	Node3 [label="NistErrorRate::getFecBpskBer", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a03eb0d0c7cc0a63f450ea688ddb65117", tooltip="Return BER of BPSK at the given SNR after applying FEC. ", pos="320,127", rects="242,119,399,135"];
+	Node4 [label="NistErrorRate::getBpskBer", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a18175d82399d69438e554cb95c7604a3", tooltip="Return BER of BPSK at the given SNR. ", pos="516,144", rects="446,136,586,152"];
+	Node5 [label="NistErrorRate::calculatePe", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#aa2df206d0e5cc31a3c3587438c7d5b74", tooltip="Return the coded BER for the given p and b. ", pos="516,76", rects="448,68,585,84"];
+	Node6 [label="NistErrorRate::getFecQpskBer", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a5814e5bd473a3127bf659d82edfd97fa", tooltip="Return BER of QPSK at the given SNR after applying FEC. ", pos="320,93", rects="241,85,399,101"];
+	Node7 [label="NistErrorRate::getQpskBer", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#ab94ccc90f9c0e35de2dd00563f0e5032", tooltip="Return BER of QPSK at the given SNR. ", pos="516,110", rects="446,102,587,118"];
+	Node8 [label="NistErrorRate::getFec16QamBer", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a457f142bf69a3b9d28e8a5a37e48f1a7", tooltip="Return BER of QAM16 at the given SNR after applying FEC. ", pos="320,59", rects="238,51,403,67"];
+	Node9 [label="NistErrorRate::get16QamBer", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a1808f09736f8a581305d5ff4a58e2555", tooltip="Return BER of QAM16 at the given SNR. ", pos="516,42", rects="442,34,591,50"];
+	Node10 [label="NistErrorRate::getFec64QamBer", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#ac41a5562bd3d9b5b50352301af0f1189", tooltip="Return BER of QAM64 at the given SNR after applying FEC. ", pos="320,25", rects="236,17,404,33"];
+	Node11 [label="NistErrorRate::get64QamBer", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#aeeb73f566759330ab5b9f3c39beb1b86", tooltip="Return BER of QAM64 at the given SNR. ", pos="516,8", rects="441,0,592,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,295,164 200,101 225,115 212,138 236,153 251,161 270,163 286,164"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,241,120 200,101 216,105 219,112 231,117"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,446,138 399,134 411,135 424,136 436,137"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,447,81 399,121 401,120 402,120 404,119 424,110 420,95 437,85"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,241,93 200,93 211,93 221,93 231,93"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,445,104 399,100 411,101 423,102 435,103"];
+	Node6 -> Node5 [color=midnightblue, style=solid, pos="e,447,82 399,86 412,85 425,84 437,83"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,237,67 200,85 214,81 218,74 227,70"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,441,48 403,52 413,51 422,51 431,49"];
+	Node8 -> Node5 [color=midnightblue, style=solid, pos="e,447,70 403,66 415,67 426,68 437,69"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,236,33 200,85 222,72 215,52 229,38"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,440,15 404,18 413,17 422,17 430,16"];
+	Node10 -> Node5 [color=midnightblue, style=solid, pos="e,447,71 404,33 424,42 420,57 438,67"];
+}

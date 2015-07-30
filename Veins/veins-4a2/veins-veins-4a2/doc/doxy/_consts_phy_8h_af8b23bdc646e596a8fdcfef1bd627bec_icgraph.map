@@ -1,0 +1,14 @@
+digraph getNDBPS {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,618,54"];
+	Node1 [label=getNDBPS, height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="40,26", rects="8,18,72,34"];
+	Node2 [label="Mac1609_4::getFrameDuration", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#abce6dae1623dde7c27d61a7e433c89a0", pos="188,26", rects="109,18,268,34"];
+	Node3 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="539,26", rects="468,18,610,34"];
+	Node4 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a077b6bebe9a8f8d2a6fcce31c6af86a7", pos="368,8", rects="305,0,432,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,72,26 82,26 90,26 99,26 108,26"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,268,26 278,26 337,26 413,26 468,26"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,268,18 276,17 286,16 295,15 304,14"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,432,15 442,16 451,17 459,18 468,19"];
+}

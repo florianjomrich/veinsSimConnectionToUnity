@@ -1,0 +1,13 @@
+digraph "Coord::sqrdist" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,262,120"];
+	Node1 [label="Coord::sqrdist", height="0.22", width="1.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="45,60", rects="8,52,82,68"];
+	Node2 [label="SimplePathlossModel\l::calcPathloss", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html#ade7562b60b0a5ced0d81ca29bee99ffd", tooltip="Method to calculate the attenuation value for pathloss. ", pos="186,106", rects="129,92,243,120"];
+	Node3 [label="BreakpointPathlossModel\l::filterSignal", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_breakpoint_pathloss_model.html#a50fed0d02ee407b1ab602a6c203cfd83", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="186,60", rects="118,46,254,74"];
+	Node4 [label="SimplePathlossModel\l::filterSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html#a632b408d1c0ecac4fd90da5d48d73c5e", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="186,14", rects="129,0,243,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,82,68 91,72 101,78 104,86 118,92 122,93 125,95 129,96"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,82,60 92,60 100,60 109,60 118,60"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,82,52 90,48 101,41 104,34 118,28 122,27 125,25 129,24"];
+}

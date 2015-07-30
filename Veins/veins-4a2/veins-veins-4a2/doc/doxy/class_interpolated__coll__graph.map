@@ -1,0 +1,8 @@
+digraph "Interpolated&lt; V &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,98,100"];
+	Node1 [label="Interpolated\< V \>", height="0.22", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="49,16", rects="0,8,99,24"];
+	Node2 [label=V, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="49,84", rects="35,76,64,92"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" value", pos="s,49,76 49,67 49,53 49,35 49,24", lp="69,50"];
+}

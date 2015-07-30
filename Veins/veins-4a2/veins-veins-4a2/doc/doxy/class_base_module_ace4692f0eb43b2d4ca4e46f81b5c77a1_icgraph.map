@@ -1,0 +1,9 @@
+digraph "BaseModule::numInitStages" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,308,28"];
+	Node1 [label="BaseModule::numInitStages", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="8,6,152,22"];
+	Node2 [label="Veins::TraCITestApp\l::numInitStages", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6f86b7e2ce858078b03dfabcb323c23d", tooltip="Divide initialization into two stages. ", pos="244,14", rects="188,0,300,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,152,14 162,14 171,14 179,14 188,14"];
+}

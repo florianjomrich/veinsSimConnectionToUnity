@@ -1,0 +1,10 @@
+digraph "BreakpointPathlossModel.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,264,84"];
+	Node1 [label="BreakpointPathlossModel.h", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="143,68", rects="71,60,215,76"];
+	Node2 [label="BreakpointPathlossModel.cc", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$_breakpoint_pathloss_model_8cc.html", pos="73,16", rects="0,8,147,24"];
+	Node3 [label="PhyLayer80211p.cc", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$_phy_layer80211p_8cc.html", pos="214,16", rects="164,8,264,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,60 125,55 112,45 95,32 84,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,154,60 161,55 174,45 191,32 203,24"];
+}

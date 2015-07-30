@@ -1,0 +1,27 @@
+digraph "BasePhyLayer::encapsMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,508,324"];
+	Node1 [label="BasePhyLayer::encapsMsg", height="0.22", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,168", rects="9,160,148,176"];
+	Node2 [label="MacToPhyControlInfo\l::getSignalFromControlInfo", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_control_info.html#a2f42fccc127d84cf6853058f501da3ec", tooltip="extracts the signal from \"control info\". ", pos="262,310", rects="191,296,334,324"];
+	Node3 [label="MacToPhyControlInfo\l::retrieveSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_control_info.html#a5e04d8d4088109ccccb7c3fcdae526a7", tooltip="Returns a pointer to the Signal of this ControlInfo. ", pos="438,310", rects="377,296,500,324"];
+	Node4 [label="Veins::AirFrame::setDuration", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#afc8977ce81a1b732d504db463273cb1a", pos="262,270", rects="187,262,337,278"];
+	Node5 [label="Veins::AirFrame::setSignal", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a49085838ee8057aa8532249b7c2dc3f4", pos="262,236", rects="195,228,330,244"];
+	Node6 [label="Veins::AirFrame::setProtocolId", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a26fa4bd47eb08854f694220a6d719d2c", pos="262,202", rects="184,194,340,210"];
+	Node7 [label="BasePhyLayer::myProtocolId", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3b24629e8306bac3186a94a3622ca5ef", tooltip="Returns the identifier of the protocol this phy uses to send messages. ", pos="262,168", rects="186,160,338,176"];
+	Node8 [label="Veins::AirFrame::setId", height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#afc9fad9abb1e40cb558d3a1df40481ad", pos="262,134", rects="205,126,320,142"];
+	Node9 [label="BaseWorldUtility::getUnique\lAirFrameId", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a1c955c6c60dfa5b46a2bf683a20a84fe", tooltip="Returns an Id for an AirFrame, at the moment simply an incremented long-value. ", pos="262,94", rects="187,80,338,108"];
+	Node10 [label="Veins::AirFrame::setChannel", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#ac5cee514e9249028a4ba35f6a8255379", pos="262,54", rects="189,46,336,62"];
+	Node11 [label="Veins::Radio::getCurrent\lChannel", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a6e7fa250ec1b1793c51931a7cb7ae914", tooltip="Returns the channel the radio is currently set to. ", pos="262,14", rects="199,0,326,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,190,301 148,176 190,210 145,256 182,294"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,376,310 334,310 345,310 356,310 366,310"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,187,264 148,176 180,199 154,233 179,258"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,194,233 148,176 173,190 160,213 184,228 184,228 185,228 185,229"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,184,194 148,176 162,180 166,186 175,190"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,186,168 148,168 157,168 166,168 176,168"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,204,137 148,160 166,154 167,146 184,142 188,141 191,140 194,139"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,186,106 148,160 171,146 163,127 178,113"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,188,59 148,160 183,132 151,94 180,66"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,198,19 148,160 195,120 140,69 184,28 186,26 187,25 189,24"];
+}

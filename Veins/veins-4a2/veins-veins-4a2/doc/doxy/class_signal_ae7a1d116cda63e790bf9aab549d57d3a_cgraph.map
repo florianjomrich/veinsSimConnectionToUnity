@@ -1,0 +1,9 @@
+digraph "Signal::~Signal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,250,28"];
+	Node1 [label="Signal::~Signal", height="0.22", width="1.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="48,14", rects="9,6,88,22"];
+	Node2 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="183,14", rects="125,0,242,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,124,14 88,14 96,14 105,14 114,14"];
+}

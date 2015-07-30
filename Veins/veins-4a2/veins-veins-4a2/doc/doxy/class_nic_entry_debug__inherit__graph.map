@@ -1,0 +1,10 @@
+digraph NicEntryDebug {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,88,136"];
+	Node1 [label=NicEntryDebug, height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="44,16", rects="0,8,89,24"];
+	Node2 [label=NicEntry, height="0.22", width="0.78", color=black, fillcolor=white, style=filled, URL="$class_nic_entry.html", tooltip="NicEntry is used by ConnectionManager to store the necessary information for each nic...", pos="44,68", rects="16,60,72,76"];
+	Node3 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="44,120", rects="21,112,68,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,44,60 44,51 44,42 44,31 44,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,44,112 44,103 44,94 44,83 44,76"];
+}

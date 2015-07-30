@@ -1,0 +1,8 @@
+digraph PhyControlMessage {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,108,84"];
+	Node1 [label=PhyControlMessage, height="0.22", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,16", rects="0,8,108,24"];
+	Node2 [label=cMessage, height="0.22", width="0.78", color=grey75, fillcolor=white, style=filled, pos="54,68", rects="26,60,82,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,54,60 54,51 54,42 54,31 54,24"];
+}

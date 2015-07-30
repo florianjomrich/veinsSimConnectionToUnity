@@ -1,0 +1,9 @@
+digraph "BaseMobility::getCurrentPosition" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,280,28"];
+	Node1 [label="BaseMobility::getCurrent\lPosition", height="0.39", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,14", rects="9,0,140,28"];
+	Node2 [label="Move::getStartPos", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_move.html#aeab90c9059a2c9214e491a58833b3c3c", tooltip="Returns the start position. ", pos="224,14", rects="176,6,272,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,176,14 140,14 149,14 157,14 166,14"];
+}

@@ -1,0 +1,13 @@
+digraph "Veins::ChannelAccess::sendToChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,730,28"];
+	Node1 [label="Veins::ChannelAccess\l::sendToChannel", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,14", rects="9,0,124,28"];
+	Node2 [label="BasePhyLayer::sendMessageDown", height="0.22", width="2.47", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a1fe847ed3e50ccf3a3740234dfee42b1", tooltip="Sends the passed AirFrame to the channel. ", pos="250,14", rects="161,6,340,22"];
+	Node3 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="451,14", rects="377,0,526,28"];
+	Node4 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="642,14", rects="563,6,722,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,124,14 134,14 143,14 151,14 160,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,14 350,14 359,14 367,14 376,14"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,526,14 536,14 545,14 553,14 562,14"];
+}

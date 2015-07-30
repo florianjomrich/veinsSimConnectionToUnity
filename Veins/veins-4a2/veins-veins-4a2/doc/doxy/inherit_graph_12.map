@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,172,28"];
+	Node1 [label="ChannelInfo::BaseIntersection\lIterator\< C, ItMatrix, ItList \>", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html", tooltip="Iterator for every intersection of a specific interval in a AirFrameMatrix. ", pos="86,14", rects="9,0,164,28"];
+}

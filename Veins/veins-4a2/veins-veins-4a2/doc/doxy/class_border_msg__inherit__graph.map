@@ -1,0 +1,8 @@
+digraph BorderMsg {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,64,84"];
+	Node1 [label=BorderMsg, height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="32,16", rects="0,8,65,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="32,68", rects="9,60,56,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,32,60 32,51 32,42 32,31 32,24"];
+}

@@ -1,0 +1,9 @@
+digraph "Mac1609_4::attachSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,322,16"];
+	Node1 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,8", rects="9,0,136,16"];
+	Node2 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="243,8", rects="172,0,314,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,136,8 145,8 154,8 163,8 172,8"];
+}

@@ -1,0 +1,9 @@
+digraph DimensionSet {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,98"];
+	Node1 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="56,22", rects="18,14,95,30"];
+	Node2 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,82", rects="0,74,113,90"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,56,74 56,65 56,53 56,39 56,30"];
+	Node1 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,16 104,17 109,18 112,20 112,22 112,26 104,28 95,28", lp="159,22"];
+}

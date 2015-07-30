@@ -1,0 +1,21 @@
+digraph "Veins::TraCICommandInterface::Vehicle::setColor" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,688,108"];
+	Node1 [label="Veins::TraCICommandInterface\l::Vehicle::setColor", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,48", rects="9,34,176,62"];
+	Node2 [label="Veins::TraCIConnection\l::query", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#ac0f5129ad1e50365588ec39112432c7d", tooltip="sends a single command via TraCI, checks status response, returns additional responses ...", pos="275,48", rects="212,34,338,62"];
+	Node3 [label="Veins::TraCIConnection\l::sendMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#aaf6acde79a0ba73113c46ea92bd567d2", tooltip="sends a message via TraCI (after adding the header) ", pos="449,48", rects="386,34,512,62"];
+	Node4 [label="Veins::socket", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a6eeefaf3bbdaff6c10cfcd01200016d3", pos="620,66", rects="585,58,656,74"];
+	Node5 [label="Veins::TraCIBuffer::str", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#ae0833eeb81079e14eed3f13d0ae5d2b3", pos="620,29", rects="560,21,680,37"];
+	Node6 [label="Veins::makeTraCICommand", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#ab52db5bfe6d9095440c0b0ac309bb99d", tooltip="returns byte-buffer containing a TraCI command with optional parameters ", pos="449,8", rects="374,0,524,16"];
+	Node7 [label="Veins::TraCIConnection\l::receiveMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#a634ce6c27d5e98f7d96f65706f3460df", tooltip="receives a message via TraCI (and strips the header) ", pos="449,94", rects="386,80,512,108"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,212,48 176,48 185,48 193,48 202,48"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,386,48 338,48 351,48 363,48 376,48"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,584,62 512,55 533,58 556,59 575,61"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,560,36 512,41 525,39 537,38 550,37"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,374,16 338,34 351,29 355,24 364,20"];
+	Node6 -> Node5 [color=midnightblue, style=solid, pos="e,560,21 524,16 537,17 542,18 550,19"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,386,83 338,62 355,67 358,74 374,80 375,80 376,80 376,81"];
+	Node7 -> Node4 [color=midnightblue, style=solid, pos="e,584,70 512,82 528,79 545,76 560,74 565,73 569,72 574,72"];
+}

@@ -1,0 +1,15 @@
+digraph "FWMath::dBm2mW" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,466,62"];
+	Node1 [label="FWMath::dBm2mW", height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,34", rects="9,26,120,42"];
+	Node2 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="223,54", rects="161,46,286,62"];
+	Node3 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="392,54", rects="326,46,458,62"];
+	Node4 [label="LogNormalShadowing\l::randomLogNormalGain", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#ab81e4e559d16d59321fe0dced4a45806", tooltip="Returns a random log normal distributed gain factor. ", pos="223,14", rects="156,0,290,28"];
+	Node5 [label="LogNormalShadowing\l::filterSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#abecf1f338dc41facc038dbcd8a863ccd", tooltip="Calculates shadowing loss based on a normal gaussian function. ", pos="392,14", rects="331,0,454,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,41 129,42 138,44 147,44 156,46 157,46 159,46 160,46"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,286,54 296,54 306,54 316,54 326,54"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,120,27 129,26 138,24 147,24 156,22"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,290,14 300,14 310,14 320,14 330,14"];
+}

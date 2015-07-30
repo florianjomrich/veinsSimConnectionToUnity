@@ -1,0 +1,26 @@
+digraph "BaseDecider::channelStateChanged" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,710,176"];
+	Node1 [label="BaseDecider::channelState\lChanged", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,105", rects="9,91,144,119"];
+	Node2 [label="SNRThresholdDecider\l::processNewSignal", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#ace13845f43c5328cea40eb00c59af2b3", tooltip="Processes a new Signal. ", pos="253,151", rects="193,137,314,165"];
+	Node3 [label="Decider80211p::setChannel\lIdleStatus", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#af06ba4862697730ee05b65f6bf90279b", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="253,105", rects="186,91,320,119"];
+	Node4 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="445,162", rects="376,148,515,176"];
+	Node5 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="445,122", rects="362,114,528,130"];
+	Node6 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="445,82", rects="373,68,517,96"];
+	Node7 [label="BaseDecider::setChannelIdle\lStatus", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ae535b44e34061014fe282c36c27b0193", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="253,42", rects="180,28,326,56"];
+	Node8 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a6a480f87157d0509c0c1fccf94ea9fef", tooltip="Processes a new Signal. ", pos="445,42", rects="364,34,527,50"];
+	Node9 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="633,25", rects="564,17,702,33"];
+	Node10 [label="BaseDecider::processSignalEnd", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ab9cfef6c04e12d2524d45e881f341300", tooltip="Processes the end of a received Signal. ", pos="445,8", rects="366,0,525,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,144,119 152,122 163,127 167,132 180,137 184,138 188,139 192,140"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,144,105 153,105 164,105 175,105 186,105"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,320,116 329,120 345,128 345,139 362,148 366,150 371,151 375,153"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,320,111 330,112 341,113 351,113 362,115"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,320,97 329,96 343,94 359,93 373,91"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,144,91 152,86 164,76 164,64 180,56"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,326,42 336,42 345,42 354,42 363,42"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,527,35 536,34 545,33 555,33 564,31"];
+	Node7 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,326,28 334,25 345,22 349,18 362,16 363,16 364,16 365,15"];
+	Node10 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,525,15 535,16 545,17 554,18 564,19"];
+}

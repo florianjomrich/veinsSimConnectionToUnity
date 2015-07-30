@@ -1,0 +1,19 @@
+digraph "Interpolated&lt; Mapping * &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,275,354"];
+	Node1 [label="Interpolated\< Mapping * \>", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,16", rects="0,8,143,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="82,144", rects="55,136,110,152"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="125,204", rects="84,196,167,212"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="125,278", rects="87,270,164,286"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="125,338", rects="69,330,182,346"];
+	Node6 [label=LinearIntplMapping, height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_linear_intpl_mapping.html", tooltip="Helper class which represents a linear interpolation between two other mappings. ", pos="145,84", rects="90,76,200,92"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" value", pos="s,73,136 67,130 58,120 46,107 41,92 33,67 52,38 64,24", lp="64,84"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,119,196 114,189 106,177 95,162 88,152"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,125,270 125,261 125,246 125,224 125,212", lp="159,238"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,125,330 125,321 125,309 125,295 125,286"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,164,272 173,273 178,274 181,276 181,278 181,282 173,284 164,284", lp="228,278"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mapping", pos="s,136,76 130,70 115,56 92,35 80,24", lp="146,50"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,90,136 97,130 110,119 127,102 137,92"];
+	Node3 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" right\nleft", pos="s,126,196 127,188 132,162 140,112 144,92", lp="154,144"];
+}

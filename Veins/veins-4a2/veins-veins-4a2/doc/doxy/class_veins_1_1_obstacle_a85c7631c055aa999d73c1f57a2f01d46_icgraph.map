@@ -1,0 +1,25 @@
+digraph "Veins::Obstacle::getBboxP1" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,906,120"];
+	Node1 [label="Veins::Obstacle::getBboxP1", height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,38", rects="9,30,146,46"];
+	Node2 [label="Veins::ObstacleControl::add", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a206a6e9155d1b201841d0718e65ed30f", pos="252,60", rects="182,52,322,68"];
+	Node3 [label="Veins::ObstacleControl\l::addFromXml", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a1e5fceb8e8d9616622cc12551231c9d3", pos="436,106", rects="376,92,496,120"];
+	Node4 [label="Veins::ObstacleControl\l::initialize", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a199ba1a4bd7eb58b6365fcaa5c0b1a90", pos="628,106", rects="568,92,688,120"];
+	Node5 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="436,60", rects="358,46,514,74"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="628,60", rects="550,46,706,74"];
+	Node7 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="820,60", rects="742,46,898,74"];
+	Node8 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="628,14", rects="550,0,706,28"];
+	Node9 [label="Veins::ObstacleControl\l::calculateAttenuation", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#ae3bc0ffe81dd2ca3145636656f392204", tooltip="calculate additional attenuation by obstacles, return signal strength ", pos="252,17", rects="192,3,312,31"];
+	Node10 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="436,14", rects="367,0,506,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,146,46 155,48 165,49 169,50 182,52"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,322,68 331,72 342,78 344,85 358,92 364,94 370,96 376,98"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,496,106 506,106 526,106 548,106 568,106"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,322,60 332,60 341,60 349,60 358,60"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,514,60 524,60 533,60 541,60 550,60"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,706,60 716,60 725,60 733,60 742,60"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,514,46 522,43 533,38 537,33 550,28"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,146,30 155,29 167,28 180,27 192,25"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,312,16 322,16 336,16 351,15 366,15"];
+}

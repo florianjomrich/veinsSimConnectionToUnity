@@ -1,0 +1,9 @@
+digraph "FWMath::mW2dBm" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,310,28"];
+	Node1 [label="FWMath::mW2dBm", height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,14", rects="9,6,120,22"];
+	Node2 [label="TwoRayInterferenceModel\l::Mapping::getValue", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model_1_1_mapping.html#ac293b9b7bf938aa591ec122d5b1172a4", tooltip="Returns the value of the mapping at the passed position. ", pos="229,14", rects="157,0,302,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,14 130,14 139,14 147,14 156,14"];
+}

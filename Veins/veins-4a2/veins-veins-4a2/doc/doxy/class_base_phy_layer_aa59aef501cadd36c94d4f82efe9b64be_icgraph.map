@@ -1,0 +1,36 @@
+digraph "BasePhyLayer::sendSelfMessage" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1172,200"];
+	Node1 [label="BasePhyLayer::sendSelfMessage", height="0.22", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,102", rects="9,94,176,110"];
+	Node2 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="295,102", rects="212,88,378,116"];
+	Node3 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="699,106", rects="616,98,782,114"];
+	Node4 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1084,104", rects="1005,96,1164,112"];
+	Node5 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="893,106", rects="821,92,965,120"];
+	Node6 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="893,60", rects="825,46,962,74"];
+	Node7 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="497,140", rects="414,126,580,154"];
+	Node8 [label="BasePhyLayer::handleChannel\lSenseRequest", height="0.39", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a6866e3f79df84cdb5550a51d6502463f", tooltip="Handles reception of a ChannelSenseRequest by forwarding it to the decider and scheduling it to the p...", pos="699,60", rects="620,46,779,74"];
+	Node9 [label="BasePhyLayer::handleUpper\lControlMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4cab267d310b5fd6cefe613fc8dfe71d", tooltip="Handles messages received from the upper layer through the control gate. ", pos="893,14", rects="819,0,968,28"];
+	Node10 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="497,186", rects="423,172,572,200"];
+	Node11 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="295,21", rects="220,13,370,29"];
+	Node12 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="497,18", rects="430,4,564,32"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,102 186,102 195,102 203,102 212,102"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,378,103 387,103 455,104 549,105 616,105"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,778,114 787,116 800,120 804,125 818,129 884,141 903,143 968,129 986,125 987,116 1004,112"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,782,106 792,106 802,106 811,106 821,106"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,782,98 790,94 801,88 804,80 818,74 820,73 822,72 824,72"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,962,72 971,75 986,81 988,90 1004,96"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,378,116 386,118 397,120 401,123 414,126"];
+	Node7 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,580,126 588,123 599,120 603,116 616,114"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,172,110 181,112 194,116 198,121 212,125 279,139 357,142 414,142"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,151,94 160,92 169,91 179,88 188,86 199,83 202,80 212,79 354,56 522,55 619,57"];
+	Node8 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,779,73 788,76 801,81 804,87 818,92 819,92 820,93 821,93"];
+	Node8 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,779,60 788,60 800,60 813,60 824,60"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,779,47 788,44 801,39 804,33 818,28"];
+	Node9 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,968,28 974,34 993,54 979,78 1004,96"];
+	Node1 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,150,110 159,112 165,114 171,116 176,119 195,126 194,137 212,145 280,172 363,181 422,185"];
+	Node10 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,572,192 581,192 678,196 840,193 968,146 987,139 986,127 1004,120 1011,117 1019,114 1027,112"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,176,94 183,88 201,70 188,46 212,29 214,27 217,26 220,25"];
+	Node11 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,370,20 379,20 396,20 414,19 430,19"];
+}

@@ -1,0 +1,17 @@
+digraph "MappingUtils::findMin" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,212"];
+	Node1 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,106", rects="9,98,132,114"];
+	Node2 [label="ConstMapping::createConst\lIterator", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a5ff3a15fe6d536fa7a26a3fe1ff1b274", tooltip="Returns a pointer of a new Iterator which is able to iterate over this Mapping. ", pos="240,198", rects="169,184,312,212"];
+	Node3 [label="ConstMappingIterator\l::inRange", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a4a6348a453418da95978e570fec046fc", tooltip="Returns true if the current position of the iterator is in range of the function. ...", pos="240,152", rects="181,138,300,166"];
+	Node4 [label="ConstMappingIterator\l::getValue", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4419c259e747867f003d07d62d4259f", tooltip="Returns the value of the Mapping at the current position. ", pos="240,106", rects="181,92,300,120"];
+	Node5 [label="ConstMappingIterator\l::hasNext", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4bac7233c154b7086c6124d2e21be49", tooltip="Returns true if the iterator has a next value it can iterate to on a call to \"next()\". ", pos="240,60", rects="181,46,300,74"];
+	Node6 [label="ConstMappingIterator\l::next", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#afdafa6870cd19b3d35674a7bc777585d", tooltip="Iterates to the next position of the Mapping. ", pos="240,14", rects="181,0,300,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,168,184 132,114 158,132 145,156 161,177"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,180,142 132,114 151,120 151,130 168,138 169,138 170,139 171,139"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,180,106 132,106 145,106 158,106 170,106"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,180,70 132,98 151,91 151,81 168,74 169,74 170,73 171,73"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,180,21 132,98 161,77 141,49 168,28 169,27 170,26 171,26"];
+}

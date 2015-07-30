@@ -1,0 +1,10 @@
+digraph LinearIntplMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,110,136"];
+	Node1 [label=LinearIntplMapping, height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="55,16", rects="0,8,110,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="55,68", rects="28,60,83,76"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="55,120", rects="14,112,97,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,55,60 55,51 55,42 55,31 55,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,55,112 55,103 55,94 55,83 55,76"];
+}

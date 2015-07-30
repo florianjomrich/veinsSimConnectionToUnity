@@ -1,0 +1,11 @@
+digraph "operator+" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,396,28"];
+	Node1 [label="operator+", height="0.22", width="0.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="37,14", rects="8,6,66,22"];
+	Node2 [label="MappingUtils::add", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0d8bf65254d099c87948c1c300986696", pos="152,14", rects="103,6,202,22"];
+	Node3 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a45c56f1ea72b2f8b278d1016ac6228df", pos="313,14", rects="238,0,388,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,102,14 66,14 74,14 83,14 92,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,238,14 202,14 210,14 219,14 228,14"];
+}

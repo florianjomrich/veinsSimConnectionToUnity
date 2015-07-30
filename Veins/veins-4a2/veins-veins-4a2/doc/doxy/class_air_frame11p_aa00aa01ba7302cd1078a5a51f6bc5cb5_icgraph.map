@@ -1,0 +1,11 @@
+digraph "AirFrame11p::setWasTransmitting" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,366,62"];
+	Node1 [label="AirFrame11p::setWasTransmitting", height="0.22", width="2.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="95,28", rects="9,20,182,36"];
+	Node2 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="288,48", rects="219,34,358,62"];
+	Node3 [label="Decider80211p::switchToTx", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#affa8c918c45d34e982da50610611f6be", tooltip="Notifies the decider that phy layer is starting a transmission. ", pos="288,8", rects="219,0,358,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,182,36 192,37 201,38 209,39 218,40"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,182,20 188,19 194,18 206,17 218,16"];
+}

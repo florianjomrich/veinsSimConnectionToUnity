@@ -1,0 +1,12 @@
+digraph "ChannelInfo::BaseIntersectionIterator&lt; C, ItMatrix, ItList &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,224,112"];
+	Node1 [label="ChannelInfo::BaseIntersection\lIterator\< C, ItMatrix, ItList \>", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="95,22", rects="18,8,173,36"];
+	Node2 [label=ItList, height="0.22", width="0.47", color=grey75, fillcolor=white, style=filled, pos="18,96", rects="1,88,36,104"];
+	Node3 [label=ItMatrix, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="95,96", rects="70,88,121,104"];
+	Node4 [label=C, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="169,96", rects="155,88,184,104"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" startIt", pos="s,23,88 28,81 34,72 42,62 50,54 56,47 64,41 71,36", lp="71,62"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" endIt", pos="s,95,88 95,80 95,67 95,49 95,36", lp="114,62"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" intervals", pos="s,164,88 159,81 153,72 145,62 137,54 130,47 123,41 116,36", lp="179,62"];
+}

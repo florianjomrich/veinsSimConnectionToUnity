@@ -1,0 +1,32 @@
+digraph "TraCIConnection.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,576,252"];
+	Node1 [label="TraCIConnection.h", height="0.22", width="1.42", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="195,236", rects="144,228,247,244"];
+	Node2 [label="stdint.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,178", rects="0,170,45,186"];
+	Node3 [label="veins/modules/mobility\l/traci/TraCIBuffer.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_buffer_8h.html", pos="124,178", rects="62,164,187,192"];
+	Node4 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="66,120", rects="44,112,89,128"];
+	Node5 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="124,120", rects="106,112,143,128"];
+	Node6 [label="cexception.h", height="0.22", width="0.94", color=grey75, fillcolor=white, style=filled, pos="194,120", rects="160,112,229,128"];
+	Node7 [label="veins/modules/mobility\l/traci/TraCICoord.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_coord_8h.html", pos="266,178", rects="204,164,329,192"];
+	Node8 [label="veins/base/utils/Coord.h", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$_coord_8h.html", pos="409,178", rects="346,170,472,186"];
+	Node9 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="332,16", rects="301,8,363,24"];
+	Node10 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="438,68", rects="360,60,517,76"];
+	Node11 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="471,16", rects="381,8,561,24"];
+	Node12 [label="FWMath.h", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$_f_w_math_8h.html", pos="468,120", rects="437,112,500,128"];
+	Node13 [label="math.h", height="0.22", width="0.58", color=grey75, fillcolor=white, style=filled, pos="555,68", rects="534,60,577,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,35,186 158,228 127,221 82,208 45,192 44,192 44,191 43,191"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,141,192 185,228 176,221 161,208 149,198"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,74,128 110,164 101,155 89,143 80,134"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,124,128 124,164 124,156 124,146 124,137"];
+	Node3 -> Node6 [color=midnightblue, style=solid, pos="e,184,128 141,164 153,155 167,143 178,133"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,249,192 205,228 214,221 229,208 241,198"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,379,186 225,228 263,218 330,200 371,188"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,334,24 403,170 392,153 366,112 351,76 344,61 339,44 336,31"];
+	Node8 -> Node10 [color=midnightblue, style=solid, pos="e,436,76 411,170 416,151 428,107 434,83"];
+	Node10 -> Node9 [color=midnightblue, style=solid, pos="e,349,24 421,60 404,51 376,38 357,28"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,466,24 443,60 448,52 455,41 461,32"];
+	Node8 -> Node12 [color=midnightblue, style=solid, pos="e,459,128 417,170 426,161 442,145 453,134"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,542,76 482,112 496,103 518,90 534,81"];
+	Node12 -> Node10 [color=midnightblue, style=solid, pos="e,443,76 463,112 459,104 453,93 447,84"];
+}

@@ -1,0 +1,29 @@
+digraph "Veins::ChannelAccess::getMobilityModule" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1112,158"];
+	Node1 [label="Veins::ChannelAccess\l::getMobilityModule", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,94", rects="9,80,124,108"];
+	Node2 [label="Veins::ChannelAccess\l::calculatePropagationDelay", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#a01c12c70034ec0583ee5f4e1ac0f683b", tooltip="Calculates the propagation delay to the passed receiving nic. ", pos="232,115", rects="161,101,304,129"];
+	Node3 [label="Veins::ChannelAccess\l::sendToChannel", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#ae370934ad7b1feacc1cb6bd6ad437198", tooltip="Sends a message to all nics connected to this one. ", pos="423,136", rects="366,122,481,150"];
+	Node4 [label="BasePhyLayer::sendMessageDown", height="0.22", width="2.47", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a1fe847ed3e50ccf3a3740234dfee42b1", tooltip="Sends the passed AirFrame to the channel. ", pos="632,141", rects="543,133,722,149"];
+	Node5 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="833,144", rects="759,130,908,158"];
+	Node6 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1024,102", rects="945,94,1104,110"];
+	Node7 [label="BasePhyLayer::filterSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#adb6dcf56295ceb53b34e83eb409a40a2", tooltip="Filters the passed AirFrame&#39;s Signal by every registered AnalogueModel. ", pos="232,74", rects="163,66,302,82"];
+	Node8 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="423,71", rects="340,57,506,85"];
+	Node9 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="632,62", rects="549,54,715,70"];
+	Node10 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="833,60", rects="761,46,905,74"];
+	Node11 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="833,14", rects="765,0,902,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,124,101 133,102 142,103 151,104 160,106"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,304,123 313,124 330,126 349,128 365,130"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,481,137 491,137 507,138 525,138 542,139"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,722,142 732,142 741,142 749,142 758,143"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,908,130 916,126 927,120 930,114 944,110"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,124,86 133,85 142,84 151,83 160,82 161,82 162,82 162,82"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,302,73 311,73 320,73 330,73 340,72"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,506,67 516,67 527,67 538,66 549,65"];
+	Node9 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,712,70 721,72 721,72 722,72 722,72 739,75 742,79 758,83 820,94 891,99 944,101"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,715,61 725,61 737,61 749,61 761,61"];
+	Node9 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,715,56 724,53 741,47 741,36 758,28 760,27 762,26 764,26"];
+	Node11 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,902,24 910,29 935,49 918,75 944,94"];
+}

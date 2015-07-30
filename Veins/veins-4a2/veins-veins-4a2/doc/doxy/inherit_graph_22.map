@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,160,16"];
+	Node1 [label=set, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="23,8", rects="9,0,38,16"];
+	Node2 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="113,8", rects="75,0,152,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,38,8 47,8 55,8 65,8 74,8"];
+}

@@ -1,0 +1,38 @@
+digraph "MappingBase.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,781,212"];
+	Node1 [label="MappingBase.cc", height="0.22", width="1.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="620,196", rects="576,188,665,204"];
+	Node2 [label="veins/base/phyLayer\l/MappingBase.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_mapping_base_8h.html", pos="477,138", rects="421,124,533,152"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="31,16", rects="0,8,62,24"];
+	Node4 [label=map, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="294,16", rects="278,8,310,24"];
+	Node5 [label=set, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="477,74", rects="463,66,492,82"];
+	Node6 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="527,74", rects="509,66,546,82"];
+	Node7 [label=algorithm, height="0.22", width="0.81", color=grey75, fillcolor=white, style=filled, pos="357,16", rects="328,8,386,24"];
+	Node8 [label=cassert, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="583,74", rects="563,66,604,82"];
+	Node9 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="644,74", rects="621,66,668,82"];
+	Node10 [label=iomanip, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="710,74", rects="685,66,735,82"];
+	Node11 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="161,74", rects="83,66,240,82"];
+	Node12 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="170,16", rects="80,8,260,24"];
+	Node13 [label="veins/base/phyLayer\l/Interpolation.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_interpolation_8h.html", pos="389,74", rects="333,60,445,88"];
+	Node14 [label=limits, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="422,16", rects="404,8,440,24"];
+	Node15 [label="assert.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="621,16", rects="599,8,644,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,512,152 600,188 579,180 547,166 521,156"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,33,24 421,128 419,127 417,125 413,124 396,117 90,98 74,88 54,74 41,48 35,31"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,295,24 421,124 420,124 420,124 420,124 399,111 332,106 316,88 302,72 297,47 296,31"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,477,82 477,124 477,114 477,101 477,91"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,521,82 488,124 496,113 508,100 516,89"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,348,24 428,124 425,123 422,121 418,120 398,112 337,105 324,88 311,70 329,45 343,30"];
+	Node2 -> Node8 [color=midnightblue, style=solid, pos="e,572,82 502,124 520,114 543,100 563,88 563,88 563,88 564,88"];
+	Node2 -> Node9 [color=midnightblue, style=solid, pos="e,631,82 525,124 553,115 590,102 621,88 621,88 622,87 622,87"];
+	Node2 -> Node10 [color=midnightblue, style=solid, pos="e,696,82 533,124 601,107 621,113 685,88 686,88 687,87 687,87"];
+	Node2 -> Node11 [color=midnightblue, style=solid, pos="e,208,82 421,124 351,108 269,93 217,83"];
+	Node11 -> Node3 [color=midnightblue, style=solid, pos="e,49,24 143,66 120,56 83,39 57,28"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,169,24 162,66 164,58 166,44 167,33"];
+	Node2 -> Node13 [color=midnightblue, style=solid, pos="e,409,88 457,124 445,115 429,104 416,94"];
+	Node13 -> Node14 [color=midnightblue, style=solid, pos="e,417,24 397,60 402,52 408,40 413,32"];
+	Node13 -> Node4 [color=midnightblue, style=solid, pos="e,307,24 366,60 351,51 329,38 314,28"];
+	Node13 -> Node7 [color=midnightblue, style=solid, pos="e,361,24 381,60 376,52 371,40 366,32"];
+	Node13 -> Node15 [color=midnightblue, style=solid, pos="e,599,24 445,60 511,44 530,44 590,27"];
+	Node1 -> Node15 [color=midnightblue, style=solid, pos="e,644,24 638,188 680,168 781,113 744,60 743,59 688,39 652,27"];
+}

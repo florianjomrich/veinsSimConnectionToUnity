@@ -1,0 +1,21 @@
+digraph "FilledUpMapping::FilledUpMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,340,292"];
+	Node1 [label="FilledUpMapping::FilledUp\lMapping", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,152", rects="9,138,152,166"];
+	Node2 [label="ConstMapping::createConst\lIterator", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a5ff3a15fe6d536fa7a26a3fe1ff1b274", tooltip="Returns a pointer of a new Iterator which is able to iterate over this Mapping. ", pos="260,278", rects="189,264,332,292"];
+	Node3 [label="ConstMappingIterator\l::inRange", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a4a6348a453418da95978e570fec046fc", tooltip="Returns true if the current position of the iterator is in range of the function. ...", pos="260,232", rects="201,218,320,246"];
+	Node4 [label="Mapping::appendValue", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#a2a63bc33cabcddf8c0f5938afd2e3328", tooltip="Appends the passed value at the passed position to the mapping. ", pos="260,192", rects="198,184,322,200"];
+	Node5 [label="ConstMappingIterator\l::getPosition", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a047e853613d5a19ff34526d0cff8fcf9", tooltip="Returns the current position of the iterator. ", pos="260,152", rects="201,138,320,166"];
+	Node6 [label="ConstMappingIterator\l::getValue", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4419c259e747867f003d07d62d4259f", tooltip="Returns the value of the Mapping at the current position. ", pos="260,106", rects="201,92,320,120"];
+	Node7 [label="ConstMappingIterator\l::hasNext", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4bac7233c154b7086c6124d2e21be49", tooltip="Returns true if the iterator has a next value it can iterate to on a call to \"next()\". ", pos="260,60", rects="201,46,320,74"];
+	Node8 [label="ConstMappingIterator\l::next", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#afdafa6870cd19b3d35674a7bc777585d", tooltip="Iterates to the next position of the Mapping. ", pos="260,14", rects="201,0,320,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,264 152,166 185,194 158,228 181,257"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,200,224 152,166 176,181 165,202 188,218 189,219 190,219 191,220"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,198,186 152,166 169,171 171,178 188,184 188,184 188,184 188,184"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,200,152 152,152 165,152 178,152 190,152"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,200,116 152,138 169,132 172,125 188,120 189,120 190,120 191,119"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,200,67 152,138 179,118 162,93 188,74 189,73 190,72 191,72"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,200,20 152,138 191,103 150,62 188,28 189,27 190,26 192,25"];
+}

@@ -1,0 +1,23 @@
+digraph "Veins::TraCIMobility::getManager" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,648,150"];
+	Node1 [label="Veins::TraCIMobility\l::getManager", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,60", rects="8,46,120,74"];
+	Node2 [label="Veins::TraCIMobility\l::getCommandInterface", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a180ae1e009f8c81f66a167e21b7b5b89", pos="218,88", rects="156,74,280,102"];
+	Node3 [label="Veins::TraCIMobility\l::getVehicleCommandInterface", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a690ad24a231dff3f3d929e3738db9b69", pos="397,98", rects="317,84,478,112"];
+	Node4 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="577,140", rects="514,132,640,148"];
+	Node5 [label="Veins::TraCIMobility\l::handleSelfMsg", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a0f6b3ea2a2e2dc2a308c8db11bc09172", tooltip="Called upon arrival of a self messages. ", pos="577,100", rects="521,86,633,114"];
+	Node6 [label="Veins::TraCITestApp\l::initialize", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a581c6c99b8dcbbdadadc4e69a3febde7", tooltip="Initialization of the module and some variables. ", pos="577,54", rects="521,40,633,68"];
+	Node7 [label="Veins::TraCITestApp\l::handlePositionUpdate", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a634a6ed505d6ff32b4b035c14e6a4e4b", pos="218,33", rects="158,19,278,47"];
+	Node8 [label="Veins::TraCITestApp\l::receiveSignal", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a6c6b28964a05c10b4c0c8d956bf48292", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="397,14", rects="341,0,453,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,120,70 129,71 138,73 147,75 156,77"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,280,91 290,92 299,92 307,92 316,93"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,478,112 486,115 497,121 500,127 514,132"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,478,99 488,99 499,99 510,99 521,99"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,478,84 487,81 497,76 501,72 514,68 516,67 518,67 521,66"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,280,102 289,106 298,111 302,117 316,121 382,140 460,143 514,143"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,280,79 289,78 298,77 307,76 316,75 387,67 468,61 521,57"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,120,50 129,48 138,47 148,45 158,43"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,278,27 287,26 304,24 324,22 341,20"];
+}

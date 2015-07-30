@@ -1,0 +1,17 @@
+digraph RSAMMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,329,234"];
+	Node1 [label=RSAMMapping, height="0.22", width="1.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="187,16", rects="142,8,232,24"];
+	Node2 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="87,84", rects="46,76,129,92"];
+	Node3 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="56,158", rects="18,150,95,166"];
+	Node4 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,218", rects="0,210,113,226"];
+	Node5 [label=RadioStateAnalogueModel, height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html", tooltip="This special AnalogueModel provides filtering of a Signal according to the actual RadioStates the Rad...", pos="258,84", rects="187,76,329,92"];
+	Node6 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="268,158", rects="224,150,313,166"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,99,76 106,71 126,58 158,36 175,24"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,59,150 63,142 70,127 79,104 84,92", lp="111,118"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,56,210 56,201 56,189 56,175 56,166"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,152 104,153 109,154 112,156 112,158 112,162 104,164 95,164", lp="159,158"];
+	Node5 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" rsam", pos="s,250,76 244,70 229,56 207,35 195,24", lp="249,50"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,267,150 266,142 264,126 261,104 259,92"];
+}

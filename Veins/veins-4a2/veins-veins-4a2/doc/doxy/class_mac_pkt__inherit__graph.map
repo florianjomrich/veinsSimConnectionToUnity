@@ -1,0 +1,10 @@
+digraph MacPkt {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,72,136"];
+	Node1 [label=MacPkt, height="0.22", width="0.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="36,68", rects="12,60,60,76"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="36,120", rects="13,112,60,128"];
+	Node3 [label=Mac80211Pkt, height="0.22", width="1.00", color=black, fillcolor=white, style=filled, URL="$class_mac80211_pkt.html", tooltip="Class generated from veins/modules/messages/Mac80211Pkt.msg:24 by nedtool. ", pos="36,16", rects="0,8,72,24"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,36,112 36,103 36,94 36,83 36,76"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,36,60 36,51 36,42 36,31 36,24"];
+}

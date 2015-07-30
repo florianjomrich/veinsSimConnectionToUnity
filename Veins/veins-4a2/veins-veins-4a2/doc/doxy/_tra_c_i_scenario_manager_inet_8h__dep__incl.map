@@ -1,0 +1,8 @@
+digraph "TraCIScenarioManagerInet.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,152,84"];
+	Node1 [label="TraCIScenarioManagerInet.h", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,68", rects="0,60,152,76"];
+	Node2 [label="TraCIScenarioManager.cc", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_8cc.html", pos="76,16", rects="8,8,144,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,76,60 76,51 76,42 76,31 76,24"];
+}

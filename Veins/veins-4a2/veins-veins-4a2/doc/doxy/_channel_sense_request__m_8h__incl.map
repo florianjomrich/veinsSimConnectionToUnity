@@ -1,0 +1,17 @@
+digraph "ChannelSenseRequest_m.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,289,200"];
+	Node1 [label="ChannelSenseRequest_m.h", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,184", rects="0,176,143,192"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="45,16", rects="14,8,76,24"];
+	Node3 [label="veins/base/phyLayer\l/ChannelState.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_channel_state_8h.html", pos="113,126", rects="57,112,169,140"];
+	Node4 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="80,68", rects="57,60,104,76"];
+	Node5 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="199,68", rects="121,60,278,76"];
+	Node6 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="199,16", rects="109,8,289,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,44,24 65,176 60,167 51,153 48,140 38,101 41,55 43,31"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,103,140 77,176 82,169 90,157 97,147"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,85,76 105,112 100,104 94,92 89,84"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,187,76 134,112 148,103 166,90 180,81"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,69,24 175,60 149,51 107,37 78,27"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,199,24 199,60 199,53 199,42 199,33"];
+}

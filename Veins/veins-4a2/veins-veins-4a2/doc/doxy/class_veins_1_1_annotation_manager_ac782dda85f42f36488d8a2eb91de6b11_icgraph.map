@@ -1,0 +1,11 @@
+digraph "Veins::AnnotationManager::scheduleErase" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,340,50"];
+	Node1 [label="Veins::AnnotationManager\l::scheduleErase", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,25", rects="8,11,150,39"];
+	Node2 [label="TraCIDemoRSU11p::onData", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#ac9d01a67de93ec7f9e64ce7c664c370f", pos="259,42", rects="187,34,332,50"];
+	Node3 [label="TraCIDemo11p::onData", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a73a6ca11b60eeb8ca9a523e382787a72", pos="259,8", rects="199,0,320,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,32 160,33 169,34 177,34 186,35"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,150,18 158,17 172,16 186,15 198,14"];
+}

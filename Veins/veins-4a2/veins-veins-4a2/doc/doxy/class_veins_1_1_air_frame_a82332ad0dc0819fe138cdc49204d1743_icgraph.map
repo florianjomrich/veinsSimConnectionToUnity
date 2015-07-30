@@ -1,0 +1,22 @@
+digraph "Veins::AirFrame::setState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1128,112"];
+	Node1 [label="Veins::AirFrame::setState", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,60", rects="9,52,138,68"];
+	Node2 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="257,81", rects="174,67,340,95"];
+	Node3 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="661,60", rects="578,52,744,68"];
+	Node4 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1040,58", rects="961,50,1120,66"];
+	Node5 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="852,60", rects="780,46,924,74"];
+	Node6 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="852,14", rects="784,0,921,28"];
+	Node7 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="459,39", rects="376,25,542,53"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,138,67 147,68 156,69 165,70 174,71"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,340,77 348,77 417,73 511,68 578,64"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,740,68 749,70 762,74 766,79 780,83 843,94 862,97 924,83 942,79 943,70 960,66"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,744,60 753,60 762,60 771,60 780,60"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,744,52 752,48 763,42 766,35 780,28 781,28 782,27 783,27"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,921,27 930,30 942,37 945,45 960,50"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,340,67 349,64 359,60 363,56 376,53"];
+	Node7 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,542,48 551,49 560,50 570,51 578,52"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,138,56 147,56 212,53 307,48 376,44"];
+}

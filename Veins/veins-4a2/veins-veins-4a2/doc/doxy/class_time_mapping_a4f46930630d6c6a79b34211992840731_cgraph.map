@@ -1,0 +1,11 @@
+digraph "TimeMapping::getValue" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,286,62"];
+	Node1 [label="TimeMapping::getValue", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,28", rects="8,20,136,36"];
+	Node2 [label="InterpolateableMap\l::getIntplValue", height="0.39", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html#a1548366830c2159110c902750646e6f5", pos="225,48", rects="172,34,278,62"];
+	Node3 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="225,8", rects="173,0,278,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,41 136,36 145,37 153,38 162,39"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,172,15 136,20 145,19 154,17 163,16"];
+}

@@ -1,0 +1,9 @@
+digraph doPacking {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,282,16"];
+	Node1 [label=doPacking, height="0.22", width="0.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="39,8", rects="9,0,70,16"];
+	Node2 [label="WaveShortMessage::parsimPack", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_wave_short_message.html#a7d544ef4bbf144936365be1365165b14", pos="190,8", rects="107,0,274,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,106,8 70,8 78,8 86,8 95,8"];
+}

@@ -1,0 +1,9 @@
+digraph "Veins::TraCIConnection::~TraCIConnection" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,250,28"];
+	Node1 [label="Veins::TraCIConnection\l::~TraCIConnection", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,14", rects="8,0,134,28"];
+	Node2 [label="Veins::socket", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a6eeefaf3bbdaff6c10cfcd01200016d3", pos="206,14", rects="171,6,242,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,170,14 134,14 143,14 152,14 160,14"];
+}

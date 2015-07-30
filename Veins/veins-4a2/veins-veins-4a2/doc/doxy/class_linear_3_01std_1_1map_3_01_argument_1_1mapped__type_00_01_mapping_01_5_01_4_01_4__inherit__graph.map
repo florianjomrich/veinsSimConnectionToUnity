@@ -1,0 +1,10 @@
+digraph "Linear&lt; std::map&lt; Argument::mapped_type, Mapping * &gt; &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,240,214"];
+	Node1 [label="Linear\< std::map\< Argument\l::mapped_type, Mapping * \> \>", height="0.39", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,22", rects="0,8,160,36"];
+	Node2 [label="InterpolatorBase\< std\l::map\< Argument::mapped\l_type, Mapping * \> \>", height="0.56", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="80,94", rects="10,74,150,114"];
+	Node3 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="80,192", rects="30,178,131,206"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,80,74 80,64 80,54 80,44 80,36"];
+	Node3 -> Node2 [dir=back, color=orange, style=dashed, label=" \< std::map\< Argument\l::mapped_type, Mapping * \> \>", pos="s,80,178 80,169 80,152 80,130 80,114", lp="160,146"];
+}

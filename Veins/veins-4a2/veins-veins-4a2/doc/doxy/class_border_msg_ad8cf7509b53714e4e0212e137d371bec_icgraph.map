@@ -1,0 +1,11 @@
+digraph "BorderMsg::getStartPos" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,532,16"];
+	Node1 [label="BorderMsg::getStartPos", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,8", rects="9,0,132,16"];
+	Node2 [label="BaseMobility::handleBorderMsg", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1cd10753592e8eeb018d8f774ce862c6", tooltip="Called upon arrival of a border messages. ", pos="252,8", rects="169,0,336,16"];
+	Node3 [label="BaseMobility::handleMessage", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#aad7ebb839ae5726f97ccf149ae661333", tooltip="This modules should only receive self-messages. ", pos="448,8", rects="372,0,524,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,8 142,8 151,8 159,8 168,8"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,336,8 345,8 354,8 363,8 372,8"];
+}

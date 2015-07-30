@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,78,16"];
+	Node1 [label=Argument, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_argument.html", tooltip="Defines an argument for a mapping. ", pos="39,8", rects="8,0,70,16"];
+}

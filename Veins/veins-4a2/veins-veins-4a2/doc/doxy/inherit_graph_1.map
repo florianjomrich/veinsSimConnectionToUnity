@@ -1,0 +1,23 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,288,254"];
+	Node1 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="53,127", rects="9,119,98,135"];
+	Node2 [label=BreakpointPathlossModel, height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_breakpoint_pathloss_model.html", tooltip="Basic implementation of a BreakpointPathlossModel. ", pos="207,246", rects="139,238,275,254"];
+	Node3 [label=JakesFading, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_jakes_fading.html", tooltip="Implements Rayleigh fading after Jakes&#39; model. ", pos="207,212", rects="172,204,242,220"];
+	Node4 [label=LogNormalShadowing, height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html", tooltip="Channel state implementing log-normal shadowing. ", pos="207,178", rects="146,170,269,186"];
+	Node5 [label=PERModel, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$class_p_e_r_model.html", tooltip="This class applies a parameterized packet error rate to incoming packets. ", pos="207,144", rects="175,136,239,152"];
+	Node6 [label=RadioStateAnalogueModel, height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html", tooltip="This special AnalogueModel provides filtering of a Signal according to the actual RadioStates the Rad...", pos="207,110", rects="136,102,278,118"];
+	Node7 [label=SimpleObstacleShadowing, height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html", tooltip="Basic implementation of a SimpleObstacleShadowing that uses SimplePathlossConstMapping (that is subcl...", pos="207,76", rects="138,68,277,84"];
+	Node8 [label=SimplePathlossModel, height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html", tooltip="Basic implementation of a SimplePathlossModel that uses SimplePathlossConstMapping (that is subclasse...", pos="207,42", rects="150,34,264,50"];
+	Node9 [label=TwoRayInterferenceModel, height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model.html", tooltip="Extended version of Two-Ray Ground path loss model. ", pos="207,8", rects="135,0,280,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,98,135 105,142 130,172 100,209 134,238 136,239 137,240 139,241"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,98,135 105,141 122,161 109,186 134,204 145,211 159,214 172,215"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,98,135 106,140 117,149 117,161 134,170 138,172 141,173 145,174"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,98,132 107,133 115,134 125,135 134,136 148,137 162,139 175,140"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,98,122 107,121 115,120 125,119 134,118 135,118 135,118 136,118"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,98,119 106,114 117,104 117,92 134,84 135,84 136,83 137,83"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,98,119 104,113 123,93 109,67 134,50 139,47 144,44 150,43"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,98,119 104,113 130,82 99,44 134,16"];
+}

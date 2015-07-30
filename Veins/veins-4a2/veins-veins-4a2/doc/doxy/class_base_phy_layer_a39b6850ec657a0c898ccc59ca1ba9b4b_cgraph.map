@@ -1,0 +1,9 @@
+digraph "BasePhyLayer::setUpControlInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,348,28"];
+	Node1 [label="BasePhyLayer::setUpControlInfo", height="0.22", width="2.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="94,14", rects="8,6,180,22"];
+	Node2 [label="PhyToMacControlInfo\l::setControlInfo", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_phy_to_mac_control_info.html#a86ea1dc0f0abd29f5057e09ce1aee7be", tooltip="Attaches a \"control info\" structure (object) to the message pMsg. ", pos="278,14", rects="217,0,340,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,216,14 180,14 189,14 198,14 206,14"];
+}

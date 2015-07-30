@@ -1,0 +1,13 @@
+digraph "Veins::ObstacleControl" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,367,166"];
+	Node1 [label="Veins::ObstacleControl", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="109,16", rects="49,8,169,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="44,150", rects="1,142,87,158"];
+	Node3 [label="Veins::AnnotationManager", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html", pos="109,90", rects="38,82,180,98"];
+	Node4 [label="Veins::AnnotationManager\l::Group", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_group.html", pos="269,90", rects="198,76,340,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,39,142 36,135 28,120 19,95 29,76 42,51 70,33 90,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" annotations", pos="s,109,82 109,73 109,58 109,36 109,24", lp="144,50"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,53,142 60,136 73,125 90,108 100,98"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" annotationGroup", pos="s,247,76 239,72 222,62 202,51 183,42 168,35 150,29 136,24", lp="265,50"];
+}

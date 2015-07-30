@@ -1,0 +1,10 @@
+digraph "BaseDelayedIterator&lt; Base, Iterator &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,157,124"];
+	Node1 [label="BaseDelayedIterator\l\< Base, Iterator \>", height="0.39", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,22", rects="0,8,109,36"];
+	Node2 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="22,108", rects="6,100,38,116"];
+	Node3 [label=Argument, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_argument.html", tooltip="Defines an argument for a mapping. ", pos="87,108", rects="56,100,118,116"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,25,100 28,92 33,76 43,51 49,36"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" position\nnextPosition", pos="s,84,100 81,92 76,76 66,51 60,36", lp="111,68"];
+}

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,352,40"];
+	Node1 [label="InterpolatorBase\< std\l::map\< Argument::mapped\l_type, Mapping * \> \>", height="0.56", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="78,20", rects="8,0,148,40"];
+	Node2 [label="Linear\< std::map\< Argument\l::mapped_type, Mapping * \> \>", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_linear_3_01std_1_1map_3_01_argument_1_1mapped__type_00_01_mapping_01_5_01_4_01_4.html", tooltip="Specialization of the Linear-template which provides LinearInterpolation for pointer two Mappings...", pos="264,20", rects="184,6,344,34"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,148,20 158,20 167,20 175,20 184,20"];
+}

@@ -1,0 +1,17 @@
+digraph "JakesFading::filterSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,472,118"];
+	Node1 [label="JakesFading::filterSignal", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,59", rects="9,51,136,67"];
+	Node2 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="241,110", rects="173,102,310,118"];
+	Node3 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a0beeef0f27c33145a0fca521df1c5f5c", tooltip="Adds a function representing an attenuation of the signal. ", pos="241,76", rects="181,68,301,84"];
+	Node4 [label="ConcatConstMapping\l::addMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#ad9e4caf92010d92e76ed86a597e3399f", tooltip="Adds another Mapping to the list of Mappings to concatenate. ", pos="405,76", rects="347,62,464,90"];
+	Node5 [label="Signal::getReceptionStart", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a7c4710243cf87caf7dfc9f313e2619b2", tooltip="Returns the point in time when the receiving of the Signal started at the receiver module...", pos="241,42", rects="177,34,306,50"];
+	Node6 [label="Signal::getReceptionEnd", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a2875223239e124d85949e1116cc12ae9", tooltip="Returns the point in time when the receiving of the Signal ended at the receiver module. ", pos="241,8", rects="178,0,305,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,102 136,67 154,75 153,87 164,97"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,181,70 136,65 148,67 159,68 171,69"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,346,76 301,76 313,76 325,76 336,76"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,176,49 136,53 146,52 156,51 166,50"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,177,14 136,51 155,42 153,28 167,18"];
+}

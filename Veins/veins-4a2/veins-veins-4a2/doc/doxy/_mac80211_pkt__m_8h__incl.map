@@ -1,0 +1,19 @@
+digraph "Mac80211Pkt_m.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,282,252"];
+	Node1 [label="Mac80211Pkt_m.h", height="0.22", width="1.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="51,236", rects="3,228,100,244"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="50,16", rects="19,8,81,24"];
+	Node3 [label="veins/base/messages\l/MacPkt_m.h", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$_mac_pkt__m_8h.html", pos="92,178", rects="38,164,146,192"];
+	Node4 [label="veins/base/utils/SimpleAddress.h", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$_simple_address_8h.html", pos="160,120", rects="76,112,245,128"];
+	Node5 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="192,68", rects="114,60,271,76"];
+	Node6 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="192,16", rects="102,8,282,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,47,24 46,228 41,219 33,205 29,192 15,134 34,65 44,33"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,82,192 57,228 62,221 69,210 76,200"];
+	Node3 -> Node2 [color=midnightblue, style=solid, pos="e,50,24 83,164 78,154 71,140 67,128 56,94 52,52 50,31"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,151,128 108,164 120,155 134,143 145,133"];
+	Node4 -> Node2 [color=midnightblue, style=solid, pos="e,57,24 149,112 137,103 119,89 105,76 89,61 72,42 62,30"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,187,76 165,112 170,104 176,93 182,84"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,72,24 170,60 146,51 108,37 81,27"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,192,24 192,60 192,53 192,42 192,33"];
+}

@@ -1,0 +1,19 @@
+digraph "BaseModule.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,359,188"];
+	Node1 [label="BaseModule.h", height="0.22", width="1.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="123,172", rects="84,164,163,180"];
+	Node2 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,120", rects="0,112,47,128"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="130,16", rects="99,8,161,24"];
+	Node4 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="253,68", rects="175,60,332,76"];
+	Node5 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="269,16", rects="179,8,359,24"];
+	Node6 [label="veins/base/utils/HostState.h", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$_host_state_8h.html", pos="173,120", rects="102,112,244,128"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,38,128 107,164 90,155 65,142 46,132"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,126,24 115,164 108,156 97,142 93,128 91,121 92,118 93,112 99,82 114,48 123,30"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,256,76 161,164 196,156 242,143 253,128 262,115 260,97 258,84"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,149,24 234,60 213,51 181,37 157,27"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,266,24 256,60 258,53 261,42 264,33"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,165,128 131,164 138,156 150,144 159,135"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,133,24 170,112 162,94 145,53 136,31"];
+	Node6 -> Node4 [color=midnightblue, style=solid, pos="e,241,76 186,112 199,104 219,91 234,81"];
+}

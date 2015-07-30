@@ -1,0 +1,11 @@
+digraph "ChannelInfo::addAirFrame" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,352,50"];
+	Node1 [label="ChannelInfo::addAirFrame", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,25", rects="8,17,150,33"];
+	Node2 [label="ChannelInfo::isChannelEmpty", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a5af012c57b6bb9930b1634138ab65bf8", tooltip="Returns true if there are currently no active or inactive AirFrames on the channel. ", pos="265,42", rects="186,34,344,50"];
+	Node3 [label="Veins::AirFrame::getDuration", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a713e5d23b4ccb3d89d29468ff1dd7b89", pos="265,8", rects="189,0,341,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,186,34 150,31 159,32 167,32 176,33"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,189,15 150,19 160,18 169,18 179,16"];
+}

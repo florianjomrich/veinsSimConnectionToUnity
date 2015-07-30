@@ -1,0 +1,9 @@
+digraph "Veins::TraCIMobility::Statistics::recordScalars" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,286,28"];
+	Node1 [label="Veins::TraCIMobility\l::Statistics::recordScalars", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="69,14", rects="9,0,130,28"];
+	Node2 [label="Veins::TraCIMobility\l::finish", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a07c35ffc4230bc632e0233c723d719d4", tooltip="Delete dynamically allocated objects. ", pos="222,14", rects="166,0,278,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,130,14 140,14 149,14 157,14 166,14"];
+}

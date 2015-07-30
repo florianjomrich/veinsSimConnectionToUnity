@@ -1,0 +1,28 @@
+digraph BaseMacLayer {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,505,382"];
+	Node1 [label=BaseMacLayer, height="0.22", width="1.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="385,16", rects="343,8,427,24"];
+	Node2 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="308,84", rects="277,76,339,92"];
+	Node3 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="209,152", rects="154,144,264,160"];
+	Node4 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="147,298", rects="112,290,183,306"];
+	Node5 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,366", rects="0,358,86,374"];
+	Node6 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,366", rects="104,358,158,374"];
+	Node7 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="264,366", rects="219,358,310,374"];
+	Node8 [label=BaseBattery, height="0.22", width="0.94", color=black, fillcolor=white, style=filled, URL="$class_base_battery.html", tooltip="Base class for any power source. ", pos="209,232", rects="175,224,244,240"];
+	Node9 [label=PassedMessage, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_passed_message.html", pos="450,152", rects="409,144,492,160"];
+	Node10 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="482,232", rects="459,224,506,240"];
+	Node11 [label=MacToPhyInterface, height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_interface.html", tooltip="Defines the methods provided by the phy to the mac layer. ", pos="411,84", rects="357,76,466,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,317,76 323,70 339,57 363,35 376,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,221,144 228,139 248,125 279,104 296,92"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,148,290 149,283 151,265 156,236 166,212 176,192 192,171 202,160"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,55,358 62,354 83,340 117,318 135,306"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,133,358 135,349 138,336 143,317 145,306"];
+	Node7 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,233,358 224,355 213,351 201,346 191,340 176,330 162,316 154,306", lp="249,332"];
+	Node8 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" battery", pos="s,209,224 209,215 209,198 209,174 209,160", lp="233,186"];
+	Node4 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,155,290 161,284 173,270 191,251 201,240"];
+	Node7 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" catDroppedPacketSignal\ncatPassedMsgSignal\ncatPacketSignal", pos="s,278,358 286,352 290,348 295,344 298,340 309,323 308,317 308,298 308,298 308,298 308,152 308,130 308,105 308,92", lp="375,232"];
+	Node9 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" passedMsg", pos="s,433,144 425,140 396,126 350,104 325,92", lp="431,118"];
+	Node10 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,479,224 476,216 469,199 459,174 453,160"];
+	Node11 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" phy", pos="s,408,76 405,68 400,54 392,35 388,24", lp="416,50"];
+}

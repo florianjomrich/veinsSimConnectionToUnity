@@ -1,0 +1,9 @@
+digraph "Mac1609_4::getFrameDuration" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,276,16"];
+	Node1 [label="Mac1609_4::getFrameDuration", height="0.22", width="2.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="88,8", rects="9,0,168,16"];
+	Node2 [label=getNDBPS, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$_consts_phy_8h.html#af8b23bdc646e596a8fdcfef1bd627bec", tooltip="returns the number of databits per ofdm symbol ", pos="236,8", rects="204,0,268,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,204,8 168,8 177,8 186,8 195,8"];
+}

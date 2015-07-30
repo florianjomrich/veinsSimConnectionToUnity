@@ -1,0 +1,8 @@
+digraph "TraCIScreenRecorder.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,124,84"];
+	Node1 [label="TraCIScreenRecorder.h", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,68", rects="0,60,124,76"];
+	Node2 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="62,16", rects="31,8,93,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,62,24 62,60 62,53 62,42 62,33"];
+}

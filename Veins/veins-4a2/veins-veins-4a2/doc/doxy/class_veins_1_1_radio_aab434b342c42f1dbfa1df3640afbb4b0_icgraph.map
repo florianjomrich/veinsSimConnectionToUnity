@@ -1,0 +1,11 @@
+digraph "Veins::Radio::switchTo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,490,28"];
+	Node1 [label="Veins::Radio::switchTo", height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,14", rects="8,6,126,22"];
+	Node2 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="237,14", rects="162,6,312,22"];
+	Node3 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="415,14", rects="348,0,482,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,126,14 135,14 144,14 153,14 162,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,14 322,14 331,14 339,14 348,14"];
+}

@@ -1,0 +1,35 @@
+digraph "Veins::TraCITestApp::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1268,180"];
+	Node1 [label="Veins::TraCITestApp\l::initialize", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,96", rects="8,82,120,110"];
+	Node2 [label="BaseApplLayer::initialize", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html#aa3ebaf5d1d1bdbec4648b07f65eb4145", tooltip="Initialization of the module and some variables. ", pos="237,172", rects="172,164,303,180"];
+	Node3 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a70f5ea30a9980d57b8384faed29ec3eb", tooltip="Initialization of the module and some variables. ", pos="416,172", rects="363,164,469,180"];
+	Node4 [label="Veins::TraCIMobilityAccess::get", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility_access.html#aa2788845910c6afc0b6068d9bf71bdd3", pos="788,135", rects="707,127,870,143"];
+	Node5 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="1184,115", rects="1109,107,1260,123"];
+	Node6 [label="Veins::TraCIMobility\l::getCommandInterface", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a180ae1e009f8c81f66a167e21b7b5b89", pos="416,94", rects="354,80,478,108"];
+	Node7 [label="Veins::TraCIMobility\l::getManager", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a9112501e8dffb3ef22fc5c571a016ed1", pos="592,94", rects="536,80,648,108"];
+	Node8 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_access.html#af6404515b1b992848f352b03d325b10d", pos="788,95", rects="710,81,866,109"];
+	Node9 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="989,97", rects="907,89,1072,105"];
+	Node10 [label="Veins::TraCIScenarioManager\l::getCommandInterface", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#af9d96f6e40de409df2f1d04b617433d5", pos="592,48", rects="514,34,670,62"];
+	Node11 [label="Veins::TraCIMobility\l::getVehicleCommandInterface", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a690ad24a231dff3f3d929e3738db9b69", pos="237,54", rects="157,40,318,68"];
+	Node12 [label="Veins::TraCIMobility\l::getExternalId", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a5d901e593ed0fcb4ee5214564f81ed95", pos="416,48", rects="360,34,472,62"];
+	Node13 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="237,12", rects="179,4,296,20"];
+	Node14 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="416,8", rects="358,0,475,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,171,170 120,110 144,126 132,149 156,164 158,165 160,166 162,167"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,363,172 303,172 320,172 337,172 353,172"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,706,134 120,104 132,105 144,107 156,108 349,125 574,131 697,134"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,1108,119 870,131 937,127 1031,122 1098,119"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,354,94 120,96 181,95 277,95 343,94"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,536,94 478,94 494,94 511,94 526,94"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,710,95 648,94 664,94 683,95 701,95"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,906,96 866,96 876,96 886,96 896,96"];
+	Node9 -> Node5 [color=midnightblue, style=solid, pos="e,1108,108 1072,105 1081,106 1090,106 1098,107"];
+	Node6 -> Node10 [color=midnightblue, style=solid, pos="e,514,62 478,80 491,75 496,71 505,66"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,156,68 120,82 133,78 138,75 147,71"];
+	Node11 -> Node6 [color=midnightblue, style=solid, pos="e,354,80 318,68 331,72 336,74 345,77"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,360,50 318,51 329,51 340,50 350,50"];
+	Node1 -> Node13 [color=midnightblue, style=solid, pos="e,178,11 120,82 146,63 130,38 156,20 160,18 164,16 168,14"];
+	Node13 -> Node14 [color=midnightblue, style=solid, pos="e,357,10 296,11 313,11 331,10 347,10"];
+}

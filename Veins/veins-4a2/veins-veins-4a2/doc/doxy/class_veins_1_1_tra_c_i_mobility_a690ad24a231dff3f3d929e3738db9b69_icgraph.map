@@ -1,0 +1,13 @@
+digraph "Veins::TraCIMobility::getVehicleCommandInterface" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,340,108"];
+	Node1 [label="Veins::TraCIMobility\l::getVehicleCommandInterface", height="0.39", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="89,54", rects="9,40,170,68"];
+	Node2 [label="Veins::TraCIMobility\l::handleSelfMsg", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a0f6b3ea2a2e2dc2a308c8db11bc09172", tooltip="Called upon arrival of a self messages. ", pos="269,94", rects="213,80,325,108"];
+	Node3 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="269,54", rects="206,46,332,62"];
+	Node4 [label="Veins::TraCITestApp\l::initialize", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a581c6c99b8dcbbdadadc4e69a3febde7", tooltip="Initialization of the module and some variables. ", pos="269,14", rects="213,0,325,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,170,68 178,70 189,73 193,76 206,80 208,81 210,81 213,82"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,170,54 180,54 189,54 197,54 206,54"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,170,40 178,37 189,34 193,31 206,28 208,27 210,27 213,26"];
+}

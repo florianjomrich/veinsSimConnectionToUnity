@@ -1,0 +1,15 @@
+digraph "BasePhyLayer::getAnalogueModelFromName" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,684,74"];
+	Node1 [label="BasePhyLayer::getAnalogue\lModelFromName", height="0.39", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,37", rects="9,23,156,51"];
+	Node2 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="269,60", rects="192,46,346,74"];
+	Node3 [label="BasePhyLayer::initialize\lAnalogueModels", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8ea7353793eed2f1a7b0cd1caacd72e9", tooltip="Initializes the AnalogueModels with the data from the passed XML-config data. ", pos="269,14", rects="207,0,332,28"];
+	Node4 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="445,14", rects="383,6,508,22"];
+	Node5 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="610,14", rects="544,6,676,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,46 165,47 174,48 183,49 192,50"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,156,28 164,27 178,25 193,24 206,22"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,332,14 342,14 355,14 369,14 382,14"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,508,14 518,14 527,14 535,14 544,14"];
+}

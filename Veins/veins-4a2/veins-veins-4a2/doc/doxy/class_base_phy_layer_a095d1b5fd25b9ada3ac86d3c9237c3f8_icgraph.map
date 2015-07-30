@@ -1,0 +1,15 @@
+digraph "BasePhyLayer::getDeciderFromName" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,664,74"];
+	Node1 [label="BasePhyLayer::getDecider\lFromName", height="0.39", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,37", rects="9,23,146,51"];
+	Node2 [label="PhyLayer80211p::getDecider\lFromName", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aba4ff7d43c6ee3c6fa550722db94aa86", tooltip="Creates and returns an instance of the Decider with the specified name. ", pos="254,60", rects="182,46,326,74"];
+	Node3 [label="BasePhyLayer::initialize\lDecider", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9da4f8ffaa373a0de7895cbea524816b", tooltip="Initializes the Decider with the data from the passed XML-config data. ", pos="254,14", rects="192,0,317,28"];
+	Node4 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="425,14", rects="363,6,488,22"];
+	Node5 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="590,14", rects="524,6,656,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,146,46 155,47 164,48 173,49 182,50"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,146,28 154,27 167,25 179,24 191,22"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,317,14 326,14 338,14 351,14 362,14"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,488,14 498,14 507,14 515,14 524,14"];
+}

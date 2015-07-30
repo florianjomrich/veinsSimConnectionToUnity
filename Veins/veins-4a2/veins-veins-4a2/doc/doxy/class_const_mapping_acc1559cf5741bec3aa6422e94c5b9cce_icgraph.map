@@ -1,0 +1,25 @@
+digraph "ConstMapping::getDimensionSet" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,386,360"];
+	Node1 [label="ConstMapping::getDimensionSet", height="0.22", width="2.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,162", rects="8,154,176,170"];
+	Node2 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a2864c33a93f9ce23403d0c84ca9a19e2", pos="295,346", rects="220,332,370,360"];
+	Node3 [label="SNRThresholdDecider\l::canAnswerCSR", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a0946c7a3e2ee04e2bb1c2dce4b7be7ec", tooltip="Returns point in time when the ChannelSenseRequest of the passed CSRInfo can be answered (e...", pos="295,300", rects="235,286,356,314"];
+	Node4 [label="MappingUtils::createCompatible\lMapping", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a6d524e08add1a4a02d7e37425783b094", pos="295,254", rects="212,240,378,268"];
+	Node5 [label="TwoRayInterferenceModel\l::filterSignal", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model.html#a4488ba8c6127ff2e016edaa6bbd6a4c0", tooltip="Has to be overriden by every implementation. ", pos="295,208", rects="223,194,368,222"];
+	Node6 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="295,162", rects="226,148,365,176"];
+	Node7 [label="SimplePathlossModel\l::filterSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html#a632b408d1c0ecac4fd90da5d48d73c5e", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="295,116", rects="238,102,352,130"];
+	Node8 [label="MappingUtils::findMax", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#ac9d1a808dbca5da873af58f1da4cbcf4", tooltip="Iterates over the passed mapping and returns the value at the key entry with the highest value in the...", pos="295,76", rects="233,68,358,84"];
+	Node9 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#adb9e9ced268b9a5d1d4f6d34738654aa", tooltip="Iterates over the passed mapping and returns the value at the key entry with the smallest value in th...", pos="295,42", rects="234,34,357,50"];
+	Node10 [label="ConstMapping::print", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a526e8d5b948e9b2ce9d729e66b162e13", tooltip="Prints the Mapping to an output stream. ", pos="295,8", rects="240,0,350,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,170 183,177 225,224 162,283 212,332 214,334 217,336 220,338"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,176,170 183,177 212,210 175,252 212,286 218,291 226,295 234,297"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,176,170 183,176 201,195 187,221 212,240"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,176,170 185,174 196,180 198,187 212,194 215,195 219,196 222,197"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,176,162 186,162 199,162 212,162 225,162"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,176,154 184,150 195,144 198,136 212,130 220,127 229,124 238,122"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,176,154 183,148 202,129 187,101 212,84 218,80 225,77 232,75"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,176,154 183,148 210,117 176,78 212,50 218,45 226,42 233,40"];
+	Node1 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,176,154 183,147 219,106 167,55 212,16 220,9 230,6 240,4"];
+}

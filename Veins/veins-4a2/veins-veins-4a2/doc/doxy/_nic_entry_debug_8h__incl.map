@@ -1,0 +1,29 @@
+digraph "NicEntryDebug.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,354,304"];
+	Node1 [label="NicEntryDebug.h", height="0.22", width="1.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="124,288", rects="76,280,173,296"];
+	Node2 [label="veins/base/connectionManager\l/NicEntry.h", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$_nic_entry_8h.html", pos="124,230", rects="44,216,205,244"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="98,16", rects="67,8,129,24"];
+	Node4 [label=map, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="16,172", rects="0,164,32,180"];
+	Node5 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="264,68", rects="186,60,343,76"];
+	Node6 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="264,16", rects="174,8,354,24"];
+	Node7 [label="veins/base/utils/Coord.h", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$_coord_8h.html", pos="154,172", rects="91,164,217,180"];
+	Node8 [label="FWMath.h", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$_f_w_math_8h.html", pos="157,120", rects="126,112,189,128"];
+	Node9 [label="math.h", height="0.22", width="0.58", color=grey75, fillcolor=white, style=filled, pos="147,68", rects="126,60,169,76"];
+	Node10 [label=vector, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="242,230", rects="222,222,262,238"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,124,244 124,280 124,274 124,263 124,254"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,95,24 107,216 98,207 87,194 82,180 63,129 81,64 92,33"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,31,180 98,216 80,206 55,193 38,184"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,263,76 174,216 193,210 207,202 226,180 250,151 259,106 262,83"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,124,24 238,60 210,51 165,37 134,27"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,264,24 264,60 264,53 264,42 264,33"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,150,180 131,216 136,208 141,197 146,188"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,98,24 145,164 136,156 123,142 117,128 102,96 99,53 98,31"];
+	Node7 -> Node5 [color=midnightblue, style=solid, pos="e,255,76 163,164 182,146 225,105 248,83"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,156,128 154,164 155,157 155,146 156,137"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,149,76 155,112 154,105 152,94 151,85"];
+	Node8 -> Node5 [color=midnightblue, style=solid, pos="e,247,76 174,112 192,103 219,90 239,80"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,16,180 93,280 74,273 49,262 35,244 21,228 17,203 16,187"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,231,238 144,280 164,272 196,258 222,244 223,244 223,243 224,243"];
+}

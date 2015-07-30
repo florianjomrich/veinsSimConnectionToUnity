@@ -1,0 +1,9 @@
+digraph "BasePhyLayer::getAnalogueModelFromName" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,336,28"];
+	Node1 [label="BasePhyLayer::getAnalogue\lModelFromName", height="0.39", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="82,14", rects="9,0,156,28"];
+	Node2 [label="Veins::Radio::getAnalogue\lModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a38a6c78b55f1442108b44a0bd27abb9f", tooltip="Returns a pointer to the RadioStateAnalogueModel. ", pos="260,14", rects="192,0,328,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,192,14 156,14 165,14 173,14 182,14"];
+}

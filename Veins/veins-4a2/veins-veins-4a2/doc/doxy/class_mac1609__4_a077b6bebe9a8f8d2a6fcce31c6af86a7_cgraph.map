@@ -1,0 +1,36 @@
+digraph "Mac1609_4::attachSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,918,244"];
+	Node1 [label="Mac1609_4::attachSignal", height="0.22", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,165", rects="9,157,136,173"];
+	Node2 [label="Mac1609_4::getFrameDuration", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#abce6dae1623dde7c27d61a7e433c89a0", pos="252,200", rects="173,192,332,208"];
+	Node3 [label=getNDBPS, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$_consts_phy_8h.html#af8b23bdc646e596a8fdcfef1bd627bec", tooltip="returns the number of databits per ofdm symbol ", pos="444,236", rects="412,228,476,244"];
+	Node4 [label="Mac1609_4::createSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#aa19fc16c9c52fbe7a896f725cc8a7883", pos="252,130", rects="189,122,315,138"];
+	Node5 [label="BaseMacLayer::createSingle\lFrequencyMapping", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a3da0a0f34a80528e6efcb5593a073c55", tooltip="Creates a Mapping defined over time and frequency with constant power in a certain frequency band...", pos="444,52", rects="372,38,517,66"];
+	Node6 [label="MappingUtils::createMapping", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0c61c76ba04339162563339b23bf42e9", tooltip="Returns an appropriate changeable Mapping with the specified domain and the specified interpolation m...", pos="640,90", rects="563,82,718,98"];
+	Node7 [label="DimensionSet::hasDimension", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#a015cb6fa6c77b26b8c7b1e65827b8342", tooltip="Returns true if the passed Dimension is inside this DimensionSet. ", pos="835,90", rects="760,82,910,98"];
+	Node8 [label="Argument::setArgValue", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a27bd7000e865670a673039233424d2ab", tooltip="Changes the value for the specified dimension. ", pos="640,52", rects="577,44,704,60"];
+	Node9 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="640,14", rects="589,6,692,22"];
+	Node10 [label="Mapping::setValue", height="0.22", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#ab8906dfac661d5c6a0a35cf1744f06ed", tooltip="Changes the value of the Mapping at the specified position. ", pos="640,143", rects="590,135,690,151"];
+	Node11 [label="Signal::setTransmissionPower", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_signal.html#ad8c5494d0f7bd564bf14dc0c90f9a361", tooltip="Sets the function representing the transmission power of the signal. ", pos="444,202", rects="368,194,520,210"];
+	Node12 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="640,202", rects="557,194,724,210"];
+	Node13 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="835,202", rects="777,188,894,216"];
+	Node14 [label="Signal::setBitrate", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a86e4ecdabd5ca03ede5e2c81c6b76002", tooltip="Sets the function representing the bitrate of the signal. ", pos="444,130", rects="400,122,488,138"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,172,192 136,173 150,177 154,183 163,188"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,412,235 332,208 350,213 351,222 368,228 379,231 391,233 402,234"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,189,134 136,157 154,151 155,143 172,138 174,137 177,136 180,136"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,371,64 315,129 321,127 327,125 332,122 356,107 346,86 363,70"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,562,84 517,65 518,65 519,66 520,66 536,71 539,77 552,81"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,760,90 718,90 729,90 739,90 750,90"];
+	Node5 -> Node8 [color=midnightblue, style=solid, pos="e,576,52 517,52 533,52 550,52 566,52"];
+	Node5 -> Node9 [color=midnightblue, style=solid, pos="e,588,17 517,39 518,39 519,38 520,38 537,33 540,27 556,22 563,20 571,19 578,18"];
+	Node5 -> Node10 [color=midnightblue, style=solid, pos="e,590,146 517,64 518,64 519,65 520,66 548,87 528,115 556,135 563,139 572,142 580,144"];
+	Node4 -> Node11 [color=midnightblue, style=solid, pos="e,368,194 315,131 321,132 327,135 332,138 355,151 346,172 361,188"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,556,202 520,202 529,202 537,202 546,202"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,776,202 724,202 738,202 753,202 766,202"];
+	Node4 -> Node6 [color=midnightblue, style=solid, pos="e,562,94 315,125 321,124 327,123 332,122 349,119 352,115 368,113 429,104 498,98 551,95"];
+	Node4 -> Node10 [color=midnightblue, style=solid, pos="e,590,145 315,134 321,135 327,136 332,137 349,140 352,144 368,147 435,156 453,148 520,147 540,147 561,146 580,145"];
+	Node4 -> Node9 [color=midnightblue, style=solid, pos="e,588,11 314,122 322,120 329,117 332,114 361,85 335,53 368,29 401,6 509,7 578,10"];
+	Node4 -> Node14 [color=midnightblue, style=solid, pos="e,400,130 315,130 340,130 368,130 391,130"];
+}

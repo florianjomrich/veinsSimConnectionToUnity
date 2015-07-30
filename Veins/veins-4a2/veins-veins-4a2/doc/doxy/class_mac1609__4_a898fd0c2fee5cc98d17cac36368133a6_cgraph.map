@@ -1,0 +1,34 @@
+digraph "Mac1609_4::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,690,278"];
+	Node1 [label="Mac1609_4::initialize", height="0.22", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="63,136", rects="9,128,118,144"];
+	Node2 [label="BaseMacLayer::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a61c82dc3b225eac37f7fa9936c28c2c3", tooltip="Initialization of the module and some variables. ", pos="231,176", rects="168,168,295,184"];
+	Node3 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a70f5ea30a9980d57b8384faed29ec3eb", tooltip="Initialization of the module and some variables. ", pos="436,236", rects="383,228,489,244"];
+	Node4 [label="MacToPhyInterface::\lgetPhyHeaderLength", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_mac_to_phy_interface.html#adf27aa5a5e5cbee6f8be1ec58cb9306f", tooltip="Returns the length of the phy header in bits. ", pos="436,196", rects="379,182,494,210"];
+	Node5 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="436,270", rects="361,262,512,278"];
+	Node6 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="436,156", rects="378,148,495,164"];
+	Node7 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="623,156", rects="565,148,682,164"];
+	Node8 [label="AddressingInterface\l::myMacAddr", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_addressing_interface.html#a7d81614e8dea6e3a7316184e6b9e959c", tooltip="Returns the L2 address for the passed mac. ", pos="436,116", rects="382,102,491,130"];
+	Node9 [label="BaseMacLayer::registerInterface", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#adc87295362ca7859cb6fe2a5bbe3c90d", tooltip="Registers this bridge&#39;s NIC with INET&#39;s InterfaceTable. ", pos="436,76", rects="353,68,520,84"];
+	Node10 [label="Mac1609_4::setParameters\lForBitrate", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a30fbd72a0e286f24dd07bbd14b5c043b", pos="231,136", rects="164,122,299,150"];
+	Node11 [label="Mac1609_4::setActiveChannel", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#aae66bc58b1e0a8bb64accea786b20756", tooltip="Set a state for the channel selecting operation. ", pos="231,96", rects="154,88,308,104"];
+	Node12 [label="Mac1609_4::channelIdle", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a1c6717faaa6b882f1d68153a4a22ae62", pos="231,42", rects="169,34,293,50"];
+	Node13 [label="Mac1609_4::timeLeftTillGuardOver", height="0.22", width="2.56", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a41a9c4025c9840048f72a0d758230af8", pos="436,42", rects="344,34,528,50"];
+	Node14 [label="Mac1609_4::guardActive", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a621bca21c2e13d7312361fd86d648a2e", pos="436,8", rects="372,0,501,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,167,172 118,144 136,151 136,161 154,168 155,168 156,169 157,169"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,383,238 295,178 299,180 304,182 308,184 331,195 322,216 344,228 353,233 363,235 373,237"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,378,190 295,182 319,185 345,187 368,189"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,360,270 295,177 299,179 304,181 308,184 340,206 313,240 344,262 346,263 349,265 351,266"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,377,161 295,169 299,169 304,168 308,168 325,166 328,165 344,164 352,163 359,163 367,162"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,564,156 495,156 514,156 535,156 554,156"];
+	Node2 -> Node8 [color=midnightblue, style=solid, pos="e,381,118 295,173 299,172 304,170 308,168 329,157 324,141 344,130 352,126 362,123 372,120"];
+	Node2 -> Node9 [color=midnightblue, style=solid, pos="e,352,79 295,175 299,173 304,171 308,168 341,144 313,109 343,85"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,360,266 98,144 105,146 112,149 118,153 139,165 135,179 154,193 230,244 260,237 347,263 348,263 349,264 350,264"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,163,136 118,136 129,136 141,136 153,136"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,154,104 118,128 133,123 135,115 146,108"];
+	Node1 -> Node12 [color=midnightblue, style=solid, pos="e,169,43 118,128 149,106 123,73 154,50 156,49 158,48 160,46"];
+	Node12 -> Node13 [color=midnightblue, style=solid, pos="e,344,42 293,42 306,42 319,42 334,42"];
+	Node12 -> Node14 [color=midnightblue, style=solid, pos="e,371,11 293,38 298,37 303,35 308,34 326,29 327,21 344,16 350,15 355,13 361,12"];
+}

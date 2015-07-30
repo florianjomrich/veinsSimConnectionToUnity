@@ -1,0 +1,13 @@
+digraph "PhyLayer80211p::initializeSimpleObstacleShadowing" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,344,96"];
+	Node1 [label="PhyLayer80211p::initialize\lSimpleObstacleShadowing", height="0.39", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,54", rects="9,40,148,68"];
+	Node2 [label="BaseWorldUtility::useTorus", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a37a1abb90a220afdaf6dbdab58299e51", tooltip="Returns true if our playground represents a torus (borders are connected) ", pos="260,88", rects="188,80,332,96"];
+	Node3 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="260,54", rects="195,46,326,62"];
+	Node4 [label="Veins::ObstacleControlAccess\l::getIfExists", height="0.39", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control_access.html#aa91c56b9eab7ff107096256d861b7ca4", pos="260,14", rects="184,0,336,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,81 148,68 163,71 167,75 178,78"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,194,54 148,54 160,54 172,54 184,54"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,184,28 148,40 161,36 166,34 175,31"];
+}

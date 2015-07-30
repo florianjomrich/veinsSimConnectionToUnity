@@ -1,0 +1,16 @@
+digraph "Veins::TraCICommandInterface::getVersion" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,760,74"];
+	Node1 [label="Veins::TraCICommandInterface\l::getVersion", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,39", rects="9,25,176,53"];
+	Node2 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="482,60", rects="404,46,560,74"];
+	Node3 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="290,18", rects="212,4,368,32"];
+	Node4 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="482,14", rects="404,0,560,28"];
+	Node5 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="674,14", rects="596,0,752,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,44 186,45 252,48 341,52 404,56"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,176,30 185,29 194,28 203,27 212,26"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,368,16 377,16 386,16 395,16 404,15"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,560,14 570,14 579,14 587,14 596,14"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,368,32 377,35 387,38 391,42 404,46"];
+}

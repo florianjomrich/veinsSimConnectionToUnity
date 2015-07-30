@@ -1,0 +1,25 @@
+digraph "TimeMapping&lt; Interpolator &gt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1082,203"];
+	Node1 [label="TimeMapping\< Interpolator \>", height="0.22", width="2.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="994,124", rects="915,116,1074,132"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="758,149", rects="731,141,786,157"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="421,149", rects="380,141,463,157"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="199,149", rects="161,141,238,157"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="65,149", rects="9,141,122,157"];
+	Node6 [label="InterpolateableMap\l\< Interpolator\< std\l::map\< simtime_t, argument\l_value_t \> \> \>", height="0.72", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", pos="758,97", rects="684,71,832,123"];
+	Node7 [label=TContainer, height="0.22", width="0.92", color=grey75, fillcolor=white, style=filled, pos="199,81", rects="166,73,232,89"];
+	Node8 [label="InterpolateableMap\l\< TInterpolator, TContainer \>", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_map.html", tooltip="Represents a std::map which is able to interpolate. ", pos="421,32", rects="343,18,500,46"];
+	Node9 [label=TInterpolator, height="0.22", width="1.03", color=grey75, fillcolor=white, style=filled, pos="199,18", rects="162,10,237,26"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,786,146 794,145 807,143 820,142 832,141 869,137 878,135 914,132"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,463,149 472,149 545,149 674,149 730,149"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,238,149 248,149 287,149 342,149 379,149", lp="290,157"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,122,149 131,149 141,149 151,149 160,149"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,222,157 227,162 231,168 222,175 199,175 171,175 164,165 176,157", lp="199,189"];
+	Node6 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" entries", pos="s,832,103 842,104 860,106 878,109 896,112 905,113 906,114 914,116", lp="873,120"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,232,82 241,82 336,84 565,91 684,95"];
+	Node8 -> Node6 [dir=back, color=orange, style=dashed, label=" \< Interpolator\< std\l::map\< simtime_t, argument\l_value_t \> \> \>", pos="s,500,20 509,19 558,16 619,21 666,46 679,53 674,63 684,71", lp="592,66"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,232,75 241,72 285,63 297,57 342,46"];
+	Node9 -> Node8 [dir=back, color=darkorchid3, style=dashed, label=" interpolate", pos="s,237,20 245,21 273,22 309,24 342,27", lp="290,35"];
+}

@@ -1,0 +1,18 @@
+digraph "Veins::TraCITestApp" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,158,292"];
+	Node1 [label="Veins::TraCITestApp", height="0.22", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,16", rects="31,8,143,24"];
+	Node2 [label=BaseApplLayer, height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html", tooltip="Base class for the application layer. ", pos="87,68", rects="44,60,131,76"];
+	Node3 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="87,120", rects="56,112,118,128"];
+	Node4 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="87,172", rects="32,164,142,180"];
+	Node5 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="87,224", rects="52,216,123,232"];
+	Node6 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,276", rects="0,268,86,284"];
+	Node7 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,276", rects="104,268,158,284"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,87,60 87,51 87,42 87,31 87,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,87,112 87,103 87,94 87,83 87,76"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,87,164 87,155 87,146 87,135 87,128"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,87,216 87,207 87,198 87,187 87,180"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,50,268 56,261 64,251 74,240 80,232"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,124,268 118,261 110,251 100,240 94,232"];
+}

@@ -1,0 +1,16 @@
+digraph SimpleConstMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,327,234"];
+	Node1 [label=SimpleConstMappingIterator, height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="154,16", rects="78,8,231,24"];
+	Node2 [label=ConstMappingIterator, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html", tooltip="Defines an const iterator for a ConstMapping which is able to iterate over the Mapping. ", pos="59,84", rects="0,76,119,92"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="281,84", rects="240,76,323,92"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="177,158", rects="139,150,216,166"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="177,218", rects="121,210,234,226"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,70,76 77,71 96,57 126,36 143,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" mapping", pos="s,266,76 259,72 233,58 191,36 169,24", lp="263,50"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,189,150 196,145 217,130 252,105 270,92", lp="275,118"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,177,210 177,201 177,189 177,175 177,166"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,216,152 225,153 230,154 233,156 233,158 233,162 225,164 216,164", lp="280,158"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,175,150 173,143 170,129 165,109 163,92 159,67 156,38 155,24", lp="197,84"];
+}

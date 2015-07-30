@@ -1,0 +1,32 @@
+digraph "PhyLayer80211p::setRadioState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1100,139"];
+	Node1 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,103", rects="8,89,142,117"];
+	Node2 [label="Decider::switchToTx", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_decider.html#a9577b7953cff7235d08d1225bd683eef", tooltip="Notifies the decider that phy layer is starting a transmission. ", pos="253,120", rects="199,112,308,128"];
+	Node3 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="253,86", rects="178,78,328,94"];
+	Node4 [label="Veins::Radio::switchTo", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aab434b342c42f1dbfa1df3640afbb4b0", tooltip="A function called by the Physical Layer to start the switching process to a new RadioState. ", pos="640,128", rects="581,120,699,136"];
+	Node5 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a0cdbbabf0ca4bab58eed854b22bb60f2", tooltip="responsible for making entries to the RSAM ", pos="831,125", rects="749,117,914,133"];
+	Node6 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#ad80154bcc09f8db0e08efb2efd75872c", tooltip="Stores an entry of the form \"time-point/attenuation (from now on)\". ", pos="1021,125", rects="950,111,1092,139"];
+	Node7 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="448,86", rects="377,72,519,100"];
+	Node8 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aceb966be7e36e87068ae3424de8a5928", tooltip="called by PhyLayer when duration-time for the current switching process is up ", pos="640,94", rects="578,86,702,102"];
+	Node9 [label="BasePhyLayer::sendControl\lMsgToMac", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a76d0386516d18d1cc64af5ef6fb315cd", tooltip="Called by the Decider to send a control message to the MACLayer. ", pos="640,54", rects="568,40,712,68"];
+	Node10 [label="ChannelInfo::isRecording", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a5b1b8d56aa2fa64b5d79c0cf5c3167a9", tooltip="Returns true if ChannelInfo is currently recording. ", pos="831,88", rects="764,80,898,96"];
+	Node11 [label="ChannelInfo::stopRecording", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a884277584d1abf73eaca5df0c61e08c9", tooltip="Tells ChannelInfo to stop recording Information from now on. ", pos="831,54", rects="758,46,904,62"];
+	Node12 [label="BasePhyLayer::sendControl\lMessageUp", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aaa439e85a8bc20a39477055aecf04993", tooltip="Sends the passed control message to the upper layer. ", pos="831,14", rects="759,0,903,28"];
+	Node13 [label="BasePhyLayer::sendSelfMessage", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aa59aef501cadd36c94d4f82efe9b64be", tooltip="Schedule self message to passed point in time. ", pos="448,46", rects="365,38,532,54"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,198,115 142,109 157,111 173,112 188,114"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,178,93 142,97 151,96 159,96 168,94"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,581,129 318,94 322,95 325,95 328,96 345,101 348,106 364,109 434,123 516,128 572,129"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,748,126 699,127 712,127 725,126 738,126"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,950,125 914,125 923,125 931,125 940,125"];
+	Node3 -> Node7 [color=midnightblue, style=solid, pos="e,377,86 328,86 341,86 354,86 367,86"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,578,91 519,89 535,90 552,91 568,91"];
+	Node8 -> Node5 [color=midnightblue, style=solid, pos="e,748,117 702,100 706,100 709,101 712,102 725,106 730,110 738,114"];
+	Node7 -> Node9 [color=midnightblue, style=solid, pos="e,568,66 519,74 532,72 545,70 558,68"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,764,83 712,68 729,73 732,77 748,80 750,80 752,81 754,81"];
+	Node9 -> Node11 [color=midnightblue, style=solid, pos="e,758,54 712,54 724,54 736,54 748,54"];
+	Node9 -> Node12 [color=midnightblue, style=solid, pos="e,759,26 712,40 729,36 732,33 748,28 748,28 749,28 749,28"];
+	Node3 -> Node13 [color=midnightblue, style=solid, pos="e,364,54 328,78 343,73 346,65 355,59"];
+}

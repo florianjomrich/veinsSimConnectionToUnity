@@ -1,0 +1,27 @@
+digraph "MappingUtils::findMax" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,468,312"];
+	Node1 [label="MappingUtils::findMax", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,150", rects="9,142,134,158"];
+	Node2 [label="ConstMapping::getDimensionSet", height="0.22", width="2.33", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#acc1559cf5741bec3aa6422e94c5b9cce", tooltip="Returns this Mappings domain as DimensionSet. ", pos="254,304", rects="170,296,338,312"];
+	Node3 [label="Argument::getDimensions", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8b3fcda23d2eec4e931126d261e4b194", tooltip="Returns the dimensions this argument is defined over. ", pos="254,270", rects="186,262,323,278"];
+	Node4 [label="DimensionSet::isSubSet", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#aae6d8ce3a87e3e1571b97c92f11363fb", tooltip="Returns true if the passed DimensionSet is a subset of this DimensionSet. ", pos="254,236", rects="194,228,315,244"];
+	Node5 [label="ConstMapping::createConst\lIterator", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a5ff3a15fe6d536fa7a26a3fe1ff1b274", tooltip="Returns a pointer of a new Iterator which is able to iterate over this Mapping. ", pos="254,196", rects="183,182,326,210"];
+	Node6 [label="ConstMappingIterator\l::getValue", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#ad4419c259e747867f003d07d62d4259f", tooltip="Returns the value of the Mapping at the current position. ", pos="254,150", rects="195,136,314,164"];
+	Node7 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="254,110", rects="202,102,307,118"];
+	Node8 [label="Argument::end", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_argument.html#aeeb6730c20ae8a8d6c9606f2e03cc1da", tooltip="Returns an iterator to the value behind the last argument value. ", pos="254,76", rects="213,68,296,84"];
+	Node9 [label="Argument::begin", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$class_argument.html#af0e836fd4aaecc1461b994e21f66ddc3", tooltip="Returns an iterator to the first argument value in this Argument. ", pos="254,42", rects="208,34,300,50"];
+	Node10 [label="Argument::getArgValue", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a137a911de0281cbb519fe13727aa0813", tooltip="Returns the value for the specified dimension. ", pos="254,8", rects="190,0,319,16"];
+	Node11 [label="Argument::find", height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ae4b61830a991f8911978c30a67dd2da6", tooltip="Returns an iterator to the Argument value for the passed Dimension. ", pos="417,8", rects="374,0,460,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,170,296 134,158 179,197 128,248 163,289"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,185,270 134,158 172,188 132,231 170,262 172,264 174,265 176,266"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,193,237 134,158 163,178 142,208 170,228 174,231 179,233 184,235"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,182,186 134,158 153,164 153,174 170,182 171,182 172,182 173,183"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,194,150 134,150 151,150 168,150 184,150"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,201,111 134,142 153,135 152,124 170,118 177,115 184,113 191,112"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,212,73 134,142 160,125 145,99 170,84 179,78 191,75 202,73"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,208,37 134,142 169,115 135,76 170,50 178,44 188,40 198,38"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,189,6 134,142 179,104 126,53 170,16 173,14 176,12 180,10"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,374,8 319,8 334,8 350,8 364,8"];
+}

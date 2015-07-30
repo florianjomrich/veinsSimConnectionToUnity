@@ -1,0 +1,28 @@
+digraph "ChannelInfo::checkAndCleanInterval" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1738,112"];
+	Node1 [label="ChannelInfo::checkAndClean\lInterval", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,77", rects="8,63,162,91"];
+	Node2 [label="ChannelInfo::addToInactives", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a002d7a0fff6734bdb6d8ddebf799f7f5", tooltip="Moves a previously active AirFrame to the inactive AirFrames. ", pos="273,77", rects="198,69,348,85"];
+	Node3 [label="ChannelInfo::removeAirFrame", height="0.22", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#af9ee0be843528ee913df218f73d4d713", tooltip="Tells the ChannelInfo that an AirFrame is over. ", pos="465,77", rects="385,69,546,85"];
+	Node4 [label="BasePhyLayer::handleAirFrame\lEndReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4f8fde562c0004b498fc3294c3f54c2f", tooltip="Handles incoming AirFrames with the state END_RECEIVE. ", pos="665,77", rects="582,63,748,91"];
+	Node5 [label="BasePhyLayer::handleAirFrame", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8d6f371fa6ea6ca89cb78764a05f31dd", tooltip="Handles messages received from the channel (probably AirFrames). ", pos="1271,60", rects="1188,52,1354,68"];
+	Node6 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="1650,58", rects="1571,50,1730,66"];
+	Node7 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="1462,60", rects="1390,46,1534,74"];
+	Node8 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="1462,14", rects="1394,0,1531,28"];
+	Node9 [label="BasePhyLayer::handleAirFrame\lReceiving", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9dbbcf0004b22c622ec4b06a19b4f564", tooltip="Handles incoming AirFrames with the state RECEIVING. ", pos="867,56", rects="784,42,950,70"];
+	Node10 [label="BasePhyLayer::handleAirFrame\lStartReceive", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a671f083680882230b754b7e9578e6274", tooltip="Handles incoming AirFrames with the state START_RECEIVE. ", pos="1069,18", rects="986,4,1152,32"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,162,77 172,77 181,77 189,77 198,77"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,348,77 358,77 367,77 375,77 384,77"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,546,77 556,77 565,77 573,77 582,77"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,748,78 757,79 766,79 776,79 784,79 948,80 989,81 1152,71 1164,70 1176,69 1188,68"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1350,68 1359,70 1372,74 1376,79 1390,83 1453,94 1472,97 1534,83 1552,79 1553,70 1570,66"];
+	Node5 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,1354,60 1363,60 1372,60 1381,60 1390,60"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,1354,52 1362,48 1373,42 1376,34 1390,28 1391,28 1392,27 1393,27"];
+	Node8 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,1531,27 1539,30 1552,36 1555,45 1570,50"];
+	Node4 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,748,68 757,67 766,67 775,66 784,65"];
+	Node9 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,950,57 959,57 1027,58 1121,59 1188,59"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,950,42 958,40 969,37 973,34 986,32"];
+	Node10 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,1152,32 1160,35 1171,41 1174,47 1188,52"];
+}

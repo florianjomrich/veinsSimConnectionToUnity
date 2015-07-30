@@ -1,0 +1,13 @@
+digraph "ConstantSimpleConstMapping::getValue" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,120"];
+	Node1 [label="ConstantSimpleConstMapping\l::getValue", height="0.39", width="2.22", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="88,60", rects="8,46,168,74"];
+	Node2 [label="MultiDimMapping\< Linear\l \>::createSubSignal", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#a1fbdfd6bd7d903fdd388556ead454461", tooltip="Internal helper method which creates a new sub-mapping for this MultiDimMapping instance. ", pos="278,106", rects="205,92,352,120"];
+	Node3 [label="MultiDimMapping\< Linear\l \>::MultiDimMapping", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#a21647d49bf4759d7e1eac552fa518b43", tooltip="Copy-constructor which assures that the sub-mappings are deep copied instead of only their the pointe...", pos="278,60", rects="205,46,352,74"];
+	Node4 [label="MultiDimMapping\< Linear\l \>::operator=", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#adf3d7e794c6e10795a4fa18d6e3b67d0", tooltip="Copy operator which assures that the sub-mappings are deep copied instead of only their the pointers...", pos="278,14", rects="205,0,352,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,168,74 176,77 187,82 191,87 204,92"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,168,60 177,60 186,60 195,60 204,60"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,168,46 176,42 187,37 191,32 204,28"];
+}

@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,144,28"];
+	Node1 [label="mixim::math::mW2dBm\l\< T, true \>", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$structmixim_1_1math_1_1m_w2d_bm_3_01_t_00_01true_01_4.html", pos="72,14", rects="9,0,136,28"];
+}

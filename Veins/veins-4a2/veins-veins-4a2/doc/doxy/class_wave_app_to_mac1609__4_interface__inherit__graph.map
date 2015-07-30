@@ -1,0 +1,8 @@
+digraph WaveAppToMac1609_4Interface {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,174,84"];
+	Node1 [label=WaveAppToMac1609_4Interface, height="0.22", width="2.42", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,68", rects="0,60,174,76"];
+	Node2 [label=Mac1609_4, height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html", tooltip="Manages timeslots for CCH and SCH listening and sending. ", pos="87,16", rects="55,8,120,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,87,60 87,51 87,42 87,31 87,24"];
+}

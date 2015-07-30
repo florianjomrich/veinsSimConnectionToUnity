@@ -1,0 +1,8 @@
+digraph "WaveShortMessage::getSenderPos" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,190,34"];
+	Node1 [label="WaveShortMessage::getSenderPos", height="0.22", width="2.42", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="95,8", rects="8,0,182,16"];
+	Node1 -> Node1 [color=midnightblue, style=solid, pos="e,44,16 146,16 176,24 159,34 95,34 37,34 18,26 36,18"];
+}

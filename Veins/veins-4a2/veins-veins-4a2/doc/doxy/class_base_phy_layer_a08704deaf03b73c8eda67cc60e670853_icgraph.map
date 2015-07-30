@@ -1,0 +1,9 @@
+digraph "BasePhyLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,310,16"];
+	Node1 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,8", rects="9,0,134,16"];
+	Node2 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="236,8", rects="170,0,302,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,8 144,8 153,8 161,8 170,8"];
+}

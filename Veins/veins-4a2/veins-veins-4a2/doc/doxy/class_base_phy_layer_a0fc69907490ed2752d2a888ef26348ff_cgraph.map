@@ -1,0 +1,15 @@
+digraph "BasePhyLayer::~BasePhyLayer" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,740,68"];
+	Node1 [label="BasePhyLayer::~BasePhyLayer", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="90,34", rects="8,26,172,42"];
+	Node2 [label="ChannelInfo::getAirFrames", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a76e9891245a5df7dd6bfb14e99e343e5", tooltip="Fills the passed AirFrameVector reference with the AirFrames which intersect with the given time inte...", pos="280,54", rects="209,46,352,62"];
+	Node3 [label="ChannelInfo::getIntersections", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a683ab4280d9c20ad02bd1c080d71b6d1", tooltip="Returns every AirFrame of an AirFrameMatrix which intersect with a given interval. ", pos="464,54", rects="389,46,540,62"];
+	Node4 [label="ChannelInfo::BaseIntersection\lIterator::next", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html#a2acff6a4c595060ffc74872cdc0be1db", tooltip="Increases the iterator to the next intersecting AirFrame and returns a pointer to this AirFrame...", pos="654,54", rects="577,40,732,68"];
+	Node5 [label="Veins::Radio::getAnalogue\lModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a38a6c78b55f1442108b44a0bd27abb9f", tooltip="Returns a pointer to the RadioStateAnalogueModel. ", pos="280,14", rects="212,0,348,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,210,46 172,42 174,42 185,43 200,45"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,388,54 352,54 361,54 369,54 378,54"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,576,54 540,54 549,54 557,54 566,54"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,212,21 172,26 182,24 192,24 202,22"];
+}

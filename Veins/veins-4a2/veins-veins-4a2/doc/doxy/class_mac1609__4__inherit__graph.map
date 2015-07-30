@@ -1,0 +1,20 @@
+digraph Mac1609_4 {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,321,292"];
+	Node1 [label=Mac1609_4, height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="160,16", rects="128,8,193,24"];
+	Node2 [label=BaseMacLayer, height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html", tooltip="A very simple MAC module template which provides de- and encapsulation of messages using the standard...", pos="87,68", rects="45,60,129,76"];
+	Node3 [label=BaseLayer, height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html", tooltip="A very simple layer template. ", pos="87,120", rects="56,112,118,128"];
+	Node4 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="87,172", rects="32,164,142,180"];
+	Node5 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="87,224", rects="52,216,123,232"];
+	Node6 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,276", rects="0,268,86,284"];
+	Node7 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,276", rects="104,268,158,284"];
+	Node8 [label=WaveAppToMac1609_4Interface, height="0.22", width="2.42", color=black, fillcolor=white, style=filled, URL="$class_wave_app_to_mac1609__4_interface.html", tooltip="Interface between WaveApplication Layer and Mac1609_4. ", pos="234,68", rects="147,60,321,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,98,60 105,55 119,45 137,32 148,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,87,112 87,103 87,94 87,83 87,76"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,87,164 87,155 87,146 87,135 87,128"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,87,216 87,207 87,198 87,187 87,180"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,50,268 56,261 64,251 74,240 80,232"];
+	Node7 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,124,268 118,261 110,251 100,240 94,232"];
+	Node8 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,222,60 215,55 202,45 184,32 172,24"];
+}

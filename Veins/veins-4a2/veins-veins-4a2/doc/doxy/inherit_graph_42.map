@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,152,16"];
+	Node1 [label=NoNextIteratorException, height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_no_next_iterator_exception.html", tooltip="This exception is thrown by the MappingIterators when \"next()\" or \"nextPosition()\" is called although...", pos="76,8", rects="8,0,144,16"];
+}

@@ -1,0 +1,9 @@
+digraph "ConstMappingIteratorWrapper::getNextPosition" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,336,28"];
+	Node1 [label="ConstMappingIteratorWrapper\l::getNextPosition", height="0.39", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="90,14", rects="8,0,172,28"];
+	Node2 [label="ConstMappingIterator\l::getNextPosition", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator.html#a1f4cae3b170754a76049b8e81b2e3c07", tooltip="Returns the position the next call to \"next()\" of this Iterator would iterate to. ...", pos="268,14", rects="209,0,328,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,208,14 172,14 181,14 190,14 198,14"];
+}

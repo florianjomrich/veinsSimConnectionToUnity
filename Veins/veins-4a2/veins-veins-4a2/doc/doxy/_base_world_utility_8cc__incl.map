@@ -1,0 +1,36 @@
+digraph "BaseWorldUtility.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,502,368"];
+	Node1 [label="BaseWorldUtility.cc", height="0.22", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="235,352", rects="181,344,289,360"];
+	Node2 [label="veins/base/modules\l/BaseWorldUtility.h", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$_base_world_utility_8h.html", pos="94,230", rects="40,216,148,244"];
+	Node3 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="99,68", rects="21,60,178,76"];
+	Node4 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="296,16", rects="265,8,327,24"];
+	Node5 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="99,16", rects="9,8,189,24"];
+	Node6 [label="veins/base/utils/Coord.h", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$_coord_8h.html", pos="139,172", rects="76,164,202,180"];
+	Node7 [label="FWMath.h", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$_f_w_math_8h.html", pos="158,120", rects="127,112,190,128"];
+	Node8 [label="math.h", height="0.22", width="0.58", color=grey75, fillcolor=white, style=filled, pos="216,68", rects="195,60,238,76"];
+	Node9 [label="veins/base/utils/FindModule.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_find_module_8h.html", pos="424,120", rects="346,112,502,128"];
+	Node10 [label="veins/base/connectionManager\l/BaseConnectionManager.h", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$_base_connection_manager_8h.html", pos="235,294", rects="155,280,316,308"];
+	Node11 [label="veins/base/connectionManager\l/NicEntry.h", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$_nic_entry_8h.html", pos="246,230", rects="166,216,327,244"];
+	Node12 [label=map, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="274,172", rects="258,164,290,180"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,100,244 211,344 191,337 165,325 146,308 128,291 113,268 104,251"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,94,76 84,216 78,206 71,193 67,180 59,144 78,103 90,82"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,265,24 129,60 163,51 219,36 257,26"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,99,24 99,60 99,53 99,42 99,33"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,133,180 105,216 112,207 121,196 128,187"];
+	Node6 -> Node4 [color=midnightblue, style=solid, pos="e,290,24 151,164 163,155 182,141 198,128 233,96 267,53 285,31"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,101,76 134,164 130,155 122,141 118,128 111,112 106,96 103,83"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,155,128 142,164 144,157 148,146 152,137"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,207,76 167,112 176,104 190,92 200,82"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,108,76 149,112 140,104 126,92 115,82"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,422,128 260,344 280,337 306,325 324,308 376,257 407,174 419,137"];
+	Node9 -> Node4 [color=midnightblue, style=solid, pos="e,306,24 414,112 392,94 342,53 314,31"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,235,308 235,344 235,338 235,327 235,318"];
+	Node10 -> Node3 [color=midnightblue, style=solid, pos="e,90,76 159,280 105,269 40,254 31,244 9,215 31,187 67,112 74,98 77,93 83,84"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,244,244 237,280 238,272 240,262 242,254"];
+	Node11 -> Node4 [color=midnightblue, style=solid, pos="e,298,24 274,216 285,207 292,198 299,180 318,130 307,64 300,33"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,270,180 253,216 257,208 262,197 266,188"];
+	Node11 -> Node3 [color=midnightblue, style=solid, pos="e,133,76 244,216 239,191 227,141 198,112 182,96 161,86 142,79"];
+	Node11 -> Node6 [color=midnightblue, style=solid, pos="e,154,180 220,216 202,206 178,193 161,184"];
+}

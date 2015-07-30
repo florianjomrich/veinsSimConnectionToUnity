@@ -1,0 +1,11 @@
+digraph "BaseWaveApplLayer::finish" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,444,28"];
+	Node1 [label="BaseWaveApplLayer::\lfinish", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="9,0,128,28"];
+	Node2 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="223,14", rects="165,6,282,22"];
+	Node3 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="377,14", rects="319,6,436,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,14 128,14 137,14 146,14 154,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,318,14 282,14 291,14 299,14 308,14"];
+}

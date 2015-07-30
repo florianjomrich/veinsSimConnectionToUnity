@@ -1,0 +1,27 @@
+digraph "Veins::Obstacle::getShape" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,898,166"];
+	Node1 [label="Veins::Obstacle::getShape", height="0.22", width="1.78", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,70", rects="9,62,138,78"];
+	Node2 [label="Veins::ObstacleControl::add", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a206a6e9155d1b201841d0718e65ed30f", pos="244,94", rects="174,86,314,102"];
+	Node3 [label="Veins::ObstacleControl\l::addFromXml", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a1e5fceb8e8d9616622cc12551231c9d3", pos="428,146", rects="368,132,488,160"];
+	Node4 [label="Veins::ObstacleControl\l::initialize", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a199ba1a4bd7eb58b6365fcaa5c0b1a90", pos="620,152", rects="560,138,680,166"];
+	Node5 [label="Veins::TraCIScenarioManager\l::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a5389f3fc889b1fe3fd126c33a7d9ae36", pos="428,94", rects="350,80,506,108"];
+	Node6 [label="Veins::TraCIScenarioManager\l::handleSelfMsg", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a86a0b91aab8823c087c33b99f3a06b1f", pos="620,106", rects="542,92,698,120"];
+	Node7 [label="Veins::TraCIScenarioManager\l::handleMessage", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#a7ca227c28f036e04e42ef08d1639dbf1", pos="812,106", rects="734,92,890,120"];
+	Node8 [label="Veins::TraCIScenarioManager\lLaunchd::init_traci", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_launchd.html#a4c5b4cac20e03a2e333fd3e49a6a7e0e", pos="620,60", rects="542,46,698,74"];
+	Node9 [label="Veins::Obstacle::calculate\lAttenuation", height="0.39", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle.html#a637ef6f4ebd448f7f2f3f68a6fb7466a", pos="244,46", rects="180,32,308,60"];
+	Node10 [label="Veins::ObstacleControl\l::calculateAttenuation", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#ae3bc0ffe81dd2ca3145636656f392204", tooltip="calculate additional attenuation by obstacles, return signal strength ", pos="428,37", rects="368,23,488,51"];
+	Node11 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="620,14", rects="551,0,690,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,138,78 147,80 157,82 161,84 174,86"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,314,102 322,106 334,114 335,124 350,132 356,134 362,136 368,138"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,488,148 498,148 518,149 540,150 560,150"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,314,94 324,94 333,94 341,94 350,94"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,506,99 515,100 524,100 533,100 542,101"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,698,106 708,106 717,106 725,106 734,106"];
+	Node5 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,506,80 515,79 524,77 533,76 542,74"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,138,62 147,61 158,59 169,58 180,56"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,308,43 318,43 334,42 352,41 368,40"];
+	Node10 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,488,30 497,29 514,27 533,25 550,22"];
+}

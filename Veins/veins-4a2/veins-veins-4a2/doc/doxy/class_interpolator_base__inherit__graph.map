@@ -1,0 +1,22 @@
+digraph "InterpolatorBase&lt; _ContainerType &gt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,818,226"];
+	Node1 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,114", rects="9,100,110,128"];
+	Node2 [label="Linear\< _ContainerType \>", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_linear.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides linear interpolation of t...", pos="393,78", rects="321,70,465,86"];
+	Node3 [label="Linear\< std::map\< argument\l_value_t, Mapping * \> \>", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_linear.html", pos="730,138", rects="655,124,805,152"];
+	Node4 [label="Nearest\< _ContainerType \>", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_nearest.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides interpolation of values f...", pos="393,152", rects="319,144,468,160"];
+	Node5 [label="NextSmaller\< _ContainerType \>", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_next_smaller.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides interpolation of values f...", pos="393,114", rects="307,106,480,122"];
+	Node6 [label="InterpolatorBase\< std\l::map\< Argument::mapped\l_type, Mapping * \> \>", height="0.56", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="393,20", rects="323,0,463,40"];
+	Node7 [label="Linear\< std::map\< Argument\l::mapped_type, Mapping * \> \>", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_linear_3_01std_1_1map_3_01_argument_1_1mapped__type_00_01_mapping_01_5_01_4_01_4.html", tooltip="Specialization of the Linear-template which provides LinearInterpolation for pointer two Mappings...", pos="730,20", rects="650,6,810,34"];
+	Node8 [label="InterpolatorBase\< std\l::map\< argument_value\l_t, Mapping * \> \>", height="0.56", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="393,198", rects="330,178,457,218"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,110,108 118,107 168,101 243,93 306,86 311,86 316,85 321,85"];
+	Node2 -> Node3 [dir=back, color=orange, style=dashed, label=" \< std::map\< argument\l_value_t, Mapping * \> \>", pos="s,465,84 474,85 476,85 478,86 480,86 557,98 575,108 650,124 652,124 653,125 655,125", lp="565,132"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,110,125 119,126 122,127 125,127 128,128 192,137 265,144 318,147"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,110,114 120,114 172,114 248,114 306,114"];
+	Node1 -> Node6 [dir=back, color=orange, style=dashed, label=" \< std::map\< Argument\l::mapped_type, Mapping * \> \>", pos="s,108,100 114,93 123,80 114,65 128,54 184,12 265,7 323,11", lp="208,68"];
+	Node6 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,463,20 473,20 527,20 596,20 650,20"];
+	Node1 -> Node8 [dir=back, color=orange, style=dashed, label=" \< std::map\< argument\l_value_t, Mapping * \> \>", pos="s,107,128 115,133 120,138 120,143 128,148 191,181 273,192 329,196", lp="208,205"];
+	Node8 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,457,186 465,185 517,176 588,163 650,152 652,152 653,151 655,151"];
+}

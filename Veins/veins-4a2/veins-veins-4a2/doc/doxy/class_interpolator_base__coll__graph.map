@@ -1,0 +1,16 @@
+digraph "InterpolatorBase&lt; _ContainerType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,330,260"];
+	Node1 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="155,22", rects="105,8,206,36"];
+	Node2 [label="PairLess\< pair_type,\l key_type \>", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", pos="77,102", rects="22,88,133,116"];
+	Node3 [label="PairLess\< Pair, Key \>", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", tooltip="Compares a the first value of a pair to a value. ", pos="58,176", rects="0,168,117,184"];
+	Node4 [label="Interpolated\< mapped\l_type \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_interpolated.html", pos="218,102", rects="159,88,278,116"];
+	Node5 [label="Interpolated\< V \>", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_interpolated.html", tooltip="Represents an interpolated value of any type. ", pos="228,176", rects="179,168,278,184"];
+	Node6 [label=V, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="228,244", rects="214,236,243,252"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" comp", pos="s,91,88 97,81 111,67 129,49 141,36", lp="142,62"];
+	Node3 -> Node2 [dir=back, color=orange, style=dashed, label=" \< pair_type, key_type \>", pos="s,60,168 62,160 65,147 70,129 73,116", lp="137,142"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" outOfRangeVal", pos="s,207,88 202,81 191,67 176,49 166,36", lp="238,62"];
+	Node5 -> Node4 [dir=back, color=orange, style=dashed, label=" \< mapped_type \>", pos="s,227,168 226,160 224,147 222,129 220,116", lp="275,142"];
+	Node6 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" value", pos="s,228,236 228,227 228,213 228,195 228,184", lp="248,210"];
+}

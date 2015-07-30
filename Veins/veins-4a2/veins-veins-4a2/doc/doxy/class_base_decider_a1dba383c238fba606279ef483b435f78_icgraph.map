@@ -1,0 +1,9 @@
+digraph "BaseDecider::handleNewSenseRequest" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,358,28"];
+	Node1 [label="BaseDecider::handleNewSense\lRequest", height="0.39", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,14", rects="9,0,166,28"];
+	Node2 [label="BaseDecider::handleChannel\lSenseRequest", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#afd31e5a65d1798d329ace9bdbec25d64", tooltip="This function is called by the PhyLayer to hand over a ChannelSenseRequest. ", pos="276,14", rects="202,0,350,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,166,14 175,14 184,14 193,14 202,14"];
+}

@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,328,84"];
+	Node1 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="59,42", rects="9,28,110,56"];
+	Node2 [label="Linear\< _ContainerType \>", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_linear.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides linear interpolation of t...", pos="233,76", rects="161,68,305,84"];
+	Node3 [label="Nearest\< _ContainerType \>", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_nearest.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides interpolation of values f...", pos="233,42", rects="159,34,308,50"];
+	Node4 [label="NextSmaller\< _ContainerType \>", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_next_smaller.html", tooltip="Given two iterators defining a range of key-value-pairs this class provides interpolation of values f...", pos="233,8", rects="147,0,320,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,110,56 118,58 129,61 133,65 146,68 151,69 156,70 161,70"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,110,42 120,42 132,42 145,42 158,42"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,110,28 118,25 129,22 133,18 146,16"];
+}

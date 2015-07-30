@@ -1,0 +1,11 @@
+digraph "Mapping::clone" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,228,50"];
+	Node1 [label="Mapping::clone", height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="50,25", rects="9,17,92,33"];
+	Node2 [label="Signal::operator=", height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$class_signal.html#aa9c8501095ecc3fb4a60f4f0e2007138", tooltip="Overwrites the copy operator to make sure that the mappings are cloned correct. ", pos="174,42", rects="129,34,220,50"];
+	Node3 [label="Signal::Signal", height="0.22", width="1.00", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a079cc6bee7380f5744001d5f26505b2c", tooltip="Overwrites the copy constructor to make sure that the mappings are cloned correct. ", pos="174,8", rects="138,0,210,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,92,31 101,32 110,34 119,34 128,36"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,92,19 101,18 113,16 127,15 138,13"];
+}

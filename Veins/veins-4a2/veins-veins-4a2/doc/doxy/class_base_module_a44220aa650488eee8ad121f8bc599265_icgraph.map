@@ -1,0 +1,9 @@
+digraph "BaseModule::handleHostState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,344,16"];
+	Node1 [label="BaseModule::handleHostState", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,8", rects="9,0,162,16"];
+	Node2 [label="BaseModule::receiveSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a9195e1fe5a0ca770e7d29351e0ab2ecf", tooltip="Called by the signaling mechanism whenever a change of a category occurs to which we have subscribed...", pos="267,8", rects="198,0,336,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,162,8 172,8 181,8 189,8 198,8"];
+}

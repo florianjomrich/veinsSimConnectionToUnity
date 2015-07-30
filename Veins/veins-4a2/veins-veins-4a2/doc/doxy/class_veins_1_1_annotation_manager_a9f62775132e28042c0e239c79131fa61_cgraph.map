@@ -1,0 +1,9 @@
+digraph "Veins::AnnotationManager::createDummyModuleLine" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,338,28"];
+	Node1 [label="Veins::AnnotationManager\l::createDummyModuleLine", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,14", rects="8,0,152,28"];
+	Node2 [label="Veins::AnnotationManager\l::createDummyModule", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager.html#a5913c22f5ec33e8a4d6531bc0b016899", pos="259,14", rects="188,0,330,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,188,14 152,14 161,14 169,14 178,14"];
+}

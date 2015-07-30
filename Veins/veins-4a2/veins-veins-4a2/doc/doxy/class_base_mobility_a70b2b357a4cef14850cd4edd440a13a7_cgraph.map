@@ -1,0 +1,31 @@
+digraph "BaseMobility::handleSelfMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,708,198"];
+	Node1 [label="BaseMobility::handleSelfMsg", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,105", rects="8,97,160,113"];
+	Node2 [label="BaseMobility::makeMove", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a9774524fd5f2d3ef348dc67f2af0f491", tooltip="Moves the host. ", pos="271,139", rects="204,131,338,147"];
+	Node3 [label="BaseMobility::updatePosition", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a291eed23c07d4693a5fa4164aa80934e", tooltip="Update the position information for this node. ", pos="271,105", rects="196,97,346,113"];
+	Node4 [label="Move::info", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_move.html#a0287300e9580229fdd0c4c2c13e9527d", tooltip="Returns information about the current state. ", pos="457,190", rects="426,182,488,198"];
+	Node5 [label="Coord::info", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a86994bfa7096155d951abb03dcf30bf1", tooltip="Returns a string with the value of the coordinate. ", pos="634,190", rects="603,182,666,198"];
+	Node6 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="457,156", rects="399,148,516,164"];
+	Node7 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="634,156", rects="576,148,693,164"];
+	Node8 [label="Move::getStartPos", height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_move.html#aeab90c9059a2c9214e491a58833b3c3c", tooltip="Returns the start position. ", pos="457,122", rects="409,114,505,130"];
+	Node9 [label="BaseWorldUtility::use2D", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a84c3d488e01d52be51c686e3fb206498", tooltip="Returns true if the world is 2-dimensional. ", pos="457,88", rects="392,80,522,96"];
+	Node10 [label="BaseMobility::playground\lSizeZ", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a1245dec457a2d33c8dd1a70ccd74ea33", tooltip="Returns the height of the playground. ", pos="457,48", rects="390,34,525,62"];
+	Node11 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="634,48", rects="569,40,700,56"];
+	Node12 [label="BaseMobility::iconSizeToTag", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_mobility.html#a4385f329f6d9df7294297c98028083e2", tooltip="Maps the passed size in pixels to an appropriate icon size tag (is). ", pos="457,8", rects="382,0,532,16"];
+	Node13 [label="Move::getSpeed", height="0.22", width="1.17", color=black, fillcolor=white, style=filled, URL="$class_move.html#a3db12757bf11ac7f025b2496d09e4941", tooltip="Returns the current speed. ", pos="271,71", rects="229,63,313,79"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,204,133 160,113 177,118 179,124 194,130"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,196,105 160,105 169,105 177,105 186,105"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,426,193 346,113 375,132 354,162 382,182 392,188 405,191 417,193"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,602,190 488,190 517,190 560,190 592,190"];
+	Node3 -> Node6 [color=midnightblue, style=solid, pos="e,398,153 346,113 367,122 362,138 382,148 384,149 386,150 388,150"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,575,156 516,156 532,156 549,156 565,156"];
+	Node3 -> Node8 [color=midnightblue, style=solid, pos="e,409,118 346,112 364,114 383,115 400,117"];
+	Node3 -> Node9 [color=midnightblue, style=solid, pos="e,392,94 346,98 358,97 370,96 382,95"];
+	Node3 -> Node10 [color=midnightblue, style=solid, pos="e,389,59 346,97 366,88 363,74 379,64"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,568,48 525,48 536,48 547,48 558,48"];
+	Node3 -> Node12 [color=midnightblue, style=solid, pos="e,382,16 346,97 375,75 356,46 374,23"];
+	Node1 -> Node13 [color=midnightblue, style=solid, pos="e,229,73 160,97 178,91 179,84 196,79 204,77 211,75 219,74"];
+}

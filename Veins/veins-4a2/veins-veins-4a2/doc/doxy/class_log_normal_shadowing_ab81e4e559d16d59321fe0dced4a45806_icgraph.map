@@ -1,0 +1,9 @@
+digraph "LogNormalShadowing::randomLogNormalGain" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,310,28"];
+	Node1 [label="LogNormalShadowing\l::randomLogNormalGain", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="8,0,142,28"];
+	Node2 [label="LogNormalShadowing\l::filterSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#abecf1f338dc41facc038dbcd8a863ccd", tooltip="Calculates shadowing loss based on a normal gaussian function. ", pos="240,14", rects="179,0,302,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,14 152,14 161,14 169,14 178,14"];
+}

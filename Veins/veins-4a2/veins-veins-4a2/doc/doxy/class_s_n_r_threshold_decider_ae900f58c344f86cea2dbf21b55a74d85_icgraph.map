@@ -1,0 +1,13 @@
+digraph "SNRThresholdDecider::isIdleRSSI" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,454,74"];
+	Node1 [label="SNRThresholdDecider\l::isIdleRSSI", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="69,37", rects="9,23,130,51"];
+	Node2 [label="SNRThresholdDecider\l::canAnswerCSR", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a0946c7a3e2ee04e2bb1c2dce4b7be7ec", tooltip="Returns point in time when the ChannelSenseRequest of the passed CSRInfo can be answered (e...", pos="227,60", rects="167,46,288,74"];
+	Node3 [label="SNRThresholdDecider\l::getChannelState", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a1e6266fe8a4d10ce5443e37321d3bcaa", tooltip="A function that returns information about the channel state. ", pos="227,14", rects="167,0,288,28"];
+	Node4 [label="SNRThresholdDecider\l::answerCSR", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#aa7e33361b328274b04ff7bd2d6206e6d", tooltip="Answers the ChannelSenseRequest (CSR) from the passed CSRInfo. ", pos="385,14", rects="325,0,446,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,130,46 139,47 148,49 157,49 166,51"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,130,28 139,27 148,25 157,25 166,23"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,288,14 298,14 307,14 315,14 324,14"];
+}

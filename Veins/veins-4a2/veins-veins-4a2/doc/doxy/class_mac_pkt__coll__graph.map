@@ -1,0 +1,8 @@
+digraph MacPkt {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,48,84"];
+	Node1 [label=MacPkt, height="0.22", width="0.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="24,16", rects="0,8,48,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="24,68", rects="1,60,48,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,24,60 24,51 24,42 24,31 24,24"];
+}

@@ -1,0 +1,18 @@
+digraph ConcatConstMappingIterator {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,365,234"];
+	Node1 [label=ConcatConstMappingIterator, height="0.22", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="157,16", rects="80,8,234,24"];
+	Node2 [label=FilteredConstMappingIterator, height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_filtered_iterator.html", tooltip="This iterator takes another ConstMappingIterator and does just pipe every method to the passed ConstM...", pos="78,84", rects="0,76,156,92"];
+	Node3 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="72,158", rects="56,150,88,166"];
+	Node4 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="215,84", rects="174,76,257,92"];
+	Node5 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="215,158", rects="177,150,254,166"];
+	Node6 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="215,218", rects="159,210,272,226"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,87,76 93,71 109,57 134,35 148,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,72,150 72,142 72,132 72,121 73,110 74,104 75,97 76,92"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" origIterator", pos="s,74,150 75,142 76,136 76,131 77,126 78,114 78,101 78,92", lp="113,118"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" baseMapping", pos="s,208,76 203,70 191,56 173,35 164,24", lp="231,50"];
+	Node5 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,215,150 215,141 215,126 215,104 215,92", lp="249,118"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,215,210 215,201 215,189 215,175 215,166"];
+	Node5 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,254,152 263,153 268,154 271,156 271,158 271,162 263,164 254,164", lp="318,158"];
+}

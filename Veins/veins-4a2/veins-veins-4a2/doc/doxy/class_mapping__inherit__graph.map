@@ -1,0 +1,26 @@
+digraph Mapping {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,812,216"];
+	Node1 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="158,105", rects="131,97,186,113"];
+	Node2 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="50,105", rects="9,97,92,113"];
+	Node3 [label="BaseDelayedMapping\l\< Mapping \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_delayed_mapping.html", pos="316,202", rects="257,188,375,216"];
+	Node4 [label=DelayedMapping, height="0.22", width="1.31", color=black, fillcolor=white, style=filled, URL="$class_delayed_mapping.html", tooltip="Moves another Mapping in its time dimension. ", pos="589,202", rects="542,194,637,210"];
+	Node5 [label=ConstMappingWrapper, height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_wrapper.html", tooltip="Wraps an ConstMapping into a Mapping interface. ", pos="316,162", rects="253,154,380,170"];
+	Node6 [label=LinearIntplMapping, height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_linear_intpl_mapping.html", tooltip="Helper class which represents a linear interpolation between two other mappings. ", pos="316,124", rects="261,116,371,132"];
+	Node7 [label="MultiDimMapping\< Interpolator \>", height="0.22", width="2.53", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html", tooltip="Implementation of the Mapping-interface which is able to represent arbitrary dimensional instances of...", pos="316,88", rects="225,80,408,96"];
+	Node8 [label="MultiDimMapping\< Linear \>", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html", pos="589,71", rects="511,63,668,79"];
+	Node9 [label=FilledUpMapping, height="0.22", width="1.33", color=black, fillcolor=white, style=filled, URL="$class_filled_up_mapping.html", tooltip="Takes a source ConstMapping with a domain A and a set of KeyEntries for a domain B and creates a clon...", pos="755,71", rects="707,63,804,79"];
+	Node10 [label="TimeMapping\< Interpolator \>", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_time_mapping.html", tooltip="Implements the Mapping-interface with an InterpolateableMap from simtime_t to double between which va...", pos="316,10", rects="237,2,396,18"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,92,105 101,105 111,105 122,105 130,105"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,172,113 179,118 182,120 184,122 186,124 209,148 197,169 224,188 234,194 245,198 257,201"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,375,202 384,202 433,202 498,202 541,202"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,181,113 189,118 206,131 204,144 224,154 233,158 243,161 252,162"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,186,111 195,112 198,113 201,113 204,114 223,117 243,119 261,121"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,186,101 196,100 205,99 215,97 224,96"];
+	Node7 -> Node8 [dir=back, color=orange, style=dashed, label=" \< Linear \>", pos="s,408,82 417,81 448,80 481,78 510,76", lp="459,90"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,668,71 677,71 687,71 697,71 706,71"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,173,97 182,93 200,83 221,72 224,71 276,58 420,63 510,67"];
+	Node1 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,185,97 191,89 203,72 191,55 204,34 211,25 214,23 224,18 228,16 232,15 236,14"];
+}

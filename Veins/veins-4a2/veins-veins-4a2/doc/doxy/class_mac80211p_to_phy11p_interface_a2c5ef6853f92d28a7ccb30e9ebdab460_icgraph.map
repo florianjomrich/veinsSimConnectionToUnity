@@ -1,0 +1,9 @@
+digraph "Mac80211pToPhy11pInterface::setCCAThreshold" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,28"];
+	Node1 [label="Mac80211pToPhy11pInterface\l::setCCAThreshold", height="0.39", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,14", rects="8,0,160,28"];
+	Node2 [label="Mac1609_4::setCCAThreshold", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a6255d9c021bb8061459356644b0d5c55", tooltip="Change the phy layer carrier sense threshold. ", pos="274,14", rects="197,6,352,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,14 170,14 179,14 187,14 196,14"];
+}

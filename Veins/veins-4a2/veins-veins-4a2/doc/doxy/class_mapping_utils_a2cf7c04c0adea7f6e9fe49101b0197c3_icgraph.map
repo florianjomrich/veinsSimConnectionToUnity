@@ -1,0 +1,15 @@
+digraph "MappingUtils::pre" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,496,120"];
+	Node1 [label="MappingUtils::pre", height="0.22", width="1.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="57,60", rects="9,52,106,68"];
+	Node2 [label="BaseMacLayer::createRectangle\lMapping", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a23ed373dcfd98255df5f5ffa7e30eec6", tooltip="Creates a simple Mapping with a constant curve progression at the passed value and discontinuities at...", pos="224,106", rects="142,92,306,120"];
+	Node3 [label="BaseMacLayer::createSignal", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a28ca155ff241c3e202a94724cc87b232", tooltip="Creates a simple Signal defined over time with the passed parameters. ", pos="415,106", rects="343,98,488,114"];
+	Node4 [label="SNRThresholdDecider\l::processSignalEnd", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a6002f2ee8ffa35ded0162c72f93c9fba", tooltip="Processes a received AirFrame. ", pos="224,60", rects="164,46,285,74"];
+	Node5 [label="RSAMConstMappingIterator\l::setNextPosition", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_r_s_a_m_const_mapping_iterator.html#a082fa16cd2eaa7ac2dd0b16b66660317", tooltip="Helper function that sets member nextPosition. ", pos="224,14", rects="147,0,302,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,106,68 115,72 125,78 128,86 142,92"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,306,106 316,106 325,106 333,106 342,106"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,106,60 116,60 131,60 147,60 163,60"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,106,52 114,48 125,41 128,34 142,28 143,27 145,27 146,26"];
+}

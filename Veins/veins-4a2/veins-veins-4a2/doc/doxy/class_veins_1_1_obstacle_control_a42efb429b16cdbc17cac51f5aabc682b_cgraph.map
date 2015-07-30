@@ -1,0 +1,9 @@
+digraph "Veins::ObstacleControl::handleMessage" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,292,28"];
+	Node1 [label="Veins::ObstacleControl\l::handleMessage", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="8,0,128,28"];
+	Node2 [label="Veins::ObstacleControl\l::handleSelfMsg", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#ae44772f7d064e31ab18301a0df6f2bd5", pos="224,14", rects="164,0,284,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,14 128,14 137,14 145,14 154,14"];
+}

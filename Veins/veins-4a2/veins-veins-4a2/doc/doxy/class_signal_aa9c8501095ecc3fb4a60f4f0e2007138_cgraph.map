@@ -1,0 +1,15 @@
+digraph "Signal::operator=" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,466,90"];
+	Node1 [label="Signal::operator=", height="0.22", width="1.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,42", rects="9,34,100,50"];
+	Node2 [label="Signal::markRcvPowerOutdated", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a594e926b3d8ff3330375c8850699ae76", tooltip="Deletes the rcvPower mapping member because it became out-dated. ", pos="220,76", rects="137,68,304,84"];
+	Node3 [label="ConcatConstMapping\l::getRefMapping", height="0.39", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_concat_const_mapping.html#abcd3a9507ddf2e6e227fb0682f736b9a", tooltip="Returns the pointer to the reference mapping. ", pos="399,76", rects="341,62,458,90"];
+	Node4 [label="ConstMapping::constClone", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html#a741e083fb18412a3d9cde7eac3dced10", tooltip="returns a deep copy of this mapping instance. ", pos="220,42", rects="150,34,290,50"];
+	Node5 [label="Mapping::clone", height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_mapping.html#a95f064bd4bc5a22aef1cf0e4a6052ec7", tooltip="Returns a deep copy of this Mapping. ", pos="220,8", rects="179,0,262,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,136,68 100,50 113,54 117,59 126,64"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,340,76 304,76 313,76 322,76 330,76"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,150,42 100,42 112,42 126,42 140,42"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,178,9 100,34 117,28 119,20 136,16 147,13 158,11 169,10"];
+}

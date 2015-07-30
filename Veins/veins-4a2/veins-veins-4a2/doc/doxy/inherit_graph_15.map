@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,328,40"];
+	Node1 [label="ConstInterpolateableIterator\l\< TInterpolator, TInterpolator\l::iterator \>", height="0.56", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_const_interpolateable_iterator.html", pos="86,20", rects="8,0,164,40"];
+	Node2 [label="InterpolateableIterator\l\< TInterpolator \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_interpolateable_iterator.html", tooltip="Provides an interpolateable iterator for any Container which maps from keys to values which is able t...", pos="260,20", rects="201,6,320,34"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,164,20 173,20 182,20 192,20 200,20"];
+}

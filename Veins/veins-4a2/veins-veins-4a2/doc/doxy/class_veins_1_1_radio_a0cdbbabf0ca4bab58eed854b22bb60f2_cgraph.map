@@ -1,0 +1,9 @@
+digraph "Veins::Radio::makeRSAMEntry" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,28"];
+	Node1 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,14", rects="9,6,174,22"];
+	Node2 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#ad80154bcc09f8db0e08efb2efd75872c", tooltip="Stores an entry of the form \"time-point/attenuation (from now on)\". ", pos="281,14", rects="210,0,352,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,210,14 174,14 183,14 191,14 200,14"];
+}

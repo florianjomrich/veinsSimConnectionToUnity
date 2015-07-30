@@ -1,0 +1,9 @@
+digraph "Veins::TraCIColor::fromTkColor" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,252,28"];
+	Node1 [label="Veins::TraCIColor::\lfromTkColor", height="0.39", width="1.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="58,14", rects="8,0,108,28"];
+	Node2 [label="Veins::TraCIColor::\lTraCIColor", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_color.html#aed4c0a7c62bb97cd300b23f3f932e6e7", pos="194,14", rects="144,0,244,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,144,14 108,14 117,14 125,14 134,14"];
+}

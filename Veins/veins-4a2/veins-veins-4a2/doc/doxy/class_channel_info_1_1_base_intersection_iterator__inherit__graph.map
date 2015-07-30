@@ -1,0 +1,11 @@
+digraph "ChannelInfo::BaseIntersectionIterator&lt; C, ItMatrix, ItList &gt;" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,696,66"];
+	Node1 [label="ChannelInfo::BaseIntersection\lIterator\< C, ItMatrix, ItList \>", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="86,26", rects="9,12,164,40"];
+	Node2 [label="ChannelInfo::BaseIntersection\lIterator\< AirFrameMatrix,\l AirFrameMatrix::iterator,\l AirFrameTimeList::iterator \>", height="0.72", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_base_intersection_iterator.html", pos="440,26", rects="363,0,518,52"];
+	Node3 [label="ChannelInfo::Intersection\lIterator", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_channel_info_1_1_intersection_iterator.html", tooltip="Type for a iterator over an AirFrame interval matrix. ", pos="622,26", rects="556,12,688,40"];
+	Node1 -> Node2 [dir=back, color=orange, style=dashed, label=" \< AirFrameMatrix, AirFrame\lMatrix::iterator, AirFrameTime\lList::iterator \>", pos="s,164,26 174,26 231,26 306,26 362,26", lp="263,46"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,518,26 527,26 537,26 546,26 556,26"];
+}

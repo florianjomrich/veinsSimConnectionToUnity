@@ -1,0 +1,16 @@
+digraph BaseMobility {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,158,240"];
+	Node1 [label=BaseMobility, height="0.22", width="1.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,68", rects="50,60,125,76"];
+	Node2 [label="Veins::BatteryAccess", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html", pos="87,120", rects="32,112,142,128"];
+	Node3 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_module.html", tooltip="Base class for all simple modules of a host. ", pos="87,172", rects="52,164,123,180"];
+	Node4 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,224", rects="0,216,86,232"];
+	Node5 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,224", rects="104,216,158,232"];
+	Node6 [label="Veins::TraCIMobility", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html", pos="87,16", rects="31,8,143,24"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,87,112 87,103 87,94 87,83 87,76"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,87,164 87,155 87,146 87,135 87,128"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,50,216 56,209 64,199 74,188 80,180"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,124,216 118,209 110,199 100,188 94,180"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,87,60 87,51 87,42 87,31 87,24"];
+}

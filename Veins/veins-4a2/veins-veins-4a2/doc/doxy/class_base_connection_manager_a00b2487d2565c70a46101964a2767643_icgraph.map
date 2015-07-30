@@ -1,0 +1,9 @@
+digraph "BaseConnectionManager::calcInterfDist" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,28"];
+	Node1 [label="BaseConnectionManager\l::calcInterfDist", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="9,0,142,28"];
+	Node2 [label="BaseConnectionManager\l::initialize", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a0d39342f1e732ad44ef7e4e2dccac24f", tooltip="Reads init parameters and calculates a maximal interference distance. ", pos="245,14", rects="179,0,312,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,14 152,14 161,14 169,14 178,14"];
+}

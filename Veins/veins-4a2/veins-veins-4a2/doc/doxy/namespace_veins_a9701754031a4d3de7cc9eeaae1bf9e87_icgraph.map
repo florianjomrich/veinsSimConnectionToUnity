@@ -1,0 +1,13 @@
+digraph "Veins::isBigEndian" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,402,74"];
+	Node1 [label="Veins::isBigEndian", height="0.22", width="1.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,37", rects="9,29,110,45"];
+	Node2 [label="Veins::TraCIBuffer\l::read", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#af77b1459cfce5455936a14352428a6c8", pos="199,60", rects="147,46,252,74"];
+	Node3 [label="Veins::TraCIBuffer\l::write", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a5716cca2373bc83b19f9182bc2b916b4", pos="199,14", rects="147,0,252,28"];
+	Node4 [label="Veins::TraCIBuffer\l::operator\<\<", height="0.39", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a60197679448ddfc14c396977c2670932", pos="341,14", rects="289,0,394,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,110,45 118,46 128,48 137,49 146,51"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,110,29 118,28 128,26 137,25 146,23"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,252,14 261,14 270,14 280,14 288,14"];
+}

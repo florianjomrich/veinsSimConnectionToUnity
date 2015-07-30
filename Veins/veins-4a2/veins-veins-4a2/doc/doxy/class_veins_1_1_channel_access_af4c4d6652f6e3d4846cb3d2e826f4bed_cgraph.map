@@ -1,0 +1,20 @@
+digraph "Veins::ChannelAccess::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,686,100"];
+	Node1 [label="Veins::ChannelAccess\l::initialize", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,56", rects="9,42,124,70"];
+	Node2 [label="BaseModule::initialize", height="0.22", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a03030e439aaf030c83da6e71e8be2f80", tooltip="Basic initialization for all modules. ", pos="224,92", rects="167,84,282,100"];
+	Node3 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="407,74", rects="349,66,466,82"];
+	Node4 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="602,74", rects="544,66,661,82"];
+	Node5 [label="Veins::ChannelAccess\l::getConnectionManager", height="0.39", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#a0dc69d65185a429fcd739d4eadedb504", tooltip="Returns a pointer to the ConnectionManager responsible for the passed NIC module. ...", pos="224,14", rects="160,0,288,28"];
+	Node6 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="407,14", rects="325,6,490,22"];
+	Node7 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="602,14", rects="527,6,678,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,166,85 124,70 139,75 143,78 156,83"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,348,80 282,86 296,85 310,83 324,82 329,81 333,81 338,80"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,543,74 466,74 487,74 512,74 533,74"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,348,71 124,59 183,62 276,67 339,70"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,160,28 124,42 137,37 142,34 151,31"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,324,14 288,14 297,14 305,14 314,14"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,526,14 490,14 499,14 508,14 516,14"];
+}

@@ -1,0 +1,9 @@
+digraph "Veins::AirFrame::dup" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,306,16"];
+	Node1 [label="Veins::AirFrame::dup", height="0.22", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,8", rects="8,0,120,16"];
+	Node2 [label="Veins::AirFrame::AirFrame", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#aead118aef0272bc72d772a346ef216ea", pos="227,8", rects="157,0,298,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,156,8 120,8 129,8 137,8 146,8"];
+}

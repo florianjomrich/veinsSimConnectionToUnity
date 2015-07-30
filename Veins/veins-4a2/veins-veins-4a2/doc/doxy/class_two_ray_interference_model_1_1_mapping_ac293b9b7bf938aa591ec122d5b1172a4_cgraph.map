@@ -1,0 +1,15 @@
+digraph "TwoRayInterferenceModel::Mapping::getValue" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,450,84"];
+	Node1 [label="TwoRayInterferenceModel\l::Mapping::getValue", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,42", rects="9,28,154,56"];
+	Node2 [label="Argument::hasArgVal", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a0e9998020362333915af80cde79df9e6", tooltip="Returns true if this Argument has a value for the passed Dimension. ", pos="255,76", rects="196,68,315,84"];
+	Node3 [label="Argument::getArgValue", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a137a911de0281cbb519fe13727aa0813", tooltip="Returns the value for the specified dimension. ", pos="255,42", rects="191,34,320,50"];
+	Node4 [label="Argument::find", height="0.22", width="1.19", color=black, fillcolor=white, style=filled, URL="$class_argument.html#ae4b61830a991f8911978c30a67dd2da6", tooltip="Returns an iterator to the Argument value for the passed Dimension. ", pos="399,42", rects="356,34,442,50"];
+	Node5 [label="FWMath::mW2dBm", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_f_w_math.html#af1390153a78142efb6af6225034f954f", tooltip="Convert a mW value to dBm. ", pos="255,8", rects="200,0,311,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,195,69 154,56 169,60 173,63 185,67"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,190,42 154,42 163,42 172,42 180,42"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,356,42 320,42 329,42 338,42 346,42"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,199,14 154,28 171,23 174,19 189,16"];
+}

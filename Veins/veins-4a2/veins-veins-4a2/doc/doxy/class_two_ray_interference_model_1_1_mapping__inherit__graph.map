@@ -1,0 +1,10 @@
+digraph "TwoRayInterferenceModel::Mapping" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,144,148"];
+	Node1 [label="TwoRayInterferenceModel\l::Mapping", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="72,22", rects="0,8,145,36"];
+	Node2 [label=SimpleConstMapping, height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping.html", tooltip="Abstract subclass of ConstMapping which can be used as base for any ConstMapping implementation with ...", pos="72,80", rects="14,72,130,88"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="72,132", rects="31,124,114,140"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,72,72 72,63 72,54 72,44 72,36"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,72,124 72,115 72,106 72,95 72,88"];
+}

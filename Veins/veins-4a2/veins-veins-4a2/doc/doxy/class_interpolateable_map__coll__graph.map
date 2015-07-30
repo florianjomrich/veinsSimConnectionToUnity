@@ -1,0 +1,10 @@
+digraph "InterpolateableMap&lt; TInterpolator, TContainer &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,187,112"];
+	Node1 [label="InterpolateableMap\l\< TInterpolator, TContainer \>", height="0.39", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,22", rects="0,8,157,36"];
+	Node2 [label=TContainer, height="0.22", width="0.92", color=grey75, fillcolor=white, style=filled, pos="34,96", rects="1,88,67,104"];
+	Node3 [label=TInterpolator, height="0.22", width="1.03", color=grey75, fillcolor=white, style=filled, pos="122,96", rects="85,88,160,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,39,88 43,81 51,68 62,49 70,36"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" interpolate", pos="s,117,88 113,81 105,68 94,49 86,36", lp="140,62"];
+}

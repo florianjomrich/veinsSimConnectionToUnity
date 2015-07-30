@@ -1,0 +1,10 @@
+digraph AirFrame11p {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,88,136"];
+	Node1 [label=AirFrame11p, height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="44,16", rects="9,8,80,24"];
+	Node2 [label="Veins::AirFrame", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html", tooltip="Class generated from veins/base/messages/AirFrame.msg:33 by nedtool. ", pos="44,68", rects="0,60,89,76"];
+	Node3 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="44,120", rects="21,112,68,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,44,60 44,51 44,42 44,31 44,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,44,112 44,103 44,94 44,83 44,76"];
+}

@@ -1,0 +1,17 @@
+digraph "Veins::TraCIMobility::getCommandInterface" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,914,74"];
+	Node1 [label="Veins::TraCIMobility\l::getCommandInterface", height="0.39", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,37", rects="8,23,132,51"];
+	Node2 [label="Veins::TraCIMobility\l::getManager", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a9112501e8dffb3ef22fc5c571a016ed1", pos="246,60", rects="190,46,302,74"];
+	Node3 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_access.html#af6404515b1b992848f352b03d325b10d", pos="438,60", rects="360,46,516,74"];
+	Node4 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="635,60", rects="553,52,718,68"];
+	Node5 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="830,60", rects="755,52,906,68"];
+	Node6 [label="Veins::TraCIScenarioManager\l::getCommandInterface", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#af9d96f6e40de409df2f1d04b617433d5", pos="246,14", rects="168,0,324,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,190,53 132,45 148,47 165,49 181,52"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,360,60 302,60 317,60 334,60 350,60"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,552,60 516,60 525,60 533,60 542,60"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,754,60 718,60 727,60 736,60 744,60"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,168,24 132,29 141,28 149,27 158,25"];
+}

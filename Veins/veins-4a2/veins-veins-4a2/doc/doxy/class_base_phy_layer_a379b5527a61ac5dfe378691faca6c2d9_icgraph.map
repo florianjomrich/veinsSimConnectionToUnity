@@ -1,0 +1,13 @@
+digraph "BasePhyLayer::readPar" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,632,28"];
+	Node1 [label="BasePhyLayer::readPar", height="0.22", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="9,6,132,22"];
+	Node2 [label="BasePhyLayer::initialize\lRadio", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a93b118fa0564e329eb2ff68279f4584d", tooltip="Initializes and returns the radio class to use. ", pos="231,14", rects="169,0,294,28"];
+	Node3 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="393,14", rects="331,6,456,22"];
+	Node4 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="558,14", rects="492,6,624,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,14 142,14 151,14 159,14 168,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,294,14 304,14 313,14 321,14 330,14"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,456,14 466,14 475,14 483,14 492,14"];
+}

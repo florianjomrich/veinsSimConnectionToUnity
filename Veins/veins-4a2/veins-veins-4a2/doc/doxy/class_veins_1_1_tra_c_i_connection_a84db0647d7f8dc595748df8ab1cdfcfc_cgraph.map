@@ -1,0 +1,9 @@
+digraph "Veins::TraCIConnection::omnet2traci" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,304,28"];
+	Node1 [label="Veins::TraCIConnection\l::omnet2traci", height="0.39", width="1.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,14", rects="8,0,134,28"];
+	Node2 [label="Veins::TraCIConnection\l::omnet2traci", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#ab356d0c41b62b01b3507e11a8e5f9bf1", tooltip="convert OMNeT++ coordinates to TraCI coordinates ", pos="233,14", rects="170,0,296,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,170,14 134,14 143,14 151,14 160,14"];
+}

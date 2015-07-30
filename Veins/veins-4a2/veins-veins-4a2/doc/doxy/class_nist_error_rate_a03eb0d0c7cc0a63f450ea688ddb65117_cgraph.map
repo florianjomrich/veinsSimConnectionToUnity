@@ -1,0 +1,11 @@
+digraph "NistErrorRate::getFecBpskBer" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,350,50"];
+	Node1 [label="NistErrorRate::getFecBpskBer", height="0.22", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="87,25", rects="9,17,166,33"];
+	Node2 [label="NistErrorRate::getBpskBer", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#a18175d82399d69438e554cb95c7604a3", tooltip="Return BER of BPSK at the given SNR. ", pos="272,42", rects="202,34,342,50"];
+	Node3 [label="NistErrorRate::calculatePe", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_nist_error_rate.html#aa2df206d0e5cc31a3c3587438c7d5b74", tooltip="Return the coded BER for the given p and b. ", pos="272,8", rects="204,0,341,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,202,36 166,32 175,33 183,33 192,35"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,203,14 166,18 175,17 184,17 193,15"];
+}

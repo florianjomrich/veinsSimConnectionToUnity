@@ -1,0 +1,23 @@
+digraph "Signal::addAttenuation" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,318,326"];
+	Node1 [label="Signal::addAttenuation", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,163", rects="8,155,128,171"];
+	Node2 [label="PERModel::filterSignal", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_p_e_r_model.html#ab571e93f422b0e6a299cee2c2b886bc0", tooltip="Has to be overriden by every implementation. ", pos="237,318", rects="176,310,298,326"];
+	Node3 [label="TwoRayInterferenceModel\l::filterSignal", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_two_ray_interference_model.html#a4488ba8c6127ff2e016edaa6bbd6a4c0", tooltip="Has to be overriden by every implementation. ", pos="237,278", rects="165,264,310,292"];
+	Node4 [label="SimpleObstacleShadowing\l::filterSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_simple_obstacle_shadowing.html#ab8f4e9c3b104f4b7fe18e4f275af79ac", tooltip="Filters a specified Signal by adding an attenuation over time to the Signal. ", pos="237,232", rects="168,218,307,246"];
+	Node5 [label="LogNormalShadowing\l::filterSignal", height="0.39", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_log_normal_shadowing.html#abecf1f338dc41facc038dbcd8a863ccd", tooltip="Calculates shadowing loss based on a normal gaussian function. ", pos="237,186", rects="176,172,299,200"];
+	Node6 [label="BreakpointPathlossModel\l::filterSignal", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_breakpoint_pathloss_model.html#a50fed0d02ee407b1ab602a6c203cfd83", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="237,140", rects="169,126,305,154"];
+	Node7 [label="JakesFading::filterSignal", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_jakes_fading.html#ae02fbdbf7ef6db9b78a3416076074190", tooltip="Has to be overriden by every implementation. ", pos="237,100", rects="174,92,301,108"];
+	Node8 [label="SimplePathlossModel\l::filterSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_simple_pathloss_model.html#a632b408d1c0ecac4fd90da5d48d73c5e", tooltip="Filters a specified AirFrame&#39;s Signal by adding an attenuation over time to the Signal. ", pos="237,60", rects="180,46,294,74"];
+	Node9 [label="RadioStateAnalogueModel\l::filterSignal", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#a5373d679bc62e9da7130d93f531adbbf", tooltip="Filters the AirFrame&#39;s Signal according to the RadioState (passively), i.e. ", pos="237,14", rects="166,0,308,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,171 135,178 170,219 119,270 164,310 168,313 171,315 176,317"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,128,171 135,178 158,204 133,237 164,264"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,128,171 136,177 149,189 145,206 164,218 165,219 166,219 167,220"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,128,171 137,172 149,174 163,175 175,177"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,128,155 137,154 147,152 158,151 169,149"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,128,155 136,149 149,136 145,118 164,108 167,106 170,105 173,104"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,128,155 135,149 156,126 136,96 164,74 169,70 174,67 180,65"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,128,155 134,149 168,111 123,65 164,28 165,27 165,27 166,27"];
+}

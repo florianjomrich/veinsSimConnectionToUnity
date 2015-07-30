@@ -1,0 +1,42 @@
+digraph "Mapping.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,735,276"];
+	Node1 [label="Mapping.h", height="0.22", width="0.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="327,260", rects="296,252,359,268"];
+	Node2 [label="veins/base/phyLayer\l/MappingBase.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_mapping_base_8h.html", pos="285,138", rects="229,124,341,152"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="506,16", rects="475,8,537,24"];
+	Node4 [label=map, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="441,16", rects="425,8,457,24"];
+	Node5 [label=set, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="14,74", rects="0,66,29,82"];
+	Node6 [label=string, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="64,74", rects="46,66,83,82"];
+	Node7 [label=algorithm, height="0.22", width="0.81", color=grey75, fillcolor=white, style=filled, pos="186,16", rects="157,8,215,24"];
+	Node8 [label=cassert, height="0.22", width="0.56", color=grey75, fillcolor=white, style=filled, pos="158,74", rects="138,66,179,82"];
+	Node9 [label=sstream, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="219,74", rects="196,66,243,82"];
+	Node10 [label=iomanip, height="0.22", width="0.69", color=grey75, fillcolor=white, style=filled, pos="285,74", rects="260,66,310,82"];
+	Node11 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="612,74", rects="534,66,691,82"];
+	Node12 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="645,16", rects="555,8,735,24"];
+	Node13 [label="veins/base/phyLayer\l/Interpolation.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_interpolation_8h.html", pos="384,74", rects="328,60,440,88"];
+	Node14 [label=limits, height="0.22", width="0.50", color=grey75, fillcolor=white, style=filled, pos="326,16", rects="308,8,344,24"];
+	Node15 [label="assert.h", height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="384,16", rects="362,8,407,24"];
+	Node16 [label="veins/base/phyLayer\l/MappingUtils.h", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$_mapping_utils_8h.html", pos="369,202", rects="313,188,425,216"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,287,152 322,252 316,243 308,229 304,216 297,197 292,176 289,160"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,503,24 341,126 342,125 343,125 345,124 349,121 421,105 426,104 430,102 431,101 436,100 448,94 453,96 463,88 480,71 493,47 500,\
+31"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,445,24 341,124 342,124 342,124 342,124 346,122 348,121 353,120 374,112 435,106 449,88 460,71 454,47 448,31"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,21,82 229,124 140,105 109,128 29,88 29,88 29,88 29,88"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,74,82 229,124 164,107 143,116 83,88 83,88 83,88 82,88"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,168,24 231,124 229,123 227,121 224,120 213,115 135,97 129,88 121,77 123,71 129,60 136,46 149,36 161,28"];
+	Node2 -> Node8 [color=midnightblue, style=solid, pos="e,170,82 252,124 231,114 203,101 179,88 179,88 179,88 178,88"];
+	Node2 -> Node9 [color=midnightblue, style=solid, pos="e,227,82 270,124 259,113 244,99 233,88"];
+	Node2 -> Node10 [color=midnightblue, style=solid, pos="e,285,82 285,124 285,114 285,101 285,91"];
+	Node2 -> Node11 [color=midnightblue, style=solid, pos="e,567,82 341,124 363,119 486,97 558,84"];
+	Node11 -> Node3 [color=midnightblue, style=solid, pos="e,521,24 597,66 579,56 549,39 528,28"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,640,24 617,66 622,57 630,43 636,32"];
+	Node2 -> Node13 [color=midnightblue, style=solid, pos="e,362,88 307,124 321,115 339,103 354,93"];
+	Node13 -> Node14 [color=midnightblue, style=solid, pos="e,334,24 370,60 361,51 349,39 340,30"];
+	Node13 -> Node4 [color=midnightblue, style=solid, pos="e,433,24 398,60 407,51 418,39 427,30"];
+	Node13 -> Node7 [color=midnightblue, style=solid, pos="e,213,24 336,60 301,50 254,36 222,27"];
+	Node13 -> Node15 [color=midnightblue, style=solid, pos="e,384,24 384,60 384,52 384,42 384,33"];
+	Node1 -> Node16 [color=midnightblue, style=solid, pos="e,359,216 333,252 338,245 346,233 353,223"];
+	Node16 -> Node11 [color=midnightblue, style=solid, pos="e,597,82 396,188 444,163 542,110 588,87"];
+	Node16 -> Node2 [color=midnightblue, style=solid, pos="e,304,152 350,188 339,179 324,168 312,158"];
+}

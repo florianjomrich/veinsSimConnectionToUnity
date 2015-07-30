@@ -1,0 +1,21 @@
+digraph "BaseLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,632,108"];
+	Node1 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="61,29", rects="8,21,114,37"];
+	Node2 [label="BaseApplLayer::initialize", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html#aa3ebaf5d1d1bdbec4648b07f65eb4145", tooltip="Initialization of the module and some variables. ", pos="216,48", rects="151,40,282,56"];
+	Node3 [label="Veins::TraCITestApp\l::initialize", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_test_app.html#a581c6c99b8dcbbdadadc4e69a3febde7", tooltip="Initialization of the module and some variables. ", pos="378,94", rects="322,80,434,108"];
+	Node4 [label="BaseWaveApplLayer::\linitialize", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#aa6a5eb1c331615fa7d87bcec1d816f8c", tooltip="Initialization of the module and some variables. ", pos="378,48", rects="319,34,438,62"];
+	Node5 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="549,65", rects="486,57,612,73"];
+	Node6 [label="TraCIDemoRSU11p::initialize", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#a94a8c38a2685c7dd941c79e96d507cbe", tooltip="Initialization of the module and some variables. ", pos="549,31", rects="474,23,624,39"];
+	Node7 [label="BaseMacLayer::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a61c82dc3b225eac37f7fa9936c28c2c3", tooltip="Initialization of the module and some variables. ", pos="216,11", rects="153,3,280,19"];
+	Node8 [label="Mac1609_4::initialize", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a898fd0c2fee5cc98d17cac36368133a6", tooltip="States of the channel selecting operation. ", pos="378,8", rects="324,0,433,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,114,36 123,37 132,38 142,39 150,40"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,282,56 291,60 302,66 304,73 318,80 319,80 320,81 322,81"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,282,48 291,48 300,48 310,48 318,48"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,438,54 447,55 459,56 473,57 486,59"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,438,42 447,41 456,40 465,40 474,38"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,114,23 123,22 132,21 143,20 152,19"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,280,10 290,10 301,10 312,9 323,9"];
+}

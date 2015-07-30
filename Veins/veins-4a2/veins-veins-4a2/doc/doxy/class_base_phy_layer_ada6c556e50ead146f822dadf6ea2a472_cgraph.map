@@ -1,0 +1,21 @@
+digraph "BasePhyLayer::finishRadioSwitching" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,718,136"];
+	Node1 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,88", rects="8,74,150,102"];
+	Node2 [label="Veins::Radio::endSwitch", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#aceb966be7e36e87068ae3424de8a5928", tooltip="called by PhyLayer when duration-time for the current switching process is up ", pos="258,115", rects="196,107,320,123"];
+	Node3 [label="Veins::Radio::makeRSAMEntry", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a0cdbbabf0ca4bab58eed854b22bb60f2", tooltip="responsible for making entries to the RSAM ", pos="449,122", rects="367,114,532,130"];
+	Node4 [label="RadioStateAnalogueModel\l::writeRecvEntry", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#ad80154bcc09f8db0e08efb2efd75872c", tooltip="Stores an entry of the form \"time-point/attenuation (from now on)\". ", pos="639,122", rects="568,108,710,136"];
+	Node5 [label="BasePhyLayer::sendControl\lMsgToMac", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a76d0386516d18d1cc64af5ef6fb315cd", tooltip="Called by the Decider to send a control message to the MACLayer. ", pos="258,61", rects="186,47,330,75"];
+	Node6 [label="ChannelInfo::isRecording", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a5b1b8d56aa2fa64b5d79c0cf5c3167a9", tooltip="Returns true if ChannelInfo is currently recording. ", pos="449,88", rects="382,80,516,96"];
+	Node7 [label="ChannelInfo::stopRecording", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_channel_info.html#a884277584d1abf73eaca5df0c61e08c9", tooltip="Tells ChannelInfo to stop recording Information from now on. ", pos="449,54", rects="376,46,522,62"];
+	Node8 [label="BasePhyLayer::sendControl\lMessageUp", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#aaa439e85a8bc20a39477055aecf04993", tooltip="Sends the passed control message to the upper layer. ", pos="449,14", rects="377,0,521,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,196,108 150,102 162,104 174,106 186,107 186,107 186,107 186,107"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,366,119 320,117 332,118 344,118 356,118"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,568,122 532,122 541,122 549,122 558,122"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,186,72 150,77 159,76 167,75 176,73"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,382,82 330,75 342,77 354,79 366,80 368,80 370,81 372,81"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,376,56 330,58 342,57 354,57 366,57"];
+	Node5 -> Node8 [color=midnightblue, style=solid, pos="e,377,25 330,47 348,41 349,34 366,28 366,28 367,28 367,28"];
+}

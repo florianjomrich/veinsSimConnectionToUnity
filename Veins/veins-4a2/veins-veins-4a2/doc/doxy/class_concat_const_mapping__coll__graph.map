@@ -1,0 +1,14 @@
+digraph "ConcatConstMapping&lt; Operator &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,208,246"];
+	Node1 [label="ConcatConstMapping\l\< Operator \>", height="0.39", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="58,22", rects="0,8,117,36"];
+	Node2 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="58,96", rects="17,88,100,104"];
+	Node3 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="58,170", rects="20,162,97,178"];
+	Node4 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="58,230", rects="2,222,115,238"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,58,88 58,80 58,67 58,49 58,36"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,58,162 58,153 58,138 58,116 58,104", lp="92,130"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,58,222 58,213 58,201 58,187 58,178"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,97,164 106,165 111,166 114,168 114,170 114,174 106,176 97,176", lp="161,170"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" refMapping", pos="s,60,88 61,79 62,76 62,73 63,70 64,58 63,45 61,36", lp="100,62"];
+}

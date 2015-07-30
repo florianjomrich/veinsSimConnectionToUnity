@@ -1,0 +1,19 @@
+digraph "BaseWorldUtility::useTorus" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,526,166"];
+	Node1 [label="BaseWorldUtility::useTorus", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,83", rects="8,75,152,91"];
+	Node2 [label="BaseConnectionManager\l::initialize", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a0d39342f1e732ad44ef7e4e2dccac24f", tooltip="Reads init parameters and calculates a maximal interference distance. ", pos="258,152", rects="192,138,325,166"];
+	Node3 [label="PhyLayer80211p::initialize\lBreakpointPathlossModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a87d6370515d5d7867abb5105c2095a76", tooltip="Creates and initializes a BreakpointPathlossModel with the passed parameter values. ", pos="258,106", rects="190,92,326,120"];
+	Node4 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="441,60", rects="364,46,518,74"];
+	Node5 [label="PhyLayer80211p::initialize\lSimpleObstacleShadowing", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#adfe098a981b32aa82c0cf369bdca29b3", tooltip="Creates and initializes a SimpleObstacleShadowing with the passed parameter values. ", pos="258,60", rects="189,46,328,74"];
+	Node6 [label="PhyLayer80211p::initialize\lSimplePathlossModel", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a1694c2434fb374bcbbe3ea7b6aea68e8", tooltip="Creates and initializes a SimplePathlossModel with the passed parameter values. ", pos="258,14", rects="192,0,324,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,152,91 160,96 173,108 169,126 188,138 189,139 190,139 191,140"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,152,91 162,92 171,93 180,95 190,96"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,326,93 335,89 346,84 350,78 364,74"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,152,75 161,74 170,73 179,72 188,70"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,328,60 338,60 347,60 355,60 364,60"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,152,75 160,69 173,57 169,39 188,28 189,27 191,27 192,26"];
+	Node6 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,324,27 333,30 346,34 350,41 364,46"];
+}

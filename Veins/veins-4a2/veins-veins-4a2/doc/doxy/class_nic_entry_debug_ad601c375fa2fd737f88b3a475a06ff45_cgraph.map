@@ -1,0 +1,11 @@
+digraph "NicEntryDebug::requestOutGate" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,552,28"];
+	Node1 [label="NicEntryDebug::requestOutGate", height="0.22", width="2.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="93,14", rects="8,6,178,22"];
+	Node2 [label="NicEntryDebug::collectFree\lGates", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#aac3b943e56b211541596a73f6437608a", tooltip="Iterates over all existing gates of this NicEntries nic and host and checks wether they are useable b...", pos="286,14", rects="214,0,358,28"];
+	Node3 [label="NicEntryDebug::collectGates", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_nic_entry_debug.html#ae4c6e480d8b2f3fc4199a7a8314ab2df", tooltip="Collects all free gates with a certain pattern as names and puts them on a stack. ...", pos="469,14", rects="394,6,544,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,214,14 178,14 187,14 195,14 204,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,394,14 358,14 367,14 375,14 384,14"];
+}

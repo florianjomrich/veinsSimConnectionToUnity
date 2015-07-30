@@ -1,0 +1,8 @@
+digraph "NextSmaller&lt; _ContainerType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,172,96"];
+	Node1 [label="NextSmaller\< _ContainerType \>", height="0.22", width="2.39", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="86,16", rects="0,8,173,24"];
+	Node2 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="86,74", rects="36,60,137,88"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,86,60 86,51 86,41 86,31 86,24"];
+}

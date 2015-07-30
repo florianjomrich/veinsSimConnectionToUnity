@@ -1,0 +1,18 @@
+digraph "Nearest&lt; _ContainerType &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,330,314"];
+	Node1 [label="Nearest\< _ContainerType \>", height="0.22", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="155,16", rects="81,8,230,24"];
+	Node2 [label="InterpolatorBase\< \l_ContainerType \>", height="0.39", width="1.39", color=black, fillcolor=white, style=filled, URL="$class_interpolator_base.html", pos="155,76", rects="105,62,206,90"];
+	Node3 [label="PairLess\< pair_type,\l key_type \>", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", pos="77,156", rects="22,142,133,170"];
+	Node4 [label="PairLess\< Pair, Key \>", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_pair_less.html", tooltip="Compares a the first value of a pair to a value. ", pos="58,230", rects="0,222,117,238"];
+	Node5 [label="Interpolated\< mapped\l_type \>", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_interpolated.html", pos="218,156", rects="159,142,278,170"];
+	Node6 [label="Interpolated\< V \>", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_interpolated.html", tooltip="Represents an interpolated value of any type. ", pos="228,230", rects="179,222,278,238"];
+	Node7 [label=V, height="0.22", width="0.39", color=grey75, fillcolor=white, style=filled, pos="228,298", rects="214,290,243,306"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,155,62 155,53 155,43 155,32 155,24"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" comp", pos="s,91,142 97,135 111,121 129,103 141,90", lp="142,116"];
+	Node4 -> Node3 [dir=back, color=orange, style=dashed, label=" \< pair_type, key_type \>", pos="s,60,222 62,214 65,201 70,183 73,170", lp="137,196"];
+	Node5 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" outOfRangeVal", pos="s,207,142 202,135 191,121 176,103 166,90", lp="238,116"];
+	Node6 -> Node5 [dir=back, color=orange, style=dashed, label=" \< mapped_type \>", pos="s,227,222 226,214 224,201 222,183 220,170", lp="275,196"];
+	Node7 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" value", pos="s,228,290 228,281 228,267 228,249 228,238", lp="248,264"];
+}

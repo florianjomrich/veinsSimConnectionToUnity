@@ -1,0 +1,10 @@
+digraph "AnnotationDummy.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,180,148"];
+	Node1 [label="AnnotationDummy.cc", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="90,132", rects="30,124,150,140"];
+	Node2 [label="veins/modules/world\l/annotations/AnnotationDummy.h", height="0.39", width="2.50", color=black, fillcolor=white, style=filled, URL="$_annotation_dummy_8h.html", pos="90,74", rects="0,60,181,88"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="90,16", rects="59,8,121,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,90,88 90,124 90,118 90,107 90,98"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,90,24 90,60 90,52 90,42 90,33"];
+}

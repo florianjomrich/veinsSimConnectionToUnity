@@ -1,0 +1,9 @@
+digraph "Decider::getChannelState" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,28"];
+	Node1 [label="Decider::getChannelState", height="0.22", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,14", rects="8,6,138,22"];
+	Node2 [label="BasePhyLayer::getChannel\lState", height="0.39", width="1.94", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a7620c7de01e2dede5a68f13fda69e0a1", tooltip="Returns the current state of the channel. ", pos="245,14", rects="175,0,316,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,138,14 147,14 156,14 165,14 174,14"];
+}

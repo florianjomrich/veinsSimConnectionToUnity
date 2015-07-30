@@ -1,0 +1,8 @@
+digraph Decider {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,124,100"];
+	Node1 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,16", rects="39,8,86,24"];
+	Node2 [label=DeciderToPhyInterface, height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html", tooltip="This class is the interface for a Decider to the BasePhyLayer. ", pos="62,84", rects="0,76,125,92"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" phy", pos="s,62,76 62,67 62,53 62,35 62,24", lp="78,50"];
+}

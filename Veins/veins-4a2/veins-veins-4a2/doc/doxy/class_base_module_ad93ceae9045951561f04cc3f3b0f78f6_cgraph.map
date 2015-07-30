@@ -1,0 +1,9 @@
+digraph "BaseModule::findHost" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,288,16"];
+	Node1 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,8", rects="9,0,126,16"];
+	Node2 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="221,8", rects="163,0,280,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,162,8 126,8 135,8 143,8 152,8"];
+}

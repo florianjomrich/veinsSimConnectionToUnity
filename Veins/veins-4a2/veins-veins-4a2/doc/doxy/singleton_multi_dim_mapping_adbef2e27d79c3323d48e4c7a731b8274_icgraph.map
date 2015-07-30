@@ -1,0 +1,11 @@
+digraph "MultiDimMapping::copySubMappings" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,350,74"];
+	Node1 [label="MultiDimMapping::copySub\lMappings", height="0.39", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="83,37", rects="8,23,158,51"];
+	Node2 [label="MultiDimMapping\< Linear\l \>::MultiDimMapping", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#a3ac6685b718a771032556e192752c528", tooltip="Intern copy-constructor which assures that the sub-mappings are deep copied instead of only their poi...", pos="268,60", rects="195,46,342,74"];
+	Node3 [label="MultiDimMapping\< Linear\l \>::operator=", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$singleton_multi_dim_mapping.html#adf3d7e794c6e10795a4fa18d6e3b67d0", tooltip="Copy operator which assures that the sub-mappings are deep copied instead of only their the pointers...", pos="268,14", rects="195,0,342,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,158,46 167,47 176,49 185,49 194,51"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,158,28 167,27 176,25 185,25 194,23"];
+}

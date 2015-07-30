@@ -1,0 +1,9 @@
+digraph "Veins::Radio::setTrackingModeTo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,326,28"];
+	Node1 [label="Veins::Radio::setTracking\lModeTo", height="0.39", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,14", rects="9,0,140,28"];
+	Node2 [label="RadioStateAnalogueModel\l::setTrackingModeTo", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_radio_state_analogue_model.html#a9a3457871c28e3e86759f70a9def9f28", tooltip="sets tracking mode ", pos="247,14", rects="176,0,318,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,176,14 140,14 149,14 157,14 166,14"];
+}

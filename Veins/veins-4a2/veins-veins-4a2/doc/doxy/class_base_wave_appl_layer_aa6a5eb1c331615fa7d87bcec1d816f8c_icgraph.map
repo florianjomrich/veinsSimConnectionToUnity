@@ -1,0 +1,11 @@
+digraph "BaseWaveApplLayer::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,322,50"];
+	Node1 [label="BaseWaveApplLayer::\linitialize", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,25", rects="9,11,128,39"];
+	Node2 [label="TraCIDemoRSU11p::initialize", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo_r_s_u11p.html#a94a8c38a2685c7dd941c79e96d507cbe", tooltip="Initialization of the module and some variables. ", pos="239,42", rects="164,34,314,50"];
+	Node3 [label="TraCIDemo11p::initialize", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_tra_c_i_demo11p.html#a0f070d06bf6eafef5bf85063f963a13d", tooltip="Initialization of the module and some variables. ", pos="239,8", rects="176,0,302,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,31 138,32 147,33 155,34 164,35"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,128,19 137,18 149,17 163,16 176,14"];
+}

@@ -1,0 +1,10 @@
+digraph "TraCIColor.cc" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,124,148"];
+	Node1 [label="TraCIColor.cc", height="0.22", width="1.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,132", rects="24,124,101,140"];
+	Node2 [label="veins/modules/mobility\l/traci/TraCIColor.h", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_color_8h.html", pos="62,74", rects="0,60,125,88"];
+	Node3 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="62,16", rects="31,8,93,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,62,88 62,124 62,118 62,107 62,98"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,62,24 62,60 62,52 62,42 62,33"];
+}

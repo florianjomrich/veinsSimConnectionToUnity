@@ -1,0 +1,11 @@
+digraph "Veins::TraCIScenarioManagerAccess::get" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,562,28"];
+	Node1 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="86,14", rects="8,0,164,28"];
+	Node2 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="283,14", rects="201,6,366,22"];
+	Node3 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="478,14", rects="403,6,554,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,200,14 164,14 173,14 181,14 190,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,402,14 366,14 375,14 384,14 392,14"];
+}

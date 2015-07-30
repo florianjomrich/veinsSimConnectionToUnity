@@ -1,0 +1,25 @@
+digraph "Veins::TraCICommandInterface::getDistance" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,688,154"];
+	Node1 [label="Veins::TraCICommandInterface\l::getDistance", height="0.39", width="2.31", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,48", rects="9,34,176,62"];
+	Node2 [label="Veins::TraCIConnection\l::query", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#ac0f5129ad1e50365588ec39112432c7d", tooltip="sends a single command via TraCI, checks status response, returns additional responses ...", pos="275,94", rects="212,80,338,108"];
+	Node3 [label="Veins::TraCIConnection\l::sendMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#aaf6acde79a0ba73113c46ea92bd567d2", tooltip="sends a message via TraCI (after adding the header) ", pos="449,94", rects="386,80,512,108"];
+	Node4 [label="Veins::socket", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#a6eeefaf3bbdaff6c10cfcd01200016d3", pos="620,112", rects="585,104,656,120"];
+	Node5 [label="Veins::TraCIBuffer::str", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#ae0833eeb81079e14eed3f13d0ae5d2b3", pos="620,75", rects="560,67,680,83"];
+	Node6 [label="Veins::makeTraCICommand", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$namespace_veins.html#ab52db5bfe6d9095440c0b0ac309bb99d", tooltip="returns byte-buffer containing a TraCI command with optional parameters ", pos="449,54", rects="374,46,524,62"];
+	Node7 [label="Veins::TraCIConnection\l::receiveMessage", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#a634ce6c27d5e98f7d96f65706f3460df", tooltip="receives a message via TraCI (and strips the header) ", pos="449,140", rects="386,126,512,154"];
+	Node8 [label="Veins::TraCIConnection\l::omnet2traci", height="0.39", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_connection.html#ab356d0c41b62b01b3507e11a8e5f9bf1", tooltip="convert OMNeT++ coordinates to TraCI coordinates ", pos="275,48", rects="212,34,338,62"];
+	Node9 [label="Veins::TraCIBuffer::eof", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a0065f3b4bf17cac8e10dc94b551eb9f8", pos="275,8", rects="213,0,337,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,212,80 176,62 190,66 194,71 204,76"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,386,94 338,94 351,94 363,94 376,94"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,584,108 512,101 533,104 556,105 575,107"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,560,82 512,87 525,85 537,84 550,83"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,374,62 338,80 351,75 355,70 364,66"];
+	Node6 -> Node5 [color=midnightblue, style=solid, pos="e,560,67 524,62 537,63 542,64 550,65"];
+	Node2 -> Node7 [color=midnightblue, style=solid, pos="e,386,129 338,108 355,113 358,120 374,126 375,126 376,126 376,127"];
+	Node7 -> Node4 [color=midnightblue, style=solid, pos="e,584,116 512,128 528,125 545,122 560,120 565,119 569,118 574,118"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,212,48 176,48 185,48 193,48 202,48"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,213,16 176,34 190,30 194,25 203,20"];
+}

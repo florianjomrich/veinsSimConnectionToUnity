@@ -1,0 +1,9 @@
+digraph doPacking {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,224,16"];
+	Node1 [label=doPacking, height="0.22", width="0.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="39,8", rects="9,0,70,16"];
+	Node2 [label="MacPkt::parsimPack", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac_pkt.html#aef7e817d2be4e94a533a89e5b6d78c59", pos="161,8", rects="107,0,216,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,106,8 70,8 78,8 87,8 96,8"];
+}

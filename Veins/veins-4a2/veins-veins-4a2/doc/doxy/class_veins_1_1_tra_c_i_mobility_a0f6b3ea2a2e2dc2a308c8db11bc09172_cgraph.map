@@ -1,0 +1,27 @@
+digraph "Veins::TraCIMobility::handleSelfMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,1266,140"];
+	Node1 [label="Veins::TraCIMobility\l::handleSelfMsg", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,37", rects="8,23,120,51"];
+	Node2 [label="Veins::TraCIMobility\l::getVehicleCommandInterface", height="0.39", width="2.22", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a690ad24a231dff3f3d929e3738db9b69", pos="240,60", rects="160,46,321,74"];
+	Node3 [label="Veins::TraCIMobility\l::getCommandInterface", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a180ae1e009f8c81f66a167e21b7b5b89", pos="422,103", rects="360,89,484,117"];
+	Node4 [label="Veins::TraCIMobility\l::getManager", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a9112501e8dffb3ef22fc5c571a016ed1", pos="598,126", rects="542,112,654,140"];
+	Node5 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_access.html#af6404515b1b992848f352b03d325b10d", pos="790,126", rects="712,112,868,140"];
+	Node6 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="987,126", rects="905,118,1070,134"];
+	Node7 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="1182,126", rects="1107,118,1258,134"];
+	Node8 [label="Veins::TraCIScenarioManager\l::getCommandInterface", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager.html#af9d96f6e40de409df2f1d04b617433d5", pos="598,80", rects="520,66,676,94"];
+	Node9 [label="Veins::TraCIMobility\l::getExternalId", height="0.39", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_mobility.html#a5d901e593ed0fcb4ee5214564f81ed95", pos="422,57", rects="366,43,478,71"];
+	Node10 [label="Veins::TraCICommandInterface\l::Vehicle::setSpeed", height="0.39", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_command_interface_1_1_vehicle.html#a3c2a71fd23b864c788a04bc8cb5de34e", pos="240,14", rects="157,0,324,28"];
+	Node11 [label="Veins::TraCIBuffer::eof", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_buffer.html#a0065f3b4bf17cac8e10dc94b551eb9f8", pos="422,14", rects="360,6,484,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,159,49 120,44 130,45 139,47 149,48"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,360,89 321,73 322,73 323,74 324,74 337,78 342,82 350,85"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,542,119 484,111 500,113 517,115 533,118"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,712,126 654,126 669,126 686,126 702,126"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,904,126 868,126 877,126 885,126 894,126"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,1106,126 1070,126 1079,126 1088,126 1096,126"];
+	Node3 -> Node8 [color=midnightblue, style=solid, pos="e,520,90 484,95 493,94 501,93 510,91"];
+	Node2 -> Node9 [color=midnightblue, style=solid, pos="e,366,58 321,59 333,59 345,58 356,58"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,156,25 120,30 129,29 137,28 146,26"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,360,14 324,14 333,14 341,14 350,14"];
+}

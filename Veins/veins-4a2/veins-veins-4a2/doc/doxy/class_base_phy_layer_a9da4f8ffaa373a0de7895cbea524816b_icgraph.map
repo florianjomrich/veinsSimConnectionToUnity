@@ -1,0 +1,11 @@
+digraph "BasePhyLayer::initializeDecider" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,472,28"];
+	Node1 [label="BasePhyLayer::initialize\lDecider", height="0.39", width="1.72", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="71,14", rects="9,0,134,28"];
+	Node2 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="233,14", rects="171,6,296,22"];
+	Node3 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="398,14", rects="332,6,464,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,134,14 144,14 153,14 161,14 170,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,296,14 306,14 315,14 323,14 332,14"];
+}

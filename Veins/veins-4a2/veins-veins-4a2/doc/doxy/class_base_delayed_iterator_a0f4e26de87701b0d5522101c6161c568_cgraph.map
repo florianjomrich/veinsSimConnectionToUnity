@@ -1,0 +1,15 @@
+digraph "BaseDelayedIterator::next" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,560,50"];
+	Node1 [label="BaseDelayedIterator\l::next", height="0.39", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="63,25", rects="9,11,118,39"];
+	Node2 [label="BaseDelayedIterator\l::updatePosition", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_base_delayed_iterator.html#a13b0a9510f63d62886e3359f5f1bcdb1", pos="209,25", rects="155,11,264,39"];
+	Node3 [label="BaseDelayedIterator\l::delayPosition", height="0.39", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_base_delayed_iterator.html#a2f79592eaa15f47a5c2758572ed58ce0", pos="355,25", rects="301,11,410,39"];
+	Node4 [label="Argument::setTime", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a8087982f050bdc61d787b128ca9ac8f9", tooltip="Changes the time value of this argument. ", pos="499,42", rects="448,34,551,50"];
+	Node5 [label="Argument::getTime", height="0.22", width="1.44", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a2ecb3b041b5b8721d6767531e4ac792a", tooltip="Returns the time value of this argument. ", pos="499,8", rects="447,0,552,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,154,25 118,25 127,25 135,25 144,25"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,300,25 264,25 273,25 281,25 290,25"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,447,36 410,31 419,32 428,33 437,35"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,446,15 410,19 419,18 428,17 437,16"];
+}

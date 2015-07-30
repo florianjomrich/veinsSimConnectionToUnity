@@ -1,0 +1,13 @@
+digraph "BaseBattery::draw" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,260,120"];
+	Node1 [label="BaseBattery::draw", height="0.22", width="1.36", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="57,60", rects="8,52,106,68"];
+	Node2 [label="Veins::BatteryAccess\l::draw", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html#a1015e11ad7fc73f62a37e395bf686015", tooltip="Draws the amount defined by the passed DrawAmount from the battery on account of the passed account...", pos="197,106", rects="142,92,252,120"];
+	Node3 [label="Veins::BatteryAccess\l::drawCurrent", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html#af62a4c6ab659f7bebc16cc789c559bc6", tooltip="Draws the passed amount of current (in mA) over time from the battery on account of the passed accoun...", pos="197,60", rects="142,46,252,74"];
+	Node4 [label="Veins::BatteryAccess\l::drawEnergy", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_battery_access.html#a603868d7ae89b65da4af161c9470f07f", tooltip="Draws the passed amount of energy (in mWs) from the battery on account of the passed account...", pos="197,14", rects="142,0,252,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,106,68 115,72 125,78 128,86 142,92"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,106,60 116,60 125,60 133,60 142,60"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,106,52 114,48 125,41 128,34 142,28"];
+}

@@ -1,0 +1,8 @@
+digraph "BaseDelayedIterator&lt; Base, Iterator &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,108,96"];
+	Node1 [label="BaseDelayedIterator\l\< Base, Iterator \>", height="0.39", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="54,22", rects="0,8,109,36"];
+	Node2 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="54,80", rects="38,72,70,88"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,54,72 54,63 54,54 54,44 54,36"];
+}

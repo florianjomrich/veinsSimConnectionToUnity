@@ -1,0 +1,11 @@
+digraph "ChannelInfo::getAirFrames" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,360,50"];
+	Node1 [label="ChannelInfo::getAirFrames", height="0.22", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="80,25", rects="9,17,152,33"];
+	Node2 [label="BasePhyLayer::getChannelInfo", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a44a1a7e9bc420aa7b835c8a7687f97a5", tooltip="Fills the passed AirFrameVector with all AirFrames that intersect with the time interval [from...", pos="270,42", rects="189,34,351,50"];
+	Node3 [label="BasePhyLayer::~BasePhyLayer", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a0fc69907490ed2752d2a888ef26348ff", tooltip="Free the pointer to the decider and the AnalogueModels and the Radio. ", pos="270,8", rects="188,0,352,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,152,31 162,32 171,33 180,33 189,34"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,152,19 161,18 170,18 179,17 188,16"];
+}

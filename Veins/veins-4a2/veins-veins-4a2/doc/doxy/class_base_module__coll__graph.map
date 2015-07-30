@@ -1,0 +1,12 @@
+digraph BaseModule {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,324,100"];
+	Node1 [label=BaseModule, height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="131,16", rects="96,8,167,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="43,84", rects="0,76,86,92"];
+	Node3 [label=cListener, height="0.22", width="0.75", color=grey75, fillcolor=white, style=filled, pos="131,84", rects="104,76,158,92"];
+	Node4 [label=simsignalwrap_t, height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$classsimsignalwrap__t.html", tooltip="Helper function to initialize signal change identifier on use and not on initializing static sections...", pos="221,84", rects="176,76,267,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,53,76 60,71 78,57 106,35 121,24"];
+	Node3 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,131,76 131,67 131,53 131,35 131,24"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" catHostStateSignal", pos="s,210,76 203,71 185,57 157,35 142,24", lp="239,50"];
+}

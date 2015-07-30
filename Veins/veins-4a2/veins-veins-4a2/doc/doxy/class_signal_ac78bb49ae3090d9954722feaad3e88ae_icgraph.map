@@ -1,0 +1,9 @@
+digraph "Signal::getReceptionModule" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,328,16"];
+	Node1 [label="Signal::getReceptionModule", height="0.22", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,8", rects="9,0,154,16"];
+	Node2 [label="Signal::getReceptionGate", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a3de107a6c7b0283bb79b7e641616b26c", tooltip="Returns pointers to the gate from which the signal was sent and on which gate it arrived. ", pos="255,8", rects="190,0,320,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,154,8 164,8 173,8 181,8 190,8"];
+}

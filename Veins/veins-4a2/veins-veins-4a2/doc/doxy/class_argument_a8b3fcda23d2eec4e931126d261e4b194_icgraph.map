@@ -1,0 +1,15 @@
+digraph "Argument::getDimensions" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,346,130"];
+	Node1 [label="Argument::getDimensions", height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,71", rects="9,63,146,79"];
+	Node2 [label="MappingUtils::findMax", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#ac9d1a808dbca5da873af58f1da4cbcf4", tooltip="Iterates over the passed mapping and returns the value at the key entry with the highest value in the...", pos="260,122", rects="198,114,323,130"];
+	Node3 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#adb9e9ced268b9a5d1d4f6d34738654aa", tooltip="Iterates over the passed mapping and returns the value at the key entry with the smallest value in th...", pos="260,88", rects="199,80,322,96"];
+	Node4 [label="Argument::operator\<", height="0.22", width="1.56", color=black, fillcolor=white, style=filled, URL="$class_argument.html#a20805e35e4f766088dccfa2bbd8faf03", tooltip="Returns true if this Argument is smaller then the passed Argument. ", pos="260,54", rects="204,46,317,62"];
+	Node5 [label="SimpleConstMappingIterator\l::SimpleConstMappingIterator", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_simple_const_mapping_iterator.html#aef703d1c7304041f2594886e902134ed", tooltip="Initializes the ConstIterator for the passed ConstMapping, with the passed key entries to iterate ove...", pos="260,14", rects="183,0,338,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,146,79 154,84 166,93 165,106 182,114 187,116 192,118 197,119"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,146,77 155,78 169,79 185,80 198,82"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,146,65 154,64 171,62 188,61 203,59"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,146,63 154,58 166,49 166,37 182,28"];
+}

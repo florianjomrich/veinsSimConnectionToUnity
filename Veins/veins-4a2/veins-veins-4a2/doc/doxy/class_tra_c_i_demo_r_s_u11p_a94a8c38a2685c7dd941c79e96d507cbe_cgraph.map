@@ -1,0 +1,24 @@
+digraph "TraCIDemoRSU11p::initialize" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,734,122"];
+	Node1 [label="TraCIDemoRSU11p::initialize", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="83,47", rects="8,39,158,55"];
+	Node2 [label="BaseWaveApplLayer::\linitialize", height="0.39", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_base_wave_appl_layer.html#aa6a5eb1c331615fa7d87bcec1d816f8c", tooltip="Initialization of the module and some variables. ", pos="265,73", rects="206,59,325,87"];
+	Node3 [label="BaseApplLayer::initialize", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_appl_layer.html#aa3ebaf5d1d1bdbec4648b07f65eb4145", tooltip="Initialization of the module and some variables. ", pos="455,80", rects="390,72,521,88"];
+	Node4 [label="BaseLayer::initialize", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_base_layer.html#a70f5ea30a9980d57b8384faed29ec3eb", tooltip="Initialization of the module and some variables. ", pos="650,80", rects="597,72,703,88"];
+	Node5 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="650,26", rects="575,18,726,34"];
+	Node6 [label="BaseModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_base_module.html#a1d2d2af49918dfb9ae036b1d086b123a", tooltip="Function to get a pointer to the host module. ", pos="455,114", rects="397,106,514,122"];
+	Node7 [label="FindModule::findHost", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#ad213402248cfa94efe6513d4944a44b3", tooltip="Returns a pointer to the host module of the passed module. ", pos="650,114", rects="592,106,709,122"];
+	Node8 [label="Veins::AnnotationManager\lAccess::getIfExists", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_access.html#a2c602699c6a6878cfaccfc2553ff839f", pos="265,21", rects="194,7,336,35"];
+	Node9 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="455,8", rects="373,0,538,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,205,62 158,55 170,57 183,58 195,60"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,389,77 325,75 342,76 361,77 379,77"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,597,80 521,80 542,80 566,80 587,80"];
+	Node2 -> Node5 [color=midnightblue, style=solid, pos="e,574,34 325,65 385,57 480,44 565,35"];
+	Node2 -> Node6 [color=midnightblue, style=solid, pos="e,396,111 325,83 329,84 332,86 336,87 354,93 355,100 372,106 377,107 381,108 386,109"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,591,114 514,114 535,114 560,114 581,114"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,194,34 158,39 167,38 175,37 184,36"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,372,13 336,16 345,15 353,15 362,14"];
+	Node9 -> Node5 [color=midnightblue, style=solid, pos="e,574,19 538,16 547,17 556,17 564,18"];
+}

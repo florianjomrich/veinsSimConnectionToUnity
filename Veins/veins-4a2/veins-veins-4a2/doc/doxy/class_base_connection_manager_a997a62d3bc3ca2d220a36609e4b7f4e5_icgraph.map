@@ -1,0 +1,14 @@
+digraph "BaseConnectionManager::updateConnections" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,472,74"];
+	Node1 [label="BaseConnectionManager\l::updateConnections", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,37", rects="9,23,142,51"];
+	Node2 [label="BaseConnectionManager\l::registerNic", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#ab9d82c54244e022ee41f3d1017cd74f1", tooltip="Registers a nic to have its connections managed by ConnectionManager. ", pos="245,60", rects="179,46,312,74"];
+	Node3 [label="Veins::ChannelAccess\l::receiveSignal", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#ad7c56c9ed2db85ecba91900c35e795a0", tooltip="Called by the signalling mechanism to inform of changes. ", pos="406,37", rects="349,23,464,51"];
+	Node4 [label="BaseConnectionManager\l::updateNicPos", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a075ad308e1ae744f4f7ff1d6517da324", tooltip="Updates the position information of a registered nic. ", pos="245,14", rects="179,0,312,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,46 151,47 160,49 169,49 178,51"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,50 320,49 330,48 339,47 348,45"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,142,28 151,27 160,25 169,25 178,23"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,24 320,25 330,26 339,27 348,29"];
+}

@@ -1,0 +1,8 @@
+digraph "Veins::AirFrame::getSignal" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,154,34"];
+	Node1 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="77,8", rects="9,0,146,16"];
+	Node1 -> Node1 [color=midnightblue, style=solid, pos="e,37,16 117,16 140,24 127,34 77,34 33,34 17,26 31,19"];
+}

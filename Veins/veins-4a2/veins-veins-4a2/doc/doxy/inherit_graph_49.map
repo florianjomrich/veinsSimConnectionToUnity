@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,336,120"];
+	Node1 [label="Veins::AnnotationManager\l::Annotation", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_annotation.html", pos="79,60", rects="8,46,150,74"];
+	Node2 [label="Veins::AnnotationManager\l::Line", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_line.html", pos="257,106", rects="186,92,328,120"];
+	Node3 [label="Veins::AnnotationManager\l::Point", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_point.html", pos="257,60", rects="186,46,328,74"];
+	Node4 [label="Veins::AnnotationManager\l::Polygon", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_polygon.html", pos="257,14", rects="186,0,328,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,74 158,77 169,82 173,87 186,92"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,150,60 159,60 168,60 177,60 186,60"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,150,46 158,42 169,37 173,32 186,28"];
+}

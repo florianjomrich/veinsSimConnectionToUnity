@@ -1,0 +1,16 @@
+digraph LinearIntplMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,286"];
+	Node1 [label=LinearIntplMapping, height="0.22", width="1.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="66,16", rects="11,8,121,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="118,76", rects="91,68,146,84"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="56,136", rects="15,128,98,144"];
+	Node4 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="56,210", rects="18,202,95,218"];
+	Node5 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,270", rects="0,262,113,278"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,111,68 105,61 95,49 81,34 73,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,64,128 70,122 83,111 100,94 110,84"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,56,202 56,193 56,178 56,156 56,144", lp="90,170"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,56,262 56,253 56,241 56,227 56,218"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,204 104,205 109,206 112,208 112,210 112,214 104,216 95,216", lp="159,210"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" right\nleft", pos="s,53,128 51,121 47,106 43,82 46,62 49,48 57,33 61,24", lp="65,76"];
+}

@@ -1,0 +1,37 @@
+digraph "PhyLayer80211p::getAnalogueModelFromName" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,542,384"];
+	Node1 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,186", rects="8,172,162,200"];
+	Node2 [label="PhyLayer80211p::initialize\lSimplePathlossModel", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a1694c2434fb374bcbbe3ea7b6aea68e8", tooltip="Creates and initializes a SimplePathlossModel with the passed parameter values. ", pos="272,324", rects="206,310,338,338"];
+	Node3 [label="BaseWorldUtility::useTorus", height="0.22", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a37a1abb90a220afdaf6dbdab58299e51", tooltip="Returns true if our playground represents a torus (borders are connected) ", pos="458,355", rects="386,347,530,363"];
+	Node4 [label="BaseWorldUtility::getPgs", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a179c8bf9d4613cbb1af0a85d779827a6", tooltip="Returns the playgroundSize. ", pos="458,321", rects="393,313,524,329"];
+	Node5 [label="PhyLayer80211p::initialize\lLogNormalShadowing", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a2d543b7a53f299c25c07a4fc3829e80a", tooltip="Creates and initializes a LogNormalShadowing with the passed parameter values. ", pos="272,232", rects="206,218,338,246"];
+	Node6 [label="PhyLayer80211p::initialize\lJakesFading", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a311114a09e1d5f2c8e23d2a523a9735e", tooltip="Creates and initializes a JakesFading with the passed parameter values. ", pos="272,186", rects="206,172,338,200"];
+	Node7 [label="PhyLayer80211p::initialize\lBreakpointPathlossModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a87d6370515d5d7867abb5105c2095a76", tooltip="Creates and initializes a BreakpointPathlossModel with the passed parameter values. ", pos="272,370", rects="204,356,340,384"];
+	Node8 [label="PhyLayer80211p::initialize\lPERModel", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa8d28b20b02c1fe2356202ba40032c38", tooltip="Creates a simple Packet Error Rate model that attenuates a percentage of the packets to zero...", pos="272,140", rects="206,126,338,154"];
+	Node9 [label="PhyLayer80211p::initialize\lSimpleObstacleShadowing", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#adfe098a981b32aa82c0cf369bdca29b3", tooltip="Creates and initializes a SimpleObstacleShadowing with the passed parameter values. ", pos="272,278", rects="203,264,342,292"];
+	Node10 [label="Veins::ObstacleControlAccess\l::getIfExists", height="0.39", width="2.11", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control_access.html#aa91c56b9eab7ff107096256d861b7ca4", pos="458,278", rects="382,264,534,292"];
+	Node11 [label="BaseWorldUtility::use2D", height="0.22", width="1.81", color=black, fillcolor=white, style=filled, URL="$class_base_world_utility.html#a84c3d488e01d52be51c686e3fb206498", tooltip="Returns true if the world is 2-dimensional. ", pos="272,100", rects="207,92,337,108"];
+	Node12 [label="PhyLayer80211p::initialize\lTwoRayInterferenceModel", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6e9fb3fba8e61140d9c54529ccf1dd89", tooltip="Creates and initializes a TwoRayInterferenceModel with the passed parameter values. ", pos="272,60", rects="200,46,345,74"];
+	Node13 [label="BasePhyLayer::getAnalogue\lModelFromName", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a419df7f53684ee758de1dcabb959e10f", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="272,14", rects="199,0,346,28"];
+	Node14 [label="Veins::Radio::getAnalogue\lModel", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a38a6c78b55f1442108b44a0bd27abb9f", tooltip="Returns a pointer to the RadioStateAnalogueModel. ", pos="458,14", rects="390,0,526,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,206,315 162,200 201,233 161,275 197,309"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,386,348 338,336 341,337 343,337 346,338 361,341 365,343 376,346"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,392,322 338,323 353,323 368,322 382,322"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,206,220 162,200 178,205 182,211 196,217"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,206,186 162,186 174,186 185,186 196,186"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,204,361 162,200 213,248 149,305 196,354"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,386,361 340,364 352,363 364,362 376,362"];
+	Node7 -> Node4 [color=midnightblue, style=solid, pos="e,392,325 340,358 342,358 344,357 346,356 365,347 364,336 382,329 382,329 382,329 383,329"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,206,152 162,172 178,166 182,160 196,155"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,202,267 162,200 188,217 174,241 194,261"];
+	Node9 -> Node3 [color=midnightblue, style=solid, pos="e,386,349 342,289 343,290 345,291 346,292 369,307 360,327 377,343"];
+	Node9 -> Node4 [color=midnightblue, style=solid, pos="e,392,316 342,290 343,291 345,291 346,292 364,298 365,307 382,313 382,313 382,313 382,313"];
+	Node9 -> Node10 [color=midnightblue, style=solid, pos="e,382,278 342,278 352,278 362,278 372,278"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,207,103 162,172 189,153 171,125 198,108 198,108 198,108 198,108"];
+	Node1 -> Node12 [color=midnightblue, style=solid, pos="e,199,73 162,172 195,144 168,109 191,80"];
+	Node1 -> Node13 [color=midnightblue, style=solid, pos="e,198,28 162,172 208,128 157,79 191,35"];
+	Node13 -> Node14 [color=midnightblue, style=solid, pos="e,390,14 346,14 358,14 369,14 380,14"];
+}

@@ -1,0 +1,8 @@
+digraph "ChannelSenseRequest::getResult" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,134,46"];
+	Node1 [label="ChannelSenseRequest\l::getResult", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,14", rects="8,0,126,28"];
+	Node1 -> Node1 [color=midnightblue, style=solid, pos="e,26,28 108,28 118,37 104,46 67,46 36,46 21,39 23,32"];
+}

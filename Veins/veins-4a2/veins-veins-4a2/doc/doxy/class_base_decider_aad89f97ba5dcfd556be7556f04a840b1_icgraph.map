@@ -1,0 +1,35 @@
+digraph "BaseDecider::canAnswerCSR" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,922,211"];
+	Node1 [label="BaseDecider::canAnswerCSR", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,60", rects="8,52,160,68"];
+	Node2 [label="BaseDecider::channelState\lChanged", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#add7242168c4bb521c6335f3de590e4b0", tooltip="Checks if the changed channel state enables us to answer any ongoing ChannelSenseRequests. ", pos="275,106", rects="208,92,343,120"];
+	Node3 [label="BaseDecider::setChannelIdle\lStatus", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ae535b44e34061014fe282c36c27b0193", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="464,169", rects="391,155,537,183"];
+	Node4 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a6a480f87157d0509c0c1fccf94ea9fef", tooltip="Processes a new Signal. ", pos="657,203", rects="576,195,739,211"];
+	Node5 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="845,186", rects="776,178,914,194"];
+	Node6 [label="BaseDecider::processSignalEnd", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ab9cfef6c04e12d2524d45e881f341300", tooltip="Processes the end of a received Signal. ", pos="657,169", rects="578,161,737,177"];
+	Node7 [label="Decider80211p::setChannel\lIdleStatus", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#af06ba4862697730ee05b65f6bf90279b", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="464,106", rects="397,92,531,120"];
+	Node8 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="657,129", rects="588,115,727,143"];
+	Node9 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="657,89", rects="574,81,740,97"];
+	Node10 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="657,49", rects="585,35,729,63"];
+	Node11 [label="SNRThresholdDecider\l::processNewSignal", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#ace13845f43c5328cea40eb00c59af2b3", tooltip="Processes a new Signal. ", pos="464,60", rects="404,46,525,74"];
+	Node12 [label="BaseDecider::handleNewSense\lRequest", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a1dba383c238fba606279ef483b435f78", tooltip="Handles a new incoming ChannelSenseRequest and returns the next (or latest) time to handle the reques...", pos="275,60", rects="197,46,354,74"];
+	Node13 [label="BaseDecider::handleChannel\lSenseRequest", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#afd31e5a65d1798d329ace9bdbec25d64", tooltip="This function is called by the PhyLayer to hand over a ChannelSenseRequest. ", pos="464,14", rects="390,0,538,28"];
+	Node14 [label="BaseDecider::handleSense\lRequestEnd", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a2f175306cc0ae9d2805bc050315a47d8", tooltip="Handles the timeout or end of a ChannelSenseRequest by calculating the ChannelState and returning the...", pos="275,14", rects="209,0,342,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,68 168,72 179,78 182,86 196,92 200,94 204,95 207,96"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,343,115 352,119 353,119 353,120 354,120 374,131 371,145 390,155 390,155 390,155 391,155"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,537,183 546,185 556,188 561,192 574,195 574,195 575,195 575,195"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,739,196 748,195 757,194 767,194 776,192"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,537,169 547,169 557,169 567,169 577,169"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,737,176 747,177 757,178 766,179 776,180"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,343,106 353,106 368,106 382,106 397,106"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,531,114 540,115 555,117 572,119 587,121"];
+	Node7 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,531,100 541,99 552,98 563,97 574,96"];
+	Node7 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,531,95 540,91 557,83 557,72 574,63 577,62 581,60 585,59"];
+	Node2 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,343,96 351,93 352,93 353,92 354,92 371,87 374,80 390,74 394,73 399,71 403,70"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,160,60 170,60 179,60 187,60 196,60"];
+	Node12 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,354,46 362,43 373,38 377,33 390,28"];
+	Node1 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,160,52 169,48 180,42 182,35 196,28 200,26 204,25 208,24"];
+	Node14 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,342,14 352,14 364,14 377,14 390,14"];
+}

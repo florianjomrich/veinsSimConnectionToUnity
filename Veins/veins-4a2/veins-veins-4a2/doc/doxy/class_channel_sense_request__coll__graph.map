@@ -1,0 +1,10 @@
+digraph ChannelSenseRequest {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,164,100"];
+	Node1 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="62,16", rects="3,8,121,24"];
+	Node2 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="23,84", rects="0,76,47,92"];
+	Node3 [label=ChannelState, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_channel_state.html", tooltip="Provides information about the current state of the channel: ", pos="101,84", rects="64,76,139,92"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,28,76 32,68 40,55 51,35 57,24"];
+	Node3 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" result_var", pos="s,96,76 92,68 84,55 73,35 67,24", lp="118,50"];
+}

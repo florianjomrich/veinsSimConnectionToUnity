@@ -1,0 +1,34 @@
+digraph "BaseDecider::calculateRSSIMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,580,334"];
+	Node1 [label="BaseDecider::calculateRSSIMapping", height="0.22", width="2.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="101,173", rects="9,165,194,181"];
+	Node2 [label="Veins::AirFrame::getId", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#abac89b81d2c1fdce7f64bd6c91811032", pos="308,326", rects="250,318,367,334"];
+	Node3 [label="BaseDecider::getChannelInfo", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a1eb9539d907f101c8d30798f6ca03337", tooltip="Collects the AirFrame on the channel during the passed interval. ", pos="308,292", rects="233,284,384,300"];
+	Node4 [label="DeciderToPhyInterface\l::getChannelInfo", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html#aa7af5edbbc50269a93c10bd682aa79f6", tooltip="Fills the passed AirFrameVector with all AirFrames that intersect with the time interval [from...", pos="497,295", rects="435,281,560,309"];
+	Node5 [label="MappingUtils::createMapping", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0c61c76ba04339162563339b23bf42e9", tooltip="Returns an appropriate changeable Mapping with the specified domain and the specified interpolation m...", pos="308,258", rects="231,250,386,266"];
+	Node6 [label="DimensionSet::hasDimension", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html#a015cb6fa6c77b26b8c7b1e65827b8342", tooltip="Returns true if the passed Dimension is inside this DimensionSet. ", pos="497,255", rects="422,247,572,263"];
+	Node7 [label="Signal::getReceivingPower", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a513b1abac0b04549585257f7f5f8ebea", tooltip="Calculates and returns the receiving power of this Signal. ", pos="308,224", rects="239,216,377,232"];
+	Node8 [label="Signal::getReceptionStart", height="0.22", width="1.78", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a7c4710243cf87caf7dfc9f313e2619b2", tooltip="Returns the point in time when the receiving of the Signal started at the receiver module...", pos="308,190", rects="244,182,373,198"];
+	Node9 [label="Signal::getReceptionEnd", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$class_signal.html#a2875223239e124d85949e1116cc12ae9", tooltip="Returns the point in time when the receiving of the Signal ended at the receiver module. ", pos="308,156", rects="245,148,372,164"];
+	Node10 [label="MappingUtils::add", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a0d8bf65254d099c87948c1c300986696", pos="308,122", rects="259,114,358,130"];
+	Node11 [label="MappingUtils::applyElement\lWiseOperator", height="0.39", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a45c56f1ea72b2f8b278d1016ac6228df", pos="497,65", rects="422,51,572,79"];
+	Node12 [label="DeciderToPhyInterface\l::getThermalNoise", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html#a2c55926187883df5bc322c947d317534", tooltip="Returns a Mapping which defines the thermal noise in the passed time frame (in mW). ", pos="308,82", rects="246,68,371,96"];
+	Node13 [label="Veins::AirFrame::getSignal", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_air_frame.html#a50cfde43def85076f0ba2e9ad16d18a4", pos="308,42", rects="240,34,377,50"];
+	Node14 [label="MappingUtils::subtract", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a37d38fd0a9593e6f055ac8d90758965e", pos="308,8", rects="248,0,368,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,249,327 194,181 243,221 183,277 230,318 233,321 236,323 240,324"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,232,286 194,181 231,209 196,249 225,279"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,434,294 384,293 398,293 411,294 424,294"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,230,250 194,181 220,198 206,224 223,244"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,422,256 386,257 395,257 403,257 412,257"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,239,219 194,181 215,190 210,205 229,216"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,243,185 194,181 208,182 221,183 234,184"];
+	Node1 -> Node9 [color=midnightblue, style=solid, pos="e,244,161 194,165 208,164 221,163 234,162"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,258,122 194,165 215,155 210,139 230,130 236,127 242,125 249,124"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,422,79 358,122 368,120 377,118 386,114 404,106 404,94 414,84"];
+	Node1 -> Node12 [color=midnightblue, style=solid, pos="e,245,88 194,165 223,145 203,116 230,96 232,95 234,94 236,92"];
+	Node1 -> Node13 [color=midnightblue, style=solid, pos="e,239,44 194,165 236,131 189,83 230,50 230,50 230,50 231,50"];
+	Node1 -> Node14 [color=midnightblue, style=solid, pos="e,248,7 194,165 246,120 179,60 230,16 233,14 235,12 238,11"];
+	Node14 -> Node11 [color=midnightblue, style=solid, pos="e,422,51 368,10 374,12 380,13 386,16 404,24 404,35 414,45"];
+}

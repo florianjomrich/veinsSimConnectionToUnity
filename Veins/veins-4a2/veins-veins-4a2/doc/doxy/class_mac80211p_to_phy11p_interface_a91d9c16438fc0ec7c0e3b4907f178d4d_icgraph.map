@@ -1,0 +1,11 @@
+digraph "Mac80211pToPhy11pInterface::changeListeningFrequency" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,346,62"];
+	Node1 [label="Mac80211pToPhy11pInterface\l::changeListeningFrequency", height="0.39", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,28", rects="8,14,160,42"];
+	Node2 [label="Mac1609_4::changeService\lChannel", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a245aaca6cf34abba6f207a8a4347a272", pos="267,48", rects="198,34,336,62"];
+	Node3 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="267,8", rects="196,0,338,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,160,36 169,37 178,38 188,39 198,40"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,160,20 169,19 178,18 187,17 196,16"];
+}

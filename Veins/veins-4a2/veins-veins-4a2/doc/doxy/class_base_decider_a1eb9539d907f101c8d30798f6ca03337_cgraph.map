@@ -1,0 +1,9 @@
+digraph "BaseDecider::getChannelInfo" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,330,28"];
+	Node1 [label="BaseDecider::getChannelInfo", height="0.22", width="2.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,14", rects="9,6,160,22"];
+	Node2 [label="DeciderToPhyInterface\l::getChannelInfo", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html#aa7af5edbbc50269a93c10bd682aa79f6", tooltip="Fills the passed AirFrameVector with all AirFrames that intersect with the time interval [from...", pos="259,14", rects="197,0,322,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,196,14 160,14 169,14 178,14 186,14"];
+}

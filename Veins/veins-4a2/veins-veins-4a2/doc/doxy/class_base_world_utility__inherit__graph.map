@@ -1,0 +1,8 @@
+digraph BaseWorldUtility {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,96,84"];
+	Node1 [label=BaseWorldUtility, height="0.22", width="1.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="48,16", rects="0,8,96,24"];
+	Node2 [label=cSimpleModule, height="0.22", width="1.19", color=grey75, fillcolor=white, style=filled, pos="48,68", rects="5,60,91,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,48,60 48,51 48,42 48,31 48,24"];
+}

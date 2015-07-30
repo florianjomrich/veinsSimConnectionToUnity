@@ -1,0 +1,13 @@
+digraph "SimplePathlossModel::calcPathloss" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,418,50"];
+	Node1 [label="SimplePathlossModel\l::calcPathloss", height="0.39", width="1.58", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="65,25", rects="8,11,122,39"];
+	Node2 [label="Coord::sqrTorusDist", height="0.22", width="1.47", color=black, fillcolor=white, style=filled, URL="$class_coord.html#aaf6119bf8bc9953d561729314de8ed5e", tooltip="Returns the squared distance on a torus of this to Coord &#39;b&#39; (omits calling square root)...", pos="211,42", rects="158,34,264,50"];
+	Node3 [label="Coord::sqrdist", height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a9245e5acb794d95128e191e6faef99d4", tooltip="Returns distance^2 to Coord &#39;a&#39; (omits calling square root). ", pos="211,8", rects="174,0,248,16"];
+	Node4 [label="Coord::squareLength", height="0.22", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_coord.html#a278c018d6de54a020c39b3b1afaec50e", tooltip="Returns the square of the length of this Coords position vector. ", pos="355,8", rects="300,0,410,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,158,36 122,32 131,33 139,33 148,35"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,174,12 122,18 136,16 151,15 165,13"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,300,8 248,8 261,8 276,8 290,8"];
+}

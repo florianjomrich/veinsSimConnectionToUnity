@@ -1,0 +1,27 @@
+digraph veins {
+	graph [compound=true];
+	node [label="\N", fontsize=10, fontname=Helvetica];
+	edge [labelfontsize=10, labelfontname=Helvetica];
+	graph [bb="0,0,174,174"];
+	subgraph clusterdir_b4006cd140cecd240c382e58c20e193b {
+		graph [bgcolor="#ddddee"];
+		graph [pencolor=black];
+		graph [label=src];
+		graph [fontname=Helvetica];
+		graph [fontsize=10];
+		graph [URL="dir_b4006cd140cecd240c382e58c20e193b.html"];
+		graph [lp="87,158"];
+		graph [bb="8,8,166,166"];
+		subgraph clusterdir_89753b7c99162ca7b86318c23caa68eb {
+			graph [bgcolor="#eeeeff"];
+			graph [label=""];
+			graph [URL="dir_89753b7c99162ca7b86318c23caa68eb.html"];
+			graph [lp=""];
+			graph [bb="16,16,158,142"];
+			dir_89753b7c99162ca7b86318c23caa68eb [label=veins, shape=plaintext, pos="123,116", width="0.75", height="0.50"];
+			dir_f93708c3df08a394eee3903eeb27efeb [label=base, shape=box, color=red, fillcolor=white, style=filled, URL="dir_f93708c3df08a394eee3903eeb27efeb.html", pos="51,42", width="0.75", height="0.50"];
+			dir_0b28f3f476f834811625968ec4d31bfc [label=modules, shape=box, color=red, fillcolor=white, style=filled, URL="dir_0b28f3f476f834811625968ec4d31bfc.html", pos="51,116", width="0.75", height="0.50"];
+			dir_0b28f3f476f834811625968ec4d31bfc -> dir_f93708c3df08a394eee3903eeb27efeb [headlabel=71, labeldistance="1.5", headhref="dir_000004_000002.html", pos="e,51,60 51,98 51,89 51,79 51,70", head_lp="57,74"];
+		}
+	}
+}

@@ -1,0 +1,15 @@
+digraph "BaseConnectionManager::getGateList" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,900,28"];
+	Node1 [label="BaseConnectionManager\l::getGateList", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="9,0,142,28"];
+	Node2 [label="Veins::ChannelAccess\l::sendToChannel", height="0.39", width="1.58", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_channel_access.html#ae370934ad7b1feacc1cb6bd6ad437198", tooltip="Sends a message to all nics connected to this one. ", pos="236,14", rects="179,0,294,28"];
+	Node3 [label="BasePhyLayer::sendMessageDown", height="0.22", width="2.47", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a1fe847ed3e50ccf3a3740234dfee42b1", tooltip="Sends the passed AirFrame to the channel. ", pos="420,14", rects="331,6,510,22"];
+	Node4 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="621,14", rects="547,0,696,28"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="812,14", rects="733,6,892,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,14 151,14 160,14 170,14 178,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,294,14 304,14 313,14 321,14 330,14"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,510,14 520,14 529,14 537,14 546,14"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,696,14 706,14 715,14 723,14 732,14"];
+}

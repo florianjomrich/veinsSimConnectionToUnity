@@ -1,0 +1,9 @@
+digraph "PhyControlMessage::dup" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,294,28"];
+	Node1 [label="PhyControlMessage::dup", height="0.22", width="1.81", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="73,14", rects="8,6,138,22"];
+	Node2 [label="PhyControlMessage::\lPhyControlMessage", height="0.39", width="1.53", color=black, fillcolor=white, style=filled, URL="$class_phy_control_message.html#a4fb5fd0bb2375626b7025b639671e6b1", pos="230,14", rects="175,0,286,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,174,14 138,14 147,14 156,14 164,14"];
+}

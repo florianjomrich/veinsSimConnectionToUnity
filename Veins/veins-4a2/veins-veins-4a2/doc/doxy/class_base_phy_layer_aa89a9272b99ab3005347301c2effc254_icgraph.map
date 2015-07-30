@@ -1,0 +1,16 @@
+digraph "BasePhyLayer::getParametersFromXML" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,662,74"];
+	Node1 [label="BasePhyLayer::getParameters\lFromXML", height="0.39", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,37", rects="8,23,162,51"];
+	Node2 [label="BasePhyLayer::initialize\lAnalogueModels", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a8ea7353793eed2f1a7b0cd1caacd72e9", tooltip="Initializes the AnalogueModels with the data from the passed XML-config data. ", pos="261,60", rects="199,46,324,74"];
+	Node3 [label="BasePhyLayer::initialize", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a08704deaf03b73c8eda67cc60e670853", tooltip="OMNeT++ initialization function. ", pos="423,37", rects="361,29,486,45"];
+	Node4 [label="PhyLayer80211p::initialize", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa3a10ad37436ef978aa9a0874b0da561", tooltip="This is needed to circumvent a bug in MiXiM that allows different header length interpretations for r...", pos="588,37", rects="522,29,654,45"];
+	Node5 [label="BasePhyLayer::initialize\lDecider", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a9da4f8ffaa373a0de7895cbea524816b", tooltip="Initializes the Decider with the data from the passed XML-config data. ", pos="261,14", rects="199,0,324,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,162,47 170,48 180,49 189,50 198,52"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,324,50 333,49 342,47 351,47 360,45"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,486,37 496,37 505,37 513,37 522,37"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,162,27 170,26 180,25 189,24 198,22"];
+	Node5 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,324,23 333,24 342,26 351,27 360,29"];
+}

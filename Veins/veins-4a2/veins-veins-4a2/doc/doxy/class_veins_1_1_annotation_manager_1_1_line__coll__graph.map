@@ -1,0 +1,15 @@
+digraph "Veins::AnnotationManager::Line" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,266,216"];
+	Node1 [label="Veins::AnnotationManager\l::Line", height="0.39", width="1.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="135,22", rects="64,8,206,36"];
+	Node2 [label="Veins::AnnotationManager\l::Annotation", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_annotation.html", pos="72,114", rects="1,100,143,128"];
+	Node3 [label="Veins::AnnotationManager\l::Group", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_annotation_manager_1_1_group.html", pos="71,194", rects="0,180,142,208"];
+	Node4 [label=Coord, height="0.22", width="0.56", color=black, fillcolor=white, style=filled, URL="$class_coord.html", tooltip="Class for storing 3D coordinates. ", pos="182,114", rects="162,106,202,122"];
+	Node5 [label=cObject, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="183,194", rects="160,186,207,202"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,82,100 87,93 99,75 116,51 126,36"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" group", pos="s,71,180 71,172 71,158 71,140 72,128", lp="93,154"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" p1\np2", pos="s,178,106 175,99 166,82 151,53 142,36", lp="176,68"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,183,186 183,177 183,160 182,136 182,122"];
+	Node4 -> Node4 [dir=back, color=darkorchid3, style=dashed, label=" ZERO", pos="s,202,108 212,108 217,109 220,111 220,114 220,119 212,121 202,120", lp="243,114"];
+}

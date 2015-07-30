@@ -1,0 +1,11 @@
+digraph "Mac1609_4::setActiveChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,348,50"];
+	Node1 [label="Mac1609_4::setActiveChannel", height="0.22", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="85,25", rects="8,17,162,33"];
+	Node2 [label="Mac1609_4::handleSelfMsg", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a551d295ebf0b23896f4d272e3db3961d", tooltip="Handle self messages such as timers. ", pos="269,42", rects="198,34,340,50"];
+	Node3 [label="Mac1609_4::initialize", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_mac1609__4.html#a898fd0c2fee5cc98d17cac36368133a6", tooltip="States of the channel selecting operation. ", pos="269,8", rects="215,0,324,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,162,32 172,33 181,34 189,34 198,35"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,162,18 170,17 186,16 200,15 214,13"];
+}

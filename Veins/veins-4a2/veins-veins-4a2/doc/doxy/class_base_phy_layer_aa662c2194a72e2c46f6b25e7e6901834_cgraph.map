@@ -1,0 +1,11 @@
+digraph "BasePhyLayer::setCurrentRadioChannel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,322,62"];
+	Node1 [label="BasePhyLayer::setCurrent\lRadioChannel", height="0.39", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,28", rects="8,14,144,42"];
+	Node2 [label="Veins::Radio::setCurrent\lChannel", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_radio.html#a8304dc1fea7754a1cd9c26713e39f234", tooltip="Changes the current channel of the radio. ", pos="247,48", rects="185,34,310,62"];
+	Node3 [label="Decider::channelChanged", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_decider.html#a546a912fd2463258e29bfe72698c9452", tooltip="Called by phy layer to indicate that the channel this radio currently listens to has changed...", pos="247,8", rects="181,0,314,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,184,41 144,36 154,38 164,38 174,40"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,180,16 144,20 153,19 161,18 170,17"];
+}

@@ -1,0 +1,11 @@
+digraph "Decider80211p::calculateSinrAndSnrMapping" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,542,28"];
+	Node1 [label="Decider80211p::calculate\lSinrAndSnrMapping", height="0.39", width="1.69", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="70,14", rects="9,0,132,28"];
+	Node2 [label="Decider80211p::checkIfSignalOk", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a01349c12df6c01678d1e25553b754819", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="250,14", rects="169,6,332,22"];
+	Node3 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="451,14", rects="368,6,534,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,132,14 142,14 151,14 159,14 168,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,332,14 342,14 351,14 359,14 368,14"];
+}

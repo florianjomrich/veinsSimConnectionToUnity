@@ -1,0 +1,9 @@
+digraph "Decider80211p::changeFrequency" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,392,28"];
+	Node1 [label="Decider80211p::changeFrequency", height="0.22", width="2.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,14", rects="8,6,176,22"];
+	Node2 [label="PhyLayer80211p::changeListening\lFrequency", height="0.39", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a4b14cc407ce1b09717a090313f557c59", pos="298,14", rects="212,0,384,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,176,14 186,14 195,14 203,14 212,14"];
+}

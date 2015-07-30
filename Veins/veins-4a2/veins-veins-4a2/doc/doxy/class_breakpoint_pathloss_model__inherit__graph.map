@@ -1,0 +1,8 @@
+digraph BreakpointPathlossModel {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,136,84"];
+	Node1 [label=BreakpointPathlossModel, height="0.22", width="1.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,16", rects="0,8,136,24"];
+	Node2 [label=AnalogueModel, height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$class_analogue_model.html", tooltip="Interface for the analogue models of the physical layer. ", pos="68,68", rects="24,60,113,76"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,68,60 68,51 68,42 68,31 68,24"];
+}

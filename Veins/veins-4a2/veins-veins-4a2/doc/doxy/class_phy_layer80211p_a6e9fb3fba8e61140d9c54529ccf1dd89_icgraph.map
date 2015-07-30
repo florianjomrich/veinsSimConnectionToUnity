@@ -1,0 +1,9 @@
+digraph "PhyLayer80211p::initializeTwoRayInterferenceModel" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,352,28"];
+	Node1 [label="PhyLayer80211p::initialize\lTwoRayInterferenceModel", height="0.39", width="2.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="81,14", rects="9,0,154,28"];
+	Node2 [label="PhyLayer80211p::getAnalogue\lModelFromName", height="0.39", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#aa9c19a4e9aec074db1585455a7474a6a", tooltip="Creates and returns an instance of the AnalogueModel with the specified name. ", pos="267,14", rects="190,0,344,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,154,14 164,14 173,14 181,14 190,14"];
+}

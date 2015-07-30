@@ -1,0 +1,30 @@
+digraph "ChannelInfo::isRecording" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,908,155"];
+	Node1 [label="ChannelInfo::isRecording", height="0.22", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,59", rects="8,51,142,67"];
+	Node2 [label="BasePhyLayer::handleChannel\lSenseRequest", height="0.39", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a6866e3f79df84cdb5550a51d6502463f", tooltip="Handles reception of a ChannelSenseRequest by forwarding it to the decider and scheduling it to the p...", pos="438,17", rects="359,3,518,31"];
+	Node3 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="629,141", rects="557,127,701,155"];
+	Node4 [label="BasePhyLayer::handleSelf\lMessage", height="0.39", width="1.89", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17088ad93f59e143ff6c7ba866a31982", tooltip="Handles self scheduled messages. ", pos="629,60", rects="561,46,698,74"];
+	Node5 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="820,37", rects="741,29,900,45"];
+	Node6 [label="BasePhyLayer::handleUpper\lControlMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a4cab267d310b5fd6cefe613fc8dfe71d", tooltip="Handles messages received from the upper layer through the control gate. ", pos="629,14", rects="555,0,704,28"];
+	Node7 [label="BasePhyLayer::sendControl\lMsgToMac", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a76d0386516d18d1cc64af5ef6fb315cd", tooltip="Called by the Decider to send a control message to the MACLayer. ", pos="250,80", rects="178,66,322,94"];
+	Node8 [label="BasePhyLayer::finishRadio\lSwitching", height="0.39", width="1.97", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#ada6c556e50ead146f822dadf6ea2a472", tooltip="Called the moment the simulated switching process of the Radio is finished. ", pos="438,101", rects="367,87,509,115"];
+	Node9 [label="BasePhyLayer::setRadioState", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a5170b3aadae25dc6b9e61974076be04b", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="629,101", rects="554,93,704,109"];
+	Node10 [label="PhyLayer80211p::setRadio\lState", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#ae743948ffdb784d6982e8011173ccbad", tooltip="Tells the BasePhyLayer to switch to the specified radio state. ", pos="820,101", rects="753,87,887,115"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,51 151,50 212,43 297,34 358,26"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,518,31 525,38 549,66 522,99 554,127 555,128 556,128 557,129"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,518,31 527,34 537,38 541,43 554,46 556,47 558,47 560,48"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,698,50 708,49 719,48 729,47 740,45"];
+	Node2 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,518,16 528,16 537,16 545,16 554,15"];
+	Node6 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,704,25 713,26 722,27 731,28 740,29"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,142,67 151,68 160,69 169,70 178,71"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,322,88 331,89 343,90 355,91 367,93"];
+	Node8 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,509,113 518,115 535,119 538,122 554,127 555,127 556,127 557,128"];
+	Node8 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,509,89 518,87 535,82 538,78 554,74 556,73 558,73 560,72"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,509,101 519,101 531,101 542,101 554,101"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,704,101 714,101 727,101 740,101 753,101"];
+	Node7 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,320,94 329,98 341,106 342,117 358,124 422,148 501,151 557,148"];
+	Node7 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,322,76 330,76 399,72 496,67 560,64"];
+}

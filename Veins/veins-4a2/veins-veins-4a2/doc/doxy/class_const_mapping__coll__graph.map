@@ -1,0 +1,11 @@
+digraph ConstMapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,166"];
+	Node1 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="56,16", rects="15,8,98,24"];
+	Node2 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="56,90", rects="18,82,95,98"];
+	Node3 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,150", rects="0,142,113,158"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,56,82 56,73 56,58 56,36 56,24", lp="90,50"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,56,142 56,133 56,121 56,107 56,98"];
+	Node2 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,84 104,85 109,86 112,88 112,90 112,94 104,96 95,96", lp="159,90"];
+}

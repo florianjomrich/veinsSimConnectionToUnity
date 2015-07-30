@@ -1,0 +1,9 @@
+digraph "Veins::ObstacleControl::addFromXml" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,292,28"];
+	Node1 [label="Veins::ObstacleControl\l::addFromXml", height="0.39", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,14", rects="8,0,128,28"];
+	Node2 [label="Veins::ObstacleControl\l::initialize", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_obstacle_control.html#a199ba1a4bd7eb58b6365fcaa5c0b1a90", pos="224,14", rects="164,0,284,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,14 138,14 147,14 155,14 164,14"];
+}

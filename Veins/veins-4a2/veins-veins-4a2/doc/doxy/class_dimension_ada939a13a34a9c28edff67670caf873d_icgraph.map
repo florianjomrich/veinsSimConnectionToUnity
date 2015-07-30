@@ -1,0 +1,9 @@
+digraph "Dimension::dimensionIDs" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,334,16"];
+	Node1 [label="Dimension::dimensionIDs", height="0.22", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,8", rects="9,0,142,16"];
+	Node2 [label="Dimension::getDimensionID", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#a33426bf3820f16042adcb24948592877", tooltip="Returns an instance of dimension which represents the dimension with the passed name. ", pos="252,8", rects="179,0,326,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,8 151,8 160,8 169,8 178,8"];
+}

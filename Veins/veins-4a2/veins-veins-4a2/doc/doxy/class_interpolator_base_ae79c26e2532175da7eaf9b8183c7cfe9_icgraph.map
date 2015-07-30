@@ -1,0 +1,15 @@
+digraph "InterpolatorBase::asInterpolated" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,368,166"];
+	Node1 [label="InterpolatorBase::asInterpolated", height="0.22", width="2.25", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="89,101", rects="8,93,170,109"];
+	Node2 [label="NextSmaller::operator()", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_next_smaller.html#a3dae081c993095eaedbdb40af0b3a749", tooltip="Functor operator of this class which interpolates the value at the passed position using the values b...", pos="283,158", rects="222,150,345,166"];
+	Node3 [label="Nearest::operator()", height="0.22", width="1.36", color=black, fillcolor=white, style=filled, URL="$class_nearest.html#a97a548579fe73c473c843a883629efa6", tooltip="Functor operator of this class which interpolates the value at the passed position using the values b...", pos="283,124", rects="234,116,332,132"];
+	Node4 [label="Linear\< std::map\< argument\l_value_t, Mapping * \> \>\l::operator()", height="0.56", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_linear.html#a1927a59614f2880683c9ee3795ab59fd", tooltip="Functor operator of this class which linear interpolates the value at the passed position using the v...", pos="283,78", rects="208,58,358,98"];
+	Node5 [label="Linear\< std::map\< Argument\l::mapped_type, Mapping *\l \> \>::operator()", height="0.56", width="2.14", color=black, fillcolor=white, style=filled, URL="$class_linear_3_01std_1_1map_3_01_argument_1_1mapped__type_00_01_mapping_01_5_01_4_01_4.html#ae9b11d23c7aa15f1f4f182caa81ce74b", tooltip="Functor operator of this class which linear interpolates the value at the passed position using the v...", pos="283,20", rects="206,0,360,40"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,171,109 179,114 191,125 188,140 206,150 211,152 216,154 221,156"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,170,109 179,110 189,112 193,114 206,116 215,117 225,118 234,119"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,170,93 179,92 188,91 198,90 208,88"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,170,93 178,87 193,73 186,54 206,40"];
+}

@@ -1,0 +1,9 @@
+digraph "BaseConnectionManager::updateNicConnections" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,320,28"];
+	Node1 [label="BaseConnectionManager\l::updateNicConnections", height="0.39", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,14", rects="9,0,142,28"];
+	Node2 [label="BaseConnectionManager\l::isInRange", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_base_connection_manager.html#a418d9fb4151ff38840838a94189ba8b6", tooltip="Check if the two nic&#39;s are in range. ", pos="245,14", rects="179,0,312,28"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,178,14 142,14 151,14 159,14 168,14"];
+}

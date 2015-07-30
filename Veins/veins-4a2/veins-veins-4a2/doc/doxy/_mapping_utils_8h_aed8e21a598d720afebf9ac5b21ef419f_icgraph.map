@@ -1,0 +1,9 @@
+digraph "operator*" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,234,28"];
+	Node1 [label="operator*", height="0.22", width="0.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="36,14", rects="9,6,64,22"];
+	Node2 [label="Argument::key_iterator\l::operator*", height="0.39", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_argument_1_1key__iterator.html#a0842776337ded8b72060c6d13e40f7f5", pos="163,14", rects="101,0,226,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,64,14 73,14 82,14 91,14 100,14"];
+}

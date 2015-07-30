@@ -1,0 +1,14 @@
+digraph "FWMath.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,297,136"];
+	Node1 [label="FWMath.h", height="0.22", width="0.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,120", rects="48,112,111,128"];
+	Node2 [label="math.h", height="0.22", width="0.58", color=grey75, fillcolor=white, style=filled, pos="21,68", rects="0,60,43,76"];
+	Node3 [label="veins/base/utils/MiXiMDefs.h", height="0.22", width="2.17", color=black, fillcolor=white, style=filled, URL="$_mi_xi_m_defs_8h.html", pos="138,68", rects="60,60,217,76"];
+	Node4 [label="omnetpp.h", height="0.22", width="0.86", color=grey75, fillcolor=white, style=filled, pos="68,16", rects="37,8,99,24"];
+	Node5 [label="veins/base/utils/miximkerneldefs.h", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$miximkerneldefs_8h.html", pos="207,16", rects="117,8,297,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,30,76 70,112 61,104 47,92 37,82"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,129,76 88,112 97,104 111,92 122,82"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,79,24 127,60 116,52 99,39 86,29"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,196,24 149,60 160,52 176,39 189,30"];
+}

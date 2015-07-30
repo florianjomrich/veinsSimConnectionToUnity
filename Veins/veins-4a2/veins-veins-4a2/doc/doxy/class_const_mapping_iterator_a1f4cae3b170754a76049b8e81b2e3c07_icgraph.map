@@ -1,0 +1,19 @@
+digraph "ConstMappingIterator::getNextPosition" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,494,188"];
+	Node1 [label="ConstMappingIterator\l::getNextPosition", height="0.39", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,94", rects="9,80,128,108"];
+	Node2 [label="SNRThresholdDecider\l::checkIfAboveThreshold", height="0.39", width="1.83", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a1d796e2f0da1c41810c5f2c5b4cfcd2e", tooltip="Checks a mapping against a specific threshold (element-wise). ", pos="246,174", rects="180,160,312,188"];
+	Node3 [label="SNRThresholdDecider\l::processSignalEnd", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#a6002f2ee8ffa35ded0162c72f93c9fba", tooltip="Processes a received AirFrame. ", pos="425,174", rects="365,160,486,188"];
+	Node4 [label="MappingUtils::findMin", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#adb9e9ced268b9a5d1d4f6d34738654aa", tooltip="Iterates over the passed mapping and returns the value at the key entry with the smallest value in th...", pos="246,134", rects="185,126,308,142"];
+	Node5 [label="ConstMappingIteratorWrapper\l::getNextPosition", height="0.39", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_const_mapping_iterator_wrapper.html#a603cbcad1aa33945132a3b8e2cfb769e", tooltip="Returns the position the next call to \"next()\" of this Iterator would iterate to. ...", pos="246,94", rects="164,80,328,108"];
+	Node6 [label="MappingUtils::iterateToNext", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_mapping_utils.html#a6a768601098bcb0d998be2c742126433", pos="246,54", rects="172,46,321,62"];
+	Node7 [label="MultiDimMappingIterator\l\< Linear \>::updateNextPosition", height="0.39", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_multi_dim_mapping_iterator.html#a1eb04551f2a3ae22f0eae4844f14ac97", tooltip="Helper method which updates the nextPosition member. ", pos="246,14", rects="165,0,327,28"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,128,108 135,114 150,128 144,146 164,160 169,163 174,165 180,167"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,312,174 322,174 336,174 351,174 364,174"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,128,108 137,112 146,117 151,122 164,126 171,128 178,129 184,130"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,128,94 138,94 146,94 155,94 164,94"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,128,80 136,76 146,70 150,65 164,62 166,61 169,61 171,60"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,128,80 135,74 150,59 144,41 164,28 164,28 165,28 165,28"];
+}

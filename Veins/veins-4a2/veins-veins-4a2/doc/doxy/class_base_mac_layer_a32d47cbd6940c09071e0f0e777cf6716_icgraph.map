@@ -1,0 +1,9 @@
+digraph "BaseMacLayer::encapsMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,368,16"];
+	Node1 [label="BaseMacLayer::encapsMsg", height="0.22", width="1.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,8", rects="9,0,150,16"];
+	Node2 [label="BaseMacLayer::handleUpperMsg", height="0.22", width="2.39", color=black, fillcolor=white, style=filled, URL="$class_base_mac_layer.html#a6de2ca07018de313a7147a03e6d77bff", tooltip="Handle messages comming from the network layer. ", pos="273,8", rects="187,0,360,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,150,8 160,8 169,8 177,8 186,8"];
+}

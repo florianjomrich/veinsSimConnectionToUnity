@@ -1,0 +1,20 @@
+digraph SNRThresholdDecider {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,318,290"];
+	Node1 [label=SNRThresholdDecider, height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="131,16", rects="71,8,192,24"];
+	Node2 [label=BaseDecider, height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html", tooltip="Provides some base functionality for most common deciders. ", pos="131,70", rects="96,62,166,78"];
+	Node3 [label=Decider, height="0.22", width="0.64", color=black, fillcolor=white, style=filled, URL="$class_decider.html", tooltip="The basic Decider class. ", pos="72,138", rects="49,130,96,146"];
+	Node4 [label=DeciderToPhyInterface, height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$class_decider_to_phy_interface.html", tooltip="This class is the interface for a Decider to the BasePhyLayer. ", pos="62,206", rects="0,198,125,214"];
+	Node5 [label="BaseDecider::CSRInfo", height="0.22", width="1.61", color=black, fillcolor=white, style=filled, URL="$struct_base_decider_1_1_c_s_r_info.html", tooltip="Data about an currently ongoing ChannelSenseRequest. ", pos="176,138", rects="118,130,235,146"];
+	Node6 [label=ChannelSenseRequest, height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_channel_sense_request.html", pos="201,206", rects="142,198,260,214"];
+	Node7 [label=cPacket, height="0.22", width="0.64", color=grey75, fillcolor=white, style=filled, pos="162,274", rects="139,266,186,282"];
+	Node8 [label=ChannelState, height="0.22", width="1.03", color=black, fillcolor=white, style=filled, URL="$class_channel_state.html", tooltip="Provides information about the current state of the channel: ", pos="240,274", rects="203,266,278,282"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,131,62 131,52 131,43 131,31 131,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,79,130 85,124 97,110 115,89 124,78"];
+	Node4 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" phy", pos="s,63,198 64,189 66,176 69,157 71,146", lp="85,172"];
+	Node5 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" currentChannelSenseRequest", pos="s,171,130 166,123 157,109 144,89 136,78", lp="237,104"];
+	Node6 -> Node5 [dir=back, color=darkorchid3, style=dashed, label=" first", pos="s,198,198 195,190 190,176 183,157 179,146", lp="207,172"];
+	Node7 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,167,266 171,258 179,245 190,225 196,214"];
+	Node8 -> Node6 [dir=back, color=darkorchid3, style=dashed, label=" result_var", pos="s,235,266 231,258 223,245 212,225 206,214", lp="257,240"];
+}

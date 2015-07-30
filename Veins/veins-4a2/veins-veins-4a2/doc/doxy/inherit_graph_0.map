@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,126,16"];
+	Node1 [label=AddressingInterface, height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$class_addressing_interface.html", tooltip="Interface for modules which assign L2 and L3 addresses for modules. ", pos="63,8", rects="9,0,118,16"];
+}

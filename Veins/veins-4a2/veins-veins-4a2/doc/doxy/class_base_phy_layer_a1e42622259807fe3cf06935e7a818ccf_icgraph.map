@@ -1,0 +1,11 @@
+digraph "BasePhyLayer::encapsMsg" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,538,28"];
+	Node1 [label="BasePhyLayer::encapsMsg", height="0.22", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="78,14", rects="9,6,148,22"];
+	Node2 [label="BasePhyLayer::handleUpper\lMessage", height="0.39", width="2.06", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a17b1d469775962d23835dd5f43a639ac", tooltip="Handles messages received from the upper layer through the data gate. ", pos="259,14", rects="185,0,334,28"];
+	Node3 [label="BasePhyLayer::handleMessage", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_phy_layer.html#a3880154c8db8b8efb5315cb6ef8f6c41", tooltip="OMNeT++ handle message function. ", pos="450,14", rects="371,6,530,22"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,148,14 158,14 167,14 175,14 184,14"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,334,14 344,14 353,14 361,14 370,14"];
+}

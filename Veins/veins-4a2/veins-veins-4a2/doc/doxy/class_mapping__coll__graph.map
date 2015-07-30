@@ -1,0 +1,13 @@
+digraph Mapping {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,206,220"];
+	Node1 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="56,16", rects="29,8,84,24"];
+	Node2 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="56,70", rects="15,62,98,78"];
+	Node3 [label=DimensionSet, height="0.22", width="1.06", color=black, fillcolor=white, style=filled, URL="$class_dimension_set.html", tooltip="Represents a set of dimensions which is used to define over which dimensions a mapping is defined (th...", pos="56,144", rects="18,136,95,152"];
+	Node4 [label="std::set\< Dimension \>", height="0.22", width="1.56", color=grey75, fillcolor=white, style=filled, pos="56,204", rects="0,196,113,212"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,56,62 56,52 56,43 56,31 56,24"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=" dimensions", pos="s,56,136 56,127 56,112 56,90 56,78", lp="90,104"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,56,196 56,187 56,175 56,161 56,152"];
+	Node3 -> Node3 [dir=back, color=darkorchid3, style=dashed, label=" timeDomain\ntimeFreqDomain", pos="s,95,138 104,139 109,140 112,142 112,144 112,148 104,150 95,150", lp="159,144"];
+}

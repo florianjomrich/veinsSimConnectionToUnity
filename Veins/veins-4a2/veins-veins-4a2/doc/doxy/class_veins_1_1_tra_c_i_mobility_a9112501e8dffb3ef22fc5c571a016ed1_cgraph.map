@@ -1,0 +1,13 @@
+digraph "Veins::TraCIMobility::getManager" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,710,28"];
+	Node1 [label="Veins::TraCIMobility\l::getManager", height="0.39", width="1.56", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="64,14", rects="8,0,120,28"];
+	Node2 [label="Veins::TraCIScenarioManager\lAccess::get", height="0.39", width="2.17", color=black, fillcolor=white, style=filled, URL="$class_veins_1_1_tra_c_i_scenario_manager_access.html#af6404515b1b992848f352b03d325b10d", pos="234,14", rects="156,0,312,28"];
+	Node3 [label="FindModule::findGlobalModule", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a36e4632a6c8c7dbdc177639957a8e62a", tooltip="Returns a pointer to the module with the type of this template. ", pos="431,14", rects="349,6,514,22"];
+	Node4 [label="FindModule::findSubModule", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$class_find_module.html#a661c335281d62d8df4affc46cc4fff9f", tooltip="Returns a pointer to a sub module of the passed module with the type of this template. ", pos="626,14", rects="551,6,702,22"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,156,14 120,14 129,14 137,14 146,14"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,348,14 312,14 321,14 329,14 338,14"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,550,14 514,14 523,14 532,14 540,14"];
+}

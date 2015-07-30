@@ -1,0 +1,28 @@
+digraph "DeciderToPhyInterface::cancelScheduledMessage" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,880,176"];
+	Node1 [label="DeciderToPhyInterface\l::cancelScheduledMessage", height="0.39", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="75,102", rects="8,88,142,116"];
+	Node2 [label="BaseDecider::channelState\lChanged", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#add7242168c4bb521c6335f3de590e4b0", tooltip="Checks if the changed channel state enables us to answer any ongoing ChannelSenseRequests. ", pos="246,102", rects="179,88,314,116"];
+	Node3 [label="SNRThresholdDecider\l::processNewSignal", height="0.39", width="1.67", color=black, fillcolor=white, style=filled, URL="$class_s_n_r_threshold_decider.html#ace13845f43c5328cea40eb00c59af2b3", tooltip="Processes a new Signal. ", pos="423,148", rects="363,134,484,162"];
+	Node4 [label="Decider80211p::setChannel\lIdleStatus", height="0.39", width="1.86", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#af06ba4862697730ee05b65f6bf90279b", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="423,102", rects="356,88,490,116"];
+	Node5 [label="PhyLayer80211p::handleSelf\lMessage", height="0.39", width="2.00", color=black, fillcolor=white, style=filled, URL="$class_phy_layer80211p.html#a6ab453897d17cd1dab056d03594dbb72", tooltip="Handles self scheduled messages. ", pos="615,162", rects="543,148,687,176"];
+	Node6 [label="Decider80211p::processNew\lSignal", height="0.39", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#a2a8f4a380e5a2ba44c36e43cc2033270", tooltip="Processes a new Signal. ", pos="615,116", rects="546,102,685,130"];
+	Node7 [label="Decider80211p::processSignalEnd", height="0.22", width="2.31", color=black, fillcolor=white, style=filled, URL="$class_decider80211p.html#ac39637b3c4cfad57ba0b4518fea264d9", tooltip="Processes a received AirFrame. ", pos="615,76", rects="532,68,698,84"];
+	Node8 [label="BaseDecider::setChannelIdle\lStatus", height="0.39", width="2.03", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ae535b44e34061014fe282c36c27b0193", tooltip="Changes the \"isIdle\"-status to the passed value. ", pos="423,42", rects="350,28,496,56"];
+	Node9 [label="BaseDecider::processNewSignal", height="0.22", width="2.25", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a6a480f87157d0509c0c1fccf94ea9fef", tooltip="Processes a new Signal. ", pos="615,42", rects="534,34,697,50"];
+	Node10 [label="BaseDecider::processSignal", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#a273892d7b0c9874e4efe3c7755aa7a17", tooltip="Processes an AirFrame given by the PhyLayer. ", pos="803,25", rects="734,17,872,33"];
+	Node11 [label="BaseDecider::processSignalEnd", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$class_base_decider.html#ab9cfef6c04e12d2524d45e881f341300", tooltip="Processes the end of a received Signal. ", pos="615,8", rects="536,0,695,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,142,102 152,102 161,102 169,102 178,102"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,314,116 322,119 333,124 337,129 350,134 354,135 358,136 362,137"];
+	Node2 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,314,102 323,102 334,102 345,102 356,102"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,490,113 499,117 516,126 514,138 532,148 535,150 539,151 543,152"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,490,107 500,108 515,109 530,110 545,111"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,490,90 499,89 510,87 521,86 532,84"];
+	Node2 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,314,88 322,83 334,74 334,64 350,56"];
+	Node8 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,496,42 506,42 515,42 524,42 533,42"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,697,35 706,34 715,33 725,33 734,31"];
+	Node8 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,496,28 504,25 515,22 519,18 532,16 533,16 534,16 535,15"];
+	Node11 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,695,15 705,16 715,17 724,18 734,19"];
+}

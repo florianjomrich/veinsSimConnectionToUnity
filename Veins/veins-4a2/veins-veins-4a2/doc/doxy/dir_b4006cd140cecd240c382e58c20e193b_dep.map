@@ -1,0 +1,15 @@
+digraph src {
+	graph [compound=true];
+	node [label="\N", fontsize=10, fontname=Helvetica];
+	edge [labelfontsize=10, labelfontname=Helvetica];
+	graph [bb="0,0,230,68"];
+	subgraph clusterdir_b4006cd140cecd240c382e58c20e193b {
+		graph [bgcolor="#eeeeff"];
+		graph [pencolor=black];
+		graph [URL="dir_b4006cd140cecd240c382e58c20e193b.html"];
+		graph [bb="8,8,222,60"];
+		dir_b4006cd140cecd240c382e58c20e193b [label=src, shape=plaintext, pos="187,34", width="0.75", height="0.50"];
+		dir_4bc0a168e5e16f637b31834828305cb0 [label=scripts, shape=box, color=black, fillcolor=white, style=filled, URL="dir_4bc0a168e5e16f637b31834828305cb0.html", pos="115,34", width="0.75", height="0.50"];
+		dir_89753b7c99162ca7b86318c23caa68eb [label=veins, shape=box, color=red, fillcolor=white, style=filled, URL="dir_89753b7c99162ca7b86318c23caa68eb.html", pos="43,34", width="0.75", height="0.50"];
+	}
+}

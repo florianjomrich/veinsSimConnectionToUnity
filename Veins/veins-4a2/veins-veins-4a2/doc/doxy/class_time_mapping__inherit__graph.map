@@ -1,0 +1,10 @@
+digraph "TimeMapping&lt; Interpolator &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,158,136"];
+	Node1 [label="TimeMapping\< Interpolator \>", height="0.22", width="2.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,16", rects="0,8,159,24"];
+	Node2 [label=Mapping, height="0.22", width="0.75", color=black, fillcolor=white, style=filled, URL="$class_mapping.html", tooltip="Represents a changeable mapping (mathematical function) from at least time to Argument::mapped_type. ", pos="79,68", rects="52,60,107,76"];
+	Node3 [label=ConstMapping, height="0.22", width="1.14", color=black, fillcolor=white, style=filled, URL="$class_const_mapping.html", tooltip="Represents a not changeable mapping (mathematical function) from domain with at least the time to a A...", pos="79,120", rects="38,112,121,128"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,79,60 79,51 79,42 79,31 79,24"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,79,112 79,103 79,94 79,83 79,76"];
+}

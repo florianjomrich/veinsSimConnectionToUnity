@@ -1,0 +1,9 @@
+digraph "Dimension::time_static" {
+	graph [rankdir=LR];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,292,16"];
+	Node1 [label="Dimension::time_static", height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="68,8", rects="9,0,128,16"];
+	Node2 [label="Dimension::Dimension", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$class_dimension.html#aa61dad15f33b6c3d09028ba9e545aa70", pos="224,8", rects="165,0,284,16"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,164,8 128,8 137,8 145,8 154,8"];
+}

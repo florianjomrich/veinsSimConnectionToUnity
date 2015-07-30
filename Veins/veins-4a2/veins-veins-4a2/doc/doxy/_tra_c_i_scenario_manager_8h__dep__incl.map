@@ -1,0 +1,29 @@
+digraph "TraCIScenarioManager.h" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,883,188"];
+	Node1 [label="TraCIScenarioManager.h", height="0.22", width="1.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="511,172", rects="445,164,578,180"];
+	Node2 [label="TraCIMobility.h", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_mobility_8h.html", pos="263,120", rects="219,112,308,128"];
+	Node3 [label="TraCIDemo11p.h", height="0.22", width="1.25", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_demo11p_8h.html", pos="47,68", rects="2,60,92,76"];
+	Node4 [label="TraCIDemo11p.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_demo11p_8cc.html", pos="46,16", rects="0,8,93,24"];
+	Node5 [label="TraCITestApp.h", height="0.22", width="1.22", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_test_app_8h.html", pos="155,68", rects="111,60,200,76"];
+	Node6 [label="TraCITestApp.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_test_app_8cc.html", pos="156,16", rects="110,8,202,24"];
+	Node7 [label="TraCIMobility.cc", height="0.22", width="1.28", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_mobility_8cc.html", pos="263,68", rects="217,60,310,76"];
+	Node8 [label="TraCIScenarioManager.cc", height="0.22", width="1.89", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_8cc.html", pos="395,68", rects="327,60,463,76"];
+	Node9 [label="TraCIScenarioManagerLaunchd.h", height="0.22", width="2.44", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_launchd_8h.html", pos="511,120", rects="423,112,600,128"];
+	Node10 [label="TraCIScenarioManagerLaunchd.cc", height="0.22", width="2.50", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_scenario_manager_launchd_8cc.html", pos="571,68", rects="481,60,661,76"];
+	Node11 [label="TraCIScreenRecorder.cc", height="0.22", width="1.75", color=black, fillcolor=white, style=filled, URL="$_tra_c_i_screen_recorder_8cc.html", pos="680,120", rects="617,112,744,128"];
+	Node12 [label="AnnotationManager.cc", height="0.22", width="1.69", color=black, fillcolor=white, style=filled, URL="$_annotation_manager_8cc.html", pos="822,120", rects="761,112,883,128"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,473,164 464,162 417,152 345,137 302,128"];
+	Node2 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,230,112 221,110 179,100 118,85 81,76"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,47,60 47,51 47,42 47,31 46,24"];
+	Node2 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,246,112 238,108 218,98 190,85 172,76"];
+	Node5 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,155,60 155,52 155,42 155,32 156,24"];
+	Node2 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,263,112 263,103 263,94 263,83 263,76"];
+	Node2 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,283,112 291,109 316,99 352,85 374,76"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,476,164 468,161 449,154 428,144 414,128 400,113 397,89 395,76"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,511,164 511,155 511,146 511,135 511,128"];
+	Node9 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,520,112 527,106 538,96 552,84 561,76"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,537,164 547,161 579,151 625,137 654,128"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,559,164 569,162 627,152 718,137 773,128"];
+}

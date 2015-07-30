@@ -1,0 +1,9 @@
+digraph "BaseFilteredIterator&lt; Base &gt;" {
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=record];
+	edge [fontname=Helvetica, fontsize=10, labelfontname=Helvetica, labelfontsize=10];
+	graph [bb="0,0,144,112"];
+	Node1 [label="BaseFilteredIterator\l\< Base \>", height="0.39", width="1.47", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="53,22", rects="0,8,106,36"];
+	Node2 [label=Base, height="0.22", width="0.44", color=grey75, fillcolor=white, style=filled, pos="53,96", rects="37,88,69,104"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, pos="s,53,88 53,80 53,67 53,49 53,36"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=" origIterator", pos="s,55,88 56,79 57,76 57,73 58,70 59,58 58,45 56,36", lp="92,62"];
+}
