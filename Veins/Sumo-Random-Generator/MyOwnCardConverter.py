@@ -4,15 +4,22 @@ from random import randint
 
 duraRouterDirectory = "C:\\veinsSimConnectionToUnity\\Veins\\sumo-0.21.0\\bin\\duarouter";
 #tripFile = "C:\\veinsSimConnectionToUnity\\Veins\\darmstadt\\trips.xml";
-tripFile = "E:\\Dropbox\\DoktorrandKOM\\SumoSzenarios\\trips.xml";
-netFile = "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\darmstadt.net.xml";
-outputFile= " E:\\Dropbox\\DoktorrandKOM\\SumoSzenarios\\darmstadt.rou.xml";
+tripFile = "E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\trips.xml";
+#netFile = "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\darmstadt.net.xml";
+#outputFile= " E:\\Dropbox\\DoktorrandKOM\\SumoSzenarios\\darmstadt.rou.xml";
+
+netFile = "C:\\veinsSimConnectionToUnity\\Veins\\veins-4a2\\veins-veins-4a2\\examples\\veins\\erlangen.net.xml";
+outputFile= " E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\erlangen.rou.xml";
 
 
 startEdgeList=[];
 endEdgeList=[];
 
-numberOfDifferentRoutes = 2500;
+startEdgesToBeUsed=[];
+endEdgesToBeUsed=[];
+
+numberOfDifferentStartEndPoints = 10;
+numberOfCars = 10000;
 
 
 
@@ -74,18 +81,38 @@ for eintrag in baum.childNodes:
                                 #fobj_out.write(str(knoten.getAttribute("id")) + "\n");
 
 
+
+
+#########################################################################
+# load road start/end points to be used 
+#########################################################################
+counterCurrentStartEndPoint=0;
+
+if(numberOfDifferentStartEndPoints<len(endEdgeList)):
+        while(counterCurrentStartEndPoint<numberOfDifferentStartEndPoints):
+                 startEdgeNumber = getZufallsZahl(len(startEdgeList)-1);
+                 endEdgeNumber = getZufallsZahl(len(endEdgeList)-1);
+                 startEdgesToBeUsed.append(startEdgeList.pop(startEdgeNumber));
+                 endEdgesToBeUsed.append(endEdgeList.pop(endEdgeNumber));
+                 counterCurrentStartEndPoint=counterCurrentStartEndPoint+1;
+
+
+
 #########################################################################
 # write out trip-file 
 #########################################################################
 
-counterX=0;
+counterCurrentCar=0;
  
-if(numberOfDifferentRoutes<len(endEdgeList)):
-          while (counterX < numberOfDifferentRoutes):
-                startEdge = getZufallsZahl(len(startEdgeList)-2);
-                endEdge = getZufallsZahl(len(endEdgeList)-2);
-                printTripLine(counterX,startEdgeList.pop(startEdge),endEdgeList.pop(endEdge));
-                counterX=counterX+1;
+while (counterCurrentCar < numberOfCars):
+                                startEdgeNumber = getZufallsZahl(len(startEdgesToBeUsed)-1);
+                                endEdgeNumber = getZufallsZahl(len(endEdgesToBeUsed)-1);
+                                startEdge = startEdgesToBeUsed.pop(startEdgeNumber);
+                                endEdge = endEdgesToBeUsed.pop(endEdgeNumber);
+                                printTripLine(counterCurrentCar,startEdge,endEdge);
+                                startEdgesToBeUsed.append(startEdge);
+                                endEdgesToBeUsed.append(endEdge);
+                                counterCurrentCar=counterCurrentCar+1;
 
 
                 
