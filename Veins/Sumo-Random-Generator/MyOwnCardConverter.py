@@ -5,11 +5,15 @@ from random import randint
 duraRouterDirectory = "C:\\veinsSimConnectionToUnity\\Veins\\sumo-0.21.0\\bin\\duarouter";
 #tripFile = "C:\\veinsSimConnectionToUnity\\Veins\\darmstadt\\trips.xml";
 tripFile = "E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\trips.xml";
-#netFile = "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\darmstadt.net.xml";
-#outputFile= " E:\\Dropbox\\DoktorrandKOM\\SumoSzenarios\\darmstadt.rou.xml";
 
-netFile = "C:\\veinsSimConnectionToUnity\\Veins\\veins-4a2\\veins-veins-4a2\\examples\\veins\\erlangen.net.xml";
-outputFile= " E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\erlangen.rou.xml";
+netFile = "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\ruesseslsheimopel.net.xml";
+outputFile= "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\ruesseslsheimopel.rou.xml";
+
+#netFile = "C:\\veinsSimConnectionToUnity\\Veins\darmstadt\\darmstadt.net.xml";
+#outputFile= " E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\darmstadt.rou.xml";
+
+#netFile = "C:\\veinsSimConnectionToUnity\\Veins\\veins-4a2\\veins-veins-4a2\\examples\\veins\\erlangen.net.xml";
+#outputFile= " E:\\Dropbox\\DoktorrandKOM\\HiwiUnityProjektVeins\\SumoSzenarios\\erlangen.rou.xml";
 
 
 startEdgeList=[];
@@ -18,7 +22,7 @@ endEdgeList=[];
 startEdgesToBeUsed=[];
 endEdgesToBeUsed=[];
 
-numberOfDifferentStartEndPoints = 10;
+numberOfDifferentStartEndPoints = 20;
 numberOfCars = 10000;
 
 

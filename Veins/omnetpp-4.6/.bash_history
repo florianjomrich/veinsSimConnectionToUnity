@@ -285,3 +285,11 @@ ls
 export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
 sumo-launchd.py 
 omnetpp
+omnetpp
+cd ..
+cd veins-4a2/veins-veins-4a2/
+export PATH=$PATH:/c/veinsSimConnectionToUnity/Veins/sumo-0.21.0/bin/
+sumo-launchd.py 
+cd C:\veinsSimConnectionToUnity\Veins\veins-4a2\veins-veins-4a2
+make doxy
+sumo-launchd.py 
